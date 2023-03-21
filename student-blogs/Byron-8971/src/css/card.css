@@ -1,0 +1,86 @@
+/* C A R D S */
+.car {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(137, 195, 245);
+    color: rgb(12, 7, 7);
+    justify-content: center;
+    border: 1px solid rgb(228, 222, 222);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.car::before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(90.21deg, #f0eaed -5.91%, #38279b 111.58%);
+    opacity: 0.85;
+    top: 0;
+    width: 100%;
+    height: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.car:hover::before {
+    height: 100%;
+}
+
+.car img {
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.car__description {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 5px;
+}
+
+.car__description:hover {
+    opacity: 1;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.car:hover {
+    top: 1%;
+}
+
+.car:hover .car__description {
+    opacity: 1;
+}
+
+.car__description-title {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: var(--ff-asl);
+    font-weight: var(--fw-bold);
+    letter-spacing: 0.8px;
+    line-height: 1.1em;
+
+}
+
+.car__description-description {
+    text-transform: capitalize;
+    font-size: 15px;
+    font-style: italic;
+    font-family: var(--ff-asl);
+    font-weight: var(--fw-bold);
+    letter-spacing: 0.8px;
+}

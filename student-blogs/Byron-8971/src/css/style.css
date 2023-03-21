@@ -1,0 +1,88 @@
+@import './font.css';
+@import './reset.css';
+@import './theme-01.css';
+@import './common.css';
+@import './header.css';
+@import './card.css';
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    max-width: 1000px;
+    margin: 10px auto;
+
+    background-color: var(--primary-color-dark);
+    color: white;
+    font-family: var(--ff-asl);
+}
+
+/* .test {
+    background-color: yellowgreen;
+    max-width: 1000px;
+} */
+/* S E R V I C E S */
+.post {
+    padding: 5px;
+    border-radius: 10px;
+    background-image: url(../assets/img/banner-bg.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: white;
+}
+
+.post h2 {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.post>p {
+    color: #B8B8B8;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px auto 30px auto;
+    text-align: center;
+    width: 56%;
+}
+
+.post__header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+.post__footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+
+
+
+@media only screen and (max-width: 700px) {
+    .post>p {
+        width: 80%;
+    }
+
+    .post__header {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .post>p {
+        width: 90%;
+    }
+
+    .post__header {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,32 @@
+/* H E A D E R */
+
+.header {
+    padding: 18px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 1000px;
+
+    z-index: 9999;
+    background-color: var(--primary-color-dark);
+    transition: 0.32s ease-in-out;
+
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__links a {
+    color: white;
+    font-weight: var(--fw-bold);
+    letter-spacing: 0.8px;
+    padding: 0 15px;
+    font-size: 16px;
+    opacity: 0.75;
+}
+
+.header__links a:hover {
+    opacity: 1;
+}
