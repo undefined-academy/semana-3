@@ -1,0 +1,38 @@
+/* --------------------------------------------------- */
+/* T A B L E S                                         */
+/* --------------------------------------------------- */
+
+.table {
+    /* margin: 0 auto; */
+    border: var(--table-border-color) 1px solid;
+    width: 100%;
+    table-layout: fixed;
+    background-color: var(--primary-color);
+}
+
+.table td,
+.table th {
+    border: var(--table-inner-border-color) 1px solid;
+    padding: 0.2em;
+}
+
+
+.table__title {
+    font-weight: 700;
+    font-size: 1.5rem;
+    background: var(--table-color);
+
+}
+
+.table td {
+    text-align: left;
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+.table td code {
+    font-size: 0.875rem;
+    display: inline-block;
+    padding: 0.2em;
+    font-weight: bold;
+}

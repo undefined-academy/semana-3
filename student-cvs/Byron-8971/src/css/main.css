@@ -1,0 +1,10 @@
+.main {
+    margin: 1rem 1rem;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--gray-color-dark);
+    border: 1px solid var(--secondary-color);
+    box-shadow: 2px 2px var(--secondary-color);
+    border-radius: 40px;
+}

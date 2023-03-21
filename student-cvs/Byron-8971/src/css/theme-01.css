@@ -1,0 +1,17 @@
+:root {
+    --primary-color: #fefefe;
+    --secondary-color: hsl(0, 1%, 74%);
+    --text-color: #333;
+
+    --table-color: rgb(231, 188, 131);
+    --table-border-color: #b2b2b2;
+    --table-inner-border-color: #080808;
+
+
+
+    --ff-primary: "Roboto Slab", serif;
+    --ff-secondary: "Georgia", serif;
+    --ff-terciary: "Inter", sans-serif;
+
+    --fs-regular: 16px;
+}

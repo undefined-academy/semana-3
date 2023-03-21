@@ -1,0 +1,11 @@
+/* --------------------------------------------------- */
+/* U T I L                                             */
+/* --------------------------------------------------- */
+.img-inline {
+    display: inline;
+}
+
+.justify {
+    text-align: justify;
+    text-justify: inter-word;
+}

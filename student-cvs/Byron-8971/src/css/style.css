@@ -1,0 +1,18 @@
+@import './font.css';
+@import './reset.css';
+@import './theme-01.css';
+@import './common.css';
+@import './header.css';
+@import './main.css';
+@import './table.css';
+@import './contactForm.css';
+
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    margin: 0 auto;
+    max-width: 62.5em;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-regular);
+    padding: 1rem 0;
+}
