@@ -6,13 +6,17 @@
 @import './main.css';
 @import './table.css';
 @import './contactForm.css';
+@import './responsive.css';
 
 body {
     background-color: var(--primary-color);
     color: var(--text-color);
     margin: 0 auto;
+    min-width: 350px;
     max-width: 62.5em;
     font-family: var(--ff-primary);
-    font-size: var(--fs-regular);
-    padding: 1rem 0;
+    font-size: var(--fs-400);
+    padding: 1rem 1rem;
+    height: 100vh;
+    height: 100dvh;
 }

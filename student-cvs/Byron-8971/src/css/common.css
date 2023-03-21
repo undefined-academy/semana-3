@@ -9,3 +9,14 @@
     text-align: justify;
     text-justify: inter-word;
 }
+
+.help {
+    font-size: var(--fs-200);
+    margin-top: 10px;
+    color: gray;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: var(--fs-xl);
+}

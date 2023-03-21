@@ -1,5 +1,5 @@
 .main {
-    margin: 1rem 1rem;
+    /* margin: 1rem 1rem; */
     padding: 10px;
     text-align: center;
     border-radius: 50%;
@@ -7,4 +7,9 @@
     border: 1px solid var(--secondary-color);
     box-shadow: 2px 2px var(--secondary-color);
     border-radius: 40px;
+}
+
+.main p {
+    font-family: var(--ff-asl);
+    letter-spacing: 2px;
 }

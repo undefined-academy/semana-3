@@ -45,7 +45,7 @@ label,
 legend {
     font-weight: bold;
     text-transform: capitalize;
-    font-size: 14px;
+    font-size: var(--fs-300);
     color: #444;
 }
 
@@ -59,12 +59,7 @@ textarea {
     color: #333;
 }
 
-.help {
-    font-size: 12px;
-    margin-top: 10px;
-    color: gray;
-    font-weight: bold;
-}
+
 
 
 button {

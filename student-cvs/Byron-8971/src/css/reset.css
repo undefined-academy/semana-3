@@ -1,6 +1,7 @@
 /* R E S E T */
 html {
     box-sizing: border-box;
+    font-size: 100%;
 }
 
 *,
@@ -8,10 +9,7 @@ html {
 *::after {
     box-sizing: inherit;
     margin: 0;
-
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html,

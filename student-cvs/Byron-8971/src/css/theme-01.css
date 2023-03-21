@@ -8,10 +8,64 @@
     --table-inner-border-color: #080808;
 
 
-
+    --ff-asl: 'A-little-sunshine', Arial, Helvetica, sans-serif;
     --ff-primary: "Roboto Slab", serif;
     --ff-secondary: "Georgia", serif;
     --ff-terciary: "Inter", sans-serif;
 
-    --fs-regular: 16px;
+    /* --fs-xl: 5rem;
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
+    --fs-300: .875rem;
+    --fs-200: .75rem; */
+    --fs-xl: 1vw;
+    --fs-600: 1.5rem;
+    --fs-500: 1.25rem;
+    --fs-400: 1rem;
+    --fs-300: .875rem;
+    --fs-200: .75rem;
+
+    --fs-e-xl: 1em;
+}
+
+@media (max-width:23.4375em) {
+
+    :root {
+        --fs-xl: 10vw;
+        --fs-600: 1.5rem;
+        --fs-500: 1.25rem;
+        --fs-400: 0.75rem;
+        --fs-300: .875rem;
+        --fs-200: .75rem;
+
+        --fs-e-xl: 1em;
+    }
+
+}
+
+@media (min-width:23.4375em) {
+
+    :root {
+
+        --fs-xl: 10vw;
+        --fs-600: 2rem;
+        --fs-500: 1.125rem;
+        --fs-400: 1rem;
+        --fs-300: 1.25rem;
+        --fs-200: 1rem;
+    }
+}
+
+@media (min-width:40em) {
+
+    :root {
+
+        --fs-xl: 3rem;
+        --fs-600: 2rem;
+        --fs-500: 1.125rem;
+        --fs-400: 1rem;
+        --fs-300: 0.75rem;
+        --fs-200: .5rem;
+    }
 }
