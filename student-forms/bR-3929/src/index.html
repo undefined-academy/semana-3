@@ -1,15 +1,62 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap w/ Vite</title>
-  </head>
-  <body>
-    <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary">Primary button</button>
+</head>
+
+<body>
+    <form>
+        <div class="container text-center py-4 px-3 mx-auto">
+            <h1>Contacto</h1>
+            <div id="emailHelp" class="form-text">Si estas interesado en contactarme, por favor rellena el siguiente
+                formulario:</div>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" pattern="[A-Za-z]+" required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <h2>Motivo de tu contacto</h2>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Creacion de Website
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                    Creacion de WebApp
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Creacion de Mobile App
+                </label>
+            </div>
+            <br>
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Descripcion de tu proyecto</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <p>Genere una breve descripcion respecto al proyecto que desea crear.</p>
+            </div>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Acepto los terminos y condiciones</label>
+        </div>
+        <div class="text-center">
+        <button type="button" class="btn btn-secondary">Enviar formulario</button>
     </div>
+    </form>
     <script type="module" src="./js/main.js"></script>
-  </body>
+</body>
+
 </html>
