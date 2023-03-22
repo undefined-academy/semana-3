@@ -9,6 +9,8 @@ html {
 }
 body {
   font-family: Arial;
+  color: #333;
+  background: whitesmoke;
 }
 
 div {
