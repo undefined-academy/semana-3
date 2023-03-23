@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+  </head>
+  <body>
+    <div class="container py-4 px-3 mx-auto">
+        <div class="container">
+            <h1 class="text-center">Contacto</h1>
+            <form action="" method="get">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+              </div>
+              <div class="mb-3">
+                <label for="apellido" class="form-label">Apellido:</label>
+                <input type="text" class="form-control" id="apellido" name="apellido" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono:</label>
+                <input type="number" class="form-control" id="telefono" name="telefono" required>
+              </div>
+              <div class="mb-3">
+                <fieldset>
+                  <legend>Contáctame por:</legend>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="contacto" id="contacto1" value="email" checked>
+                    <label class="form-check-label" for="contacto1">
+                      Email
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="contacto" id="contacto2" value="telefono">
+                    <label class="form-check-label" for="contacto2">
+                      Teléfono
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="contacto" id="contacto3" value="ninguno">
+                    <label class="form-check-label" for="contacto3">
+                      Ninguno
+                    </label>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="terminos" name="terminos" value="checkbox" required>
+                <label class="form-check-label" for="terminos">Aceptar los términos y condiciones.</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+          
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
