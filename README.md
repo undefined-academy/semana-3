@@ -40,9 +40,7 @@ Agregar la siguiente etiqueta meta a tu HTML de la hoja de vida:
 
 [1] No haremos fork ni un pull request por ahora.
 
-## 🏋Clase 3 [EJERCICIOS]
-
-### 💻 Ejercicio
+## 🏋Clase 3 [EJERCICIO]
 
 1. Ejecutar `npm init -y` en la raíz del proyecto de la hoja de vida.
 2. Agregar vite como dependencia `npm install vite`.
@@ -59,7 +57,7 @@ Agregar la siguiente etiqueta meta a tu HTML de la hoja de vida:
 
 ```
 
-#### Añade tu primer archivo de JavaScript
+### Añade tu primer archivo de JavaScript
 
 1. Agrega un tag de `<script type="module" src="/main.mjs"></script>`
 2. Escribe en el archivo el siguiente código:
@@ -79,16 +77,14 @@ $form.addEventListener("submit", handleSubmit);
 
 🍎  Debemos prevenir el comportamiento por defecto del envío de la información al servidor.
 
-## 🏋Clase 4 [EJERCICIOS]
-
-### 💻 Ejercicio
+## 🏋Clase 4 [EJERCICIO]
 
 1. Hacer fork del repositorio de la semana-3 `https://github.com/undefined-academy/semana-3`
 2. Subir la maquetación de la portada de blog usando Flexbox y CSS Grid a la carpeta `students-blog`.
 3. Subir la maquetación mobile first responsive de la hoja de vida a la carpeta `students-cv`.
 4. Elegir entre Bootstrap o TailwindCSS y maquetar el formulario de contacto con dicha tecnología en la carpeta `student-forms`.
 
-#### Estructura del PR
+### Estructura del PR
 
 ```Markdown
 .
