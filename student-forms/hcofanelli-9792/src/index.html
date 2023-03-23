@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap w/ Vite</title>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <h1>Contacto</h1>
+        <form>
+            <div class="mb-3">
+              <label for="exampleInputName" class="form-label">NOMBRE</label>
+              <input type="text" class="form-control" id="exampleInputName" >
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">EMAIL</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" >
+              </div>
+              <div class="form-group">
+				<fieldset>
+					<legend>Presupuesto</legend>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                <label class="form-check-label" for="flexRadioDefault1">
+                 $10.000
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  $5.000
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                <label class="form-check-label" for="flexRadioDefault2">
+                  $1.000
+                </label>
+              </div>
+            </fieldset>
+            <div  class="form-text">Este presupuesto es la base no el total.</div>
+        </div>
+        <label for="type" class="proyecto">Tipo de proyecto</label>
+        <select class="form-select" aria-label="Default select example">
+            <option selected>Selecciones uno</option>
+            <option value="website">Website</option>
+            <option value="Webapp">Aplicacion Web</option>
+            <option value="Mobile">Aplicacion mobile</option>
+            <option value="Design">Diseño Web</option>
+          </select>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">DESCRIPCION</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div  class="form-text">Escribe una descripción del proyecto en al menos 500 palabras.</div>
+            <div class="mb-3 form-check checkAcep">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">ACEPTO LOS TERMINOS Y CONDICIONES</label>
+            </div>
+            <button type="submit" class="btn btn-primary">ENVIAR</button>
+          </form>
+      </main>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+html {
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+body {
+    
+    font-family: "Helvetica", "Arial", sans-serif;
+    background-color: #fafafa;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: #333;
+   }
+  .form-group, .form-label, .proyecto {
+	margin: 20px 0;
+}
+
+label, input {
+	vertical-align: middle;
+}
+
+label, input:not([type="radio"], [type="checkbox"]) {
+	width: 100%;
+}
+
+textarea {
+	display: block;
+	width: 100%;
+	resize: vertical;
+}
+
+label, legend {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #444;
+}
+.checkAcep{
+    margin-top: 20px;
+}
