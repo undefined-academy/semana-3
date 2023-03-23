@@ -1,6 +1,6 @@
 :root{
     --header-background: #6f6175;
-    --primary-background: #e7ecf1;
+    --primary-background: #f2f2f3;
     --secondary-background: #9f98a3;    
 }
 
@@ -35,7 +35,7 @@ nav li{
 nav a{
     color: #fff;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 0.7rem;
     text-transform: uppercase;
 }
   
@@ -73,18 +73,18 @@ h1{
   
 .card img {
     width: 100%;
-    height: auto;
+    height: 180px;
     margin-bottom: 10px;
     border-radius: 5px;
 }
   
 .card h2 {
-    font-size: 20px;
+    font-size: 1.2rem;
 }
   
 .card p {
     margin: 10px 0 0 0;
-    font-size: 16px;
+    font-size: 0.9rem;
 }
 
 footer{
@@ -107,7 +107,6 @@ footer p{
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
-
 }
 
 @media screen and (max-width: 425px)  {
@@ -123,6 +122,4 @@ footer p{
     main{
         width: 100%;
     }
-
-
 }
