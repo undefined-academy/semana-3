@@ -10,3 +10,9 @@
     box-shadow: 2px 2px var(--secondary-color);
     border-radius: 40px;
 }
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
