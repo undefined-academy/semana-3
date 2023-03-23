@@ -2,5 +2,6 @@ function handleSubmit(event) {
     event.preventDefault(); //
     console.log("Hola mundo");
   }
-  const $form = document.querySelector("FormContact");
-  $form.addEventListener("submit", handleSubmit);
+  const ContactForm = document.querySelector("#FormContact");
+  
+  ContactForm.addEventListener("submit", handleSubmit);

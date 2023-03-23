@@ -78,6 +78,28 @@ input[type="text"], input[type="email"], select, fieldset, textarea{
     color: #333;
 }
 
+input[type="radio"] + *::before {
+    display: flexbox;
+    vertical-align: bottom;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.3rem;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: #facc15;
+  }
+
+input[type="radio"]:checked + * {
+    color: #facc15;
+  }
+
+input[type="radio"]:checked + *::before {
+    background: radial-gradient(#facc15 0%, #facc15 40%, transparent 50%, transparent);
+    border-color: #facc15;
+  }
+
+
 .help {
     font-size: 12px;
     margin-top: 10px;
