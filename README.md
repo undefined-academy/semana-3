@@ -90,18 +90,18 @@ $form.addEventListener("submit", handleSubmit);
 .
 ├── student-cvs/
 │ └── glrodasz-0666/
-│ ├── index.html
-│ ├── form.html
-│ ├── styles.css
-│ └── main.mjs
+│     ├── index.html
+│     ├── form.html
+│     ├── styles.css
+│     └── main.mjs
 ├── student-blogs/
 │ └── glrodasz-0666/
-│ ├── index.html
-│ └── styles.css
+│     ├── index.html
+│     └── styles.css
 └── student-forms/
     └── glrodasz-0666/
         ├── src
         └── package.json
 ```
 
-⭐ **¡Si usas ambos, crea las carpetas dentro de `student-forms/bootstrap|tailwind` !**
+⭐ **¡Si usas ambos, crea las carpetas dentro de `student-forms/usuario-de-discord/bootstrap|tailwind` !**
