@@ -60,8 +60,18 @@ header > .box > button{
     font-size: 1rem;
     border-radius: 1rem;
     background-color: rgb(181, 181, 35);
+    color: #d1d3d4;
     margin: 1rem;
+    cursor: pointer;
     
+} 
+header > .box > button:hover{
+    background-color: rgb(134, 134, 15);
+}
+
+header > .box > button:active{
+    
+    background-color: rgb(58, 58, 4);
 }
 
 header > .box2 > span{
@@ -97,10 +107,20 @@ header > .box3 > a{
     display: inline-block;
     text-decoration: none;
     font-size: 1rem;
+    color: #d1d3d4;
     background-color:  rgb(181, 181, 35);
     border-radius: 1rem;
     padding: 1rem 2rem;
     margin-top: 1rem;
+}
+
+header > .bo3 > a:hover{
+    background-color: rgb(134, 134, 15);
+}
+
+header > .box3 > a:active{
+    
+    background-color: rgb(58, 58, 4);
 }
 
 /* MAIN */
@@ -112,3 +132,88 @@ main{
     background-color: #323338;
     margin-top: 16rem;
 }
+
+main > .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main > .container > section{
+    width: 100%;
+    height:20rem  ;
+    margin-bottom: 2rem;
+    border: 0.4rem solid #d1d3d4;
+}
+
+main > .container > section > h2{
+    font-size: 1.4rem ;
+    color: #d1d3d4;
+}
+
+main > .container > section > span{
+    display: inline-block;
+    width: 6rem;
+    height: 6rem;
+    margin: 0.4rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}   
+/*FUNDAMENTOS*/
+main > .container > section > .html{
+    background-image: url('https://drive.google.com/uc?id=1JHAT2eAZ7vvelpIvU_2GUaENWfsE0SMW');
+}
+main > .container > section > .css{
+    background-image: url('https://drive.google.com/uc?id=1wLIJuvkuncDrmJtVPxvoTZKw6hTfT3sC');
+}
+main > .container > section > .javascript{
+    background-image: url('https://drive.google.com/uc?id=1zGb03hZ0jBBbolQYA-gNbgWFDjgqU5_X');
+}
+main > .container > section > .ecma{
+    background-image: url('https://drive.google.com/uc?id=1TspCGMd38ATmoUlSDwyVl5rHqjFwx_DP');
+}
+
+/* FRAMEWORKS */
+main > .container > section > .react{
+    background-image: url('https://drive.google.com/uc?id=1TBBJSGpU7LT5k0oRAcBKrQs8PGI6K6Pr');
+}
+
+/* DISEÑO CSS */
+main > .container > section > .pug{
+    padding: 1rem;
+    background-image: url('https://drive.google.com/uc?id=1oJAOTIn97NrwXnohWyLiJ3FSttkBttkD');
+}
+main > .container > section > .sass{
+    background-image: url('https://drive.google.com/uc?id=1pSnOtSP3B_OyAn3oGr-EP0c2BG32k5wP');
+}
+main > .container > section > .tailwind{
+    background-image: url('https://drive.google.com/uc?id=10hRNIt3m9Ssg80IlKlA_0uATqFeIm8hW');
+}
+main > .container > section > .material-ui{
+    background-image: url('https://drive.google.com/uc?id=13SZCrSPEP56In4ng8mQO-xI0EDKhk7gH');
+}
+
+/* HERRAMIENTAS */
+
+main > .container > section > .git{
+    background-image: url('https://drive.google.com/uc?id=1NObl4xRCStl28_XV-E0D3Bh4KMpKijgO');
+}
+main > .container > section > .git-hub{
+    background-image: url('https://drive.google.com/uc?id=1aAVCAtY5Wh2rqIBJ49wBW5iFSR0ccJwH');
+}
+main > .container > section > .devtool{
+    background-image: url('https://drive.google.com/uc?id=1wVz29BxuKSI7JZDNAt2Xvi16IhNn6Gc4');
+}
+main > .container > section > .webpack{
+    background-image: url('https://drive.google.com/uc?id=1vCo3LO3cH-oTDiqRWxq2jbL-DvIoJq9h');
+}
+main > .container > section > .npm{
+    background-image: url('https://drive.google.com/uc?id=1uFKhktUCKAf89zrn6Zeos31204hIYvkS');
+}
+main > .container > section > .vite{
+    background-image: url('https://drive.google.com/uc?id=1afL991F3PHHqr4CvaIdJMmhXVIP50BLB');
+}
+
+
