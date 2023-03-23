@@ -1,9 +1,7 @@
 :root{
-    --color-background: #0d1117;
-    --just-white: #fff; 
-    --border-main: #30363d;
-    --border-bottom: #21262d;
-    --secondary-background: #292f36;
+    --header-background: #6f6175;
+    --primary-background: #e7ecf1;
+    --secondary-background: #9f98a3;    
 }
 
 *{
@@ -14,9 +12,35 @@
 
 html{
     font-family: 'DM Sans', sans-serif;
-    background: linear-gradient(45deg, transparent 49%, #bea9ca 49% 51%, transparent 41%) , linear-gradient(-45deg, transparent 49%, #bea9ca 49% 51%, transparent 21%);
-    background-size: 3em 3em;
-    background-color: #ffffff;
+    background-color: var(--primary-background);
+}
+
+header{
+    background-color: var(--header-background);
+    color: #fff;
+    padding: 10px;
+}
+  
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+}
+  
+nav li{
+    margin-right: 20px;
+}
+  
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+  
+nav a:hover{
+    text-decoration: underline;
 }
 
 main{
@@ -24,7 +48,6 @@ main{
     width: 80%;
     height: auto;
     padding: 50px;
-    background: rgba(110, 97, 116, 0.5)
 }
   
 h1{
@@ -43,8 +66,7 @@ h1{
 .card {
     display: flex;
     flex-direction: column;
-    background-color: #f2f2f2;
-    border: 1px solid #ccc;
+    background-color: #ffffff;
     border-radius: 5px;
     padding: 20px;
 }
@@ -63,4 +85,44 @@ h1{
 .card p {
     margin: 10px 0 0 0;
     font-size: 16px;
+}
+
+footer{
+    background-color: var(--secondary-background);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+  
+footer p{
+    margin: 0;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px)  {
+
+    main{
+        width: 100%;
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 425px)  {
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    main{
+        width: 100%;
+    }
+
+
 }
