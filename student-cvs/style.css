@@ -20,7 +20,7 @@ html{
 
 body {
     margin: 0 auto;
-    max-width: 50em;
+    max-width: 60%;
 }
 
 main{
@@ -51,11 +51,16 @@ h2{
 
 .container-info{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
     border: 1px dotted gray;
     border-radius: 6px;
     background-color: var(--secondary-background);
+}
+
+a{
+    padding: 5px;
 }
 
 table {
@@ -75,9 +80,6 @@ table tbody tr:nth-child(even) {
 	background: var(--secondary-background);
 }
 
-.container-form{
-    padding: 20px;
-}
 
 .container-form h2{
     text-align: center;
@@ -118,4 +120,22 @@ button{
     color: var(--just-white);
     border-radius: 5px;
     border: 1px solid lightskyblue;
+}
+
+@media screen and (max-width: 768px){
+    body {
+        max-width: 85%;
+    }
+    main{
+        padding: 20px 30px;
+    }      
+}
+
+@media screen and (max-width: 425px){
+    body {
+        max-width: 90%;
+    }
+    main{
+        padding: 20px 20px;
+    }       
 }
