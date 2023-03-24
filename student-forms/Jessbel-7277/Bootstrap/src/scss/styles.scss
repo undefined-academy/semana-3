@@ -1,2 +1,11 @@
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
+
+.bg-header{
+    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
