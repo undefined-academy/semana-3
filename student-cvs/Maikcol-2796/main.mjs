@@ -1,10 +1,10 @@
-const navButton= document.querySelector('.nav-button')
-const navItems = document.querySelector('.nav-links')
+const $navButton= document.querySelector('.nav-button')
+const $navItems = document.querySelector('.nav-links')
 
 navButton.addEventListener('click', ()=>{navItems.classList.toggle('show')})
 
 
-const animatedElement = document.querySelector('.section-title');
+const $animatedElement = document.querySelector('.section-title');
 
 const observer = new IntersectionObserver((entries, observer) => {
   entries.forEach(entry => {
