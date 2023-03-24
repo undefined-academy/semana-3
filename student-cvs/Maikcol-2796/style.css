@@ -41,6 +41,7 @@ nav {
   right: 2%;
   left: 2%;
   color: var(--color-secundary);
+  opacity: .95;
 
   display: flex;
   justify-content: space-between;
@@ -403,13 +404,15 @@ form {
 nav {
   display: flex;
   flex-direction: column;
-  justify-content: center;  
+  justify-content: center; 
+  gap: 1em;
 }
 
 .nav-links {
   display: none;
   flex-direction: column;
   align-items: flex-start;
+  
 }
 
 .nav-links.show {
