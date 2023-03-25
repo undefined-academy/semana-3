@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row my-5">
+            <div class="col">
+
+                <h1 class="display-1 text-center">Contactame</h1>
+
+                <form action="/server" method="get">
+
+                    <label for="nombre_contacto" class="form-label">Nombre:</label>
+                    <input type="text" name="nombre_contacto" id="nombre_contacto" class="form-control">
+
+                    <label for="correo_contacto" class="form-label">Correo ellectronico</label>
+                    <input type="email" name="correo_contacto" id="correo_contacto" class="form-control">
+
+                    <label for="mensaje_contacto" class="form-label">Deja tu mensaje</label>
+                    <textarea name="mensaje_contacto" id="mensaje_contacto" class="form-control"></textarea>
+
+
+                    <input type="submit" value="Enviar" class="btn btn-block form-control btn-primary mt-3">
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
