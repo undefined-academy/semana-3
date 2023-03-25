@@ -1,3 +1,14 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
 body {
     display: grid;
     height: 100vh;
