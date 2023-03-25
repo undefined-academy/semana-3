@@ -1,20 +1,25 @@
 body {
     display: grid;
     height: 100vh;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto 1fr auto auto;
 }
 
 header {
-    background: rgb(168, 107, 117);
-    /* padding: 2rem; */
+    /* background: rgb(168, 107, 117); */
+    padding: 0.5rem;
 }
 
-main {
-    background: rgb(156, 76, 46);
+header {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    display: flex;
 }
 
 footer {
-    background: wheat;
+    /* background: wheat; */
     padding: 2rem;
     text-align: center;
 }
@@ -24,17 +29,23 @@ body {
 }
 
 .container {
+    height: 100vh;
+
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    margin: 20px 30px;
+    grid-template-columns: repeat(4, minmax(100px, 0.5fr));
+    grid-template-rows: 400px;
+
+    padding-top: 3%;
+    padding-left: 3%;
+    grid-gap: 10%;
 }
 
 .RAM {
+    background-color: #14092b;
+
     display: flex;
     flex-direction: column;
-    height: 280px;
-    width: 200px;
-    background-color: #14092b;
+
     border-radius: 10px;
     box-shadow: -0.5rem 0 3rem #000;
 }
@@ -54,6 +65,15 @@ body {
 .RAM h3 {
     text-align: end;
     margin-right: 10px;
+}
+
+.RAM p {
+    padding-top: 15%;
+    padding-left: 5%;
+}
+
+div:last-child {
+    grid-column: 1 / 5;
 }
 
 .separator {
