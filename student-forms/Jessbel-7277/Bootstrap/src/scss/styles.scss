@@ -10,24 +10,41 @@
     justify-content: center;
 }
 
+.container-head h1{
+    padding: 10px;
+}
+
 .container-head p{
     padding: 5px;
 }
 
 .container-main{
-    padding: 20px;
+    margin-bottom: 20px;
+    padding: 20px 90px;
 }
 
 .container-form{
     margin: 0 auto;
-    padding: 10px;
-    width: 90%;
+    /* padding: 10px;
+    width: 90%; */
 }
 
-.prueba{
-    background-color: burlywood;
-    width: 100%;
+.container-description{
+    /* background-color: burlywood; */
     height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.container-text{
+    width: 50%;
+    height: auto;
+    text-align: end;
+    padding-right: 10px;
+    border-right: 4px solid #ffc107;
 }
 
 
