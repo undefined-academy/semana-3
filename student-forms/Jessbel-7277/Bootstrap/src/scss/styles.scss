@@ -1,11 +1,43 @@
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
 
-.bg-header{
-    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+.container-head{
+    background-image: url('https://i.postimg.cc/y8FSgLMf/fotis-fotopoulos-Du-HKo-V44prg-unsplash.jpg');
     height: 40vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.container-head p{
+    padding: 5px;
+}
+
+.container-main{
+    padding: 20px;
+}
+
+.container-form{
+    margin: 0 auto;
+    padding: 10px;
+    width: 90%;
+}
+
+.prueba{
+    background-color: burlywood;
+    width: 100%;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 425px)  {
+    .container-main{
+        padding: 20px 5px;
+    }
+    .container-form{
+        padding: 10px 0px;
+        width: auto;
+    }
+
 }
