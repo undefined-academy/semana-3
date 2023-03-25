@@ -4,10 +4,16 @@
     box-sizing: border-box;
 }
 
+
 body{
     font-size: 62.5%;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
+    min-height: 100vh;
+
+}
+html{
+   
 }
 
 
@@ -20,6 +26,12 @@ body{
     background-color:#d1d3d4 ;
 }
 
+.position{
+    position: absolute;
+    top: 4rem;
+    left: 2rem;
+}  
+    
 /*Hacer navbar para responsive desing
 
 /* HEADER */
@@ -127,27 +139,34 @@ header > .box3 > a:active{
 
 main{
     width: 100%;
-    height: 50rem;
+    height: 85rem;
     padding:2rem;
     background-color: #323338;
     margin-top: 16rem;
+   
 }
 
-main > .container{
+main > .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 
-main > .container > section{
+main > .container > section {
     width: 100%;
-    height:20rem  ;
+    height:auto ;
     margin-bottom: 2rem;
-    border: 0.4rem solid #d1d3d4;
+    background-color: #837d7d15;
+    padding: 1rem;
+    /* border: 1rem solid grey; */
+    box-shadow: -1px 4px 29px 9px rgba(0,0,0,0.75);
+    align-items: center;
 }
 
-main > .container > section > h2{
-    font-size: 1.4rem ;
+main > .container > section > h2 {
+    font-size: 1.6rem ;
+    margin-bottom: 0.6rem ;
     color: #d1d3d4;
 }
 
@@ -159,9 +178,10 @@ main > .container > section > span{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
 }   
+
 /*FUNDAMENTOS*/
+
 main > .container > section > .html{
     background-image: url('https://drive.google.com/uc?id=1JHAT2eAZ7vvelpIvU_2GUaENWfsE0SMW');
 }
@@ -172,6 +192,7 @@ main > .container > section > .javascript{
     background-image: url('https://drive.google.com/uc?id=1zGb03hZ0jBBbolQYA-gNbgWFDjgqU5_X');
 }
 main > .container > section > .ecma{
+    background-size: contain;
     background-image: url('https://drive.google.com/uc?id=1TspCGMd38ATmoUlSDwyVl5rHqjFwx_DP');
 }
 
@@ -182,16 +203,19 @@ main > .container > section > .react{
 
 /* DISEÑO CSS */
 main > .container > section > .pug{
-    padding: 1rem;
+    background-size: contain;
     background-image: url('https://drive.google.com/uc?id=1oJAOTIn97NrwXnohWyLiJ3FSttkBttkD');
 }
 main > .container > section > .sass{
+    background-size: contain;
     background-image: url('https://drive.google.com/uc?id=1pSnOtSP3B_OyAn3oGr-EP0c2BG32k5wP');
 }
 main > .container > section > .tailwind{
+    background-size: contain;
     background-image: url('https://drive.google.com/uc?id=10hRNIt3m9Ssg80IlKlA_0uATqFeIm8hW');
 }
 main > .container > section > .material-ui{
+    background-size: contain;
     background-image: url('https://drive.google.com/uc?id=13SZCrSPEP56In4ng8mQO-xI0EDKhk7gH');
 }
 
@@ -216,4 +240,154 @@ main > .container > section > .vite{
     background-image: url('https://drive.google.com/uc?id=1afL991F3PHHqr4CvaIdJMmhXVIP50BLB');
 }
 
+main > .blog{
+    width: 100%;
+    height: auto;
+    margin: 2rem 0;
+    display: grid;
+   
+    top: 0;
+    left: 0;
+    
+}
 
+main > .blog > h2{
+    font-size: 1.6rem ;
+    margin:2rem 0;
+    color: #d1d3d4;
+}
+
+
+main > .blog > article{
+    width: 100%;
+    height:20rem;
+    background-color: #837d7d15;
+    border-radius: 1rem;
+    box-shadow: -1px 4px 29px 9px rgba(0,0,0,0.75);
+    align-items: center;
+    margin-bottom: 2rem;
+
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+
+main > .blog > article {
+    background-image: url('https://drive.google.com/uc?id=10W3pkqWn-dNN2gmP3oocXiefboBVyzkr');
+}
+
+main > .blog > .article2 {
+    background-image: url('https://drive.google.com/uc?id=1RLkWWfRbBqo4B8hZLENabGhnYPl6lgXo');
+}
+
+main > .blog > .article3{
+    background-image: url('https://drive.google.com/uc?id=1kgb5UOac3AIySNxJx5c1ndsOMD7KmB2q');
+}
+
+main > .blog > .article4{
+    background-image: url('https://drive.google.com/uc?id=1yiI4HYFfgcAtH0wQn2u2IRGysE5PoGNx');
+}
+
+main > .blog > article > .text{
+    padding: 1rem;
+}
+
+
+main > .blog > article > .text > h3{
+    font-size: 1.4rem;
+    padding: 0.4rem;
+    margin-bottom: 10rem;
+    color: #d1d3d4;
+}
+
+main > .blog > article > .text > a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #d1d3d4;
+    background-color:  rgb(181, 181, 35);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    text-align: center;
+    
+}
+
+header > .box3 > a:hover{
+    background-color: rgb(134, 134, 15);
+}
+
+header > .box3 > a:active{
+    
+    background-color: rgb(58, 58, 4);
+}
+
+/* TERMINAR EL FOOTER( ARREGLAR FALLA) */
+
+/* FOOTER */
+footer{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    display: flex;
+    background-color: #323338;;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom:-125rem;
+    
+}
+
+footer > .f-text{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    margin-bottom: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > .f-text > .text1{
+    font-size: 1rem;
+    font-weight: bolder;
+    color: rgb(181, 181, 35);
+    text-align: center;
+}
+
+footer > .f-text > .text2{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #d1d3d4;
+}
+
+footer > .f-text > .paragraph{
+    font-size: 1rem;
+    color: #d1d3d4;
+    text-align: center;
+}
+
+
+
+footer > .f-button{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer > .f-button > a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #d1d3d4;
+    background-color:  rgb(181, 181, 35);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    text-align: center;
+    
+}
