@@ -57,8 +57,15 @@ body {
 h2,
 h3,
 h4,
-strong {
+strong,
+label,
+legend {
     color: rgb(43, 108, 108);
+}
+
+label,
+legend {
+    font-weight: bold;
 }
 
 .flex-container {
@@ -90,6 +97,67 @@ ul{
 
 .title{
     text-align: center;
+}
+
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.formStyle {
+    margin: 5px 0;
+}
+
+label,
+input {
+    width: 100%;
+    display: block;
+}
+
+textarea {
+    width: 100%;
+    display: block;
+    resize: vertical;
+}
+
+.desc {
+    font-size: 12px;
+}
+
+datalist {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    /* writing-mode: vertical-lr; */
+    width: 100%;
+}
+
+option {
+    padding: 0;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin: 0;
+}
+
+.btn {
+    padding: 16px 60px;
+    margin: 0 auto;
+    border: 1px solid #493f3f;
+    width: 30%;
+    cursor: pointer;
+    background-color: rgb(43, 108, 108);
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background-color: rgb(78, 182, 182);
+}
+
+.btn:active {
+    background-color: rgb(15, 73, 73);
 }
 
 @media screen and (min-width: 992px) {
