@@ -15,7 +15,13 @@ body {
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
 }
-.page {
+.page article {
+  margin: 0 auto;
+  max-width: 50em;
+  line-height: 1.5;
+  padding: 3em;
+}
+.page form {
   margin: 0 auto;
   max-width: 50em;
   line-height: 1.5;
@@ -27,7 +33,7 @@ header {
       rgba(105, 100, 100, 0.5),
       rgba(133, 110, 110, 0.5)
     ),
-    url(header.jpg);
+    url(https://source.unsplash.com/_MMP5j_fCqw);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -164,7 +170,7 @@ textarea:focus-visible {
     height: 100vh;
   }
 
-  .page {
+  .page article {
     position: relative;
     background: #f0fdfa;
     bottom: 100px;
