@@ -5,7 +5,7 @@ html {
 }
 
 body{
-    
+    margin:0;
     box-sizing: inherit;
 }
 main{
@@ -35,11 +35,13 @@ h1{
     background-color: aquamarine;
 }
 h2{
-    background-color:antiquewhite
+    background-color:antiquewhite;
+    width: 100%;
 }
 
 h3{
-    background-color:blanchedalmond
+    background-color:blanchedalmond;
+    width: 100%;
 }
 li {
     list-style: none;
@@ -47,6 +49,7 @@ li {
 
 p {
     min-width: 300px;
+    padding: 5px;
 }
 img{
     max-width: 500px;
@@ -67,7 +70,8 @@ input {
     border: 1px solid lightgray;
     border-radius: 4px;
     padding: 8px 10px;
-    color: #333
+    color: #333;
+    max-width: 100%;
 }
 
 label {
@@ -106,17 +110,22 @@ button:active{
     section { 
         display: inline-flex;
         align-items: stretch;
-        max-width: 33%;
+        max-width: 100%;
     }    
     nav{
         display:inline-block;
     
     }
+
     .form-section{
-        width: 100%;
-        margin: 1 20px;
+
+        max-width: 60%;
+        
     }
     .enviar{
         text-align: center;
     } 
+    p {
+        padding: 10px;
+    }
 }
