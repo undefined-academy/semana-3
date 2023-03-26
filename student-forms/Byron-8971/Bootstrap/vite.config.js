@@ -1,4 +1,4 @@
-const path = require("path");
+const path = require("path")
 
 export default {
   root: path.resolve(__dirname, "src"),
@@ -13,4 +13,4 @@ export default {
     port: 8080,
     hot: true,
   },
-};
+}

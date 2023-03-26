@@ -3,44 +3,42 @@
 /* --------------------------------------------------- */
 
 .table {
-    border: var(--table-border-color) 1px solid;
-    width: 100%;
-    table-layout: fixed;
-    background-color: var(--primary-color);
-    font-size: var(--fs-400);
+  border: var(--table-border-color) 1px solid;
+  width: 100%;
+  table-layout: fixed;
+  background-color: var(--primary-color);
+  font-size: var(--fs-400);
 }
 
 .table td,
 .table th {
-    border: var(--table-inner-border-color) 1px solid;
-    padding: 0.2em;
+  border: var(--table-inner-border-color) 1px solid;
+  padding: 0.2em;
 }
 
-
 .table__title {
-    font-weight: 700;
-    font-size: var(--fs-e-xl);
-    background: var(--table-color);
-
+  font-weight: 700;
+  font-size: var(--fs-e-xl);
+  background: var(--table-color);
 }
 
 .table td {
-    text-align: left;
-    padding: 0 5px;
-    font-weight: bold;
-    /* overflow: hidden; */
+  text-align: left;
+  padding: 0 5px;
+  font-weight: bold;
+  /* overflow: hidden; */
 }
 
 .table td code {
-    margin: 10px auto;
-    font-size: var(--fs-400);
-    font-family: var(--ff-asl);
+  margin: 10px auto;
+  font-size: var(--fs-400);
+  font-family: var(--ff-asl);
 
-    letter-spacing: 2px;
-    display: inline-block;
-    padding: 12px 10px;
-    font-weight: bold;
-    background-color: rgba(116, 109, 109, 0.1);
-    box-shadow: 2px 2px 5px 1px rgba(71, 69, 68, 0.5);
-    border-radius: 10px;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 12px 10px;
+  font-weight: bold;
+  background-color: rgba(116, 109, 109, 0.1);
+  box-shadow: 2px 2px 5px 1px rgba(71, 69, 68, 0.5);
+  border-radius: 10px;
 }

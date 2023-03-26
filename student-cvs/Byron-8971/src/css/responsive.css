@@ -1,20 +1,17 @@
-@media (min-width:23.4375em) {
-
-    .formato {
-        background-color: rgb(245, 178, 178);
-    }
+@media (min-width: 23.4375em) {
+  .formato {
+    background-color: rgb(245, 178, 178);
+  }
 }
 
-@media (min-width:40em) {
-
-    .formato {
-        background-color: rgb(183, 178, 245);
-    }
+@media (min-width: 40em) {
+  .formato {
+    background-color: rgb(183, 178, 245);
+  }
 }
 
-@media (min-width:62.5em) {
-
-    .formato {
-        background-color: rgb(245, 229, 178);
-    }
+@media (min-width: 62.5em) {
+  .formato {
+    background-color: rgb(245, 229, 178);
+  }
 }

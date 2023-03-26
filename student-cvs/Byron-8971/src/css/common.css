@@ -2,25 +2,25 @@
 /* U T I L                                             */
 /* --------------------------------------------------- */
 .img-inline {
-    display: inline;
+  display: inline;
 }
 
 .justify {
-    text-align: justify;
-    text-justify: inter-word;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .help {
-    font-size: var(--fs-200);
-    margin-top: 10px;
-    color: gray;
-    font-weight: bold;
+  font-size: var(--fs-200);
+  margin-top: 10px;
+  color: gray;
+  font-weight: bold;
 }
 
 h1 {
-    font-size: var(--fs-xl);
+  font-size: var(--fs-xl);
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
