@@ -1,5 +1,6 @@
 const handleSubmit = e => {
-    e.preventDefault();
+    e.preventDefault()
+    console.log("Hola mundo 🌎");;
     $form.reset();
 }
 
