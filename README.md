@@ -13,3 +13,10 @@
 warning: encountered old-style '//wsl.localhost/Ubuntu/home/devold112/Wilmer-8071/github-profiles/semana-3' that should be '%(prefix)///wsl.localhost/Ubuntu/home/devold112/Wilmer-8071/github-profiles/semana-3'`
 
 Si alguien tiene alguna idea de como solucionarlo me ayudaria muchisimo.
+
+### Ejercicio 02
+
+1) En mi hoja de vida realizada en la semana 02 le aplique mediaqueries (480px, 768px) para hacer mi sitio responsive tanto en el `<header>` , `<footer>` y en el `main`
+2) Hice push de mis cambios
+
+
