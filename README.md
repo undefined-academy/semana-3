@@ -17,6 +17,10 @@ Si alguien tiene alguna idea de como solucionarlo me ayudaria muchisimo.
 ### Ejercicio 02
 
 1) En mi hoja de vida realizada en la semana 02 le aplique mediaqueries (480px, 768px) para hacer mi sitio responsive tanto en el `<header>` , `<footer>` y en el `main`
-2) Hice push de mis cambios
+2) Hice push de mis cambios.
 
+### Ejercicio 03
 
+1) Pude enlazar mi `index.html` con `main.mjs` con `<script type="module" src="/student-cvs/Wilmer-8071/main.mjs"></script>`
+2) En el archivo `main.mjs` copie el comando proporcionado en el ejercicio y al visualizar consola decia "Hola Mundo"
+3) Hice `commit` y `push`.
