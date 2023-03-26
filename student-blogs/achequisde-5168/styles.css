@@ -1,0 +1,150 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Font sizes */
+
+  --font-size-big: 1.55rem;
+  --font-size-normal: 0.95rem;
+  --font-size-small: 0.75rem;
+
+  /* Font colors */
+
+  --font-color-white: #fff;
+  --font-color-black: #222;
+}
+
+body {
+  line-height: 1.5;
+  font-size: var(--font-size-normal);
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: antiquewhite;
+}
+
+h1,
+h2 {
+  font-size: var(--font-size-big);
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (min-width: 40em) {
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header header header"
+      "cards cards cards cards aside"
+      "cards cards cards cards aside";
+  }
+}
+
+.grid-container > header {
+  grid-area: header;
+  background-color: #333;
+  color: var(--font-color-white);
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style: none;
+}
+
+.grid-container > header ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 1em;
+}
+
+.cards-container {
+  grid-area: cards;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 1em 1em 1em;
+  gap: 0.625em;
+}
+
+.card-container header,
+.card-container h1,
+.card-container p,
+.card-container footer {
+    padding: 0.2em;
+}
+
+.card-container {
+  flex-grow: 1;
+  flex-basis: 49%;
+  box-shadow: 2px 2px 3px lightblue;
+}
+
+.card-container,
+aside {
+  background-color: white;
+}
+
+.article-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 0.5em;
+  font-size: var(--font-size-small);
+  color: var(--font-color-white);
+  margin: 0.5em 0;
+}
+
+.article-tags li {
+  background-color: royalblue;
+  border-radius: 8px;
+  padding: 0.375em;
+  margin: 0.1em 0;
+}
+
+.card-container {
+  padding: 0.5em;
+}
+
+aside {
+  grid-area: aside;
+  margin: 0 1em 1em 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+aside article {
+  margin-top: 1em;
+  padding-bottom: 0.5em;
+}
+
+aside article:not(:last-child) {
+    border-bottom: 1px solid gray;
+}
+
+article footer {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: var(--font-size-small);
+}
+
+article p {
+  margin: 0.5em 0;
+}
+
+.article-author {
+  font-weight: bold;
+}

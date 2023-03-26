@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script async defer type="module" src="./js/main.js"></script>
+  </head>
+  <body
+    class="bg-dark d-flex align-items-center justify-content-center min-vh-100"
+  >
+    <section class="p-4 bg-light rounded">
+      <h2>Contact me</h2>
+      <p class="lead">If you wish to contact me, please use the form below:</p>
+      <form action="get" name="contact-form">
+        <label class="form-label" for="user-name">Name</label>
+        <input
+          class="form-control mb-2 bg-light"
+          type="text"
+          name="userName"
+          id="user-name"
+          placeholder="lovecats123"
+        />
+        <label class="form-label" for="user-email">Email</label>
+        <input
+          class="form-control mb-2"
+          type="email"
+          name="userEmail"
+          id="user-email"
+          placeholder="yourname@domain.com"
+        />
+        <label class="form-label" for="user-area"
+          >In which area you work?</label
+        >
+        <select
+          class="form-control mb-2"
+          name="userArea"
+          id="user-area"
+          required
+        >
+          <option value="" hidden disabled selected>
+            Select your tech area...
+          </option>
+          <option value="fullstack">Frontend/Backend</option>
+          <option value="it">IT Consulting</option>
+          <option value="design">Graphic Designer</option>
+        </select>
+        <label class="form-label" for="user-comment">Comment</label>
+        <textarea
+          class="form-control mb-2"
+          name=""
+          id="user-comment"
+          cols="60"
+          rows="4"
+        ></textarea>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>

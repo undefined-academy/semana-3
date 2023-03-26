@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <section class="form block-center">
+      <h2>Contact me</h2>
+      <p>If you wish to contact me, please use the form below:</p>
+      <form action="get" name="contact-form">
+        <label for="user-name">name</label>
+        <input type="text" name="" id="user-name" placeholder="lovecats123" />
+        <label for="user-email">email</label>
+        <input
+          type="email"
+          name=""
+          id="user-email"
+          placeholder="yourname@domain.com"
+        />
+        <label for="user-area">In which area you work?</label>
+        <select name="" id="user-area" required>
+          <option value="" hidden disabled selected>
+            Select your tech area...
+          </option>
+          <option value="fullstack">Frontend/Backend</option>
+          <option value="it">IT Consulting</option>
+          <option value="design">Graphic Designer</option>
+        </select>
+        <label for="user-comment">comment</label>
+        <textarea name="" id="user-comment" cols="60" rows="10"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>

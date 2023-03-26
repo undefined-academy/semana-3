@@ -1,0 +1,186 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+
+  margin: 0;
+  padding: 0;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  max-width: 100%;
+}
+
+img {
+  max-width: 50%;
+}
+
+body {
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 0.5em;
+
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #f3f4f6;
+}
+
+ul {
+  list-style: none;
+}
+
+p,
+ul,
+li,
+table,
+h2,
+article > h1 {
+  margin-block: 0.625em;
+}
+
+[role="doc-subtitle"] {
+  margin-top: 0.25em;
+
+  color: #4b5563;
+  font-style: italic;
+}
+
+.strengths ul {
+  list-style: "✅ ";
+  list-style-position: inside;
+  font-weight: bold;
+  color: #14b8a6;
+  line-height: 2;
+}
+
+footer p {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #4b5563;
+}
+
+.testimonials figcaption {
+  margin-block: 0.5em;
+}
+
+.testimonials figure {
+  margin-bottom: 1em;
+  background-color: #e5e7eb;
+  border-radius: 8px;
+  padding: 1em;
+}
+
+.testimonials figcaption p:first-of-type {
+  color: #14b8a6;
+  font-weight: bold;
+}
+
+.testimonials figcaption p:last-of-type {
+  color: #4b5563;
+}
+
+.testimonials-container {
+  text-align: center;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+.project-container {
+  padding-bottom: 1rem;
+}
+
+.project-container article h3 {
+  color: #14b8a6;
+  letter-spacing: 0.2ch;
+}
+
+.project-container article {
+  padding: 1rem 1rem 0 1rem;
+
+}
+
+@media screen and (min-width: 576px) {
+  .str-tech {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1em;
+  }
+
+  .testimonials-container > * {
+    flex: 1 1 45%;
+    
+    display: grid;
+    place-content: center;
+  }
+}
+
+/* Form styles */
+
+.block-center {
+  margin: 0 auto;
+  max-width: clamp(375px, 80%, 40em);
+}
+
+.form {
+  padding: 1em 0;
+  margin-bottom: 0;
+  margin-top: 0.83em;
+}
+
+.form h2 {
+  font-size: var(--fs-text);
+}
+
+.form p {
+  font-size: var(--fs-text);
+}
+
+label {
+  margin: 0.5em 0;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 0.5em;
+}
+
+input,
+label,
+select,
+textarea,
+button {
+  display: block;
+}
+
+button {
+  margin: 1em 0;
+  padding: 2em;
+  border: none;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-family: monospace;
+  background-color: hsl(206, 73%, 50%);
+  color: #fff;
+
+  text-align: center;
+}
+
+button:hover {
+  background-color: hsl(206, 73%, 80%);
+  cursor: pointer;
+}
