@@ -361,10 +361,10 @@ textarea:focus-visible{
         min-height: 850px;
     }
     h3{
-        font-size: 1.5rem;
-        padding-bottom: 1rem;
+        font-size: 1.5rem; 
+        margin: 1rem;
     }
-    h1, h3{
+    h1{
         margin: 2rem;
     }
     h4{
