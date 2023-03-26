@@ -268,5 +268,5 @@ section .descripcion{
         .btn button:hover{
             background: rgba(15, 99, 227, 0.72);
             border: 1px solid rgba(13, 54, 114, 0.72);
-        }
+             }
     }
