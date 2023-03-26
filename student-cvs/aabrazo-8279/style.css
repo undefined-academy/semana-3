@@ -1,0 +1,137 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 940px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+  padding: 4em 1em;
+  color: #566b78;
+}
+
+header {
+  background-color: rgb(149, 149, 201);
+  background-position: center top;
+  background-repeat: no-repeat;
+  line-height: 1.2;
+  padding: 3em 1em;
+  text-align: center;
+  border: 1px solid orange;
+  border-radius: 15px;
+}
+
+header h1 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 400;
+  padding: 10px;
+}
+
+header a {
+  background-color: rgb(182, 182, 228);
+  border: 1px solid orange;
+  border-radius: 290486px;
+  color: white;
+  font-size: 0.7em;
+  letter-spacing: 0.4em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
+}
+
+header a:hover {
+  background: orange;
+  color: white;
+}
+
+h2 {
+  color: rgb(81, 81, 136);
+  background-color: rgb(202, 202, 231);
+  text-align: center;
+  border: 1px solid orange;
+  border-radius: 15px;
+}
+
+h3 {
+  background-color: rgb(242, 216, 168);
+  border-bottom: 1px solid orange;
+  border-radius: 4px 4px 0 0;
+  padding: 5px 10px;
+}
+
+h3,
+strong {
+  color: #333;
+}
+
+a {
+  color: orange;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 10px;
+}
+
+th {
+  text-align: center;
+  background-color: rgb(232, 230, 227);
+}
+
+th,
+tr,
+td {
+  padding: 0.5em 1em;
+  border: 1px solid;
+}
+
+footer {
+  margin-top: 3em;
+  font-size: 0.8em;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0;
+}
+
+section {
+  border: 1px solid orange;
+  border-radius: 4px;
+  margin-bottom: 2em;
+  margin: 20px 0;
+}
+
+p {
+  margin: 10px;
+}
+
+ul {
+  margin: 10px 10px 10px 30px;
+}
+
+@media screen and (min-width: 992px) {
+  .container_tables {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  section {
+    box-shadow: 4px 5px 10px;
+  }
+}
