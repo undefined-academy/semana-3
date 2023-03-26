@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    background: linear-gradient(to left, #282828, #1d2023);
+    font-family: "Heebo", sans-serif;
+    font-size: 1em;
+    color: #f6f1d1;
+    line-height: 1.5;
+}
+
+.section-search {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-search label {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.section-search input[type="search"] {
+    width: 30%;
+    background-color: #a89984;
+    border: 1px solid #928375;
+    border-radius: 1em;
+    padding: 8px 10px;
+    color: #f6f1d1;
+    font-family: "Heebo", sans-serif;
+    font-size: 1em;
+}
+
+.articles {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.item-article {
+    flex: 0 0 22em;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    box-shadow: 2px 2px 6px 0px #1d2021;
+    padding: 0px 20px;
+    background-color: #32302f;
+    display: grid;
+    vertical-align: middle;
+}
+
+.item-article:hover {
+    background-color: #1d2021;
+}
+
+.item-article img {
+    max-width: 100%;
+    border-radius: 1em;
+}
+
+.other-info {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.item-article a {
+    text-decoration: none;
+    background-color: #fb4934;
+    color: #f6f1d1;
+    border: 1px solid #1d2021;
+    padding: 10px 40px;
+    display: block;
+    border-radius: 1em;
+}
+
+.item-article a:hover {
+    background-color: #cc241d;
+}
+
+.tags {
+    display: flex;
+    justify-content: start;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tags span {
+    cursor: pointer;
+    border: 1px solid #1d2021;
+    background-color: #b8bb26;
+    border-radius: 1em;
+    padding: 5px 10px;
+    font-size: 0.8em;
+}
+
+.tags span:hover {
+    background-color: #98971a;
+}
