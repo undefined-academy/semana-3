@@ -12,10 +12,6 @@ body{
     min-height: 100vh;
 
 }
-html{
-   
-}
-
 
 /* COLORS */
 .primary{
@@ -41,32 +37,48 @@ header{
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    
 }
 
 
-header > div{
+/* header > div{
     width: 100%;
     height: 15rem;
     margin-bottom: 2rem;
     /* background-color: coral; */
+
+
+header > .container{
+    width: 100%;
+    height: 15rem;
+
+    margin-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-header > .box > .name{
-    display: inline-block;
+
+
+header > .container > .box > .name{
+    display: block;
+    padding: 1rem;
     margin-bottom: 0.8rem;
     border-bottom: 4px solid yellow;
     font-size: 2.5rem;
     font-weight: bold;
 }
 
-header > .box > p{
+header > .container > .box > p{
     display: inline-block;
+    padding: 0 1rem 1rem 1rem;
     margin: 1rem 0;
     font-size: 1.4rem ;
     color: #d1d3d4;
 }
 
-header > .box > button{
+header > .container > .box > button{
     width: 100%;
     height: 3rem;
     font-size: 1rem;
@@ -77,16 +89,16 @@ header > .box > button{
     cursor: pointer;
     
 } 
-header > .box > button:hover{
+header > .container > .box > button:hover{
     background-color: rgb(134, 134, 15);
 }
 
-header > .box > button:active{
+header > .container > .box > button:active{
     
     background-color: rgb(58, 58, 4);
 }
 
-header > .box2 > span{
+header > .container > .box2 > span{
     border-radius: 50%;
     width: 15rem;
     height: 15rem;
@@ -104,7 +116,7 @@ header > .box2 > span{
 header > .box3 > h3{
     font-size: 2.5rem;
     font-weight: bold;
-    margin-top: 2rem;
+    margin-top: 13rem;
     color: #d1d3d4;
 }
 
@@ -140,10 +152,16 @@ header > .box3 > a:active{
 main{
     width: 100%;
     height: 85rem;
-    padding:2rem;
+    padding:2rem ;
     background-color: #323338;
     margin-top: 16rem;
    
+}
+
+main > h2{
+    font-size: 1.6rem ;
+    margin-bottom: 2rem ;
+    color: #d1d3d4;
 }
 
 main > .container {
@@ -152,6 +170,8 @@ main > .container {
     justify-content: center;
     
 }
+
+
 
 main > .container > section {
     width: 100%;
@@ -244,11 +264,7 @@ main > .blog{
     width: 100%;
     height: auto;
     margin: 2rem 0;
-    display: grid;
    
-    top: 0;
-    left: 0;
-    
 }
 
 main > .blog > h2{
@@ -257,8 +273,16 @@ main > .blog > h2{
     color: #d1d3d4;
 }
 
+main > .blog > .grid-container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    
+}
 
-main > .blog > article{
+
+main > .blog > .grid-container > article{
     width: 100%;
     height:20rem;
     background-color: #837d7d15;
@@ -271,41 +295,52 @@ main > .blog > article{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; 
+    grid-column: 1/5;
+    grid-row: 1/2;
 }
 
 
-main > .blog > article {
+main > .blog > .grid-container > .article1 {
+    grid-column: 1/5;
+    grid-row: 1/2;
     background-image: url('https://drive.google.com/uc?id=10W3pkqWn-dNN2gmP3oocXiefboBVyzkr');
 }
 
-main > .blog > .article2 {
+main > .blog >  .grid-container >  .article2{
+    grid-column: 1/5;
+    grid-row: 2/3;   
     background-image: url('https://drive.google.com/uc?id=1RLkWWfRbBqo4B8hZLENabGhnYPl6lgXo');
 }
 
-main > .blog > .article3{
+main > .blog >   .grid-container >  .article3{
+    grid-column: 1/5;
+    grid-row: 3/4;  
     background-image: url('https://drive.google.com/uc?id=1kgb5UOac3AIySNxJx5c1ndsOMD7KmB2q');
 }
 
-main > .blog > .article4{
+main > .blog >   .grid-container >  .article4{
+    grid-column: 1/5;
+    grid-row: 4/5;  
     background-image: url('https://drive.google.com/uc?id=1yiI4HYFfgcAtH0wQn2u2IRGysE5PoGNx');
 }
 
-main > .blog > article > .text{
+main > .blog > .grid-container >  .article1 > .text{
     padding: 1rem;
 }
 
 
-main > .blog > article > .text > h3{
+main > .blog > .grid-container >  article > .text > h3{
     font-size: 1.4rem;
     padding: 0.4rem;
     margin-bottom: 10rem;
     color: #d1d3d4;
 }
 
-main > .blog > article > .text > a{
+main > .blog > .grid-container > article > .text > a{
     display: inline-block;
     text-decoration: none;
     font-size: 1rem;
+    line-height: 1.4;
     color: #d1d3d4;
     background-color:  rgb(181, 181, 35);
     border-radius: 1rem;
@@ -315,22 +350,15 @@ main > .blog > article > .text > a{
     
 }
 
-header > .box3 > a:hover{
-    background-color: rgb(134, 134, 15);
-}
 
-header > .box3 > a:active{
-    
-    background-color: rgb(58, 58, 4);
-}
 
 /* TERMINAR EL FOOTER( ARREGLAR FALLA) */
 
 /* FOOTER */
 footer{
     width: 100%;
-    height: auto;
-    padding: 2rem;
+    height: 65vh;
+    padding-top: 4rem;
     display: flex;
     background-color: #323338;;
     flex-direction: column;
@@ -343,6 +371,7 @@ footer{
 footer > .f-text{
     width: 100%;
     height: 3rem;
+    padding: 0.3rem;
     display: flex;
     margin-bottom: 5rem;
     flex-direction: column;
@@ -381,6 +410,7 @@ footer > .f-button{
 
 footer > .f-button > a{
     display: inline-block;
+    width: 8rem;
     text-decoration: none;
     font-size: 1rem;
     color: #d1d3d4;
@@ -391,3 +421,100 @@ footer > .f-button > a{
     text-align: center;
     
 }
+
+
+footer > .f-button > a > i{
+    width: 4rem;
+    
+}
+footer > .separator {
+    width: 100%;
+    height: 15rem;
+}
+footer > .separator > div{
+    width: 100%;
+    height: auto;
+    border-top: 0.3rem solid rgb(181, 181, 35);
+    margin-top: 10rem;
+}
+
+footer > .separator > p{
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+    color: #d1d3d4;
+   
+
+}
+
+@media screen and (min-width: 768px){
+    header{
+
+    }
+    header > .box > .name{
+        display: block;
+    }
+
+    header > .box3{
+        margin-top: 4rem;
+    }
+
+    main {
+        margin-top: 10rem;
+    }
+
+    footer{
+        height: 75vh;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header{
+       flex-direction: column; 
+    }
+
+    header > .container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    header > .container > .box{
+       
+        border-left: 4px solid yellow;
+    }
+
+   
+    main > .container {
+        flex-direction: row;
+        justify-content: space-around;
+    } 
+    
+    main > .blog > .grid-container > article{
+        margin:0;
+        height: auto;
+    }  
+
+    main > .blog > .grid-container > .article1 {
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+
+    main > .blog > .grid-container > .article2{
+        grid-column: 1/4;
+        grid-row: 2 / span 2;
+    }
+
+    main > .blog > .grid-container > .article3{
+        grid-column: 4/5;
+        grid-row: 2 / span 4;
+    }
+
+    main > .blog > .grid-container > .article4{
+        grid-column: 1/4;
+        grid-row: 4/5;
+        gap: none;
+    }
+}
+
+
+/* terminar los ultimo retoques y formulario */
