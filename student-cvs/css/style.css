@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+header{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: clamp(.7rem, 2vw, 3rem);
+    font-weight: 800;   
+    color: #fff; 
+}
+
+
+.formulario {
+    width: 60%;
+    padding: 10px 10px;
+    height: 805px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+    gap: 15px;
+}
+
+.form{
+        
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 70px 70px 70px 115px;
+    gap: 10px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    height: 405px;
+    padding: 20px 5px;
+}
+
+input[type="text"], input[type='email']{
+    width: 22em;
+    height: 40px;
+    
+}
+
+label {
+    
+    font-size: 1rem;
+    text-align: right;
+    color: #fff;
+}
+
+section .descripcion{
+    width: 22em;
+    height: 80px;
+    
+}
+
+.contact{
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: clamp(.8rem, 2vw, 1.2rem);
+    text-align: justify;
+    
+    width: 100%;
+    
+}
+
+.btn button{
+    width: 10em;
+    height: 80px;
+    background: rgba(16, 94, 210, 0.38);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.7px);
+    -webkit-backdrop-filter: blur(4.7px);
+    border: 1px solid rgba(13, 54, 114, 0.72);
+    border: none; 
+    color: #fff;
+}
+
+.btn button:hover{
+    background: rgba(13, 54, 114, 0.72);
+    border: 1px solid rgba(13, 54, 114, 0.72);
+    border: none; 
+    cursor: pointer;
+}
+
+.btn button{
+    font-size: large;
+    position: relative;
+    left: 2.5em;
+    top: 1em;
+}
+
+@media screen and (max-width: 1200px){
+
+    header{
+        width: 60%;
+    }
+    .formulario{
+        width: 60%;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .contact{
+        width: 100%;
+        *font-size: 1rem;
+    }
+
+    .btn button{
+        position: relative;
+        left: 40px;
+        top: 22px;
+    }
+
+    input[type="text"], input[type='email']{
+        width: 18em;
+        height: 40px;
+        
+    }
+    
+    section .descripcion{
+        width: 18em;
+        height: 80px;
+}
+
+@media screen and (max-width: 1000px){
+
+    header{
+        width: 60%;
+    }
+    .formulario{
+        width: 60%;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .contact{
+        width: 100%;
+    }
+
+    .btn button{
+        position: relative;
+        left: 30px;
+        top: 22px;
+        width: 8em;
+        height: 80px;
+    }
+
+    input[type="text"], input[type='email']{
+        width: 15em;
+        height: 40px;
+        
+    }
+    
+    section .descripcion{
+        width: 15em;
+        height: 80px;
+}
+
+@media screen and (max-width: 900px){
+
+    header{
+        width: 60%;
+    }
+    .formulario{
+        width: 60%;
+        grid-template-columns: 1fr;
+        
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .contact{
+        width: 100%;
+        margin-top: -120px;
+    }
+
+    .btn button{
+        position: relative;
+        left: 30px;
+        top: 22px;
+        width: 8em;
+        height: 80px;
+    }
+
+    input[type="text"], input[type='email']{
+        width: 15em;
+        height: 40px;
+        
+    }
+    
+    section .descripcion{
+        width: 15em;
+        height: 80px;
+}
+
+
+@media screen and (max-width: 580px){
+
+    header{
+        width: 60%;
+        margin: 0 auto;
+    }
+    .formulario{
+        width: 60%;
+        grid-template-columns: 1fr;
+        height: 1300px;
+        
+    }
+
+    .form{
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 70px 70px 70px;        
+        height: 700px;
+    }
+
+    .contact{
+        width: 100%;
+        margin-top: -287px;
+        
+    }
+
+    .btn button{
+        position: relative;
+        left: 38px;
+        top: 10px;
+        width: 10em;
+        height: 60px;
+    }
+
+    input[type="text"], input[type='email']{
+        width: 19em;
+        height: 40px;
+        
+    }
+    
+    section .descripcion{
+        width: 19em;
+        height: 80px;
+    }
+}
+
+@media (hover: hover) {
+        .btn button:hover{
+            background: rgba(15, 99, 227, 0.72);
+            border: 1px solid rgba(13, 54, 114, 0.72);
+        }
+    }

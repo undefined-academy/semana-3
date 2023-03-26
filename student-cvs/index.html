@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <header>
+        <h1>Abodago Digital</h1>
+    </header>
+
+    <main class="formulario">
+
+        <form class="form">
+            <section class="grid__text">
+                <label for="name">Nombres</label>
+                <input type="text" name="budget" id="name">
+            </section>
+            <section class="grid__text">
+                <label for="lname">Apellido Paterno</label>
+                <input type="text" name="lname" id="lname">
+            </section>
+            <section class="grid__text">
+                <label for="lmname">Apellido Materno</label>
+                <input type="text" name="lmname" id="lmname">
+            </section>
+            <section class="grid__text">
+                <label for="email">Correo Electronico</label>
+                <input type="email" name="email" id="email">
+            </section>
+            <section class="grid__text">
+                <label for="country">Estado</label>
+                <input type="text" name="country" id="country">
+            </section>
+            <section class="grid__text">
+                <label for="mcountry">Municipio</label>
+                <input type="text" name="mcountry" id="mcountry">
+            </section>
+            <section class="grid__text">
+                <label for="descripcion">Describe tu caso</label>
+                <input class="descripcion" type="text" name="descripcion" id="description">
+            </section>
+            <section class="btn">
+                <button>Enviar</button>
+            </section>
+        </form>
+ 
+        <article>
+            <p class="contact">Abogado Digital, es una herramienta en linea que te permite de manera practica y comoda, solicitar nuestros 
+                servicios, ya sea que necesites asesoria legal, o que te representemos en un juicio, o que te ayudemos a redactar un documento,
+                solo registra los datos en el formulario y nos pondremos en contacto contigo lo mas pronto posible. <br>
+
+                Abogado Digital, si requires mas informacion de nuestros servicios puedes enviarnos un correo a <br> abogadodig@abogados.com
+            </p>
+        </article>
+    </main>
+
+    <script type="module" src="/main.mjs"></script>
+</body>
+</html>
