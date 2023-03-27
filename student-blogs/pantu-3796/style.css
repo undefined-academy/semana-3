@@ -13,9 +13,12 @@ body {
   div {
     display: flex;
     flex-direction: column;
-    border: 1px solid #333;
     padding: 20px;
     
+  }
+  div:hover{
+    box-shadow: 10px 14px 10px -10px rgba(0,0,0,0.75);
+  
   }
   
   img {
