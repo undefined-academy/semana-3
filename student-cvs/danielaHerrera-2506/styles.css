@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  color: #413543;
+  padding: 8px 16px;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  border-radius: 50%;
+  width: 128px;
+}
+
+h1,
+h2 {
+  color: #8f43ee;
+}
+
+.presentacion {
+  text-align: center;
+}
+
+.tecnologias {
+  text-align: center;
+  list-style: none;
+}
+
+.portafolio {
+  list-style: none;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 10px 0;
+  border-radius: 5px;
+}
+
+input {
+  padding: 5px;
+}
+
+button {
+  width: 100%;
+  font-size: 18px;
+  background-color: #8f43ee;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  padding: 12px 16px;
+}
+
+@media screen and (min-width: 992px) {
+
+  body {
+    margin: 0 auto;
+    max-width: 50em;
+  }
+  
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    width: 64px;
+    margin-left: 20px;
+  }
+
+  button {
+    width: 25%;
+    padding: 8px 16px;
+  }
+}
