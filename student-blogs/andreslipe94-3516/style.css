@@ -1,0 +1,39 @@
+/* estilos para el layout usando flex */
+
+.container {
+    display: flex;
+    padding-left: 200px;
+    padding-right: 200px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  img {
+    width: auto;
+    height: 300px;
+    border-radius: 4px;
+  }
+  
+  div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 /4;
+    grid-row: 1 / 2;
+  }
+
+  ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+  }
