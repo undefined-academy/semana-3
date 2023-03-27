@@ -1,0 +1,22 @@
+{
+  "name": "hardstone-3508",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:css": "tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "dev:f": "vite dev",
+    "dev": "concurrently \"npm run dev:css\" \"npm run dev:f\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Hardstone",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "concurrently": "^7.6.0",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.7",
+    "vite": "^4.2.1"
+  }
+}
