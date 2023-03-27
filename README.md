@@ -24,3 +24,9 @@ Si alguien tiene alguna idea de como solucionarlo me ayudaria muchisimo.
 1) Pude enlazar mi `index.html` con `main.mjs` con `<script type="module" src="/student-cvs/Wilmer-8071/main.mjs"></script>`
 2) En el archivo `main.mjs` copie el comando proporcionado en el ejercicio y al visualizar consola decia "Hola Mundo"
 3) Hice `commit` y `push`.
+
+### Ejercicio 04
+
+1) Para el ejercicio me decante por Bootstrap y lo instalo segun los pasos vistos en clase
+2) realice unos pequeños cambios en el formulario
+3) Todo el dia he tenido serios problemas con el git sobre todo con este ejercicio que me costo demasiado poder enviar los cambios. Hasta tuve problemas porque no me instalaba la dependencia de Vite por el error mencionado en el ejercicio 01
