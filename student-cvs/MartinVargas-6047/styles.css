@@ -327,9 +327,3 @@ input:not([type="checkbox"]) {
 form {
   accent-color: red;
 }
-/* Javascript Form */
-#trucazo {
-  opacity: 0;
-  pointer-events: none;
-  cursor: default;
-}
