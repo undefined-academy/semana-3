@@ -1,0 +1,257 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --secondary-color: #f8f8f8;
+  --bg-color: #272B35;
+  --bg-color-soft: #51555e;
+  --bg-hover: #2d313d;
+  --card-color: #272B35;
+  --btn-color: #353843;
+  --card-border: #E87B2D;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--bg-color);
+  padding: 30px 0;
+}
+
+ul, li {
+  list-style: none;
+}
+
+img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #f8f8f8;
+}
+
+a {
+  color: #fff;
+  background-color: var(--main-color);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.navbar{
+  display: flex;
+  gap: 2em;
+}
+.navbar li{
+  cursor: pointer;
+  border-bottom: 2px solid var(--bg-color);
+  font-weight: 600;
+}
+
+.search {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid var(--secondary-color);
+  background-color: transparent;
+  color: var(--secondary-color);
+}
+.search::placeholder {
+  background-color: transparent;
+  color: var(--secondary-color);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  width: 280px;
+  padding: 30px 0px;
+  background-color: var(--card-color);
+  cursor: pointer;
+  position: relative;
+  border-radius: 30px;
+}
+
+
+.card-wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+
+.card-cat {
+  margin-top: 1rem;
+}
+.card-cat span {
+  background: var(--main-color);
+  color: #f8f8f8;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+.card footer {
+  padding: 0 1rem;
+}
+.card-wrap {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+
+.card-text{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+}
+.card-text h3{
+  color: var(--secondary-color);
+  font-size: 30px;
+}
+.card-text p{
+  color: var(--bg-color-soft);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card-footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+}
+
+.card_details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .5em;
+
+}
+
+.card_details p{
+  color: var(--card-border);
+  font-size: 30px;
+  font-weight: 600;
+}
+.card_details button{
+  padding: 12px 30px;
+  font-size: 15px;
+  border: 1px solid var(--btn-color);
+  border-radius: 20px;
+  color: var(--secondary-color);
+  background-color: var(--btn-color);
+}
+
+
+.card_header{
+  width: 200px;
+  height: 200px;
+}
+
+
+.extra{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0px 200px;
+  background-color: var(--bg-hover);
+}
+.extra_text{
+  width: 50%;
+}
+
+.extra_text h2{
+  font-size: 60px;
+  color: var(--secondary-color);
+}
+.extra_subtitle{
+  font-size: 30px;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.extra_price{
+  margin-top: 30px;
+  font-size: 40px;
+  color: var(--card-border);
+}
+
+.extra_btns{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1em;
+  margin-top: 30px;
+}
+
+.extra_btns button{
+  border: none;
+  padding: 15px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+}
+
+.extra_btns button:nth-child(1){
+  background-color: transparent;
+  border: 1px solid var(--bg-color-soft);
+  color: var(--bg-color-soft);
+}
+.extra_btns button:nth-child(2){
+  background-color: var(--card-border);
+  color: var(--secondary-color);
+}
+
+.extra_img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.navbar li:hover{
+  border-bottom: 2px solid var(--card-border);
+
+}
+
+.card:hover{
+  transform: scale(1.1);
+  transition: .7s all ease-in-out;
+  background-color: var(--bg-hover);
+}
+
+
+
+.card:hover button{
+  padding: 14px 40px;
+  font-size: 16px;
+  border: 1px solid var(--card-border);
+  border-radius: 20px;
+  color: var(--secondary-color);
+  background-color: var(--card-border);
+  transition: .5s all ease-in-out;
+
+}
