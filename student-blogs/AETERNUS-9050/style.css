@@ -1,0 +1,292 @@
+body {
+	background-color: #121212;
+	color: #f2f2f2;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 10px 5%;
+	background-color: #080808;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 500;
+	text-transform: capitalize;
+	padding: 10px;
+}
+
+nav ul li:first-child a {
+	color: #00bfff;
+}
+
+.search {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.search input {
+	border-radius: 10px;
+	border: 1px solid #121212;
+	background-color: #121212;
+	color: #f2f2f2;
+	padding: 8px 12px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+.search input::placeholder {
+	font-weight: bold;
+}
+
+.search input:focus {
+	outline: none;
+	border: 1px solid #00bfff;
+}
+
+.search input:focus + span {
+	color: #00bfff;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 20px;
+	grid-auto-flow: dense;
+	padding: 2.5% 5%;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	background-color: #080808;
+	color: #ccc;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cardImage {
+	overflow: hidden;
+	border-radius: 10px 10px 0 0;
+	display: block;
+	max-width: 100%;
+	height: 150px;
+}
+
+.cardImage img {
+	max-width: 100%;
+}
+
+.cardContent {
+	padding: 1.25rem;
+}
+
+.cardDetails {
+	display: flex;
+	justify-content: space-between;
+	font-weight: 600;
+}
+
+.cardDetails small {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	text-transform: uppercase;
+	color: #aaa;
+}
+
+.cardTitle h1 {
+	font-size: 1.5rem;
+	font-weight: 500;
+	line-height: 1.25;
+	color: #fff;
+}
+
+.cardTags {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.tag {
+	background-color: rgba(0, 191, 255, 0.6);
+	color: #ffffff;
+	padding: 3px 8px;
+	border-radius: 10px;
+	text-transform: uppercase;
+}
+
+.cardDescription {
+	display: none;
+	visibility: hidden;
+}
+
+.cardButton a {
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	color: #00bfff;
+	font-weight: 500;
+	margin-top: 2em;
+}
+
+@media (min-width: 768px) {
+	main {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		grid-auto-flow: dense;
+	}
+
+	.cardOne {
+		grid-column: 1 / -1;
+	}
+
+	.cardOne {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.cardOne .cardImage {
+		border-radius: 10px 0 0 10px;
+		width: 600px;
+		height: 100%;
+	}
+
+	.cardOne .cardImage img {
+		max-width: 100%;
+		height: 100%;
+	}
+}
+
+@media (min-width: 1024px) {
+	body {
+		font-size: 16px;
+	}
+
+	header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	nav ul {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+	@keyframes navLinkAnimation {
+		0% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-3px);
+		}
+		100% {
+			transform: translateY(0);
+		}
+	}
+
+	nav ul li {
+		transition: color 0.3s ease;
+	}
+
+	nav ul li:hover {
+		animation: navLinkAnimation 0.5s ease infinite;
+	}
+
+	nav ul li a:hover {
+		color: #00bfff;
+	}
+
+	.search span:hover {
+		color: #00bfff;
+		cursor: pointer;
+	}
+
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 60px;
+	}
+
+	.card {
+		transition: transform 0.3s, box-shadow 0.3s;
+	}
+
+	.card:hover {
+		transform: translateY(-5px);
+		transition: transform 0.3s, box-shadow 0.3s;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+	}
+
+	.cardImage {
+		border-radius: 10px 10px 0 0;
+		max-width: 100%;
+		height: 200px;
+		cursor: pointer;
+	}
+
+	.cardImage img {
+		transition: transform 0.3s ease;
+	}
+
+	.cardImage img:hover {
+		transform: scale(1.1);
+	}
+
+	.cardContent {
+		padding: 2rem;
+	}
+
+	.cardTitle h1 {
+		line-height: 1.4;
+	}
+
+	.tag {
+		border-radius: 20px;
+	}
+
+	.cardDescription {
+		display: -webkit-box;
+		visibility: visible;
+		line-height: 1.6;
+		overflow: hidden;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+	}
+
+	.cardButton a:hover {
+		color: #0083e0;
+	}
+
+	.cardOne {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.cardOne .cardImage {
+		border-radius: 10px 0 0 10px;
+		width: 800px;
+		height: 100%;
+	}
+
+	.cardOne .cardImage img {
+		max-width: 100%;
+		height: 100%;
+	}
+}
