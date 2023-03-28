@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="AETERNUS-9050" />
+
+		<!-- Normalize CSS -->
+		<link rel="preload" href="./reset.css" as="style" />
+		<link href="./reset.css" rel="stylesheet" />
+
+		<!-- Styles CSS -->
+		<link rel="preload" href="./style.css" as="style" />
+		<link href="./style.css" rel="stylesheet" />
+
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet" />
+
+		<!-- Font Awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+			integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+
+		<!-- JS Scripts -->
+		<script defer type="module" src="/main.mjs"></script>
+
+		<title>AETERNUS-9050 Contact</title>
+
+		<!-- Meta tags -->
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	</head>
+	<body>
+		<main>
+			<!-- Contact Me -->
+			<section
+				id="contactMeSection"
+				aria-labelledby="contactMeHeading"
+				role="region">
+				<h2 id="contactMeHeading">
+					<span
+						role="img"
+						aria-hidden="false"
+						aria-label="Envelope icon"
+						class="fa-solid fa-envelope icon"></span>
+					Contact Me
+				</h2>
+				<form action="mailto:andryfpo@gmail.com" method="get">
+					<fieldset id="personalInformation" aria-label="Personal Information">
+						<div>
+							<input
+								type="text"
+								name="firstName"
+								id="firstName"
+								placeholder="First Name"
+								aria-label="First Name"
+								required />
+							<input
+								type="text"
+								name="lastName"
+								id="lastName"
+								placeholder="Last Name"
+								aria-label="Last Name"
+								required />
+						</div>
+						<div>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Email"
+								aria-label="Email"
+								required />
+							<input
+								type="tel"
+								name="telephone"
+								id="telephone"
+								placeholder="Phone Number"
+								aria-label="Phone Number" />
+						</div>
+					</fieldset>
+					<fieldset id="messageInformation" aria-label="Message Information">
+						<div>
+							<input
+								type="text"
+								name="subject"
+								id="subject"
+								placeholder="Subject"
+								aria-label="Subject"
+								required />
+						</div>
+						<div>
+							<textarea
+								name="message"
+								id="message"
+								placeholder="Type your message here"
+								aria-label="Type your message here"
+								required></textarea>
+						</div>
+					</fieldset>
+					<fieldset id="sourceInformation" aria-label="Source Information">
+						<label for="source" id="sourceLabel"
+							>How did you hear about me?</label
+						>
+						<select
+							name="source"
+							id="source"
+							aria-labelledby="sourceLabel"
+							required>
+							<option value="" selected disabled>Select...</option>
+							<option value="google">Google</option>
+							<option value="instagram">Instagram</option>
+							<option value="twitter">Twitter</option>
+							<option value="linkedin">LinkedIn</option>
+							<option value="discord">Discord</option>
+							<option value="other">Other</option>
+						</select>
+					</fieldset>
+					<div>
+						<button type="submit" value="Send">Submit</button>
+					</div>
+				</form>
+			</section>
+		</main>
+	</body>
+</html>
