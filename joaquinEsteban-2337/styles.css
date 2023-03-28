@@ -7,15 +7,15 @@
 
 body{
     font-size: 62.5%;
-    font-family: Arial, Helvetica, sans-serif;
-    position: relative;
-    min-height: 100vh;
-
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh; /* Establecer el alto mínimo del cuerpo de la página en 100% de la altura de la vista */
+    display: flex;
+    flex-direction: column;
 }
 
 /* COLORS */
 .primary{
-    background-color: #2c2d32;
+    background-color: #1e264a;
 }
 
 .secundary{
@@ -27,135 +27,105 @@ body{
     top: 4rem;
     left: 2rem;
 }  
-    
-/*Hacer navbar para responsive desing
-
 /* HEADER */
+
 header{
     width: 100%;
     height: auto;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
 }
 
-
-/* header > div{
-    width: 100%;
-    height: 15rem;
-    margin-bottom: 2rem;
-    /* background-color: coral; */
-
-
-header > .container{
-    width: 100%;
-    height: 15rem;
-
-    margin-top: 6rem;
-    display: flex;
-    flex-direction: column;
+header > nav ul{
+    width: 40rem;
+    display: none;
     justify-content: space-around;
 }
 
-
-
-header > .container > .box > .name{
-    display: block;
-    padding: 1rem;
-    margin-bottom: 0.8rem;
-    border-bottom: 4px solid yellow;
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-header > .container > .box > p{
-    display: inline-block;
-    padding: 0 1rem 1rem 1rem;
-    margin: 1rem 0;
-    font-size: 1.4rem ;
+header > nav a{
+    font-size: 1.2rem;
+    text-decoration: none;
     color: #d1d3d4;
 }
 
-header > .container > .box > button{
+header .flex-container{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+header > .flex-container > .box1{
+    display: none;
     width: 100%;
-    height: 3rem;
-    font-size: 1rem;
-    border-radius: 1rem;
-    background-color: rgb(181, 181, 35);
-    color: #d1d3d4;
-    margin: 1rem;
-    cursor: pointer;
-    
-} 
-header > .container > .box > button:hover{
-    background-color: rgb(134, 134, 15);
+    height: 40rem;
+    background-color: aqua;
 }
 
-header > .container > .box > button:active{
-    
-    background-color: rgb(58, 58, 4);
-}
-
-header > .container > .box2 > span{
-    border-radius: 50%;
-    width: 15rem;
-    height: 15rem;
+header > .flex-container > .box1 > .img > span{
+    /* border-radius: 50%; */
+    width: 30rem;
+    height: 30rem;
     display: block;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('https://drive.google.com/uc?id=1Gv7DhO_2mBMhRbNa6sB9fv8AYyowDoBl');
-    box-shadow: -1px 20px 22px 0px rgba(0,0,0,0.75);
+    background-image: url('https://drive.google.com/uc?id=1aUSixm25FPSF5JXO7s8j42sStQ530pa8');
     margin: 0 auto;
-    
 }
 
 
-header > .box3 > h3{
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-top: 13rem;
-    color: #d1d3d4;
+header > .flex-container > .box2{
+    width: 100%;
+    padding: 1rem;
+    background-color: #1e264a;
+    text-align: left;
 }
 
-header > .box3 > p{
+header > .flex-container > .box2 > h3{
+    font-size: 5rem; 
+    color: #8a97fc;
+}
+
+header > .flex-container > .box2 > .text{
+    font-size: 2rem ;
+    color: #4e5aa8;
+}
+
+header > .flex-container > .box2 > p{
+    font-size: 0.9rem ;
+    margin-bottom: 1rem;
+}
+
+
+header > .flex-container > .box2 > a{
     display: inline-block;
-    margin: 1rem 0;
-    font-size: 1.4rem ;
-    color: #d1d3d4;
-}
-
-header > .box3 > a{
-    display: inline-block;
-    text-decoration: none;
+    height: 3rem;
     font-size: 1rem;
-    color: #d1d3d4;
-    background-color:  rgb(181, 181, 35);
+    padding: 1rem;
+    text-decoration: none;
     border-radius: 1rem;
-    padding: 1rem 2rem;
-    margin-top: 1rem;
+    background-color: rgb(102, 102, 100);
+    color: #d1d3d4;
+    cursor: pointer;
 }
 
-header > .bo3 > a:hover{
+header > .flex-container > .box2 > a:hover{
     background-color: rgb(134, 134, 15);
 }
 
-header > .box3 > a:active{
-    
+header > .flex-container > .box2 > a:active{
     background-color: rgb(58, 58, 4);
 }
+
+/*Hacer navbar para responsive desing
+
+
 
 /* MAIN */
 
 main{
     width: 100%;
-    height: 85rem;
+    height: 90rem;
     padding:2rem ;
-    background-color: #323338;
-    margin-top: 16rem;
-   
+    margin-bottom: 100rem;
+    background-color: #1e264a;
 }
 
 main > h2{
@@ -164,7 +134,7 @@ main > h2{
     color: #d1d3d4;
 }
 
-main > .container {
+main > .flex-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,7 +143,7 @@ main > .container {
 
 
 
-main > .container > section {
+main > .flex-container > section {
     width: 100%;
     height:auto ;
     margin-bottom: 2rem;
@@ -181,16 +151,18 @@ main > .container > section {
     padding: 1rem;
     /* border: 1rem solid grey; */
     box-shadow: -1px 4px 29px 9px rgba(0,0,0,0.75);
-    align-items: center;
+    
+ 
 }
 
-main > .container > section > h2 {
+main > .flex-container > section > h2 {
     font-size: 1.6rem ;
     margin-bottom: 0.6rem ;
     color: #d1d3d4;
+    text-align: center;
 }
 
-main > .container > section > span{
+main > .flex-container > section > span{
     display: inline-block;
     width: 6rem;
     height: 6rem;
@@ -202,74 +174,77 @@ main > .container > section > span{
 
 /*FUNDAMENTOS*/
 
-main > .container > section > .html{
+main > .flex-container > section > .html{
     background-image: url('https://drive.google.com/uc?id=1JHAT2eAZ7vvelpIvU_2GUaENWfsE0SMW');
 }
-main > .container > section > .css{
+main > .flex-container > section > .css{
     background-image: url('https://drive.google.com/uc?id=1wLIJuvkuncDrmJtVPxvoTZKw6hTfT3sC');
 }
-main > .container > section > .javascript{
+main > .flex-container > section > .javascript{
     background-image: url('https://drive.google.com/uc?id=1zGb03hZ0jBBbolQYA-gNbgWFDjgqU5_X');
 }
-main > .container > section > .ecma{
+/* main > .flex-container > section > .ecma{
     background-size: contain;
     background-image: url('https://drive.google.com/uc?id=1TspCGMd38ATmoUlSDwyVl5rHqjFwx_DP');
-}
+} */
 
 /* FRAMEWORKS */
-main > .container > section > .react{
+main > .flex-container > section > .react{
     background-image: url('https://drive.google.com/uc?id=1TBBJSGpU7LT5k0oRAcBKrQs8PGI6K6Pr');
 }
 
 /* DISEÑO CSS */
-main > .container > section > .pug{
+main > .flex-container > section > .pug{
     background-size: contain;
     background-image: url('https://drive.google.com/uc?id=1oJAOTIn97NrwXnohWyLiJ3FSttkBttkD');
 }
-main > .container > section > .sass{
+main > .flex-container > section > .sass{
     background-size: contain;
     background-image: url('https://drive.google.com/uc?id=1pSnOtSP3B_OyAn3oGr-EP0c2BG32k5wP');
 }
-main > .container > section > .tailwind{
+main >.flex-container > section > .tailwind{
     background-size: contain;
     background-image: url('https://drive.google.com/uc?id=10hRNIt3m9Ssg80IlKlA_0uATqFeIm8hW');
 }
-main > .container > section > .material-ui{
+main > .flex-container > section > .material-ui{
     background-size: contain;
     background-image: url('https://drive.google.com/uc?id=13SZCrSPEP56In4ng8mQO-xI0EDKhk7gH');
 }
 
 /* HERRAMIENTAS */
 
-main > .container > section > .git{
+main > .flex-container > section > .git{
     background-image: url('https://drive.google.com/uc?id=1NObl4xRCStl28_XV-E0D3Bh4KMpKijgO');
 }
-main > .container > section > .git-hub{
+main > .flex-container > section > .git-hub{
     background-image: url('https://drive.google.com/uc?id=1aAVCAtY5Wh2rqIBJ49wBW5iFSR0ccJwH');
 }
-main > .container > section > .devtool{
+main > .flex-container > section > .devtool{
     background-image: url('https://drive.google.com/uc?id=1wVz29BxuKSI7JZDNAt2Xvi16IhNn6Gc4');
 }
-main > .container > section > .webpack{
+main > .flex-container > section > .webpack{
     background-image: url('https://drive.google.com/uc?id=1vCo3LO3cH-oTDiqRWxq2jbL-DvIoJq9h');
 }
-main > .container > section > .npm{
+main > .flex-container > section > .npm{
     background-image: url('https://drive.google.com/uc?id=1uFKhktUCKAf89zrn6Zeos31204hIYvkS');
 }
-main > .container > section > .vite{
+main > .flex-container > section > .vite{
     background-image: url('https://drive.google.com/uc?id=1afL991F3PHHqr4CvaIdJMmhXVIP50BLB');
 }
 
+
+/* MAIN SECTION BLOG */
 main > .blog{
     width: 100%;
-    height: auto;
-    margin: 2rem 0;
+    height: 95rem;
+    background-color: #1e264a;
+    margin-top: 3rem;
    
 }
 
 main > .blog > h2{
     font-size: 1.6rem ;
-    margin:2rem 0;
+    margin: 2rem 0;
     color: #d1d3d4;
 }
 
@@ -285,11 +260,12 @@ main > .blog > .grid-container{
 main > .blog > .grid-container > article{
     width: 100%;
     height:20rem;
-    background-color: #837d7d15;
+    background-color: #1e264a;
     border-radius: 1rem;
     box-shadow: -1px 4px 29px 9px rgba(0,0,0,0.75);
     align-items: center;
     margin-bottom: 2rem;
+    padding: 1rem;
 
     display: inline-block;
     background-position: center;
@@ -306,66 +282,52 @@ main > .blog > .grid-container > .article1 {
     background-image: url('https://drive.google.com/uc?id=10W3pkqWn-dNN2gmP3oocXiefboBVyzkr');
 }
 
-main > .blog >  .grid-container >  .article2{
+main > .blog > .grid-container >  .article2{
     grid-column: 1/5;
     grid-row: 2/3;   
     background-image: url('https://drive.google.com/uc?id=1RLkWWfRbBqo4B8hZLENabGhnYPl6lgXo');
 }
 
-main > .blog >   .grid-container >  .article3{
+main > .blog > .grid-container >  .article3{
     grid-column: 1/5;
     grid-row: 3/4;  
     background-image: url('https://drive.google.com/uc?id=1kgb5UOac3AIySNxJx5c1ndsOMD7KmB2q');
 }
 
-main > .blog >   .grid-container >  .article4{
+main > .blog > .grid-container >  .article4{
     grid-column: 1/5;
     grid-row: 4/5;  
     background-image: url('https://drive.google.com/uc?id=1yiI4HYFfgcAtH0wQn2u2IRGysE5PoGNx');
 }
 
-main > .blog > .grid-container >  .article1 > .text{
-    padding: 1rem;
-}
 
-
-main > .blog > .grid-container >  article > .text > h3{
+main > .blog > .grid-container >  article > h3{
     font-size: 1.4rem;
     padding: 0.4rem;
     margin-bottom: 10rem;
     color: #d1d3d4;
 }
 
-main > .blog > .grid-container > article > .text > a{
+main > .blog > .grid-container > article > a{
     display: inline-block;
     text-decoration: none;
     font-size: 1rem;
-    line-height: 1.4;
     color: #d1d3d4;
     background-color:  rgb(181, 181, 35);
     border-radius: 1rem;
     padding: 1rem 2rem;
     margin-top: 1rem;
     text-align: center;
-    
 }
-
-
-
-/* TERMINAR EL FOOTER( ARREGLAR FALLA) */
 
 /* FOOTER */
 footer{
+    position: relative;
+    bottom: 0;
     width: 100%;
-    height: 65vh;
-    padding-top: 4rem;
-    display: flex;
-    background-color: #323338;;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    bottom:-125rem;
-    
+    height: 55vh;
+    padding-top: 4rem; 
+    background-color: #1e264a;
 }
 
 footer > .f-text{
@@ -382,7 +344,7 @@ footer > .f-text{
 footer > .f-text > .text1{
     font-size: 1rem;
     font-weight: bolder;
-    color: rgb(181, 181, 35);
+    color: #8a97fc;;
     text-align: center;
 }
 
@@ -422,19 +384,18 @@ footer > .f-button > a{
     
 }
 
-
 footer > .f-button > a > i{
     width: 4rem;
     
 }
 footer > .separator {
     width: 100%;
-    height: 15rem;
+    
 }
 footer > .separator > div{
     width: 100%;
     height: auto;
-    border-top: 0.3rem solid rgb(181, 181, 35);
+    border-top: 0.3rem solid #8a97fc;;
     margin-top: 10rem;
 }
 
@@ -443,8 +404,6 @@ footer > .separator > p{
     text-align: center;
     margin-top: 1rem;
     color: #d1d3d4;
-   
-
 }
 
 @media screen and (min-width: 768px){

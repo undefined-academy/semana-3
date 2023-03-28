@@ -1,58 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>CV Joaquin Esteban</title>
 </head>
+
 <body class="primary">
     <header>
-        <div class="container">
+        <nav>
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Aprendido</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contactame</a></li>
+            </ul>
+        </nav>
+        <div class="flex-container">
+
+            <div class="box1">
+                <div class="img">
+                    <span></span>
+                </div>
+
+            </div>
+
             <div class="box2">
-                <span></span>
+                <h3>Hola! <br>Soy Joaquin</h3>
+                <p class="text"> Full Stack Web Developer</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe modi consequuntur velit eveniet voluptate, totam itaque quaerat maiores rerum illum maxime suscipit laborum cum ut. Necessitatibus saepe aut distinctio cupiditate?</p>
+                <a href="#">Mas de mi</a>
+                
             </div>
-            <div class="box">
-                <p class="name"> Joaquin <br> Esteban</p>
-                <p>Twiter / Linkedin <br> Discord /  Instagram</p>
-                <button class="button">Contactame!</button>
-            </div>
+            <!-- <p>Comence a estudiar en plena pandemia a mediados del 2020, siempre mi alredor mis amigos,ya eran
+                developer
+                o estaban estudiando la Ingenieria en Sistemas pero yo pensaba que era personas inteligentes. <br>En
+                pandemia,me pico la curiosidad por este mundo de la tecnologia, bueno el resto es historia.... </p>
+             -->
         </div>
-        
-        <div class="box3">
-            <h3>introduccion</h3>
-            <p> Full Stack Web Developer</p>
-            <p>Comence a estudiar en plena pandemia a mediados del 2020, siempre mi alredor mis amigos,ya eran developer o estaban estudiando la  Ingenieria en Sistemas pero yo pensaba que era personas inteligentes. <br>En pandemia,me pico la curiosidad por este mundo de la tecnologia, bueno el resto es historia.... </p>
-            <a href="#">Mas de mi</a>
-        </div>
-        
-        
+
     </header>
     <main>
         <h2>Tecnologias Aprendidas</h2>
-        <div class="container">
-            
+        <div class="flex-container">
+
             <section class="box1">
                 <h2>Fundamentos</h2>
                 <span class="html"></span>
                 <span class="css"></span>
                 <span class="javascript"></span>
                 <span class="ecma"></span>
-                
+
             </section>
+
             <section class="box2">
                 <h2>Frameworks</h2>
                 <span class="react"></span>
             </section>
+
             <section class="box3">
                 <h2>Diseño CSS</h2>
                 <span class="pug"></span>
                 <span class="sass"></span>
                 <span class="tailwind"></span>
                 <span class="material-ui"></span>
-                
+
             </section>
+
             <section class="box4">
                 <h2>Herramientas </h2>
                 <span class="git"></span>
@@ -62,45 +82,43 @@
                 <span class="npm"></span>
                 <span class="vite"></span>
             </section>
-            
+
         </div>
         <section class="blog">
             <h2>Blog</h2>
             <div class="grid-container">
+
                 <article class="article1">
-                    <section class="text">
-                        <h3>Como trabajar en Equipo</h3>
-                       <a href="#">Ver</a>
-                    </section>
+                    <h3>Como trabajar en Equipo?</h3>
+                    <a href="#">Ver</a>
                 </article>
+
                 <article class="article2">
-                    <section class="text">
-                        <h3>Como viajar sin usar el Bus?</h3>
-                       <a href="#">Ver</a>
-                    </section>
+                    <h3>Como viajar sin usar el Bus?</h3>
+                    <a href="#">Ver</a>
                 </article>
+
                 <article class="article3">
-                    <section class="text">
-                        <h3>Tip!de como organizar tu semana</h3>
-                       <a href="#">Ver</a>
-                    </section>
+                    <h3>Tip!de Organizacion</h3>
+                    <a href="#">Ver</a>
                 </article>
+
                 <article class="article4">
-                    <section class="text">
-                        <h3>Mi primer dia en el mundo IT</h3>
-                       <a href="#">Ver</a>
-                    </section>
+                    <h3>El mundo IT</h3>
+                    <a href="#">Ver</a>
                 </article>
-               
+
             </div>
-            
         </section>
+
     </main>
     <footer>
         <section class="f-text">
             <p class="text1">Contacto</p>
             <p class="text2">Maneras de Contactarme</p>
-            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quae tenetur ratione laborum error molestias ab reiciendis modi obcaecati quos sunt culpa voluptas, corporis nam dolorem deleniti natus nulla perferendis!</p>
+            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quae tenetur ratione
+                laborum error molestias ab reiciendis modi obcaecati quos sunt culpa voluptas, corporis nam dolorem
+                deleniti natus nulla perferendis!</p>
         </section>
         <section class="f-button">
             <a href="#"><i class="fa-brands fa-twitter"></i>Twiter</a>
@@ -118,4 +136,5 @@
     </footer>
     <script src="https://kit.fontawesome.com/5e05ea164b.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
