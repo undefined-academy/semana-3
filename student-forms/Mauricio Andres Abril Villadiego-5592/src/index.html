@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto</title>
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <div class="container py-3 px-3 mx-auto">
+    <h1>Contacto</h1>
+  </div>
+
+  <form class="container py-4 px-3 mx-auto">
+    <div class="row mb-3">
+      <label for="inputName3" class="col-sm-2 col-form-label">Nombre</label>
+      <div class="col-sm-10">
+        <input type="text" name="inputName3" class="form-control" id="inputName3"  required>
+        
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="inputLastName3" class="col-sm-2 col-form-label">Apellido</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" name="inputLastName3" id="inputLastName3"  required>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="inputEmail3" name="inputEmail3" required>
+      </div>
+    </div>
+   
+
+    <fieldset class="row mb-3">
+      <legend class="col-form-label col-sm-2 pt-0">Presupuesto</legend>
+      <div class="col-sm-10">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="10000" required>
+            <label class="form-check-label" for="inlineRadio1">$10.000</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="8500">
+            <label class="form-check-label" for="inlineRadio2">$8.500</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="5000">
+            <label class="form-check-label" for="inlineRadio3">$5.000</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="2500">
+            <label class="form-check-label" for="inlineRadio4">$2.500</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio5" value="1000">
+            <label class="form-check-label" for="inlineRadio5">$1.000</label>
+          </div>
+          <div class="form-text">Este presupuesto es una base en USD</div>
+      </div>
+      
+    </fieldset>
+
+    <div class="row mb-3 align-items-center">
+      <label for="type" class="col-sm-2 col-form-label">Tipo de proyecto</label>
+      <div class="col-sm-10">
+
+        <select name="type" id="type" class="form-select" aria-label="Default select example" required>
+          <option selected disabled>Seleccione uno</option>
+          <option value="website">Website</option>
+          <option value="webapp">Webapp</option>
+          <option value="mobileApp">Mobile App</option>
+          <option value="landingPage">Landing Page</option>
+        </select>
+
+      </div>
+    </div>
+
+
+    <div class="input-group mb-3">
+      <label for="inputName3" class="col-sm-2 col-form-label">Cargar Wire Frame</label>
+      <input type="file" class="form-control" id="inputGroupFile02">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
+      <textarea class="form-control" name="exampleFormControlTextarea1" id="exampleFormControlTextarea1" rows="3" required></textarea>
+      <div class="form-text">Escribe una descripción del proyecto en al menos 500 palabras.</div>
+    </div>
+
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" name="flexCheckDefault" id="flexCheckDefault" required>
+      <label class="form-check-label" for="flexCheckDefault">
+        ACEPTO LOS TERMINOS Y CONDICIONES
+      </label>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">ENVIAR</button>
+  </form>
+
+</body>
+
+</html>

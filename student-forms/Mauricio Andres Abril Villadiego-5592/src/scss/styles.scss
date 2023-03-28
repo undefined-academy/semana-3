@@ -1,0 +1,21 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+body{
+    margin: 0 auto;
+    width: 65%;
+    height: 100%;
+    background: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #555;
+    line-height: 1.5;
+    padding: 1em 0.3em;
+    
+}
+
+label, legend{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #444;
+}
