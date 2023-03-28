@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+
+html {
+    box-sizing: border-box;
+    margin: 30px;
+    padding: 0;
+    font-family: 'Futura PT', sans-serif;
+    max-width: 1000px;
+
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-size: 18px;
+    width: 100%;
+    color: whitesmoke;
+    
+}
+
+img{
+    width: 100%;
+}
+
+
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    background-color: #4f6f5c;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+    padding: 20px;
+    transition: all 500ms ease;
+}
+
+.cards:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    background: #1d4130;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    line-height: 1.5;
+
+}
+
+h1 {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+
+.div-titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo {
+    color: #333;
+    text-align: center;
+    font-size: 50px;
+    transition: all 100ms ease;
+    width: 350px;
+    
+}
+
+h1:hover{
+    color: #ffdd00;
+}
+
