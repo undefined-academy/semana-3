@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+html, body {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: whitesmoke;
+    font-family: Open Sans, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 150%;
+}
+
+.form-h1 {
+    font-size: 125%;
+}
+
+h2 {
+    font-size: 140%;
+}
+
+h3 {
+    font-size: 100%;
+    padding: 3% 0;
+}
+
+.nav-header {
+    background: #181818;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    height: 60px;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    color:#ebebeb;
+    padding: 0 0;
+    width: calc(100% / 3);
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+}
+
+nav li:hover:not(:first-child) a {
+    color: #1b2027;
+    background: #28cf7d;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease;
+    color:#ebebeb;
+    text-decoration: none;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-weight: 600;
+}
+
+.active-menu {
+    background: #7a0092;
+}
+
+article {
+    width: 85%;
+}
+
+.about-bkg {
+    background: #2b2f3a;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me header {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.quote {
+    margin-top: 3px;
+    font-size: 80%;
+    padding-left: 10px;
+    border-left: 1px solid white;
+    text-align: left;
+}
+
+.about-p {
+    padding: 1% 0 25px 0;
+    font-size: 95%;
+}
+
+/* Experience */
+
+.exp-bkg {
+    background: #21252e;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.experience h2 {
+    padding: 2% 0 0 0;
+}
+
+.photo, .photo picture {
+    display: flex;
+    justify-content: center;
+}
+
+.photo img {
+    width: 85%;
+}
+
+.exp-1, .exp-2, .exp-3, .exp-4 {
+    background: #1b2027;
+    color: white;
+    padding-bottom: 5%;
+    margin: 2% 0;
+    border-radius: 5px;
+}
+
+.exp-1:hover, .exp-2:hover, .exp-3:hover, .exp-4:hover {
+    background: #28cf7d;
+    color: #1b2027;
+}
+
+.exp-4 {
+    margin-bottom: 5%;
+}
+
+.photo:not(:last-child), .photo:not(:last-child) {
+    margin-bottom: 2%;
+}
+
+/* Skills */
+
+.skills-bkg {
+    background: #28cf7d;
+    color: #270027;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 3% 0;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.multimedia, .broadcast, .tools {
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-s img, .photo-s picture, .photo-s a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.photo-s {
+    padding: 1%;
+    width: 57px;
+}
+
+.skills h3 {
+    font-size: 120%;
+    padding: 3% 0;
+}
+
+.soft-list {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.soft-list-bkg:not(:last-child) {
+    background-color: #000000;
+    width: 150px;
+}
+
+.soft-list-bkg {
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.soft-list-bkg:not(:first-child) {
+    margin-right: 4px;
+}
+
+.soft-list div {
+    display: inline-flex;
+}
+
+.soft-list p {
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 4px 10px 4px 10px;
+}
+
+.soft-list p:not(:first-child) {
+    margin-top: 8px;
+}
+
+.soft-list p:nth-child(even) {
+    font-weight: 600;
+    border-left: 3px rgb(255, 0, 242) solid;
+    border-right: 3px rgb(132, 0, 255) solid;
+    padding-left: 10px;
+    font-size: 110%;
+}
+
+.soft-list p:nth-child(odd) {
+    font-weight: 600;
+    border-right: 3px rgb(132, 0, 255) solid;
+    border-left: 3px rgb(255, 0, 242) solid;
+    padding-right: 10px;
+    font-size: 110%;
+}
+
+/* Form */
+
+.form-section {
+    padding-top: 3%;
+    background: #fbfeff;
+    color: #270027;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.form-section header {
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+form label {
+    padding: 3%;
+    width: 75%;
+    text-align: center;
+    max-width: 400px;
+    font-weight: 600;
+}
+
+form input, form textarea {
+    background: rgb(255, 255, 255);
+    padding: 2%;
+    width: 75%;
+    max-width: 400px;
+    font-family: Open Sans, Helvetica, Arial, sans-serif;
+    font-size: 80%;
+    border: 0;
+    border-bottom: 1px solid rgb(131, 131, 131);
+}
+
+.send-button {
+    font-weight: 600;
+    margin: 4% 0 4% 0;
+    padding: 1% 4%;
+    font-family: Open Sans, Helvetica, Arial, sans-serif;
+    font-size: 80%;
+}
+
+/* Footer */
+
+footer {
+    background: #000000;
+    color: #F6F1F1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rrss-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer div {
+    padding: 0 4% 0 4%;
+}
+
+.rrss-container div:not(:last-child) {
+    border-right: 1px solid rgb(209, 209, 209);
+}
+
+footer a {
+    display: flex;
+}
+
+footer p {
+    text-align: center;
+    padding: 4% 0;
+    font-size: 90%;
+    font-weight: 500;
+}
+
+/* Desktop */
+
+@media screen and (min-width: 992px) {
+
+    body {
+        background-color: #2f2235;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        width: 900px;
+    }
+
+    .about-bkg, .exp-bkg, .skills-bkg, .form-section, footer {
+        width: 900px;
+    }
+
+    .form-container {
+        width: 70%;
+    }
+    footer p {
+        text-align: center;
+        padding: 22px 0;
+    }
+
+    footer div {
+        padding: 0 3% 0 3%;
+    }
+
+    .form-section {
+        padding-top: 30px;
+    }
+
+    .skills-bkg {
+        padding-bottom: 37px;
+        padding-top: 37px;
+    }
+
+}
