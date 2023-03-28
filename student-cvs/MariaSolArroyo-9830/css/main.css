@@ -59,7 +59,7 @@ header a{
 .botonesinicio{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    /* width: 50%; */
     justify-content: center;
     text-align: center;
     align-content: center;
@@ -192,6 +192,25 @@ button{
     margin: 30px 0;
 }
 
+.adobe{
+    color: #32756bb7;
+}
+th,tr,td{
+    border: 0.6px solid #333;
+    padding: 5px;
+    margin: 5px;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: self-start ;
+}
+
+.whatsapp{
+    margin-top: 10px;
+}
 
 /* Media query */
 
@@ -204,6 +223,26 @@ button{
 
     body{
         max-width: 70em;
+    }
+
+    th,tr,td{
+        border: 0px solid #333;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    fieldset{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .whatsapp{
+        margin: 0;
+    }
+
+
+    .grupobotones{
+        display: flex;
     }
 }
 
