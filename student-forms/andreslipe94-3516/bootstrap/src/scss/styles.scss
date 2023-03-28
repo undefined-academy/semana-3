@@ -1,0 +1,24 @@
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+
+input{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+h2{
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.container{
+    display: block;
+    justify-content: center;
+    max-width: 600px;
+
+textarea{
+    margin-bottom: 10px;
+}
+}

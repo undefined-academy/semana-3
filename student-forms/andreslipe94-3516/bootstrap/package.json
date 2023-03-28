@@ -1,0 +1,23 @@
+{
+  "name": "andreslipe94-3516",
+  "version": "1.0.0",
+  "description": "El código proporcionado es un archivo HTML que contiene mi información personal y, incluyendo nombre, información de contacto, resumen de experiencia y habilidades y conocimientos relevantes. El archivo también incluye un enlace a mi cuenta de GitHub. El propósito del archivo es proporcionar información sobre mis habilidades y experiencia a posibles empleadores o interesados en mi perfil profesional.",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.11.7",
+    "bootstrap": "^5.2.3",
+    "vite": "^4.2.1"
+  },
+  "devDependencies": {
+    "sass": "^1.60.0"
+  }
+}
