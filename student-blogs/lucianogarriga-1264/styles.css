@@ -30,14 +30,17 @@ nav ul{
     display: flex;
     justify-content: space-evenly; 
     background: #383737;
-    color: #f1f1f1;
+    list-style: none;
+    text-decoration: none; 
+    color: aliceblue; 
     cursor: pointer;
     font-size: 0.8rem;
     padding: 1rem;
 }
-nav ul li{
+nav ul li a{
     list-style: none;
-    text-decoration: none;
+    text-decoration: none;  
+    color: aliceblue; 
 }
 /* HEADER STYLES & BACKGROUND */
 .header{ 
@@ -128,6 +131,9 @@ a h3{
 @media screen and (min-width: 920px){
     .flex-container{
         display: flex;
+    }
+    nav ul li a{
+        font-size: 1rem;
     }
     .content{
         flex: 1;
