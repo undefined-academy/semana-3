@@ -67,7 +67,7 @@ nav li {
     transition: all 0.2s ease;
 }
 
-nav li:hover:not(:first-child) a {
+nav li:hover:not(.active-menu-not) a {
     color: #1b2027;
     background: #28cf7d;
 }

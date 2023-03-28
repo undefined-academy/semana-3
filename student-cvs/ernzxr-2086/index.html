@@ -7,7 +7,6 @@
     <title>Ernesto Riveiro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script async defer type="module" src="./main.mjs"></script>
 </head>
 
 <body>
@@ -15,7 +14,7 @@
     <header class="nav-header">
         <nav>
             <ul>
-            <li><a class="active-menu" href="#home">Home</a></li><li><a href="https://github.com/ernzxr" target="_blank">GitHub</a></li><li><a href="#contact">Contact</a></li>
+            <li class="active-menu-not"><a class="active-menu" href="./index.html">Home</a></li><li><a href="https://github.com/ernzxr" target="_blank">GitHub</a></li><li><a href="./form.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -277,22 +276,6 @@
                     </div>
                 </article>
         </article>
-    </section>
-
-    <section class="form-section">
-        <header>
-        <h1 class="form-h1">Let's work together!</h1>
-        <p>Or just say hi :)</p>
-        </header>
-        <form class="form-container" action="/server" method="get">
-            <label class="form-name" for="name">Name</label>
-            <input id="name" name='name' type="text" placeholder="Tell me your name!" required>
-            <label class="form-email" for="email">Email</label>
-            <input id='email' name="email" type="email" placeholder="Email for contact?" required>
-            <label class="form-message" for="message">Description</label>
-            <textarea id="message" name="message" placeholder="Alright, what's on your mind?" required rows="1"></textarea>
-            <button class="send-button">Send</button>
-        </form>
     </section>
 
     <footer>
