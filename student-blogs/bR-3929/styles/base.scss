@@ -1,14 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Delicious+Handrawn&display=swap');
 
-body,
-html {
-    box-sizing: border-box;
-}
+@media screen and (max-width: 800px) {
+    .container{
+        display:flex;
+        flex-direction: column;
+    }
+    .container div img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .container div#tft img {
+        width: 100%;
+        height: auto;
+    }
+    header {
+        background-color: #94a3b8;
+        color: #fff;
+        padding: 0;
+    }
 
-html {
-    background: #e2e8f0;
-}
-
-* {
-    box-sizing: inherit;
+    nav {
+        background-color: #94a3b8;
+        color: #fff;
+        height: auto;
+    }
 }

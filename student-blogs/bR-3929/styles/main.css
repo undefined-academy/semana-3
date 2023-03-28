@@ -5,10 +5,6 @@ html {
   box-sizing: border-box;
 }
 
-html {
-  background: white;
-}
-
 * {
   box-sizing: inherit;
 }
@@ -59,6 +55,7 @@ nav a {
   border-radius: 5px;
   text-align: center;
   background: #f1f5f9;
+  border-radius: 8px;
 }
 
 .container div p {
@@ -71,6 +68,7 @@ nav a {
   max-width: 100%;
   width: 350px;
   height: 300px;
+  border-radius: 8px;
 }
 
 .container div#tft {
@@ -87,6 +85,32 @@ body {
   font-family: Arial, sans-serif;
   background: #e2e8f0;
   padding: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .container div img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .container div#tft img {
+    width: 100%;
+    height: auto;
+  }
+  header {
+    background-color: #94a3b8;
+    color: #fff;
+    padding: 0;
+  }
+  nav {
+    background-color: #94a3b8;
+    color: #fff;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

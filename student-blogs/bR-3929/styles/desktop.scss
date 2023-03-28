@@ -1,16 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Delicious+Handrawn&display=swap');
 
-
-/*
-
 body,
 html {
     box-sizing: border-box;
 }
 
-html {
-    background: #e2e8f0;
-}
+
 
 * {
     box-sizing: inherit;
@@ -65,6 +60,7 @@ nav a {
     border-radius: 5px;
     text-align: center;
     background: #f1f5f9;
+    border-radius: 8px;
 }
 
 .container div p {
@@ -77,6 +73,7 @@ nav a {
     max-width: 100%;
     width: 350px;
     height: 300px;
+    border-radius: 8px;
 }
 
 .container div#tft {
@@ -95,3 +92,5 @@ body {
     background: #e2e8f0;
     padding: 0;
 }
+
+
