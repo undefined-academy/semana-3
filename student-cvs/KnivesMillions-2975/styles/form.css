@@ -58,7 +58,7 @@ hr {
 #name, #email {
     display: block;
 }
-/* todos lo que sea label, input menos type radio y checkbox */
+
 label, input:not([type="radio"], [type="checkbox"]) {
     width: 50%;
 }
