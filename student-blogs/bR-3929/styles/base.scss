@@ -1,3 +1,4 @@
+@use "variables.scss" as *;
 
 @media screen and (max-width: 800px) {
     .container{
@@ -14,14 +15,14 @@
         height: auto;
     }
     header {
-        background-color: #94a3b8;
-        color: #FFFFFF;
+        background-color: $gull-gray;
+        color: $solid-white;
         padding: 0;
     }
 
     nav {
-        background-color: #94a3b8;
-        color: #FFFFFF;
+        background-color: $gull-gray;
+        color: $solid-white;
         height: auto;
     }
 }

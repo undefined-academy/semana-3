@@ -1,4 +1,4 @@
-
+@use "variables.scss" as *;
 
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@500&family=Delicious+Handrawn&display=swap');
 
@@ -15,14 +15,14 @@ html {
 
 
 header {
-    background-color: #94a3b8;
-    color: #FFFFFF;
+    background-color: $gull-gray;
+    color: $solid-white;
     padding: 10px;
 }
 
 nav {
-    background-color: #94a3b8;
-    color: #FFFFFF;
+    background-color: $gull-gray;
+    color: $solid-white;
     padding: 10px;
 }
 
@@ -41,7 +41,7 @@ nav li {
 }
 
 nav a {
-    color: #FFFFFF;
+    color: $solid-white;
     text-decoration: none;
     font-size: 22px;
     font-weight: bold;
@@ -61,7 +61,7 @@ nav a {
     padding: 20px;
     border-radius: 5px;
     text-align: center;
-    background: #f1f5f9;
+    background: $catskill-white;
     border-radius: 8px;
 }
 
@@ -91,7 +91,7 @@ nav a {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #e2e8f0;
+    background: $catskill-gray;
     padding: 0;
 }
 
