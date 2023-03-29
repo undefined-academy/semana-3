@@ -52,10 +52,15 @@ button {
   width: 100%;
   font-size: 18px;
   background-color: #8f43ee;
-  border: none;
+  border: 1px solid #8f43ee;
   color: white;
   border-radius: 5px;
   padding: 12px 16px;
+}
+
+button:hover {
+  background-color: white;
+  color: #8f43ee;
 }
 
 @media screen and (min-width: 992px) {
