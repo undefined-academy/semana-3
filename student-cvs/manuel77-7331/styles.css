@@ -52,8 +52,11 @@ section, header {
     background: #ecf0f1;
 }
 
-@media screen and (min-width: 992px) {
-    .copy {
+@media screen and (max-width: 992px) {
+  .rdb {
+    display: none!important;
+  }  
+  .copy {
         height: 60px;
         min-height: auto;
     }
@@ -77,9 +80,6 @@ h1, h2, h3 {
     background: #f5f7f9;
     border-bottom: 1px solid #d8dee9;
     color: #43454b;
-  }
-
-  pre {
     padding: 1em;
     border-left: 2px solid #69c;
   }
@@ -130,7 +130,10 @@ h1, h2, h3 {
   .form-group {
     margin: 20px 0;
   }
-  
+  .rdb{
+    display: flex;
+    flex-direction: column;
+  }
   .form-group label, input:not([type="radio"],[type="checkbox"]){
     width: 100%;
   }
