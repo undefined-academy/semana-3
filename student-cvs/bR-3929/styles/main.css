@@ -16,7 +16,8 @@ body {
 
 body a {
   text-decoration: none;
-  color: tomato;
+  color: red;
+  line-height: 1.3;
 }
 
 header {
