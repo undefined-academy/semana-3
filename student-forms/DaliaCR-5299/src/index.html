@@ -15,7 +15,7 @@
             </div>
         </nav>
     <section class="container">
-        <h3>Contacto</h3>
+        <h3 class="m-3 text-center">Contacto</h3>
         <form action="/server" method="get">
             <div class="mb-3">
                 <label class="form-label" for="name">Nombre:</label>
@@ -27,19 +27,25 @@
             </div>
             <div class="mb-3">
                 <fieldset>
-                    <legend class="col-form-label col-sm-2 pt-0">Razon de contacto</legend>
+                    <legend class="col-form-label col-sm-2 pt-0">Razon de contacto:</legend>
+                    <div class="form-check">
                     <label class="form-label">
                         <input class="form-check-input" type="radio" name="reason" value="full" required>
                         Empleo de tiempo completo
                         </label>
+                    </div>
+                    <div class="form-check">
                         <label class="form-label">
                         <input class="form-check-input" type="radio" name="reason" value="part">
                         Empleo de tiempo parcial
                         </label>
+                    </div>
+                    <div class="form-check">
                         <label class="form-label">
                         <input class="form-check-input" type="radio" name="reason" value="freelance">
                         Empleo de forma independiente
                         </label>
+                    </div>
                 </fieldset>
             </div>
             <div class="mb-3">
