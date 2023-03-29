@@ -27,7 +27,7 @@ nav {
   padding: 0px 30px;
 }
 
-.nav-logo {
+figure.logo {
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -45,7 +45,7 @@ nav {
   margin-left: 25px;
 }
 
-.nav-menu {
+ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;

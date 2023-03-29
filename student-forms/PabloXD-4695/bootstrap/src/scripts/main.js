@@ -1,5 +1,4 @@
 import "../styles/style.scss";
-import * as bootstrap from "bootstrap";
 
 function handleSubmit(event) {
   event.preventDefault();
