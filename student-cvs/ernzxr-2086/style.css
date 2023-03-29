@@ -7,7 +7,10 @@ html, body {
 
 body {
     margin: 0;
-    background: whitesmoke;
+    background-color: #2f2235;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: Open Sans, Helvetica, Arial, sans-serif;
     line-height: 1.5;
 }
@@ -48,6 +51,14 @@ h3 {
 
 nav {
     width: 100%;
+}
+
+nav {
+    max-width: 900px;
+}
+
+.about-bkg, .exp-bkg, .skills-bkg, .form-section, footer {
+    max-width: 900px;
 }
 
 nav ul {
@@ -374,13 +385,6 @@ footer p {
 /* Desktop */
 
 @media screen and (min-width: 992px) {
-
-    body {
-        background-color: #2f2235;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
     nav {
         width: 900px;
