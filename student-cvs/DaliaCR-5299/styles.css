@@ -56,7 +56,7 @@ header {
 
 @media screen and (min-width: 992px) {
   .rb {
-    display: none!important;
+    display: inline!important;
   }
 
   .copy {
