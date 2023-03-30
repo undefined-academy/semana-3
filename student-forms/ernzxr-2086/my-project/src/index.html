@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./js/main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+      html, body {
+        height: 100%;
+      }
+    </style>
+    
+  </head>
+
+  <body class="d-flex flex-column">
+
+    <nav class="navbar navbar-expand-sm bg-primary p-3">
+      <div class="container-fluid">
+        <a class="navbar-brand text-bg-primary" href="#">@ernzxr</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-bg-primary" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-bg-primary" href="#">GitHub</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-bg-primary" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container d-flex justify-content-center align-items-center" style="height: 100%">
+      <form style="width: 500px;">  
+        <div class="mb-3 mt-2">
+      <label for="name1" class="form-label">Name</label>
+      <input class="form-control" id="name1" type="text" placeholder="Your name." aria-label="nameHelp">
+    </div>
+      <div class="mb-3 mt-2">
+        <label for="email1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email1" placeholder="Email for contact." aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3 mt-2">
+      <label for="customRange2" class="form-check-label d-flex justify-content-between mb-0 mt-2">
+          <p class="d-inline mb-0">Frontend</p>
+          <p class="d-inline mb-0">Backend</p>
+      </label>
+      <input type="range" class="form-range" min="0" max="2" id="customRange2">
+    </div>
+      <div class="mb-3">
+        <label for="description" class="mb-2">Description</label>
+        <textarea class="form-control" placeholder="Leave a description here." id="description" style="height: 100px"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    </div>
+       
+ <footer class="bg-dark text-light py-3 mt-auto">
+  <div class="container-fluid text-center">
+      <p class="mb-0">¡Thanks for visiting!</p>
+      <p class="mb-0">&copy; 2023 ernzxr.</p>
+      </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjq+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+  </body>
+
+</html>

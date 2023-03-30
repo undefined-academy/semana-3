@@ -10,6 +10,8 @@ body {
     margin: 0;
     font-family: Open Sans, Helvetica, Arial, sans-serif;
     line-height: 1.5;
+    display: flex;
+    justify-content: center;
 }
 
 * {
@@ -48,9 +50,12 @@ h1, h2, p, ul, li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 75%;
     width: 20%;
     transition: all 0.3s ease;
+}
+
+.related img {
+    margin-top: 10px;
 }
 
 .related:nth-child(even) {
@@ -176,4 +181,87 @@ footer {
 
 .youtube-short:hover {
     background-color: #ffeffe;
+}
+
+@media screen and (max-width: 992px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .youtube-video {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .youtube-video div, .youtube-video iframe {
+        width: 100%;
+    }
+
+    .youtube-video div {
+        margin-bottom: 2%;
+    }
+
+    article {
+        margin-bottom: 3%;
+    }
+
+    .youtube-short {
+        width: 90%;
+        max-width: 240px;
+    }
+
+    .youtube-short h1 {
+        padding-top: 10%;
+        margin-bottom: 4%;
+    }
+
+    .youtube-short iframe {
+        width: 100%;
+        max-width: 170px;
+    }
+
+    footer {
+        display: grid;
+        grid: 50% 50% / 50% 50%;
+        row-gap: 4px;
+        height: 450px;
+        width: 90%;
+        align-self: center;
+        margin-bottom: 4%;
+    }
+
+    footer .related {
+        width: 90%;
+        max-width: 167px;
+        place-self: center;
+    }
+    
+    .container nav {
+        width: 90%;
+        height: 100%;
+        grid-area: 1 / 1 / 2 / 4;
+        display: flex;
+        margin: 2% 0;
+        justify-content: center;
+    }
+
+    .container input {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    ul li{
+        width: 100%;
+        align-self: self-start;
+        justify-content: center;
+        text-align: center;
+    }
 }
