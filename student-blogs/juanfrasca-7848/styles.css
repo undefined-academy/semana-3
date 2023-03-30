@@ -1,0 +1,95 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    font-family: "Roboto","Helvetica", "Arial", sans-serif; 
+    line-height: 1.5;
+    max-width: 100%;
+    background: wheat;
+}
+
+div {
+    border: 1px solid Gainsboro;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+input[type="search"] {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid Gainsboro;
+    width: 400px;
+    max-width: 25%;
+    background: WhiteSmoke;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(40% 40% 20%);
+    grid-template-rows: auto;
+    grid-template-areas: "header header header" 
+    "input-1 input-1 ."
+    ". input-2 input-2"
+    "input-3 input-3 ."
+    ". input-4 input-4";
+    row-gap:  2em;
+    padding: 2em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    grid-area: header;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#enter-1{
+    grid-area: input-1;
+}
+
+#enter-2{
+    grid-area: input-2;
+    justify-self: end;
+}
+
+#enter-3{
+    grid-area: input-3;
+}
+
+#enter-4{
+    grid-area: input-4;
+    justify-self: end;
+}
+
+.input-blog{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: cornsilk;
+    border-radius: 6px;
+}
+
+.input-blog div{
+    width: 100%;
+}
