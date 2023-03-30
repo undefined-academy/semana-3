@@ -11,7 +11,6 @@ body {
   color: #9c9dad;
   font-size: 1rem;
   background-color: #1c1d20;
-  ;
   font-family: 'Poppins', sans-serif;
 
 }
@@ -21,60 +20,49 @@ main {
   max-width: 50em;
   line-height: 1.5;
   padding: 4em 1em;
-  
+
 }
-
-
 
 header {
   background: #e2e2e2;
   width: 100%;
-  display: table;
-  ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10%;
 }
 
-.menu {
-  width: 900px;
-  margin: 0 auto;
-}
-
-nav {
-  float: right;
-
-}
-
-nav ul li {
+header .nav-links{
   list-style: none;
-  margin-left: 25px;
-  float: left;
-  padding: 25px 0;
-  
 }
 
-nav ul li a {
+header .nav-links li{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+header .nav-links li:hover{
+  transform: scale(1.1);
+}
+
+header .nav-links a{
+  font-size: 700;
+  color: #333;
   text-decoration: none;
-  color: #444;
-  font-weight: bold;
-  
 }
 
-nav ul li a::before {
-  width: 100%;
-  background: #444;
-  height: 5px;
-  top: 0px;
-  position: absolute;
- 
+header .nav-links a:hover{
+  color:#e81c4f
 }
-section ul li{
-  list-style: none;
-}
+
 h2 {
   margin-top: 1em;
   padding-top: 1em;
 
 }
-
+h1{
+  text-align: center;
+}
 h1,
 h2,
 strong {
@@ -86,13 +74,23 @@ a {
   color: #e81c4f;
 }
 
-@media screen and (min-width: 992px) {
-  main {
+section h2{
+  text-align: center;
+}
+section ul li{
+  list-style: none;
+}
+footer{
+  text-align: center;
+}
+
+/* responsive mobile*/
+
+@media screen and (max-width: 992px){
+  section {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    
-  }
-
+    justify-content: center;
   
+  }
 }

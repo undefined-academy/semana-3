@@ -1,26 +1,14 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Semana 3</title>
-    <link rel="stylesheet" href="styles.css">
-    <script type="module" src="main.mjs"></script>
-</head>
-
-<body>
-    <header>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-          </ul>
-        </nav>
-      </header>
-    
-    <main>
-        <h1>Formulario de contacto.</h1>
-        <form method="post" enctype="text/plain">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <div class="container py-4 px-3 mx-auto">
+        <form method="post" action="mailto:agu123@gmail.com" enctype="text/plain">
             <div class="form-group">
                 <label id="name-label" for="name">Nombre:</label>
                 <input type="text" name="name" id="name" class="form-control" placeholder="Ingrese su nombre"
@@ -56,11 +44,6 @@
                 </button>
             </div>
         </form>
-        <footer>
-            <p>&copy;BootCamp JavaScript Undefined-Shell</p>
-        </footer>
-    </main>
-
-</body>
-
+    </div>
+  </body>
 </html>
