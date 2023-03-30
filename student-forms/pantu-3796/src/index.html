@@ -1,23 +1,26 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap w/ Vite</title>
     <script type="module" src="./js/main.js"></script>
-  </head>
-  <body>
+</head>
+
+<body>
+
     <div class="container py-4 px-3 mx-auto">
-        <form method="post" action="mailto:agu123@gmail.com" enctype="text/plain">
+        <form method="post" enctype="text/plain">
             <div class="form-group">
-                <label id="name-label" for="name">Nombre:</label>
-                <input type="text" name="name" id="name" class="form-control" placeholder="Ingrese su nombre"
-                    required />
+                <label for="inputName">Nombre</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Ingrese su nombre">
             </div>
             <div class="form-group">
-                <label id="lastname-label" for="lastname">Apellido:</label>
-                <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Ingrese su apellido"
-                    required />
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Ingrese su email">
+
             </div>
             <div class="form-group">
                 <label id="age" for="age">Edad:</label>
@@ -25,25 +28,27 @@
                     required />
             </div>
             <div class="form-group">
-                <p>Cual es el asusto?:</p>
-                <select id="most-like" name="mostLike" class="form-control" required>
-                    <option disabled selected value>Seleccione la opcion>
-                    <option value="projects">Proyecto</option>
-                    <option value="community">Comunidad</option>
-                    <option value="other">Otros</option>
+                <label for="exampleFormControlSelect1">Cual es el asusto?:</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Seleccione la opcion..</option>
+                    <option>Proyecto</option>
+                    <option>Comunidad</option>
+                    <option>Otros</option>
+
                 </select>
+
+
             </div>
             <div class="form-group">
-                <p>Ingresa el mensaje:</p>
-                <textarea id="textarea" class="input-textarea" name="textarea"
-                    placeholder="Ingrese su mensaje.."></textarea>
+                <label for="exampleFormControlTextarea1">Ingrese el mensaje:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <div class="form-group">
-                <button type="submit" id="submit" class="submit-button">
-                    Enviar
-                </button>
+
+                <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
         </form>
     </div>
-  </body>
+</body>
+
 </html>
