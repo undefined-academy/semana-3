@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undefined Shell - Juanfrasca #7848</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script type="module" src="/main.mjs"> </script>
+</head>
+<body>
+    <main>
+        <section>
+            <h2>Contact me</h2>
+                <section id="contact">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone number</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <fieldset>
+                                <legend>Best time to reach you (GTM -11)</legend>
+                                <select name="time" id="time">
+                                    <option value="default" disabled selected>Select one option...</option>
+                                    <option value="morning">08:00 - 12:00</option>
+                                    <option value="afternoon">12:00 - 16:00</option>
+                                    <option value="evening">16:00 - 20:00</option>
+                                </select>
+                            </fieldset>
+                        </div>
+                        
+                        <div class="form-group" id="textarea-div">
+                            <label for="message" id="textarea-label">Message</label>
+                            <textarea name="message" id="message" placeholder="Leave me your message!" rows="5"></textarea>
+                        </div>
+                        <a href="/"><button id="button-back" type="button">Go back</button></a>
+                        <button id="button-submit" type="submit">Submit</button>
+                    </form>
+                </section>
+        </section> 
+    </main>        
+</body>
+</html>

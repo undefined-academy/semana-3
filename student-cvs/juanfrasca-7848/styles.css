@@ -1,0 +1,251 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+html{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Roboto","Helvetica", "Arial", sans-serif; 
+    line-height: 1.5;
+    margin: 0;
+}
+
+h2 {
+    margin-top: 1em;
+}
+
+h1, h2, strong {
+    color: #333;
+}
+
+header{
+    background: #6c5ce7;
+    line-height: 1.2;
+    padding: 10vw 2em;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin: 0.4em auto;
+}
+
+header h2, header strong, header em{
+    color: white;
+}
+
+header a {
+    color: white;
+}
+
+a:hover {
+    color:  #e81c4f;
+}
+
+#greeting-span{
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#web-developer-span{
+    display: inline-block;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 0.4em auto 0.8em;
+    font-weight: bold;
+    width: 80%;
+}
+
+main{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em 1em;
+    color: #566b78;
+    text-align: center;
+}
+
+.div-ul{
+    background: #e1e3e4;
+    padding: 0.2em;
+    margin: 1em auto;
+    vertical-align: text-bottom;
+    border-radius: 25px;
+    border-left: 2px solid #a29bfe;
+    width: 80%;
+}
+
+ul{
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+    transition: none 200ms ease-out;
+    transition-property: color;
+}
+
+a:hover{
+    color: #d63031;
+}
+
+p{
+    width: 80%;
+    margin: 0 auto;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+section{
+    width: 100%;
+}
+
+address{
+    font-style: normal;
+}
+
+#contact-form{
+    background: #e1e3e4;
+    padding: 1em;
+    margin: 0 auto;
+    vertical-align: text-bottom;
+    border-radius: 25px;
+    border-left: 2px solid #69c;
+    width: 100%;
+}
+
+.form-group{
+    width: 90%;
+    margin: 1em auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input, textarea, select, fieldset{
+    padding: 0.4em;
+    font-family: "Roboto","Helvetica", "Arial", sans-serif;
+}
+
+fieldset{
+    margin: 1em auto;
+    border-width: 0.13em;
+    width: 100%;
+    border-radius: 4px;
+}
+
+textarea{
+    resize: none;
+    outline: none;
+    padding: 1em;
+    width: 100%;
+}
+
+#textarea-div{
+    display: block;
+}
+
+#textarea-label{
+    display: block;
+    text-align: left;
+    margin-bottom: 0.4em;
+}
+
+#button-back{
+    margin: 1em;
+    background: #636e72;
+    border: 1px solid #636e72;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    outline: 0;
+    padding: 1em 1.2em;
+    text-align: center;
+    vertical-align: middle;
+    transition: none 200ms ease-out;
+    transition-property: background;
+}
+
+#button-back:hover{
+    background: #b2bec3;
+    border: 1px solid #b2bec3;
+}
+
+#button-submit{
+    margin: 1em;
+    background: #d63031;
+    border: 1px solid #d63031;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    outline: 0;
+    padding: 1em 1.2em;
+    text-align: center;
+    vertical-align: middle;
+    transition: none 200ms ease-out;
+    transition-property: background;
+}
+
+#button-submit:hover{
+    background: #ff7675;
+    border: 1px solid #ff7675;
+}
+
+@media screen and (min-width: 425px) {
+    .div-ul, #contact-form{
+        width: 60%;
+    } 
+}
+
+@media screen and (min-width: 1024px) {
+    .div-ul, #contact-form{
+        width: 60%;
+    }
+
+    h3{
+        font-size: 1em;
+    }
+
+    fieldset{
+        width: 70%;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
