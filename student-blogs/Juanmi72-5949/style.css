@@ -16,7 +16,7 @@ body {
     grid-template-rows: 50px auto auto ;
     gap:20px;
     
-    border: 2px dashed teal;
+    /*border: 2px dashed teal;*/
 }
 nav {
     display: flex;
