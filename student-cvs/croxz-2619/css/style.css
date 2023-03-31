@@ -1,0 +1,598 @@
+@import url('https://fonts.cdnfonts.com/css/fixedsys-excelsior-301');
+
+@keyframes typing {
+  from { width: 0 }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+#particles-js{
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+.titulo{
+  display: block;
+  white-space: nowrap;
+  border-right: 2px solid white;
+  width: 100%;
+
+  animation: typing 2s steps(59), blink .5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+html{
+    font-size: 62.5%;
+    font-family: 'Fixedsys Excelsior 3.01', sans-serif;
+    color: green;
+    scroll-behavior: smooth;
+  }
+
+  body{
+    background: black;
+  }
+
+nav {
+    background-color: black;
+    color: white;
+  }
+  
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    align-items: center;
+    padding: 10px;
+  }
+  
+.navbar-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+.navbar-links a:hover{
+    color: green;
+    border-bottom: 1px dotted green;
+  }
+  
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: white;
+  }
+
+  .navbar-icon {
+    display: none;
+  }
+
+  @media only screen and (min-width: 769px) {
+
+  .home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px; 
+    height: 100vh;
+  }
+  
+  .home-title {
+    grid-row: 1; 
+    grid-column: 1; 
+    align-self: flex-end;
+    font-size: 5rem;
+    padding-left: 10rem;
+  }
+  
+  .home-desc {
+    grid-row: 2; 
+    grid-column: 1;
+    font-size: 3rem;
+    padding-left: 10rem;
+  }
+  
+  .home img {
+    grid-row: 1 / span 2; 
+    grid-column: 2; 
+    place-self: center;
+  }
+
+  main{
+    display: grid;
+    grid-template-rows: 100vh 100vh 100vh ;
+  }
+
+  .cards{
+    display: flex;
+    justify-content: space-evenly;
+    place-content: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .card{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .cards_title{
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .card_img{
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .card_img img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .slider-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slider_img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+
+  
+  .slider-image:first-child {
+    opacity: 1;
+  }
+
+  .slider-container_2 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider-image_2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .slider-image_2:first-child {
+    opacity: 1;
+  }
+
+  .main_works{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cards_works{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+    gap: 20px;
+  }
+
+  .card_work{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+  } 
+
+  .card_desc{
+    font-size: 3rem;
+    place-self: center;
+    margin-left: 10px;
+  }
+
+  .slider-container{
+    width: 100%;
+    height: 100%;
+  }
+
+  .slider_img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .main_contact{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 1rem;
+  }
+
+  .form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 10px;
+  }
+
+  .form_term label{
+    font-size: 2rem;
+  }
+
+  .form label{
+    font-size: 3rem;
+  }
+
+  .form input{
+    font-size: 3rem;
+    font-family: 'Fixedsys Excelsior 3.01', sans-serif;
+    color: green;
+  }
+
+  textarea{
+    font-size: 3rem;
+    font-family: 'Fixedsys Excelsior 3.01', sans-serif;
+    color: green;
+  }
+
+  .btnEnviar{
+    font-size: 2rem;
+    font-family: 'Fixedsys Excelsior 3.01', sans-serif;
+    color: green;
+    background: black;
+    width: 20rem;
+    height: 5rem;
+    border: 1px solid white;
+  }
+
+  .btnEnviar:hover{
+    background: green;
+    color: white;
+    border: 1px solid black;
+  }
+
+
+  footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 10rem;
+  }
+
+  .footer_social{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 50%;
+  }
+
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  body{
+    background: black;
+  }
+
+    header{
+      display: grid;
+      grid-template-rows: 50px calc(100vh - 50px);
+    }
+    .navbar {
+        grid-template-columns: auto auto;
+      }
+      
+      .navbar-links {
+        display: none;
+      }
+      
+      .navbar-icon {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px;
+      }
+      
+      .navbar-icon i {
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+      }
+      
+      .navbar-links.show {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px;
+      }
+      
+      .navbar-links.show a {
+        font-size: 18px;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #fff;
+      }
+
+      .home{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100vw;
+      }
+
+      .home-title{
+        font-size: 4rem;
+        text-align: center;
+      }
+
+      .home-desc{
+        font-size: 2rem;
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 3rem;
+        margin: 0.8rem;
+        font-weight: bold;
+      }
+
+      main{
+        display: grid;
+        grid-template-rows: 100vh 100vh 100vh ;
+      }
+
+      .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+      }
+
+      .cards_works{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+      }
+
+      .cards_title{
+        font-size: 3rem;
+        text-align: center;
+      }
+
+      .card{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid black;
+        border-radius:20px ;
+        height: 30vh;
+        width: 90vw;
+      }
+
+      .card_work{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid black;
+        border-radius:20px ;
+        height: 30vh;
+        width: 90vw;
+      }
+
+      .card_img{
+        width: 25rem;
+        text-align: center;
+      }
+
+      .card_img img{
+        width: 70%;
+      }
+
+      .card_desc{
+        width: 50%;
+        text-align: left;
+        font-size: 1.5rem;
+        margin: 0.8rem;
+        font-weight: bold;
+      }
+
+      .slider-container{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .slider_img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+      }
+      
+      .slider-image {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+
+      
+      .slider-image:first-child {
+        opacity: 1;
+      }
+
+      .slider-container_2 {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .slider-image_2 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+      
+      .slider-image_2:first-child {
+        opacity: 1;
+      }
+
+      .main_contact{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 80%;
+        gap: 1rem;
+      }
+
+      .form{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+      }
+
+      .form_term label{
+        font-size: 1.5rem;
+      }
+
+      .form label{
+        font-size: 2rem;
+      }
+
+      .form input{
+        font-size: 2rem;
+        font-family: 'Fixedsys Excelsior 3.01', sans-serif;
+        color: green;
+      }
+
+      textarea{
+        font-size: 2rem;
+        font-family: 'Fixedsys Excelsior 3.01', sans-serif;
+        color: green;
+      }
+
+      .btnEnviar{
+        font-size: 2rem;
+        font-family: 'Fixedsys Excelsior 3.01', sans-serif;
+        color: green;
+        background: black;
+        width: 20rem;
+        height: 5rem;
+      }
+
+      .btnEnviar:hover{
+        background: green;
+        color: white;
+      }
+
+      .main_works{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 10rem;
+        gap: 1rem;
+      }
+
+      .footer_social{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 50%;
+      }
+
+}
+

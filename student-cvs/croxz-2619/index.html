@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script  src="./javascript/particles.min.js"></script>
+    <script async defer  src="./javascript/main.js"></script>
+    <title>Joshep Vilalba</title>
+</head>
+<body>
+    <div id="particles-js">    </div>
+        <header>
+            <nav>
+                <div class="navbar">
+                    <a href="#" class="logo">Portafolio</a>
+                    <div class="navbar-links">
+                        <a href="#home">Home</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#works">Works</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="navbar-icon">
+                        <h2>▼ Menu</h2>
+                    </div>
+                </div>
+            </nav>
+
+            
+            <section id="#home" class="home">
+                <h1 class="home-title titulo">Joshep Villalba</h1>
+                
+                <p class="home-desc">Soy un programador apasionado por el desarrollo web, las aplicaciones de escritorio y la automatización mediante scripts. Manejo tecnologias como HTML, CSS, JAVASCRIPT, PYTHON y MSQL</p>
+                <img src="./images/EjayQ10E_400x400.jpg" alt="Foto perfil">
+            </section>
+
+        </header>
+
+        <main>
+        
+            <section id="skills" class="main_skills">
+
+                <h2 class="cards_title">Skills</h2>
+
+                <div class="cards">
+
+
+
+                    <div class="card">
+
+                        <div class="card_img">
+                            <img src="./images/python.png" alt="Python">
+                        </div>
+                        <div class="card_img">
+                            <img src="./images/javascript.png" alt="Javascript">
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="card_img">
+                            <img src="./images/html.png" alt="HTML">
+                        </div>
+                        <div class="card_img">
+                            <img src="./images/css.png" alt="CSS">
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+
+                        <div class="card_img">
+                            <img src="./images/node.png" alt="Node">
+                        </div>
+                        <div class="card_img">
+                            <img src="./images/sql.png" alt="SQL">
+                        </div>
+                    </div>
+
+                </div>
+        
+            </section>
+                
+            <section class="main_works" id="works">
+
+                <h2 class="cards_title">Portafolio</h2>
+
+                <div class="cards_works">
+
+                    <div class="card_work">
+
+                        <div class="slider-container">
+                            <img src="./images/works/gps1.png" alt="Imagen portafolio" class="slider-image">
+                            <img src="./images/works/gps2.png" alt="Imagen portafolio" class="slider-image">
+                            <img src="./images/works/gps3.png" alt="Imagen portafolio" class="slider-image">
+                            <img src="./images/works/gps4.png" alt="Imagen portafolio" class="slider-image">
+                            <img src="./images/works/gps5.png" alt="Imagen portafolio" class="slider-image">
+                        </div>
+                        <div class="card_desc">
+                            <p>Sistema de posicionamiento GPS donde se toman fotos de los pasajeros para llevar el control, hecho con Laravel para el front y back, Python para el manejo de las cámaras y GPS</p>
+                        </div>
+
+                    </div>
+
+                    <div class="card_work">
+
+                        <div class="slider-container_2">
+                            <img src="./images/works/scrapy1.png" alt="Imagen portafolio" class="slider-image_2">
+                            <img src="./images/works/scrapy2.png" alt="Imagen portafolio" class="slider-image_2">
+                        </div>
+                        <div class="card_desc">
+                            <p>Script de python con Scrapy para obtener información de sitios web de manera automatizada. En este caso, obtener información de los trabajos publicados en Computrabajo.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="card_work">
+
+                        <div class="slider-container">
+                            <img src="./images/works/pokedex.png" alt="Pokedex" class="slider_img">
+                        </div>
+                        <div class="card_desc">
+                            <p>Pokedex creada con HTML, CSS, Javascript con llamada a la api pokeapi y llamadas asíncronas</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+        
+            <section class="main_contact" id="contact">
+
+                <h2 class="cards_title">Contactame</h2>
+
+                <form method="post" action="./" id="contact-form">
+
+                    <div class="form">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" placeholder="Ingrese su nombre completo" type="text" required/>
+                    </div>
+                    <div class="form">
+                        <label for="email">Email</label>
+                        <input id="email" placeholder="Ingrese su correo" type="email" required/>
+                    </div>
+                    <div class="form">
+                        <label for="telefono">Teléfono</label>
+                        <input id="telefono" placeholder="Ingrese su número de teléfono" type="tel"/>
+                    </div>
+                    <div class="form">
+                        <label for="asunto">Asunto</label>
+                        <input id="asunto" placeholder="Ingrese el asunto de su mensaje" type="text" required/>
+                    </div>
+                    <div class="form">
+                        <label for="descripcion">Descripción</label>
+                        <textarea id="descripcion" rows="5" required> </textarea>
+                        <span class="help">Mensaje sobre el tema a tratar</span>
+                    </div>
+                    <div class="form_term">
+                        <input type="checkbox" id="check" required/>
+                        <label for="check" class="check">Acepto los términos y condiciones </label>
+                    </div>
+
+                    <button class="btnEnviar">Enviar</button>
+                </form>
+        
+            </section>
+
+        </main>
+
+        <footer>
+            <h2 class="cards_title">Redes</h2>
+            <div class="footer_social">
+                <img src="./images/github.png" alt="Github" class="">
+                <img src="./images/facebook.png" alt="Facebook" class="">
+                <img src="./images/instagram.png" alt="Instagram" class="">
+                <img src="./images/tiktok.png" alt="Tiktok" class="">
+            </div>
+        </footer>
+
+</body>
+
+</html>
