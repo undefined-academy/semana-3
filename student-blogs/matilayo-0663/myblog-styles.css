@@ -1,0 +1,182 @@
+main {
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: #c9daea;
+    color: #333;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 20px;
+    padding: 20px 20px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+
+h1, strong, {
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    color: green;
+    font-size: 40px;
+}
+
+
+header {
+    width: 100%;
+    background-color: #263d36;
+    background-image: url(imagenes/lukasz-szmigiel-jFCViYFYcus-unsplash.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    padding: 7vw 2em;
+    text-align: center;
+    opacity: 95%;
+    border-bottom: 3px solid black;
+}
+
+ .grid {
+    display: grid;
+    grid-template: 50px 40px 1fr 1fr / 2fr 1fr;
+ }
+
+ul {
+    
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    
+}
+
+li {
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #63c132;
+    padding: 9px;
+    box-shadow:  3px 3px 5px #0e0c0c;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: #111;
+}
+
+li:hover {
+    box-shadow:  0px 0px 8px 5px #c2cc30;
+}
+
+nav {
+    grid-column: 1 / 2;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    grid-row: 1 / 1;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 4px;
+    grid-column: 2 / 3;
+    height: 40px;
+    align-self: center;
+    font-size: 15px;
+    grid-row: 1 / 1;
+}
+
+ div.posts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+ }
+ 
+div.main {
+    justify-self: center;
+    align-self: center;
+    height: 100%;
+    width: 80%;
+    margin: 10px;
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 2;
+    display: grid;
+    grid-template: 1fr / 2fr 3fr;   
+    background-color: #9ee37d;
+    border-radius: 5px;
+    box-shadow:  3px 3px 5px #0e0c0c;
+}
+
+div.posts {
+    grid-area: 4 / 1 / span 1 / span 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    justify-self: center; 
+    margin: 10px;
+
+}
+
+.two, .three, .four {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px;
+    background-color: #9ee37d;
+    border-radius: 5px;
+    box-shadow:  3px 3px 5px #0e0c0c;
+    padding: 10px;
+}
+
+div.img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    margin: 5px;
+    width: 100%;
+}
+
+img {
+    width: 80%;
+    border-radius: 3px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.autor {
+    font-size: 15px;
+    font-style: italic;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.text{
+    margin: 10px;
+}
+
+.imgposts {
+    width: 80%;
+}
+
+.textposts {
+    font-size: 12px;
+    margin: 1px;
+}
+h3 {
+    font-size: 15px;
+    margin: 10px auto 2px;
+}
+
