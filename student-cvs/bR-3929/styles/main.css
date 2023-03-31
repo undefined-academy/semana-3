@@ -1,17 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+
 body,
 html {
   box-sizing: border-box;
   font-family: arial;
+ 
 }
 
 * {
   box-sizing: inherit;
+
 }
 
 body {
   max-width: 100%;
   height: 100%;
   background: #fef2f2;
+  margin: 0;
 }
 
 body a {
@@ -61,6 +66,7 @@ footer {
   bottom: 50px;
   text-align: start;
   padding: 10px;
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 700px) {
