@@ -6,12 +6,12 @@ function handleSubmit(event) {
 
 //🍎 Debemos prevenir el comportamiento por defecto del envío de la información al servidor.
 
-const $form = document.querySelector("contact");
-$form.addEventListener("submit", handleSubmit);
+const form = document.getElementById("contact");
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+})
 
 
 // OTRA FORMA
-// const form = document.getElementById("contact");
-// form.addEventListener("submit", function (event) {
-//   event.preventDefault();
-// })
+// const $form = document.querySelector("contact");
+// $form.addEventListener("submit", handleSubmit);
