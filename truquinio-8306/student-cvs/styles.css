@@ -1,0 +1,560 @@
+/*////////////////////////////////////////////////////////   MOBILE  ////////////////////////////////////////////////////////*/
+@media only screen and (max-width: 768px) {
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    background: transparent url("https://i.ibb.co/Ld7q13v/fondo3.jpg") repeat fixed 0 0;
+  }
+
+  header {
+    background-color: #1c1c1c;
+    color: white;
+  }
+
+  /* NAVBAR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  .navbar {
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav a {
+    text-decoration: none;
+    margin: 0 .625rem;
+  }
+
+  .nav a:hover {
+    font-weight: bolder;
+    transition: 0.2s;
+  }
+
+  .logoFT {
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+
+    /* SETEO LA VELOCIDAD DE GIRO DEL LOGO */
+    animation: logoFT-spin infinite 10s linear;
+  }
+
+  /* SETEO EL GIRO DEL LOGO */
+  @keyframes logoFT-spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  /* MAIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  .main {
+    padding: 2rem;
+  }
+
+  .fotoPefil {
+    max-width: 100%;
+    /* Imagen responsiva */
+    display: block;
+    margin: 0 auto;
+    transform: scale(0.7);
+    margin-top: -2rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    margin: 0 auto 1rem auto;
+    text-align: center;
+    color: #fff;
+  }
+
+  .flag {
+    transform: scale(1.3);
+    margin-right: .125rem;
+  }
+
+  .about {
+    padding: .625rem;
+    text-align: justify;
+    color: #fff;
+    accent-color: #e48c0d;
+  }
+
+  .about p {
+    margin-top: 1rem;
+  }
+
+  .subtitle {
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    text-align: center;
+    color: #fff;
+  }
+
+  .tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: .625rem;
+  }
+
+  .tecnologias {
+    margin: .5rem 1.5rem;
+    transform: scale(1.3);
+    flex-basis: calc(50% - 3.5rem);
+  }
+
+  /* FORM >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  form {
+    width: 100%;
+    margin: 0 auto;
+
+  }
+
+  .form-group {
+    display: grid;
+    margin-bottom: 20px;
+  }
+
+  label,
+  input {
+    vertical-align: middle;
+  }
+
+  label,
+  input:not([type="radio"],
+    [type="checkbox"]) {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    background: #3c3d40;
+    border: 1px solid #3c3d40;
+    border-radius: 5px;
+    padding: 8px 10px;
+    color: #ebebeb;
+  }
+
+  input:focus-visible,
+  textarea:focus-visible {
+    outline: 1px solid #e48c0d;
+  }
+
+  textarea {
+    width: 100%;
+    display: block;
+    resize: vertical;
+  }
+
+  label,
+  .presupuesto {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ebebeb;
+    padding: 10px 0 0 0;
+
+    /* padding: 10px 0 0 0; */
+  }
+
+  .fieldset {
+    display: flex;
+    align-content: center;
+  }
+
+  .select {
+    border-radius: 5px;
+  }
+
+  .help {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #81838a;
+
+    text-align: center;
+  }
+
+  .boton {
+    /* display:block; */
+    /* padding:0.5rem,1rem; */
+    width: 100%;
+    /* margin:auto; */
+
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+
+    background: #e48c0d;
+    border-radius: 8px;
+
+    cursor: pointer
+  }
+
+  .boton:hover {
+    transform: scale(0.9);
+    transition: .5s
+  }
+
+  .boton:focus {
+    outline: none
+  }
+
+  .boton:active {
+    background: #db4932
+  }
+
+  /* FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  footer,
+  footer a {
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 50px auto 0 0;
+    background: #212429;
+  }
+
+  footer a {
+    padding: 0 .3%;
+  }
+
+  footer a:hover {
+    color: #e48c0d;
+    font-weight: bolder;
+    transition: 0.2s;
+  }
+
+  .rrss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .item:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+}
+
+
+/*////////////////////////////////////////////////////////   DESKTOP  ////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 769px) {
+  html {
+    background-color: #212429;
+    height: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  * {
+    box-sizing: inherit;
+  }
+
+  body {
+    margin: 0;
+    font-family: Arial;
+    background: transparent url("https://i.ibb.co/Ld7q13v/fondo3.jpg") repeat fixed 0 0;
+  }
+
+  /*  NAVBAR >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  .navbar {
+    position: fixed;
+  }
+
+  .nav {
+    position: absolute;
+    left: 18%;
+    width: 100%;
+
+    /* border: 2px dashed yellow; */
+  }
+
+  .nav a {
+    text-decoration: none;
+    margin: 0 .625rem;
+
+    /* border: 1px solid tomato; */
+  }
+
+  .nav a:hover {
+    font-weight: bolder;
+    transition: 0.2s;
+  }
+
+  .logoFT {
+    width: 5%;
+    display: block;
+
+    /* SETEO LA VELOCIDAD DE GIRO DEL LOGO */
+    animation: logo-spin infinite 10s linear;
+  }
+
+  /* SETEO EL GIRO DEL LOGO */
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /*  HEADER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  header {
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+
+  header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /*  MAIN >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  .about,
+  .tech,
+  .buttons,
+  .form,
+  footer {
+    padding: 10px 300px;
+    text-align: justify;
+
+    color: #fff;
+    accent-color: #e48c0d;
+  }
+
+  .form-group {
+    margin-bottom: 20px 0;
+  }
+
+  .title,
+  .subtitle {
+    color: #fff;
+    text-align: center;
+
+    margin: 20px;
+  }
+
+  .tecnologias {
+    display: inline-block;
+    justify-content: space-between;
+    margin-right: 10px;
+  }
+
+  .tecnologias:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+
+  /*  FORM >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  label,
+  input {
+    vertical-align: middle;
+  }
+
+  label,
+  input:not([type="radio"],
+    [type="checkbox"]) {
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    background: #3c3d40;
+    border: 1px solid #3c3d40;
+    border-radius: 5px;
+    padding: 8px 10px;
+    color: #ebebeb;
+  }
+
+  input:focus-visible,
+  textarea:focus-visible {
+    outline: 1px solid #e48c0d;
+  }
+
+  textarea {
+    width: 100%;
+    display: block;
+    resize: vertical;
+  }
+
+  label,
+  .presupuesto {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ebebeb;
+
+    padding: 10px 0 0 0;
+  }
+
+  .fieldset {
+    display: flex;
+    align-content: center;
+  }
+
+  .select {
+    border-radius: 5px;
+  }
+
+  .help {
+    font-size: 12px;
+    margin-top: 10px;
+    color: #81838a;
+
+    text-align: center;
+  }
+
+  .boton {
+    display: block;
+    padding: 0.5rem 1rem;
+    width: 200px;
+    margin: 30px auto 30px auto;
+
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+
+    background: #e48c0d;
+    border: 1px solid #e48c0d;
+    border-radius: 8px;
+    padding: 16px 60px;
+
+    cursor: pointer;
+  }
+
+  .boton:hover {
+    transform: scale(0.9);
+    transition: 1s;
+  }
+
+  .boton:active {
+    background: #db4932;
+    border: 1px solid #db4932;
+    transition: 1s;
+  }
+
+  /*  CARDS >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  .row {
+    display: flex;
+    justify-content: center;
+    padding: 0 15%;
+  }
+
+  .cards-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  div .card {
+    background-color: #ffffff26;
+    margin: 5% auto;
+    padding: 2rem;
+    color: #fff;
+  }
+
+  div .card:hover {
+    transform: scale(1.03);
+    transition: 1s;
+    cursor: pointer;
+  }
+
+  .card-title,
+  .card-text {
+    margin: 0;
+    text-align: center;
+  }
+
+  .card-text a {
+    color: #e48c0d;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  div a {
+    color: #e48c0d;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .tecnologias:hover {
+    transform: none;
+  }
+
+  .card-img {
+    margin-top: 5%;
+  }
+
+  .card-img:hover {
+    transform: scale(1.05);
+    transition: 1s;
+  }
+
+  /*  FOOTER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  footer,
+  footer a {
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 50px auto 0 0;
+    background: #212429;
+  }
+
+  footer a {
+    padding: 0 .3%;
+  }
+
+  footer a:hover {
+    color: #e48c0d;
+    font-weight: bolder;
+    transition: 0.2s;
+  }
+
+  .rrss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .item {
+    display: inline-block;
+    justify-content: space-between;
+    margin-right: 10px;
+  }
+
+  .item:hover {
+    transform: scale(1.1);
+    transition: 1s;
+  }
+}

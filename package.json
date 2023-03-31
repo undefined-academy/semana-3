@@ -1,0 +1,15 @@
+{
+  "name": "undefined-academy_semana-3",
+  "version": "1.0.0",
+  "description": "> 🏕️ [Base de conocimientos.](https://undefinedshell.notion.site/Semana-3-73f4277f993c4eb78d0d5aab7be42c94)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
