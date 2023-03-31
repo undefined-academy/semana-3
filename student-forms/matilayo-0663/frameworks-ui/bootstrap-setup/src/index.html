@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <form>
+        <header>
+            <h1>Contact Form</h1>
+            <p>If you want to contact me, please complete the following form</p>
+        </header>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Name</span>
+            <input required type="text" class="form-control" placeholder="Enter your name" aria-label="Name" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">Email</span>
+            <input required type="text" class="form-control" placeholder="Enter your email" aria-label="Email" aria-describedby="basic-addon1">
+        </div>
+        <br>
+        <p class="indication">Please indicate in wich language you want us to comunicate</p>
+
+        <div class="form-check">
+            <input required class="form-check-input" type="radio" name="flexRadioDefault" id="english">
+            <label class="form-check-label" for="english">
+              English
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="spanish">
+            <label class="form-check-label" for="spanish">
+              Spanish
+            </label>
+          </div>
+          <br>
+          <p class="indication">Why do you want to contact me?</p>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="job-offer" id="job-offer">
+            <label class="form-check-label" for="job-offer">
+              Job Offer
+            </label>
+          </div>
+        
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="project-col" id="project-col">
+            <label class="form-check-label" for="project-col">
+              Project colaboration
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="educative-ofer" id="educative-ofer">
+            <label class="form-check-label" for="educative-ofer">
+              Educative offer
+            </label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="other" id="other">
+            <label class="form-check-label" for="other">
+              Other
+            </label>
+          </div>
+
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Please describe here a litle more about why de you want to contact me"></textarea>
+          </div>
+        <br>
+          <p class="indication">Where do you find my personal web?</p>
+          <select required class="form-select" aria-label="Default select example">
+            <option selected value="">Select form here</option>
+            <option value="1">Linkedin</option>
+            <option value="2">Github</option>
+            <option value="3">Other</option>
+          </select>
+          <br>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </body>
+</html>
