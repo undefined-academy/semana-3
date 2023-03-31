@@ -49,3 +49,9 @@ input {
 .card img {
     width: 300px;
 }
+
+.blog-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
