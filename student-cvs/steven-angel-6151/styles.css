@@ -28,7 +28,6 @@ main {
     margin: 0 auto;
     max-width: 100em;
     justify-content: center;
-    border: 1px dashed tomato;
     padding: 0 30px;
     font-size: 16px;
     font-family: 'Gilda Display', serif;
@@ -119,13 +118,13 @@ p {
 }
 
 h2 {
-    color: #EB455F;
+    color: #4f6f5c;
     text-align: center;
     font-family: 'Futura PT', sans-serif;
 }
 
 hr {
-    border: 2.5px solid #BAD7E9;
+    border: 2.5px solid rgba(79, 111, 92, 0.5);
     padding: 0 auto;
     margin: 0 auto;
     border-radius: 2px;
