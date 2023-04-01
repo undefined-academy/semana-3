@@ -522,11 +522,6 @@ video {
   font-weight: 700;
 }
 
-.text-teal-600 {
-  --tw-text-opacity: 1;
-  color: rgb(13 148 136 / var(--tw-text-opacity));
-}
-
 body {
   background-color: darkslategray;
 }
