@@ -24,13 +24,3 @@ function myFunction() {
 }
 
 
-document.getElementById("myIconHome").addEventListener("click", myFunctionHome);
-
-function myFunctionHome() {
-    var respomenu = document.getElementById("myTopnav");
-    if (respomenu.className === "topnav") {
-        respomenu.className += " responsive";
-    } else {
-        respomenu.className = "topnav";
-    }
-}

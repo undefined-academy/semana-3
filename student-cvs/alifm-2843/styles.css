@@ -34,13 +34,9 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 3em;
 }
 
-main {
-    margin-top: 2em;
 
-}
 
 
 /*----Hamburger menu----*/
@@ -57,7 +53,7 @@ h2
 }
 
 h1 {
-    margin-top: 2em;
+    margin-top: 1em;
     font-size: 2em;
     padding-left: 0.5em;
 }
@@ -130,12 +126,6 @@ footer {
     color: rgba(0, 81, 255, 0.882);
 }
 
-footer img {
-    width: 2.5em;
-    border-radius: 10px;
-    margin: 1em 1em 0.7em;
-}
-
 footer p {
     border-top: 1px solid;
     padding-top: 0.3em;
@@ -150,14 +140,12 @@ footer p {
     border: 3px solid #333;
     text-align: center;
     width: 100%;
-    margin: -2em auto 1em;
+    margin: 0.7em auto 1em;
     box-shadow: 0 0 10px black;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-   
-
 }
 
 legend {
@@ -192,13 +180,14 @@ select {
 }
 
 textarea {
-    border-radius: 5px;
+    border-radius: 6px;
     margin: 1px 0px 20px 0px;
     width: 90%;
     resize: none;
     border: 1px solid gray;
     color: #333;
-    padding: 5px 7px;
+    padding: 7px 7px;
+    
 }
 
 input:focus-visible,
@@ -209,7 +198,7 @@ textarea:focus-visible,
 }
 
 .radio-fieldset {
-    border-radius: 10px;
+    border-radius: 7px;
     margin: 0em auto 2em;
     border: 1px solid gray;
     width: 90%;
@@ -308,7 +297,8 @@ li:hover {
    
 
     form {
-        width: 100%;
+        width: 38em;
+
     }
 
     main {
@@ -316,14 +306,10 @@ li:hover {
         margin-bottom: 3em;
     }
 
-    .radio-fieldset {
-    display: flex;
-      justify-content: space-around;
-  
-  }
+   
 
   header ul {
-    margin: 0.2em 1.5em 0.2em;
+    margin: 0.1em 1.5em 0.em;
 }
 
 header li {
