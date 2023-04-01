@@ -1,0 +1,96 @@
+/* import de las Fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap');
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+
+/* Barra de Navegación */
+
+
+.nav_container {
+    grid-column: 1/1;
+    grid-row: 1/2;
+    background-color: #fff;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 5px 30px;
+}
+
+.nombre_nav {
+    cursor: pointer;
+}
+
+.nombre{
+    width: auto;
+    color: #1d4130;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Futura PT', sans-serif;
+    font-size: 40px;
+    transition: all 400ms ease;
+}
+
+.nombre:hover{
+    color: #ffdd00;
+    text-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.subnombre{
+    width: auto;
+    color: #4f6f5c;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Futura PT', sans-serif;
+    font-size: 15px;
+    padding: 0 10px;
+    transition: all 400ms ease;
+}
+
+.subnombre:hover{
+    color: #ffdd00;
+    
+}
+
+.nav_bar {
+    list-style: none;
+}
+.nav_bar > li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav_bar > li > a{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Futura PT', sans-serif;
+}
+
+.menu_button {
+    background-image: url(/img/menu_icon.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 10px 30px;
+    
+}
+
+.contact_button {
+    background-color: #4f6f5c;
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 18px;
+    word-spacing: 4px;
+    transition: all 400ms ease-in-out;
+}
+
+.contact_button:hover {
+    background-color: #ffdd00;
+    color: #333;
+    padding: 20px 30px;
+    font-size: 18px;
+    word-spacing: 4px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
