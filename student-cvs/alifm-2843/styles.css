@@ -1,11 +1,12 @@
-/*-------------------Mobile first---------------------*/
-
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 
 html,
 body {
     box-sizing: border-box;
     scroll-behavior: smooth;
+    display: grid;
+    place-items: center;
+    padding: 0 10px;
 }
 
 * {
@@ -33,18 +34,25 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 9em;
+    margin-bottom: 3em;
 }
 
 main {
-    margin-top: 3em;
-    width: 95%;
+    margin-top: 2em;
+
+}
+
+
+/*----Hamburger menu----*/
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
 }
 
 
 h1,
 h2
-{
+ {
     color: #333;
 }
 
@@ -59,17 +67,8 @@ header h1, footer h1 {
  margin-bottom: 0;
 }
 
-header li {
-    list-style: none;
-    padding: 1px;
-}
-
-li:hover {
-    cursor: pointer;
-}
-
 h2 {
-    margin-top: 2em;
+    margin-top: 1em;
     padding-top: 1em;
 }
 
@@ -78,13 +77,13 @@ a, header h1, footer h1  {
 }
 
 a:hover {
-    background: #65464e;
-    color: white;
+    font-weight: bolder;
+    color: darkblue;
 }
 
 #home,
 #acknowledgements {
-    margin-top: 9em;
+    margin-top: 6em;
     background-color: rgb(227, 234, 234);
     padding: 1em 2em 3em;
     margin-bottom: 3em;
@@ -131,6 +130,12 @@ footer {
     color: rgba(0, 81, 255, 0.882);
 }
 
+footer img {
+    width: 2.5em;
+    border-radius: 10px;
+    margin: 1em 1em 0.7em;
+}
+
 footer p {
     border-top: 1px solid;
     padding-top: 0.3em;
@@ -151,6 +156,8 @@ footer p {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+   
+
 }
 
 legend {
@@ -177,7 +184,7 @@ input[type='tel'],
 select {
     border-radius: 5px;
     margin: 1px 0px 20px 0px;
-    width: 80%;
+    width: 90%;
     height: 40px;
     border: 1px solid gray;
     color: #333;
@@ -187,7 +194,7 @@ select {
 textarea {
     border-radius: 5px;
     margin: 1px 0px 20px 0px;
-    width: 80%;
+    width: 90%;
     resize: none;
     border: 1px solid gray;
     color: #333;
@@ -205,7 +212,7 @@ textarea:focus-visible,
     border-radius: 10px;
     margin: 0em auto 2em;
     border: 1px solid gray;
-    width: 80%;
+    width: 90%;
     display: block;
     text-align: initial;
     background-color: white;
@@ -237,7 +244,7 @@ legend {
 .legend-radio {
     text-decoration: none;
     background: linear-gradient(180deg, rgb(250, 239, 225), white);
-    
+
 }
 
 button:hover {
@@ -249,60 +256,59 @@ button:active {
     background-color: rgba(0, 52, 165, 0.882);
 }
 
-/*----Hamburger menu----*/
- /* Hide all links. Show the icon link that contains should open and close the topnav (.icon) */
+
+ /* When the screen is less than 900 pixels wide, hide all links. Show the link that contains should open and close the topnav (.icon) */
  .topnav a {
     display: none;
 }
 
 .topnav a.icon {
-    display:flow-root;
     float: right;
+    display: block;
+    padding-right: 25px;
     
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 .topnav.responsive {
     position: relative;
+    display: flex;
+}
+
+header li {
+    display: block;
+    padding: 0px;
+}
+
+.header.responsive {
+    padding: 0;
 }
 
 .topnav.responsive a.icon {
     position: absolute;
-    right: 0;
-    top: 0;
-    float: right;
-    text-align: right;
-}
-
-.topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-    float: left;
+    right: 1px;
+    top: 16px;
     
 }
 
+.topnav.responsive a {
+    display: block;
+    text-align: left;
+    
+}
 
-/*----------------Desktop version------------------*/
+li:hover {
+    cursor: pointer;
+}
+
+
 /*-------- Media queries --------*/
 
 @media screen and (min-width:900px) {
-    header ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    ul i {
-        justify-content: center;
-        align-items: center;
-        padding-top: 5px;
-        padding-right: 3px;
-
-    }
+   
 
     form {
-        width: 80%;
+        width: 100%;
     }
 
     main {
@@ -312,8 +318,9 @@ button:active {
 
     .radio-fieldset {
     display: flex;
-    justify-content: space-around;
-}
+      justify-content: space-around;
+  
+  }
 
   header ul {
     margin: 0.2em 1.5em 0.2em;
@@ -327,6 +334,12 @@ header li {
     font-weight: bold;
 }
 
+header i {
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+
 .topnav a {
     display: flex;
 }
@@ -334,5 +347,6 @@ header li {
 .topnav a.icon {
     display: none;
 }
+
 
 }

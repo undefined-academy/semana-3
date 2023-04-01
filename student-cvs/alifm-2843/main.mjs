@@ -11,11 +11,26 @@ $form.addEventListener("submit", handleSubmit);
 // other functions
 
 //* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+
+document.getElementById("myIcon").addEventListener("click", myFunction);
+
 function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += "responsive";
+    var respomenu = document.getElementById("myTopnav");
+    if (respomenu.className === "topnav") {
+        respomenu.className += " responsive";
     } else {
-        x.className = "topnav";
+        respomenu.className = "topnav";
+    }
+}
+
+
+document.getElementById("myIconHome").addEventListener("click", myFunctionHome);
+
+function myFunctionHome() {
+    var respomenu = document.getElementById("myTopnav");
+    if (respomenu.className === "topnav") {
+        respomenu.className += " responsive";
+    } else {
+        respomenu.className = "topnav";
     }
 }
