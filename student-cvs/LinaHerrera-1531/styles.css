@@ -1,0 +1,169 @@
+* {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 25px;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    background-color: black ;
+    color: deeppink;
+}
+
+main, footer{
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    flex-direction: column;
+    font-size: 22px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    flex-direction: row;
+}
+
+.liHeader{
+    display: inline;
+    list-style-type: none;
+    font-size: 18px;
+    padding: 4px;
+}
+
+a:hover, a:visited, a:link {
+    color: deeppink;
+}
+
+header, section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 80px; */
+}
+
+.pPrincipal{
+    font-size: 20px;
+    text-align: justify;
+}
+
+h3{
+    font-size: 20px;
+}
+
+th{
+    font-size: 17px;
+}
+td{
+    font-size: 15px;
+}
+
+.liOther{
+    font-size: 17px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.liFooter{
+    display: inline;
+    list-style-type: none;
+    font-size: 18px;
+    padding: 4px;
+}
+
+/* Reglas para pc escritorio:
+si quisiera que mis ultimas 3 section pasaran de columna a fila,ajustandose al ancho, los meto en un div con clase features y 
+utilizaría el media query de abajo. Puedo modificar las propiedades de las clases o ID q necesite*/
+
+@media screen and (min-width: 992px) {
+    /* .features{
+        display: flex;
+    }
+    .feature{
+        width: 100%;
+    } */
+    body{
+        font-size: 25px;
+        font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+        background-color: black ;
+        color: deeppink;
+    }
+    
+    main, footer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    h1, h2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+        flex-direction: column;
+        font-size: 42px;
+    }
+    
+    nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+        flex-direction: row;
+    }
+    
+    .liHeader{
+        display: inline;
+        list-style-type: none;
+        font-size: 38px;
+        padding: 80px;
+    }
+    
+    a:hover, a:visited, a:link {
+        color: deeppink;
+    }
+    
+    header, section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* min-height: 80px; */
+    }
+    
+    .pPrincipal{
+        font-size: 30px;
+        text-align: justify;
+    }
+    h3{
+        font-size: 40px;
+    }
+    
+    th{
+        font-size: 37px;
+    }
+    td{
+        font-size: 35px;
+    }
+    
+    .liOther{
+        font-size: 37px;
+    }
+
+    .liFooter{
+        display: inline;
+        list-style-type: none;
+        font-size: 38px;
+        padding: 80px;
+    }
+
+}
