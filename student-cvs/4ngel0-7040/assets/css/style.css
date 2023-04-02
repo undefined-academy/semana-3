@@ -189,17 +189,16 @@ img {
     font-size: 15rem;
 }
 
-/* Contactos*/
-
-.footer-nav a {
-    padding: 0 1rem;
-    margin-bottom: 1.5rem;
+/* Proyectos*/
+.proyect {
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-address {
-    display: inline-block;
+.proyect-img {
+    margin: 1rem 0;
 }
-
 /* Estilos para la Tabla*/
 
 .tabla {
@@ -263,6 +262,15 @@ input[type="radio"] {
 }
 
 /*Footer*/
+
+.footer-nav a {
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+}
+
+address {
+    display: inline-block;
+}
 
 .footer {
     background: rgb(252, 223, 164);
