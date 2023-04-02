@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <title>Contacto - Eduardo Mendez</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    </head>
+    
+    <body>
+        <!-- This is the Header -->
+        <header>
+            <!-- Nav Top -->
+            <nav class="navbar navbar-dark bg-dark fixed-top">
+                <!-- This is the logotipo -->
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="./src/logotipo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                        Eduardo Mendez
+                    </a>
+
+                    <!-- This is the menu of the website -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Eduardo Mendez</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+
+                        <!-- There are the pages of the menu -->
+                        <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Acerca de mí</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Proyectos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Formación</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Contacto</a>
+                            </li>
+                        </ul>
+
+                        <!-- This is the search -->
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Background image -->
+            <section
+            class="p-5 text-center bg-image"
+            style="
+                background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
+                width: 100%;
+                height: 350px;
+                margin-top: 56px;
+            "
+            >
+                <div class="mask p-5" style="background-color: rgba(0, 0, 0, 0.6);">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                        <div class="text-white">
+                            <h1 class="mb-3">CONTACTO</h1>
+                            <h5 class="mb-3">Esta es mi página de contacto</h5>
+                            <a class="btn btn-outline-light btn-lg" href="#" role="button"
+                            >Acerca de Mí</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+
+        <!-- This is the Main -->
+        <main class="container mx-auto py-5 px-4" style="min-width: 320px; max-width: 980px">
+            <!-- This is the section: Contact -->
+            <section class="mx-auto" style="min-width: 280px; max-width: 680px">
+                <div class="pb-4">
+                    <h1>Contactame.</h1>
+                    <p>Llena el formulario para ponerme en contacto contigo:</p>
+                </div>
+                <form>
+                    <!-- 2 column grid layout with text inputs for the first and last names -->
+                    <div class="row mb-4">
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" id="form3Example1" class="form-control" />
+                                <label class="form-label" for="form3Example1">Nombre</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline">
+                                <input type="text" id="form3Example2" class="form-control" />
+                                <label class="form-label" for="form3Example2">Apellido</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <input type="email" id="form3Example3" class="form-control" />
+                        <label class="form-label" for="form3Example3">Correo electrónico</label>
+                    </div>
+
+                    <!-- Number input -->
+                    <div class="form-outline mb-4">
+                        <input type="number" id="form6Example6" class="form-control" />
+                        <label class="form-label" for="form6Example6">Telefono</label>
+                    </div>
+
+                    <!-- Message input -->
+                    <div class="form-outline mb-4">
+                        <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                        <label class="form-label" for="form4Example3">Mensaje</label>
+                    </div>
+
+                    <!-- Checkbox -->
+                    <div class="form-check d-flex justify-content-center mb-4">
+                        <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+                        <label class="form-check-label" for="form4Example4">
+                            Enviarme una copia de este mensaje
+                        </label>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4">Enviar</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- This is the Footer -->
+        <footer class="bg-dark text-center text-white">
+            <!-- Section: Foother top -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4">
+                <div class="container text-center text-md-start mt-4">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column content -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content footer -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Eduardo Mendez
+                            </h6>
+                            <p>
+                                Soy Tecnólogo en Gestión de Mercadeo y Desarrollador Web en formación. He estudiado cursos en Desarrollo Web en Platzi y actualmente estoy cursando un Bootcamp de JavaScript Full-Stack con Guillermo Rodas.
+                            </p>
+                        </div>
+
+                        <!-- Grid column Links -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Enlaces de interes:
+                            </h6>
+                            <p>
+                                <a href="#" class="text-reset">Acerca de mí</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-reset">Portafolio</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-reset">Formación</a>
+                            </p>
+                            <p>
+                                <a href="#" class="text-reset">Contacto</a>
+                            </p>
+                        </div>
+
+                        <!-- Grid column Contact -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Contacto:</h6>
+                            <p>
+                                <a class="navbar-brand text-light" href="mailto:emendezarterion@gmail.com" target="_blank">📧 emendezarterion@gmail.com</a>
+                            </p>
+                            <p>📱 +57 3025274749</p>
+                            <p>
+                                <a class="navbar-brand text-light" href="http://wa.me/573024515567" target="_blank">WhatsApp</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section: Copyright -->
+            <section class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2023 Copyright: Eduardo Mendez
+            </section>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </body>
+</html>

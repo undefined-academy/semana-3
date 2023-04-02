@@ -1,0 +1,15 @@
+{
+  "name": "contact_form",
+  "version": "1.0.0",
+  "description": "Pagina de Contacto",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Eduardo Mendez",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^4.2.1"
+  }
+}
