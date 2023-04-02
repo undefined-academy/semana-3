@@ -1,0 +1,108 @@
+/* HEADER */
+.header-container {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 1em;
+    line-height: 1.8;
+    background: #031332;
+    color: #fff;
+    width: 100%;
+    padding: 4.2em 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.header-logo {
+    display: inline-block;
+}
+
+.header-nav {
+    display: inline-block;
+}
+
+/* Media Queries: Cell Phones */
+@media screen and (max-width: 767px) {
+    .header-logo {
+        min-width: 288px;
+        text-align: center;
+    }
+    .header-nav {
+        min-width: 288px;
+        text-align: center;
+    }
+    .header-nav ul {
+        display: inline-block;
+        font-size: 18px;
+    }
+    .header-nav a {
+        text-decoration: none;
+        margin: 0 20px;
+    }
+}
+
+/* Media Queries: Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .header-logo {
+        width: 40%;
+    }
+    .header-nav {
+        width: 60%;
+    }
+    .header-nav ul {
+        display: inline-flex;
+        flex-wrap: wrap;
+        font-size: 18px;
+    }
+    .header-nav a {
+        text-decoration: none;
+        margin: 0 20px;
+    }
+}
+
+/* Media Queries: Desktop */
+@media screen and (min-width: 1024px) {
+    .header-logo {
+        width: 30%;
+        color: #fff;
+    }
+    .header-nav {
+        width: 70%;
+        text-align: right;
+    }
+    .header-nav ul {
+        display: inline-flex;
+        font-size: 18px;
+    }
+    .header-nav a {
+        text-decoration: none;
+        margin: 0 20px;
+    }
+}
+
+.header-nav li {
+    list-style: none;
+}
+
+.header-container h1 {
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 8px;
+}
+
+.header-container a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.header-container a:hover {
+    color: #0b50f1;
+}
+
+.header-container a:active {
+    color: #0b50f1;
+}

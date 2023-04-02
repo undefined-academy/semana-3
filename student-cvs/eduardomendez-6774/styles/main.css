@@ -1,0 +1,117 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    width: 100%;
+}
+
+/* Main */
+.main-container {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5;
+    background: #fff;
+    color: #333;
+    min-width: 320px;
+    max-width: 980px;
+    margin: auto;
+    height: auto;
+    padding: 2.2em 0;
+}
+
+.main-container h1 {
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    padding-bottom: 8px;
+}
+
+.section-container a {
+    text-decoration: none;
+    color: blue;
+}
+
+.section-container a:hover {
+    color: #0b50f1;
+}
+
+.section-container a:active {
+    color: #0b50f1;
+}
+
+/* Section: About Me */
+.about-me-section {
+    min-width: 280px;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    padding-bottom: 1.2em;
+}
+
+.content-about-me {
+    padding: 0 1.25em;
+    display: inline-block;
+}
+
+.image-about-me {
+    padding: 0 1.25em;
+    display: inline-block;
+}
+
+/* Media Queries: Cell Phones */
+@media screen and (max-width: 767px) {
+    .content-about-me {
+        min-width: 280px;
+        max-width: 580px;
+        margin: auto;
+        text-align: center;
+    }
+    .image-about-me {
+        width: 240px;
+    }
+}
+
+/* Media Queries: Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .content-about-me {
+        width: 65%;
+    }
+    .image-about-me {
+        width: 35%;
+    }
+}
+
+/* Media Queries: Desktop */
+@media screen and (min-width: 1024px) {
+    .content-about-me {
+        width: 70%;
+    }
+    .image-about-me {
+        width: 30%;
+    }
+}
+
+/* Section: Other section */
+.section-container {
+    min-width: 280px;
+    max-width: 900px;
+    margin: auto;
+    padding: 1.2em 1.2em;
+}
+
+.main-container ul {
+    padding: 0 40px;
+}

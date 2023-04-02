@@ -1,0 +1,112 @@
+/* FOOTER */
+.footer-container {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 1em;
+    line-height: 2;
+    background: #212529;
+    color: #fff;
+    width: 100%;
+    padding: 4.2em 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.footer-description {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.footer-links {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.footer-contact {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+/* Media Queries: Cell Phones */
+@media screen and (max-width: 767px) {
+    .footer-description {
+        min-width: 288px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .footer-links {
+        min-width: 288px;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .footer-contact {
+        min-width: 288px;
+        text-align: center;
+    }
+}
+
+/* Media Queries: Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .footer-description {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .footer-links {
+        width: 50%;
+        text-align: center;
+    }
+    .footer-contact {
+        width: 50%;
+        text-align: center;
+    }
+}
+
+/* Media Queries: Desktop */
+@media screen and (min-width: 1024px) {
+    .footer-description {
+        width: 40%;
+    }
+    .footer-links {
+        width: 30%;
+        padding: 0 40px;
+    }
+    .footer-contact {
+        width: 30%;
+    }
+}
+
+.boxLink {
+    display: inline-block;
+}
+
+.footer-container h1 {
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    padding-bottom: 8px;
+}
+
+.footer-container a {
+    font-family: sans-serif, serif, Verdana, Tahoma;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-container a:hover {
+    color: #0b50f1;
+}
+
+.footer-container a:active {
+    color: #0b50f1;
+}
+
+.footer-container ul {
+    list-style: none;
+}

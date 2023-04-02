@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <title>Eduardo Mendez</title>
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel="stylesheet" href="./styles/header.css">
+        <link rel="stylesheet" href="./styles/footer.css">
+        <link rel="stylesheet" href="./styles/contact.css">
+    </head>
+    
+    <body>
+        <!-- This is the Header -->
+        <header class="header-container">
+            <div class="header-logo">
+                <h1><a href="./index.html">Eduardo Mendez</a></h1>
+            </div>
+
+            <nav class="header-nav">
+                <ul>
+                    <li>
+                        <a href="./index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./pages/acerca-de-mi.html">¿Quien soy?</a>
+                    </li>
+                    <li>
+                        <a href="./pages/proyectos.html">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="./pages/formacion.html">Formación</a>
+                    </li>
+                    <li>
+                        <a href="./pages/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- This is the Main -->
+        <main class="main-container">
+            <!-- This is the section: About me -->
+            <section class="about-me-section">
+                <div class="content-about-me">
+                    <h1>Acerca de Mí</h1>
+                    <p>Soy Tecnólogo en Gestión de Mercadeo y Desarrollador Web Training. He estudiado cursos en <strong>Desarrollo Web</strong> en <strong>Platzi</strong> y actualmente estoy cursando un <strong>Bootcamp de JavaScript Full-Stack</strong> con <strong>Guillermo Rodas</strong>. En este perfil muestro los proyectos que he realizado en mi experiencia y las tecnologías que conozco.</p>
+                </div>
+
+                <div class="image-about-me">
+                    <img src="./img/foto-perfil-acerca-de-mi.png" alt="Imagen de Eduardo" width="100%">
+                </div>
+            </section>
+
+            <!-- This is the section: Tecnologies used -->
+            <section class="section-container">
+                <h1>Tecnologías que manejo:</h1>
+                <ul>
+                    <li>Visual Studio Code</li>
+                    <li>Git y GitHub</li>
+                    <li>Ubuntu</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </section>
+    
+            <!-- This is the section: Proyects -->
+            <section class="section-container">
+                <h1>Proyectos realizados:</h1>
+                <ul>
+                    <li>
+                        <a href="https://edmedev.github.io/batatabit/" target="_blank">BatataBit</a>
+                    </li>
+                    <li>
+                        <a href="https://edmedev.github.io/figuras-geometricas/" target="_blank">Figuras Geométricas</a>
+                    </li>
+                    <li>
+                        <a href="https://edmedev.github.io/porcentajes-y-descuentos/" target="_blank">Porcentajes y Descuentos</a>
+                    </li>
+                    <li>
+                        <a href="https://edmedev.github.io/edme-movies/" target="_blank">EDME Movies</a>
+                    </li>
+                </ul>
+            </section>
+            
+            <!-- This is the section: Academic training -->
+            <section class="section-container">
+                <h1>Formación académica:</h1>
+                <ul>
+                    <li><strong>Bootcamp JavaScript Full-Stack</strong> - Undefined Academy - Cursando actualmente</li>
+                    <li><strong>Desarrollo Web FrontEnd</strong> - Endeavor y Platzi - 2022</li>
+                    <li><strong>Tecnólogo en Gestión de Mercadeo</strong> - Politecnico Grancolombiano - 2021</li>
+                </ul>
+            </section>
+
+            <!-- This is the section: Contact -->
+            <section class="section-container">
+                <div>
+                    <h1>Contactame.</h1>
+                    <p>Llena el formulario para ponerme en contacto contigo:</p>
+                </div>
+                <form action="./server/" method="get">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input id="name" name="name" type="text" placeholder="Ingrese su nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="Ingrese su correo electrónico" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Mensaje</label>
+                        <textarea id="description" name="description" rows="4"></textarea>
+                        <div class="description-help">Escribe tu mensaje aquí</div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="terms">
+                            <input id="terms" name="terms" type="checkbox" required>
+                            <span>Acepto los terminos y condiciones</span>
+                        </label>
+                    </div>
+
+                    <button>Enviar</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- This is the Footer -->
+        <footer class="footer-container">
+            <div class="footer-description">
+                <h1>Eduardo Mendez</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iure dolorum eum unde non voluptatum a culpa, ipsum distinctio eligendi, autem quos voluptates eveniet dolore omnis mollitia nemo dolores cumque!</p>
+            </div>
+
+            <div class="footer-links">
+                <h1>Links:</h1>
+                <ul class="boxLink">
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./page/acerca.html">¿Quienes somos?</a>
+                    </li>
+                    <li>
+                        <a href="./page/contact.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h1>Contacto:</h1>
+                <p>📧 emendezarterion@gmail.com</p>
+                <a href="http://wa.me/573024515567" target="_blank">WhatsApp</a>
+            </div>
+        </footer>
+
+        <script type="module" src="main.mjs"></script>
+    </body>
+</html>
