@@ -1,0 +1,375 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+* {
+  box-sizing: inset;
+}
+
+html,
+body {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 0;
+  font-size: 10px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  background: #f3f4f6;
+  color: #566b78;
+  line-height: 1.5;
+  padding: 0em 0em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  height: 30em;
+  background-image: url("ImagenFondo.jpg");
+  background-size: 100% 100%;
+
+}
+
+nav {
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+}
+
+header li {
+  border: 1px solid aqua;
+  background-color: #333;
+  border-radius: 30px;
+  list-style: none;
+}
+
+header a {
+  color: white;
+  font-size: 3em;
+  letter-spacing: 0.1em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+}
+
+header li:hover {
+  background: #e81c4f;
+  color: white;
+}
+
+.container-pagina {
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+p {
+  line-height: 1.4;
+}
+
+h3 {
+  margin-top: 1px;
+  padding-top: 1px;
+}
+
+h1,
+h2,
+strong {
+  color: #333;
+  text-align: center;
+}
+
+section {
+  padding: 0 1em;
+}
+
+#Bienvenida {
+  background: #EAECE9;
+
+}
+
+#Proyectos {
+  background: #EAECE9;
+}
+
+
+/*************************Estilos Tablas****************************/
+
+table {
+  border-spacing: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.8em;
+  width: 100%;
+}
+
+table thead {
+  background-color: chocolate;
+  border: 1px solid gray;
+  color: whitesmoke;
+  text-align: center;
+}
+
+table tbody tr td {
+  border: 0.01em solid lightgray;
+}
+
+table tbody tr td.principal {
+  font-weight: bold;
+}
+
+ol li {
+  font-size: 0.8em;
+}
+
+ol li div {
+  background: lightgray;
+  color: brown;
+  font-size: 1.2em;
+  margin: 0 auto;
+  margin-bottom: 16px;
+  text-align: center;
+  max-width: 200px;
+  padding: 0.5em;
+}
+
+
+
+/********************Estilos Formulario*************************/
+
+.form-group {
+  margin: 20px 0;
+  box-sizing: inset;
+}
+
+label {
+  width: 100%;
+  height: 100%;
+}
+
+input:not([type="radio"], [type="checkbox"]) {
+
+  width: 100%;
+  height: 100%;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 1);
+  padding: 10px 1px;
+  color: #333;
+
+}
+label,
+input {
+  vertical-align: middle;
+  /*alinear verticalmente en el medio solo funciona en elementos enline*/
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+
+label,
+legend {
+  text-transform: uppercase;
+  font-size: 17px;
+  color: #444;
+}
+
+.inpuPresupuesto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.help {
+  font-size: 15px;
+  margin-top: 10px;
+  color: #333
+}
+
+button {
+
+  padding: 16px 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #713f12;
+  background: #eab308;
+  color: #333;
+  border-radius: 8px;
+  text-shadow: -1px -1px 0 rgb(255, 255, 255, 0.5);
+  box-shadow: 1px 1px 3px rgb(0, 0, 0, 0.5);
+  cursor: pointer;
+
+}
+
+button:hover {
+  background: #fafafa;
+}
+
+button:active {
+  background: #ca8a04;
+  box-shadow: -1px -1px 0 rgb(0, 0, 0, 0.5);
+}
+
+form {
+  accent-color: #eab308;
+  /*Para el color de los Radio butons*/
+}
+
+input:focus-visible {
+  /*Para el border de los input*/
+  outline: 1px solid #eab308;
+  /*o con border pero afecta tamaño border: 1px solid #eab308; */
+}
+
+textarea:focus-visible {
+  /*Para el border de los texarea*/
+  outline: 1px solid #eab308;
+  /*o con border pero afecta tamaño border: 1px solid #eab308; */
+}
+
+footer {
+  margin-top: 1em;
+  font-size: 20px;
+}
+
+
+@media screen and (min-width: 500px) {
+
+  body {
+    margin: 0 auto;
+    font-size: 10px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    background: #f3f4f6;
+    color: #566b78;
+    line-height: 1.5;
+    padding: 0em 2em;
+
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  header {
+    max-width: 95em;
+    background-color: #263d37;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    background-image: none;
+    border-radius: 29px;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  header li {
+    border: 1px solid aqua;
+    background-color: #333;
+    border-radius: 30px;
+    list-style: none;
+  }
+
+  header a {
+    color: white;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    transition: none 200ms ease-out;
+  }
+
+  header li:hover {
+    background: #e81c4f;
+    color: white;
+  }
+
+  .container-pagina {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    max-width: 50em;
+  }
+
+  p {
+    line-height: 1.4;
+  }
+
+  h3 {
+    margin-top: 1px;
+    padding-top: 1px;
+  }
+
+  h1,
+  h2,
+  strong {
+    color: #333;
+    text-align: center;
+  }
+
+
+  section {
+    padding: 0 0;
+  }
+
+  #Bienvenida {
+    background: #f3f4f6;
+
+  }
+
+  #Proyectos {
+    background: #f3f4f6;
+  }
+
+  #contacto{
+    width: 100%;
+  }
+
+  
+}
+
+
+
+
