@@ -1,0 +1,90 @@
+/* Generales */
+:root {
+    --primary-color: #0db769;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial;
+}
+
+.container {
+    padding: 1rem 3.5rem;
+    background-color: #dbf7ea;
+}
+
+/* Header */
+.navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu .logo {
+    font-size: 2.4rem;
+    text-decoration: none;
+    padding: 2rem 0;
+}
+
+.navbar-menu .opciones {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.navbar-menu .button-nav {
+    background-color: #0db769;
+    border-radius: 5px;
+    padding: 0.9rem 2rem;
+}
+
+.navbar-section {
+    display: grid;
+    place-items: center;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid Gainsboro;
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+input[type="search"] {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid Gainsboro;
+    width: 400px;
+    background: WhiteSmoke;
+}
+
+.container-post {
+    padding: 1rem 3.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px auto auto;
+    gap: 20px;
+}
+
+
+
+div:last-child {
+    grid-column: 1 / 4;
+}
