@@ -53,9 +53,28 @@ body {
 .navbar-section {
     display: grid;
     place-items: center;
+    height: 25rem;
 }
 
-div {
+.navbar-section .container-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15rem;
+}
+
+.navbar-section .container-info h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.navbar-section .container-info p {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.post {
     display: flex;
     flex-direction: column;
     border: 1px solid Gainsboro;
