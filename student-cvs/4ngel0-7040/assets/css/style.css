@@ -22,7 +22,7 @@ html {
 }
 
 body {
-    background: rgb(235, 224, 201);
+    background: #ebe0c9;
     background: linear-gradient(0deg, rgba(235, 224, 201, 1) 0%, rgba(230, 216, 187, 1) 73%, rgba(252, 223, 164, 1) 100%);
 }
 
@@ -102,20 +102,15 @@ img {
     font-weight: bold;
 }
 
-.hidden {
-    display: none;
-}
-
-.visible {
-    display: block;
+.separador {
+    background: rgb(255, 207, 167);
+    background: linear-gradient(84deg, rgba(255, 207, 167, 0.12) 0%, rgba(255, 155, 73, 1) 32%, rgba(255, 155, 73, 1) 69%, rgba(255, 207, 167, 0.12) 100%);
+    height: .7rem;
+    margin: 0;
+    border: none;
 }
 
 /* Header */
-
-.presentacion {
-    background-color: #ffd684;
-    padding: 10rem 10rem;
-}
 
 .header-contenedor {
     display: flex;
@@ -149,6 +144,49 @@ img {
 .header-navegacion {
     display: flex;
     gap: 1.5rem;
+}
+
+/* Presentación*/
+
+.presentacion {
+    background-color: #ffd684;
+    padding: 10rem 15rem;
+}
+
+.presentacion-header {
+    font-size: 2rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.presentacion-span {
+    display: block;
+    text-shadow: 0.1em 0.1em rgba(46, 46, 46, 0.158);
+    font-size: 6rem;
+}
+
+.presentacion-texto {
+    color: #6a6565;
+}
+
+/*Skills*/
+
+.skill-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.skill-language {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 3px solid #000;
+}
+
+.skill-size {
+    font-size: 15rem;
 }
 
 /* Contactos*/
