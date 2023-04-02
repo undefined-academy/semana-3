@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="scss/styles.scss">
+    <title>FORMULARIO</title>
+</head>
+<body>
+<article class="info">
+    <div>
+        <img src="https://res.cloudinary.com/wildcodeschool/image/upload/c_fill,f_auto,w_1200/v1/blog/lfdhherpbhkngd4ezj0n" alt="">
+    </div>
+        <form class="form-group" id="my-form"  action="https://formspree.io/f/xwkjkzo" method="POST">
+           <u><h2>CONTACTO</h2></u>
+            <div class="sep">
+            <label for="exampleInputEmail1" class="form-label"> Hola, quien sos? </label>
+                <input name="Nombre usuario" placeholder=" Nombre o Usuario " type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+        </div>
+        <div class="sep">  
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input name="Email" placeholder="Email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+        </div>
+        <div class="sep">
+                <label for="exampleInputPassword1" class="form-label">Contame, Que necesitas?</label>
+        </div>
+        <div class="sep">      
+            <textarea
+                    class="form-control" id="exampleInputPassword1"
+                    placeholder="Ingrese sus comentarios"
+                    name="comentarios" id="" cols="25" rows="5">
+            </textarea>
+        </div>
+        <div>
+            <p>Indicame que buscas:</p>
+            <input type="radio" id="paginaWeb" name="pag">
+            <label for="paginaWeb">Pagina Web </label>
+            <input type="radio" id="software" name="sof">
+            <label for="software">Software </label>
+            <input type="radio" id="consulta" name="cons">
+            <label for="consulta">Consulta</label>
+        </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</article>
+<div class="container py-4 px-3 mx-auto">
+   
+    <button class="btn btn-primary">Primary button</button>
+  </div>
+  my-form
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
