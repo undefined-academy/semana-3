@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/form.js"></script>
+  </head>
+  <body class="bg-secondary">
+    
+    <div class="container py-4 px-3 mx-auto text-center">
+      <h1>Formulario</h1>
+    </div>
+
+    <div class="container">
+      <main class="row ">
+        <form id="form">
+          <div class="mb-3 col-sm-10 col-lg-5 mx-auto">
+            <label for="name" class="form-label fs-5 fw-bold">Nombre</label>
+            <input type="text" class="form-control text-center" id="name" placeholder="Ingrese su nombre completo" required>
+          </div>
+
+          <div class="mb-3 col-sm-10 col-lg-5 mx-auto">
+            <label for="email" class="form-label fs-5 fw-bold">Email</label>
+            <input type="email" class="form-control text-center" id="email" placeholder="Ingrese su Email" required>
+          </div>
+
+          <div class="mb-3 col-sm-10 col-lg-5 mx-auto">
+            <label for="name" class="form-label fs-5 fw-bold">Asunto</label>
+            <input type="text" class="form-control text-center" id="name" placeholder="Ingrese el asunto a tratar" required>
+          </div>
+
+          <div class="mb-3 col-sm-10 col-lg-5 mx-auto">
+            <label for="floatingTextarea2" class="fw-bold">Descripción</label>
+            <textarea class="form-control" placeholder="Escriba el asunto a tratar" id="floatingTextarea2" style="height: 100px" required></textarea>
+          </div>
+
+          <div class="mb-3 col-sm-10 col-lg-5 mx-auto">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+            <label class="form-check-label fw-bold" for="exampleCheck1">Acepto los términos y condiciones </label>
+          </div>
+
+          <div class="col-sm-10 col-lg-5 mx-auto text-center">
+            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+          </div>
+        </form>
+      </main>
+
+    </div>
+
+  </body>
+
+</html>
