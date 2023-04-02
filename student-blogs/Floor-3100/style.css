@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+:root {
+  --color1: #813405;
+  --color2: #d45113;
+  --color3: #f9a03f;
+  --color4: #f8dda4;
+  
+}
+
+body {
+    background: var(--color4);
+    color: var(--color1);
+    font-size: 16px;
+    margin: 8px 32px;
+}
+
+.titulo {
+    font-size: 72px;
+    color: var(--color1);
+    font-style: italic;
+    margin: 16px;
+    text-align: center; 
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    padding: 0;
+    display: flex;
+    gap: 16px;
+}
+
+li {
+    list-style: none;
+    padding: 8px;
+    background: var(--color1);
+    font-weight: 600;
+    border-radius: 8px;
+    color: var(--color4);
+}
+
+li:hover {
+    background: var(--color2);
+}
+
+.search {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid Gainsboro;
+    width: 400px;
+    background: WhiteSmoke;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    gap: 40px; 
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 4px 4px 0px var(--color1);
+    background: var(--color3);
+}
+
+.item:hover {
+    background: var(--color2);
+    color: var(--color4);
+}
+
+img {
+    width: auto;
+    max-height: 300px;
+    margin: 0px auto;
+}
+
+.item h1 {
+    margin: 0px;
+}
+
+p {
+    margin: 8px;
+    font-size: 16px;
+}
+
+.item:last-child {
+  grid-column: 1 / 4;
+  text-align: justify;
+}
+
+footer {
+    margin: 32px auto;
+    text-align: center;
+}
+
+
