@@ -7,42 +7,69 @@
     margin: 0px;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 5%;
-}
 
 h1,
 h2,
 strong {
     color: #333;
     padding: 0;
-    margin: 0;
+    margin: 8px 0 8px 0;
 }
 
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
 .card {
-    background-color: rgba(216, 238, 20, 0.336);
-    width: 25%;
-    height: 20%;
-    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(179, 180, 202, 0.336);
+    padding: 1em;
     border-radius: 7.5%;
-    margin: 8px;
+    width: 20%;
+    margin-top: 8px;
 }
 
-.info-post{
+.card img {
+    width: 100%;
+    height: 40%;
+    border-radius: 5%;
+}
+
+.description-right {
     display: flex;
+    height: 100%;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.info-post {
+    display: flex;
+    align-self: flex-end;
+    align-items: flex-end;
+    align-content: flex-end;
     justify-content: space-between;
 }
 
 
 .last-post-container {
     display: flex;
-    flex-direction: row-reverse;
-    background-color: rgba(216, 238, 20, 0.336);
-    width: 95%;
-    margin: 0% auto;
+    flex-direction: row;
+    background-color: rgba(179, 180, 202, 0.336);
+    border-radius: 2.5%;
+    height: 500px;
+    margin: 0 0 8px 0;
+}
+
+.last-post-container img {
+    width: 40%
+}
+
+.left-image {
+    border-radius: 2.5% 0px 0px 2.5%;
 }
 
 .tag {
@@ -69,27 +96,13 @@ strong {
 }
 
 
-.card-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
 .title {
     text-align: center;
     padding: 8px;
 }
 
-.description-right {
-    padding: 4px 32px;
-}
 
-.image-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
+
 
 .nav-container {
     display: flex;
@@ -122,5 +135,8 @@ strong {
     padding: 20px;
 }
 
-
-
+.container-blog {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+}
