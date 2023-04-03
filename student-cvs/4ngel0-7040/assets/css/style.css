@@ -119,12 +119,26 @@ img {
     cursor: pointer;
 }
 
+.ocultar {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+}
+
 /* Header */
 
 .header-contenedor {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    gap: 2rem;
+}
+
+@media (min-width: 992px) {
+    .header-contenedor {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 .header-logo {
@@ -136,7 +150,6 @@ img {
     overflow: hidden;
     border-right: 5px solid;
 }
-
 
 @keyframes animacion {
     from {
@@ -150,28 +163,69 @@ img {
     }
 }
 
+@media (min-width: 992px) {
+    .header-barra {
+        display: none;
+    }
+}
+
+.header-barra-img {
+    width: 5rem;
+}
+
 .header-navegacion {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
     gap: 1.5rem;
+}
+
+@media (min-width: 992px) {
+    .header-navegacion {
+        flex-direction: row;
+        margin-bottom: 0;
+        visibility: visible;
+        opacity: 1;
+        height: auto;
+    }
 }
 
 /* Presentación*/
 
 .presentacion {
     background-color: #ffd684;
-    padding: 10rem 15rem;
+    padding: 2rem;
+}
+
+@media (min-width: 768px) {
+    .presentacion {
+        padding: 10rem 15rem;
+    }
 }
 
 .presentacion-header {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: #333;
     line-height: 1.5;
+}
+
+@media (min-width: 768px) { 
+    .presentacion-header {
+        font-size: 2rem;
+    }
 }
 
 .presentacion-span {
     display: block;
     text-shadow: 0.1em 0.1em rgba(46, 46, 46, 0.158);
-    font-size: 6rem;
+    font-size: 4rem;
+}
+
+@media (min-width: 768px) { 
+    .presentacion-span  {
+        font-size: 6rem;
+    }
 }
 
 .presentacion-texto {
@@ -183,7 +237,8 @@ img {
 .skill-lista {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap: 5rem;
 }
 
 .skill-language {
@@ -200,10 +255,20 @@ img {
 
 /* Proyectos*/
 
+#proyects {
+    margin-bottom: 2rem;
+}
+
 .proyect {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
+}
+
+@media (min-width: 992px) {
+    .proyect-article:last-child {
+        grid-area: 3 / 1 / 4 / 5;
+    }
 }
 
 .proyect-article {
@@ -281,6 +346,7 @@ input[type="radio"] {
     background: #ffc477;
     color: #333;
     text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    margin-bottom: 2rem;
 }
 
 /*Footer*/
