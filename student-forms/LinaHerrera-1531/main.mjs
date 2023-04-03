@@ -6,4 +6,6 @@ function handleSubmit(event) {
 }
     
 const $form =document.querySelector("form");
+
+//para q cada q hago enviar se ejecute la funcion 
 $form.addEventListener("submit", handleSubmit);
