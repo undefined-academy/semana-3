@@ -1,9 +1,17 @@
 :root {
-    --primary-color: #e0dada;
+    --primary-color: #0099ff;
+    --secondary-color: #1c5480;
     --primary-color-dark: #0e0a0a;
+    --primary-white: hwb(0 21% 78%);
 
-    
-    --ff-asl: 'A-little-sunshine', Arial, Helvetica, sans-serif;
+    --card-pr-bg-color: rgb(219, 219, 210);
+    --card-pr-color-dark-50: #0e0a0a87;
+    --card-sc-color: #e9e7f3;
+
+
+    --ff-asl: '"A-little-sunshine",system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif, Arial';
+
+    --ff-base: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif';
 
     --fw-bold: 700;
     --fw-regular: 400;

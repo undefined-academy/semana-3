@@ -14,8 +14,15 @@ body {
     max-width: 1000px;
     margin: 10px auto;
 
-    background-color: var(--primary-color-dark);
-    color: white;
+    /* background-color: var(--primary-color-dark); */
+    background-image:
+        radial-gradient(#09f 1px, transparent 1px),
+        radial-gradient(#09f 1px, transparent 1px);
+    background-position: 0 0, 25px 25px;
+    background-size: 50px 50px;
+
+
+    /* color: var(--primary-white); */
     font-family: var(--ff-asl);
 }
 
@@ -27,12 +34,12 @@ body {
 .post {
     padding: 5px;
     border-radius: 10px;
-    background-image: url(../assets/img/banner-bg.png);
+    /* background-image: url(../assets/img/banner-bg.png); 
     background-position: top center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
 
-    color: white;
+    color: var(--secondary-color);
 }
 
 .post h2 {
@@ -42,7 +49,7 @@ body {
 }
 
 .post>p {
-    color: #B8B8B8;
+    color: var(--primary-color);
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
@@ -53,36 +60,42 @@ body {
 
 .post__header {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, minmax(335px, 1fr));
     gap: 20px;
 }
 
 
 .post__footer {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, minmax(335px, 1fr));
     gap: 20px;
 }
 
+@media only screen and (max-width: 576px) {
+    .post>p {
+        width: 90%;
+    }
+}
 
 
-
-@media only screen and (max-width: 700px) {
+@media only screen and (min-width: 576px) and (max-width: 768px) {
     .post>p {
         width: 80%;
     }
 
     .post__header {
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
     .post>p {
-        width: 90%;
+        width: 80%;
     }
 
     .post__header {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
     }
 }

@@ -3,10 +3,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(137, 195, 245);
-    color: rgb(12, 7, 7);
+    background-color: var(--card-pr-bg-color);
+    color: var(--secondary-color);
     justify-content: center;
-    border: 1px solid rgb(228, 222, 222);
+    border: 1px solid var(--card-pr-color-dark-50);
     border-radius: 10px;
     position: relative;
     overflow: hidden;
@@ -15,7 +15,7 @@
 .car::before {
     content: "";
     position: absolute;
-    background: linear-gradient(90.21deg, #f0eaed -5.91%, #38279b 111.58%);
+    background: linear-gradient(90.21deg, var(--card-pr-bg-color) -5.91%, var(--card-sc-color) 111.58%);
     opacity: 0.85;
     top: 0;
     width: 100%;
@@ -74,6 +74,8 @@
     letter-spacing: 0.8px;
     line-height: 1.1em;
 
+    margin-bottom: 30px;
+
 }
 
 .car__description-description {
@@ -83,4 +85,76 @@
     font-family: var(--ff-asl);
     font-weight: var(--fw-bold);
     letter-spacing: 0.8px;
+
+    /* color: var(--primary-color); */
+
+    max-width: 90%;
+}
+
+.car__description-title-m {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: var(--ff-asl);
+    font-weight: var(--fw-bold);
+    letter-spacing: 0.8px;
+    line-height: 1.1em;
+
+    margin-bottom: 30px;
+
+}
+
+.car__description-description-m {
+    text-transform: capitalize;
+    font-size: 15px;
+    font-style: italic;
+    font-family: var(--ff-asl);
+    font-weight: var(--fw-bold);
+    letter-spacing: 0.8px;
+
+    max-width: 90%;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    .car__description-title {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .car__description-description {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+    .car__description-title {
+        font-size: 25px;
+        margin-bottom: 10px;
+
+    }
+
+    .car__description-description {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .car__description-title {
+        font-size: 30px;
+        margin-bottom: 10px;
+
+    }
+
+    .car__description-description {
+        font-size: 13px;
+    }
+
+    .car__description-title-m {
+        margin-bottom: 30px;
+
+    }
+
+    .car__description-description-m {
+        max-width: 50%;
+    }
+
 }
