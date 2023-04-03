@@ -144,6 +144,7 @@ img {
 .header-logo {
     font-family: var(--logo);
     animation: animacion 2s steps(30), transparent .5s step-end infinite alternate;
+    color: #7b3804;
     font-size: 2.5rem;
     width: 12em;
     white-space: nowrap;
@@ -189,6 +190,14 @@ img {
         opacity: 1;
         height: auto;
     }
+}
+
+.header-navegacion a{
+    color: #7b3804;
+}
+
+.header-navegacion a:hover {
+    text-decoration: underline;
 }
 
 /* Presentación*/
@@ -347,6 +356,27 @@ input[type="radio"] {
     color: #333;
     text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
     margin-bottom: 2rem;
+}
+
+/*Sobre mi*/
+
+.about-tittle {
+    margin-bottom: 3rem;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 }
 
 /*Footer*/

@@ -13,6 +13,10 @@ const eventListeners = () => {
 
         input.addEventListener('click', mostrarMetodoContacto);
     });
+
+    const form = document.querySelector(".form");
+
+    form.addEventListener("submit", handleSubmit);
 }
 
 const navegacionResponsive = () => {
@@ -39,5 +43,9 @@ const mostrarMetodoContacto = (e) => {
         </div>
         `;
     }
+}
 
+const handleSubmit = (event) => {
+    event.preventDefault(); 
+    console.log("Hola mundo");
 }
