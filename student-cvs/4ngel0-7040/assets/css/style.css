@@ -110,6 +110,15 @@ img {
     border: none;
 }
 
+.boton {
+    padding: 1.5rem 3.5rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
 /* Header */
 
 .header-contenedor {
@@ -190,21 +199,40 @@ img {
 }
 
 /* Proyectos*/
+
 .proyect {
     display: grid;
-    column-gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.proyect-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #ac914e;
+    border-radius: .5rem;
 }
 
 .proyect-img {
-    margin: 1rem 0;
+    margin: 3rem 0;
 }
+
+.boton-proyecto {
+    color: #fff;
+    background-color: #d77a01;
+}
+
+.boton-proyecto:hover {
+    background-color: #f29c2b;
+}
+
 /* Estilos para la Tabla*/
 
 .tabla {
-    margin: auto;
     border: black 1px solid;
-    margin-bottom: 2rem;
+    margin: 3rem auto;
 }
 
 th,
@@ -248,17 +276,11 @@ input[type="radio"] {
     width: auto;
 }
 
-.boton {
-    padding: 1.5rem 3.5rem;
-    margin-top: 2rem;
-    text-transform: uppercase;
-    font-weight: bold;
+.boton-contacto {
     border: 1px solid #916540;
     background: #ffc477;
     color: #333;
     text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
-    border-radius: .5rem;
-    cursor: pointer;
 }
 
 /*Footer*/
