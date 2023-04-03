@@ -26,7 +26,7 @@ a {
 }
 
 header,
-main,
+.content,
 footer {
     padding: 1rem 3.5rem;
 }
@@ -98,6 +98,7 @@ img {
 
 
 /* ------------------------------- Main - Contenido Principal ------------------------------------*/
+
 .container-main {
     padding-top: 10rem;
     max-width: 80%;
@@ -123,7 +124,7 @@ img {
 }
 
 /* Conteiner post */
-.container-main h1 {
+.container-main h2 {
     padding: 2rem 0 4rem 0;
     text-align: center;
 }
@@ -157,7 +158,7 @@ img {
     border-radius: 3px;
 }
 
-.post-info h1 {
+.post-info h3 {
     padding: 1.5rem 0;
     font-size: 1.6rem;
     font-weight: 600;
@@ -193,6 +194,49 @@ img {
 .post:last-child {
     grid-column: 1 / 3;
     display: flex;
+}
+
+
+/*-------- Section Suscribe ----------*/
+.suscribete {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 20rem;
+}
+
+.container-subscribe {
+    position: absolute;
+    background-color: #dbf7ea;
+    width: 80%;
+    top: -15rem;
+    height: 30rem;
+    display: grid;
+    place-items: center;
+}
+
+.container-subscribe-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container-subscribe-info h2 {
+    font-size: 2.4rem;
+}
+
+.container-subscribe-info p {
+    font-size: 1.2rem;
+    margin: 2rem 0;
+}
+
+.container-subscribe-info span {
+    font-size: 1rem;
+}
+
+.container-subscribe-info .form {
+    display: flex;
+    justify-content: center;
 }
 
 
