@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="./main.mjs"></script>
+  </head>
+  <body>
+    <main>
+      <article>
+        <nav>
+          <span>Who am I?</span>
+        </nav>
+        <section>
+          <div class="container-whoami">
+            <img src="./my_photo.jpeg" />
+
+            <p class="whoami">
+              <span class="wave">Hello!, I'm Jorge.</span>
+              I am an undergraduate student, I am currently taking the <span class="italic"> Undefined Shell Bootcamp</span> to learn the skills of a <span class="italic"> Full-stack JavaScript Developer</span>.
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <div class="container-commands">
+            <h2>Table of some <strong>Commands</strong></h2>
+            <table>
+              <tr>
+                <th><strong>Command</strong></th>
+                <th><strong>Description</strong></th>
+              </tr>
+              <tr>
+                <td><code>rm file_name</code></td>
+                <td>This remove a file, with -r flag remove folders</td>
+              </tr>
+              <tr>
+                <td><code>cd directory</code></td>
+                <td>Change Current Directory</td>
+              </tr>
+              <tr>
+                <td><code>touch new_file_name</code></td>
+                <td>Create a new file</td>
+              </tr>
+              <tr>
+                <td><code>pwd</code></td>
+                <td>Print current working directory</td>
+              </tr>
+              <tr>
+                <td><code>cat file_name</code></td>
+                <td>Shows in terminal the content file</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+
+        <section>
+          <div class="contact-container">
+            <h2>Contact Form</h2>
+
+            <form action="/serve" method="get">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Type your full name"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Type your email"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="description">Description</label>
+                <textarea
+                  name="description"
+                  id="description"
+                  cols="30"
+                  rows="4"
+                ></textarea>
+                <div class="help">
+                  Type a description in less than 500 word.
+                </div>
+              </div>
+              <button>Send</button>
+            </form>
+          </div>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>
