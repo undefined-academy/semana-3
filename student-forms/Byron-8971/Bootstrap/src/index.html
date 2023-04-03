@@ -1,19 +1,170 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bootstrap w/ Vite</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container py-4 px-3 mx-auto">
-        <h1>Hello, Bootstrap and Vite!</h1>
-        <button class="btn btn-primary">Primary button</button>
-      </div>
-      <script type="module" src="./js/main.js"></script>
-</body>
+      <header class="border border-secondary border-3 rounded">
+        <h1 class="text-center">Contacto</h1>
+      </header>
 
+      <main class="main">
+        <article class="article">
+          <h2 class="visually-hidden">ACERCA DE MI Y LO APRENDIDO</h2>
+          <section class="section formato">
+            <h2 class="visually-hidden">CONTACTO</h2>
+            <article class="contacto__article">
+              <h3 class="text-center">Déjame tu información y te contactaré</h3>
+              <div>
+                <form action="/server" method="get">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      aria-describedby="nameHelp"
+                      required
+                    />
+                    <div id="nameHelp" class="form-text">
+                      Ingrese su correo nombre.
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Correo</label>
+                    <input
+                      type="email"
+                      name="email"
+                      class="form-control"
+                      id="email"
+                      aria-describedby="emailHelp"
+                      required
+                    />
+                    <div id="emailHelp" class="form-text">
+                      Nosotros nunca compartiremos su correo a nadie.
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <fieldset class="row mb-3">
+                      <legend class="col-form-label col-sm-2 pt-0">
+                        Presupuesto
+                      </legend>
+                      <div class="col-sm-10">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="budget"
+                            id="10000"
+                            value="10000"
+                            required
+                          />
+                          <label class="form-check-label" for="10000">
+                            10000
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="budget"
+                            id="5000"
+                            value="5000"
+                            required
+                          />
+                          <label class="form-check-label" for="5000">
+                            5000
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="budget"
+                            id="1000"
+                            value="1000"
+                            required
+                          />
+                          <label class="form-check-label" for="1000">
+                            1000
+                          </label>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <div id="emailHelp" class="form-text">
+                      Este presupuesto es la base no el total.
+                    </div>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="knoledgeType" class="form-label"
+                      >Tipo de proyecto</label
+                    >
+                    <select
+                      name="knoledgeType"
+                      class="form-select"
+                      aria-label="Default select example"
+                      id="knoledgeType"
+                      required
+                    >
+                      <option selected value="">Seleccione uno</option>
+                      <option value="Website">Website</option>
+                      <option value="Webapp">Webapp</option>
+                      <option value="MobileApp">Mobile app</option>
+                      <option value="Disenio">Diseño</option>
+                      <option value="Prefiero no decirlo">
+                        PrefieroNoDecirlo
+                      </option>
+                    </select>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="description" class="form-label"
+                      >Descripción</label
+                    >
+                    <textarea
+                      class="form-control"
+                      name="description"
+                      id="description"
+                      rows="5"
+                      required
+                    ></textarea>
+                    <div id="descriptionHelp" class="form-text">
+                      Escribe una descripción del proyecto en al menos 500
+                      palabras.
+                    </div>
+                  </div>
+
+                  <div class="mb-3 form-check">
+                    <input
+                      type="checkbox"
+                      class="form-check-input"
+                      name="terms"
+                      id="terms"
+                      required
+                    />
+                    <label class="form-check-label" for="terms"
+                      >Acepto los términos y condiciones</label
+                    >
+                  </div>
+
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+              </div>
+            </article>
+          </section>
+        </article>
+        <br />
+      </main>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
 </html>
