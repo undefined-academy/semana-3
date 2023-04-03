@@ -97,7 +97,7 @@ img {
 }
 
 
-/* Main - Contenido Principal */
+/* ------------------------------- Main - Contenido Principal ------------------------------------*/
 .container-main {
     padding-top: 10rem;
     max-width: 80%;
@@ -191,13 +191,14 @@ img {
 }
 
 .post:last-child {
-    grid-column: 1 / 4;
+    grid-column: 1 / 3;
+    display: flex;
 }
 
 
 /* --------------------------- FOOTER ----------------------------------- */
 footer {
-    margin-top: 20rem;
+    margin-top: 4rem;
     background-color: #333;
     height: 40rem;
 }
@@ -205,4 +206,58 @@ footer {
 .container-footer {
     max-width: 80%;
     margin: 0 auto;
+    padding: 15rem 0 0 0;
+    display: grid;
+    align-content: end;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.contact-me,
+.links,
+.services,
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.6rem;
+}
+
+.contact-me h2,
+.links h2,
+.services h2,
+.social-media h2 {
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+}
+
+.contact-me li,
+.links li,
+.services li {
+    padding: 0.5rem 0;
+    color: darkgrey;
+}
+
+.links a,
+.services a {
+    color: darkgrey;
+}
+
+.social-media ul {
+    display: flex;
+    gap: 3rem;
+}
+
+.politics {
+    grid-column: 1 / 5;
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.politics p {
+    color: grey;
+    font-size: 1.2rem;
 }
