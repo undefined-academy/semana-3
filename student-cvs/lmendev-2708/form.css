@@ -1,7 +1,11 @@
+section article {
+  width: 100%;
+}
+
 form {
   display: flex;
   flex-direction: column;
-  max-width: 28rem;
+  margin: 0 2rem;
 }
 
 label {
@@ -46,4 +50,11 @@ button:hover {
 button:active{
   box-shadow: none;
   background-color: #075985;
+}
+
+@media (min-width: 1024px) {
+  form {
+    max-width: 28rem;
+    margin: 0;
+  }
 }
