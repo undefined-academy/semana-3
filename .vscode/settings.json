@@ -1,0 +1,11 @@
+{
+    "[javascript]": {
+        // Utilizando CON prettier
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true,
+        // Original
+        // "editor.codeActionsOnSave": {
+        //   "source.fixAll.eslint": true
+        // }
+      }
+}
