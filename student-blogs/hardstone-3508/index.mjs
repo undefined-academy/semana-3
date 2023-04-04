@@ -65,6 +65,7 @@ function filterByTag(entry) {
 function mapFirtTittle(entries) {
     return _.map(entries, "titulo")
 }
-const ejerFilterByTag = _.filter(entries, filterByTag)
+const ejerFilterByTag = _.filter(entries, filterByTag);
 const ejerMapedByTittle = _.mapValues(_.groupBy(entries, "autor"), mapFirtTittle);
+document.getElementById("code1").innerHTML = (JSON.stringify(ejerMapedByTittle));
 console.log(ejerMapedByTittle);

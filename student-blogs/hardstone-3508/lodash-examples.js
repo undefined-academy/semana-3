@@ -1,7 +1,8 @@
 import _ from "lodash";
 
-//._gorupBy 
+//._gorupBy
 const entriesByAuthor = _.groupBy(entries, "autor")
+document.innerHTML=(entriesByAuthor)
 console.log(entriesByAuthor);
 console.log(entriesByAuthor["Pedro Gonzalez"])
 
@@ -57,5 +58,5 @@ const ejerMapedByTittle = _.map(ejerFilterByTag, "titulo")
 const ejerGroupByAutor = _.groupBy(ejerMapedByTittle, "autor")
 console.log(ejerGroupByAutor);
 
-const ejerMapedByTittle = _.map(_.groupBy(entries, "autor"), mapFirtTittle);
+const ejerMapedByTittle2 = _.map(_.groupBy(entries, "autor"), mapFirtTittle);
 console.log(ejerMapedByTittle);

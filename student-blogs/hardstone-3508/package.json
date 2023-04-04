@@ -1,16 +1,18 @@
 {
   "name": "hardstone-3508",
-  "version": "1.0.0",
-  "description": "Pruebas de lodash",
-  "main": "index.html",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "devDependencies": {
+    "vite": "^4.2.0"
+  },
   "dependencies": {
+    "dayjs": "^1.11.7",
     "lodash": "^4.17.21"
   }
 }
