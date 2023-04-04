@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body class="container-sm">
+    <div class="card container-sm my-5 p-5">
+        <div class="card-header text-bg-warning mb-3">
+            <h1 class="text-center fw-bold font-monospace">Información de Contacto</h1>
+        </div>
+
+        <form class="border-warning">
+            <fieldset class="row g-3 mb-4">
+                <legend class="fw-bold text-color-legend border-bottom border-warning my-2">Información General 👤
+                </legend>
+
+                <div class="form-floating mb-3 col-md-6">
+                    <input class="form-control" type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+                    <label class="form-label" for="nombre">Nombre</label>
+                </div>
+
+                <div class="form-floating col-md-6">
+                    <input class="form-control" type="text" id="apellido" placeholder="Ingresa tu Apellido" required>
+                    <label class="form-label" for="apellido">Apellido</label>
+                </div>
+
+            </fieldset>
+
+            <fieldset class="row g-3 mb-4">
+                <legend class="fw-bold text-color-legend border-bottom border-warning my-2">Información de Contacto
+                    <span class="text-center">📧/📱</span>
+                </legend>
+
+                <p class="m-0">Medio de Preferencia:</p>
+
+                <div class="form-check ms-2 mt-2">
+                    <input class="form-check-input" type="radio" name="rd" value="email" id="correo" required>
+                    <label class="form-check-label" for="correo">Correo</label>
+                </div>
+
+                <div class="form-check ms-2 mt-2">
+                    <input class="form-check-input" type="radio" name="rd" value="telefono" id="tel" required>
+                    <label class="form-check-label" for="tel">Teléfono</label>
+                </div>
+
+                <div id="contacto"></div>
+
+            </fieldset>
+
+            <fieldset class="row g-3">
+                <legend class="fw-bold text-color-legend border-bottom border-warning my-2">Información sobre el
+                    proyecto 📋</legend>
+
+                <div class="form-floating">
+                    <select class="form-select" name="opcion" id="proyecto" required>
+                        <option value="" selected disabled>--Elija una opción--</option>
+                        <option value="1">Sitio Web</option>
+                        <option value="2">Aplicaion Móvil</option>
+                        <option value="3">Aplicación Web</option>
+                    </select>
+
+                    <label class="form-label" for="proyecto">Tipo de proyecto</label>
+                </div>
+
+                <div class="form-floating">
+                    <textarea class="form-control" name="descripcion" id="descripcion"
+                        placeholder="Leave a comment here" style="height: 100px" required></textarea>
+                    <label class="form-label" for="descripcion">Descripción</label>
+                </div>
+
+                <div class="form-floating">
+                    <input class="form-control" type="number" id="presupuesto" min="1" placeholder="Ingresa tu Apellido"
+                        required>
+                    <label class="form-label" for="presupuesto">Presupuesto</label>
+                </div>
+            </fieldset>
+
+            <button class="btn btn-primary btn-lg mt-2" type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+body {
+    background-color: #ede9d3;
+}
+
+.text-color-legend {
+    color: #b57048;
+}
+
+@include media-breakpoint-down(sm) {
+    .text-center {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1920px) {
+    .form-floating > label:not(.label-contacto) {
+        padding: 1rem 1.35rem;
+    }
+}
