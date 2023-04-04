@@ -1,0 +1,15 @@
+{
+  "name": "lmendev-2708",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "lmendev",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.3.1"
+  }
+}
