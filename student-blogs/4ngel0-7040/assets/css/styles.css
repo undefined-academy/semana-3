@@ -1,0 +1,214 @@
+:root {
+    --fuente-titulo: 'Share Tech', sans-serif;
+    --fuente-enlaces: 'Kanit', sans-serif;
+    --fuente-texto: 'Nanum Gothic', sans-serif;
+}
+
+/* Estilos Globales*/
+
+html {
+    font-size: 62.5%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    background: #dbdbe1;
+}
+
+h1,
+h2 {
+    font-family: var(--fuente-titulo);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+}
+
+a {
+    font-family: var(--fuente-enlaces);
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+p {
+    font-family: var(--fuente-texto);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.contenedor {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*Header*/
+
+.header-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 5rem;
+    background-color: #5ea5f1;
+}
+
+@media (min-width: 768px) {
+    .header-nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.header-nav-opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .header-nav-opciones {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+
+.header-nav-redes {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .header-nav-redes {
+        gap: 2rem;
+        margin-top: 0;
+    }
+}
+
+.header-nav-opciones a {
+    color: #fff;
+}
+
+.header-nav-opciones a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.fa-brands {
+    color: #fff;
+}
+
+.fa-instagram:hover {
+    color: #fb7ba8;
+}
+
+.fa-youtube:hover {
+    color: #ff0606;
+}
+
+.fa-twitter:hover {
+    color: #075fbd;
+}
+
+/*Articulo Destacado*/
+
+.article-main {
+    background-image: url(../img/vr.jpg);
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    width: 35rem;
+    height: 60rem;
+}
+
+@media (min-width: 768px) {
+    .article-main {
+        background-position: center center;
+        width: 100%;
+    }
+}
+
+.article-main-content {
+    margin-top: 5rem;
+    padding: 20rem 4rem 0;
+}
+
+@media (min-width: 768px) {
+    .article-main-content {
+        padding: 38rem 5rem 0;
+    }
+}
+
+.article-main-header a {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.article-main-text p {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.separador {
+    margin-bottom: 2rem;
+}
+
+.article-featured {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-featured-daily {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #888888;
+    margin: 1rem 0;
+}
+
+@media (min-width: 768px) {
+    .article-featured-daily {
+        flex-direction: row;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+}
+
+.article-featured-daily:last-child {
+    border: none;
+}
+
+.article-featured-header a {
+    font-size: 1.8rem;
+    color: #000;
+    line-height: 1;
+}
+
+.article-featured-header a:hover {
+    color: #cd872b;
+}
+
+/*Footer*/
+
+.footer {
+    background-color: #5ea5f1;
+    text-align: center;
+    padding: 2rem 0;
+}
