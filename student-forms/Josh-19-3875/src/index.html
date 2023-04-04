@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+</head>
+
+<body>
+    <div class="container py-4 px-3 mx-auto">
+        <h1 class="text-center">Contact me!</h1>
+    </div>
+
+    <form class="container">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Full name</label>
+            <input type="email" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Your full name">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Your email">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <label for="exampleInputEmail1" class="form-label">City</label>
+        <select class="form-select mb-3" aria-label="Default select example">
+            <option selected>Open and choose one</option>
+            <option value="1">NewYork</option>
+            <option value="2">California</option>
+            <option value="3">Texas</option>
+        </select>
+        <label for="exampleInputEmail1" class="form-label">Project's descrition 📄🖥️</label>
+        <div class="form-floating ">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Comments</label>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">I Accept the conditions</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
