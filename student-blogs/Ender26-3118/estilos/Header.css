@@ -1,0 +1,104 @@
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: "roboto", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+header {
+    width: 100%;
+
+}
+main{
+    z-index: 50;
+}
+.entry {
+    display: flex;
+    justify-content: space-evenly;
+    min-height: 80px;
+    background-color: lightblue;
+}
+
+.inicio {
+    padding-right: 10px;
+}
+
+.inicio:hover,
+.soccer-1:hover,
+.soccer-2:hover,
+.soccer-3:hover,
+.soccer-4:hover,
+.soccer-5:hover, 
+.soccer-6:hover {
+    background-color: rgb(51, 48, 48);
+    color: white;
+    cursor: pointer;
+
+}
+
+.soccer-1 .entrada-1,
+.soccer-2 .entrada-1,
+.soccer-3 .entrada-1,
+.soccer-4 .entrada-1,
+.soccer-5 .entrada-1, 
+.soccer-6 .entrada-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(51, 48, 48, 0.5);
+    position: absolute;
+    pointer-events: none;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+}
+
+.soccer-1:hover .entrada-1,
+.soccer-2:hover .entrada-1,
+.soccer-3:hover .entrada-1,
+.soccer-4:hover .entrada-1,
+.soccer-5:hover .entrada-1,
+.soccer-6:hover .entrada-1 {
+    visibility: visible;
+}
+
+.entrada-1 .primera-1,
+.entrada-1 .segunda-1,
+.entrada-1 .tercera-1 {
+    border-bottom: 2px solid black;
+    text-align: center;
+}
+
+.soccer-1,
+.soccer-2,
+.soccer-3,
+.soccer-4,
+.inicio,
+.soccer-5,
+.soccer-6,
+.ultima-seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.imagen {
+    width: 24px;
+    height: 24px;
+    margin-left: 12px;
+    margin-right: 6px;
+}
+
+.imagen-2 {
+    width: 40px;
+    height: 30px;
+    margin-left: 12px;
+    margin-right: 6px;
+}
+
+.ultima-seccion,
+input[type="text"] {
+    margin: auto 10px;
+}

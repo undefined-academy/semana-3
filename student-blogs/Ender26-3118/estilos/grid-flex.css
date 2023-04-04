@@ -1,0 +1,108 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 10px 10px;
+    gap: 20px 10px;
+
+
+
+}
+
+.articulo-1 {
+    border: 2px solid purple;
+    height: 100%;
+
+}
+
+.articulo-2 {
+    border: 2px solid green;
+    height: 100%;
+}
+
+.articulo-3 {
+    border: 2px solid blue;
+    height: 100%;
+}
+
+.articulo-4 {
+    border: 2px solid rgb(255, 0, 115);
+    height: 100%;
+}
+
+.articulo-5 {
+    border: 2px solid blueviolet;
+    height: 100%;
+}
+
+.articulo-6 {
+    border: 2px solid rgb(226, 208, 43);
+    height: 100%;
+}
+
+h1 {
+    color: black;
+    font-size: 18px;
+    margin: 5px;
+    text-align: center;
+}
+
+.prueba {
+    margin: 5px 5px;
+    height: 500px;
+}
+
+.articulo-1 .imagen-clasico,
+.articulo-2 .ferguson-wenger,
+.articulo-3 .Napoli,
+.articulo-4 .sergio-ramos,
+.articulo-5 .tuchel,
+.articulo-6 .sorteo {
+    width: 100%;
+    height: 200px;
+}
+
+.prueba .country,
+.prueba .division {
+    background-color: rgb(17, 48, 158);
+    color: white;
+    margin-left: 3px;
+    margin-right: 2px;
+    border-radius: 5px;
+}
+
+.prueba .text {
+    font-size: 14px;
+    text-align: justify;
+    min-height: 140px;
+    margin: 10px 10px;
+}
+
+.perfil {
+    min-height: 40px;
+    display: flex;
+    margin-bottom: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+.informacion{
+    min-height: 230px;
+    position: relative;
+}
+
+.perfil .perfil-1 {
+    width: 40px;
+    height: 100%;
+    border-radius: 100%;
+    margin-right: 10px;
+    margin-left: 5px;
+
+}
+
+.perfil .autor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

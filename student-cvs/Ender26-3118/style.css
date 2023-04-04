@@ -1,0 +1,140 @@
+body {
+    background-color: rgb(109, 229, 187);
+    max-width: 1000px;
+    max-height: 500px;
+    margin: 0 auto;
+    color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.imagen-perfil{
+    margin: 0;
+}
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width:600px){
+
+    *{
+        font-size: 14px;
+    }
+   
+    .informacion-personal{
+        display: flex;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+    }
+    header figure img{
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+    }
+
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: red;
+}
+
+h2,
+h4 {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+ li {
+   font-weight: 400;
+}
+
+.form-1 {
+    width: 100%;
+    margin: 10px auto;
+}
+
+.form-1 input {
+    width: 95%;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+    align-items: middle;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 15px 32px;
+    border-radius: 5px;
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: blue;
+    color: white;
+}
+
+input[type="submit"]:active {
+    background-color: blue;
+    color: white;
+}
+
+input[type="text"],
+input[type="email"] {
+    border-radius: 2px;
+    padding: 4px 8px;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+
+select {
+    width: 95%;
+}
+
+.form-2 {
+    margin-bottom: 10px;
+}
+.formulario {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.contacto{
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+footer{
+    text-align: center;
+}
+button{
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(22, 0, 217);
+    color: white;
+}
