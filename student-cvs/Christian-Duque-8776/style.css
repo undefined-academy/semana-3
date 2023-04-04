@@ -1,0 +1,524 @@
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 40px 150px 30px 25px 100px 30px 25px;
+    font-family: sans-serif;
+    background-color: #FDF7C3;
+    gap: 2px;
+}
+
+
+h2 {
+    display:  flex;
+    grid-column: 2/12;
+    grid-row: 3/4;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto{
+    display: flex;
+    
+    border-radius: 50%;
+    grid-column: 6/8;
+    grid-row: 2/4;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    background-image: url(perfil.jpeg);
+    background-size: cover;
+}
+
+h3 {
+    display: flex;
+    grid-column:3/11;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.sepa2,.sepa3{
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.sepa2 {
+    grid-column: 3/11;
+    grid-row: 4/5;
+    border: 3px solid #ffb4b4;
+}
+
+.sepa3{
+    grid-column: 3/11 ;
+    grid-row: 2/8;
+    border: 3px solid #0B2447;
+
+}
+
+.sepa4 {
+    grid-column: 3/11;
+    grid-row: 15/15;
+    border: 3px solid #0B2447;
+}
+
+.sepa5{
+    grid-column: 3/11;
+    grid-row: 2/2;
+    border: 3px solid #0B2447;
+}
+
+.sepa6{
+    grid-column: 3/11;
+    grid-row: 7/7;
+    border: 3px solid #0B2447;
+}
+
+.sepa7{
+    grid-column: 3/11;
+    grid-row: 11/11;
+    border: 3px solid #0B2447;
+}
+
+.sepa8{
+    grid-column: 3/11;
+    grid-row: 14/14;
+    border: 3px solid #0B2447;
+}
+
+.descripcion{
+    display: flex;
+    grid-column: 3/11;
+    grid-row: 5/5;
+    text-align: justify;
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 30px 20px 20px 20px 20px 30px  30px 30px 30px 35px 60px 40px 100px 35px 5px 50px 50px 60px 35px 40px 30px 20px 100px 100px 30px;
+    font-family: sans-serif;
+    background-color: #FFDEB4;
+    gap: 2px;
+
+}
+
+.container3{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 60px 2px 60px 60px 60px 60px 2px 60px 60px 60px 2px 200px 70px 2px 288px;
+    font-family: sans-serif;
+    background-color: #B2A4FF;
+    gap: 2px;
+}
+
+.dot{
+    border: 7px solid tomato;
+    border-radius: 50%;
+    grid-column: 2/4;
+    grid-row: 3/5;
+    width: 50%;
+}
+
+.dot1{
+    border: 7px solid tomato;
+    border-radius: 50%;
+    grid-column: 2/4;
+    grid-row: 7/9;
+    width: 50%;
+    height: 45%;
+}
+
+.dot2{
+    border: 7px solid tomato;
+    border-radius: 50%;
+    grid-column: 2/4;
+    grid-row: 11/12;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 6px;
+}
+
+.dot3{
+    border: 5px solid tomato;
+    border-radius: 50%;
+    grid-column: 2/4;
+    grid-row: 16/16;
+    width: 35%;
+    height: 40%;
+    position: relative;
+    top: 9px;
+    left: 2px;
+}
+
+.dot4{
+    border: 5px solid tomato;
+    border-radius: 50%;
+    grid-column: 2/4;
+    grid-row: 18/18;
+    width: 35%;
+    height: 35%;
+    position: relative;
+    top: 13px;
+    left: 2px;
+}
+
+.dot5{
+    border: 5px solid tomato;
+    border-radius: 50%;
+    grid-column: 2/4;
+    grid-row: 21/21;
+    width: 35%;
+    height: 70%;
+    position: relative;
+    top: 4px;
+    left: 2px;
+}
+
+.dot6{
+    border: 5px solid tomato;
+    border-radius: 50%;
+    grid-column: 2/4;
+    grid-row: 24/24;
+    width: 35%;
+    height: 20%;
+    position: relative;
+    top:1px;
+    left: 2px;
+}
+
+
+
+.h3ulsa {
+    grid-row: 3/5 ;
+    grid-column: 4/11;
+    text-align: center;
+
+}
+
+.horizontal1{
+    border: 4px solid tomato;
+    width: 0;
+    height: 49px;
+    grid-column: 2/4;
+    grid-row: 5/5;
+    position:relative;
+    left: 18px;
+    bottom: 3px;
+
+
+}
+
+.horizontal2{
+    border: 4px solid tomato;
+    width: 0;
+    height: 96px;
+    grid-column: 2/4;
+    grid-row: 9/9;
+    position: relative;
+    left: 18px;
+    bottom: 28px;
+}
+
+.horizontal3{
+    border: 3px solid tomato;
+    width: 0;
+    height: 75px;
+    grid-column: 2/4;
+    grid-row: 17/17;
+    position: relative;
+    left: 15px;
+    top: -15px;
+}
+
+.horizontal4{
+    border: 3px solid tomato;
+    width: 0;
+    height: 100px;
+    grid-column: 2/4;
+    grid-row: 18/18;
+    position: relative;
+    left: 15px;
+    top:  40px;
+}
+
+.horizontal5{
+    border: 3px solid tomato;
+    width: 0;
+    height: 120px;
+    grid-column: 2/4;
+    grid-row: 22/22;
+    position: relative;
+    left: 15px;
+
+}
+
+.titulo1{
+    font-size: 22px;
+}
+
+.titulo2{
+    grid-row: 14/15;
+    font-size: 22px;
+}
+
+.titulo3{
+    grid-row: 1/2;
+    font-size: 22px;
+}
+
+.titulo4{
+    grid-row: 6/6;
+}
+
+.titulo5{
+    grid-row: 10/10;
+}
+
+.tituloexp{
+    grid-row: 16/17;
+    
+}
+
+.tituloexp1{
+    grid-row: 18/19;
+    margin-right: 20px;
+}
+
+.tituloexp2{
+    grid-row: 21/22;
+
+}
+
+.tituloexp3{
+    grid-row: 24/24;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top:-32px
+
+}
+
+.lista {
+   grid-row: 5/6;
+   grid-column: 3/13;
+}
+
+.lista1 {
+    grid-row: 9/10;
+    grid-column: 3/13;
+
+    
+
+}
+
+.h3usa{
+    grid-row: 7/9;
+    grid-column: 4/11;
+    text-align: center;
+
+}
+
+.hola2 {
+    
+    grid-row: 11/11;
+    grid-column:  4/12;
+    overflow-wrap: break-word;
+    text-align:justify;
+    display: block;
+    margin-left: 20px;
+}
+
+.lista2 {
+    list-style: none;
+    grid-column: 1/12;
+    grid-row: 12/13;   
+}
+
+.lista3 {
+    grid-column: 3/12;
+    grid-row: 17/20;
+}
+
+.lista4{
+    grid-column: 3/12;
+    grid-row: 19/23;
+}
+
+.lista5{
+    grid-column: 3/13;
+    grid-row: 23/24;
+}
+
+.lista6{
+    grid-column:3/13;
+    grid-row: 25/25;
+    position: relative;
+    top: -50px;
+}
+
+.subtitulo{
+    grid-column: 4/12;
+    grid-row: 16/18;
+    position: relative;
+    top: 15px;
+}
+
+.subtitulo1{
+    grid-column: 4/12;
+    grid-row: 18/20;
+    position: relative;
+    top: 20px;
+}
+
+.subtitulo2{
+    grid-column: 4/12;
+    grid-row: 21/21;
+    position: relative;
+    top: 10px;
+}
+
+.subtitulo3{
+    grid-column: 4/12;
+    grid-row: 24/24;
+    position: relative;
+    top: 10px;
+}
+
+
+.experience1{
+    grid-column:9/13;
+    grid-row: 15/18;
+    display: flex;
+    align-items:center;
+    margin: 0 auto;
+    padding: 0 auto;
+    position: relative;
+    top: -2px;
+}
+
+.experience2{
+    grid-column: 9/13;
+    grid-row: 18/21;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 auto;
+    position: relative;
+    top: -20px;
+}
+
+.experience3{
+    grid-column: 9/13;
+    grid-row: 21/24;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 auto;
+    position: relative;
+    top: -35px;
+}
+
+.experience4{
+    grid-column: 9/13;
+    grid-row: 24/29;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -28px;
+}  
+
+p{
+    grid-column:2/12;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+a{
+    grid-column: 2/12;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.github{
+    width: 250px;
+}
+
+@media screen and (min-width:400px) {
+
+    html{
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    
+}
+
+@media screen and (min-width:992px){
+
+      html{
+        max-width:890px;
+        margin: 0 auto;
+      }
+      h2{
+        grid-row: 2/2;
+        grid-column: 4/13;
+        font-size: 50px;
+        position: relative;
+        left: -30px;
+
+      }
+    .foto{
+        grid-column: 2/3;
+        grid-row: 1/6;
+        width: 250px;
+        height: 250px;
+    }
+    .sepa2{
+        grid-column: 4/12;
+        grid-row: 3/4;
+        position: relative;
+        top: -20px;
+
+
+    }
+    .descripcion{
+        display: flex;
+        grid-column: 4/12;
+        grid-row: 3/3;
+        text-align: justify;
+
+    }
+    .container{
+        max-height:280px;
+    }
+    .container2{
+        max-width:  415px;
+    }
+
+    .container3{
+        max-width: 455px;
+        position: relative;
+        left:415px;
+        top:-1074px;
+    }
+    .subtitulox{
+        grid-column: 2/12;
+        grid-row: 3/3;
+        position: relative;
+        top: -50px;
+        left: 20px;
+    }
+
+}
+
