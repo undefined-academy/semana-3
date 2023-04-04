@@ -1,0 +1,119 @@
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 1350px;
+    margin: 0 auto;
+    background: #DAF5FF;
+}
+
+/**  NAV SECTION   **/
+
+ul {
+    display: flex;
+    justify-content: flex-start;
+    padding: 1.5rem;
+    /* border: 1px solid black; */
+    background: #fcfefe;
+    border-radius: 10px;
+    gap: 2rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+
+/** MAIN SECTION  **/
+
+.principal-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.section-group  {
+    margin-top: 2rem;
+    padding: 1.3rem;
+    width: 25rem;
+    background: #fcfefe;
+    border-radius: 0.5rem;
+    /* box-shadow: -webkit-box-shadow: 10px 13px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 13px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 10px 13px 5px 0px rgba(0,0,0,0.25); */
+    -webkit-box-shadow: 10px 13px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 13px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 10px 13px 5px 0px rgba(0,0,0,0.25);
+}
+
+.img-section {
+    padding: 1rem;
+}
+
+span {
+    background: #DAF5FF;
+    text-align: center;
+    width: 45px;
+    display: block;
+    padding: 3px;
+    border-radius: 3px;
+}
+
+.span {
+    width: 90px;
+}
+
+/**  Last part  **/
+
+.last-section {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* justify-items: center; */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #fcfefe;
+    border-radius: 0.5rem;
+    /* border: 1px solid black; */
+    margin-bottom: 2rem;
+
+
+    -webkit-box-shadow: 10px 13px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 10px 13px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 10px 13px 5px 0px rgba(0,0,0,0.25);
+}
+
+.last-img {
+    height: 100%;
+}
+
+.img {
+    height: auto;
+    width: 80%;
+    border-radius: 3px;
+}
+
+
+.last-info span {
+    display: inline;
+}
+
