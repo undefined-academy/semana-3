@@ -1,0 +1,17 @@
+{
+  "name": "davidoe-6229",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "vite": "^4.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev":"vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
