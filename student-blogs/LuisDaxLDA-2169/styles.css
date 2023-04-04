@@ -4,7 +4,7 @@
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     color: #555;
     padding: 0px;
-    margin: 0px;
+    margin: 0;
 }
 
 
@@ -12,8 +12,15 @@ h1,
 h2,
 strong {
     color: #333;
-    padding: 0;
-    margin: 8px 0 8px 0;
+    padding: 8px 0 0 0;
+    margin: 0;
+}
+
+.container-blog{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+align-items: center;
 }
 
 .card-container {
@@ -33,18 +40,6 @@ strong {
     margin-top: 8px;
 }
 
-.card img {
-    width: 100%;
-    height: 40%;
-    border-radius: 5%;
-}
-
-.description-right {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    padding: 16px;
-}
 
 .info-post {
     display: flex;
@@ -52,24 +47,32 @@ strong {
     align-items: flex-end;
     align-content: flex-end;
     justify-content: space-between;
+    margin: 12px 0 0 0;
 }
 
 
 .last-post-container {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     background-color: rgba(179, 180, 202, 0.336);
     border-radius: 2.5%;
-    height: 500px;
-    margin: 0 0 8px 0;
+    width: 1200px;
 }
 
-.last-post-container img {
-    width: 40%
-}
-
-.left-image {
+.left-image{
     border-radius: 2.5% 0px 0px 2.5%;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.description-right {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 10% 75% 5%;
+    padding: 8px;
+    grid-column-start: 4;
+    grid-column-end: 6;
 }
 
 .tag {
@@ -102,8 +105,6 @@ strong {
 }
 
 
-
-
 .nav-container {
     display: flex;
     justify-content: space-around;
@@ -133,10 +134,4 @@ strong {
 
 .blog-content {
     padding: 20px;
-}
-
-.container-blog {
-    display: flex;
-    flex-direction: column;
-    padding: 12px;
 }
