@@ -2,8 +2,8 @@
 
 body {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    margin: 0px;
     color: #555;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -16,17 +16,26 @@ strong {
     margin: 0;
 }
 
+p{
+    padding: 4px;
+    margin: 0;
+}
+
 .container-blog {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 30% 70%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 20px;
 }
 
 .card-container {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 50% 50%;
+    max-width: 100%;
+    row-gap: 20px;
 }
+
+
 
 .card {
     display: flex;
@@ -35,18 +44,19 @@ strong {
     background-color: rgba(179, 180, 202, 0.336);
     padding: 1em;
     border-radius: 7.5%;
-    width: 80%;
-    margin: 8px;
+    width: 85%;
+    margin: auto;
+}
+
+footer{
+    margin-top: auto;
 }
 
 
 .info-post {
     display: flex;
-    align-self: flex-end;
-    align-items: flex-end;
-    align-content: flex-end;
     justify-content: space-between;
-    margin: 12px 0 0 0;
+    flex-wrap: wrap;
 }
 
 
@@ -54,9 +64,9 @@ strong {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     background-color: rgba(179, 180, 202, 0.336);
-    border-radius: 2.5%;
     width: 95%;
-    margin: 8px auto;
+    border-radius: 2.5%;
+    margin-top: 8px;
 }
 
 .left-image {
@@ -69,9 +79,8 @@ strong {
 }
 
 .description-right {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 5% 80% 5%;
+    display: flex;
+    flex-direction: column;
     padding: 8px;
     grid-column-start: 4;
     grid-column-end: 6;
@@ -98,6 +107,7 @@ strong {
 .container-tags {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 
@@ -132,8 +142,4 @@ strong {
 .nav-tabs a:hover {
     background: #000000;
     color: rgb(67, 0, 252);
-}
-
-.blog-content {
-    margin: 0 auto;
 }
