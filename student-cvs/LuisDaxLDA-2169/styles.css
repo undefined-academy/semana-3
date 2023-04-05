@@ -32,16 +32,19 @@ strong {
     color: #333;
 }
 
-code,
-pre {
+code {
     background: #f5f7f9;
     border-bottom: 1px solid #d8dee9;
     color: #a7adba;
 }
 
-pre {
-    border-left: 2px solid #69c;
+.code-block {
+    border-left: 4px solid #69c;
+    padding-left: 20px;
+    width: 75%;
+    margin: 0 auto;
 }
+
 
 a {
     color: #e81c4f;
@@ -55,7 +58,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     line-height: 1.2;
-    padding: 10vw 2em;
+    padding: 6vw;
     text-align: center;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.637);
 }
@@ -63,9 +66,9 @@ header {
 
 header img {
     display: inline-block;
-    height: 256px;
+    width: 120px;
+    height: 120px;
     vertical-align: top;
-    width: 256px;
 }
 
 header h1 {
@@ -108,7 +111,8 @@ span.copy {
     padding: 1em 2em;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     color: #566b78;
-    float: inline-end;
+    display: block;
+    text-align: end;
 }
 
 #form-contact {
@@ -137,21 +141,64 @@ textarea {
     display: inline-block;
 }
 
-.form-group{
+.form-group {
     margin: 0;
     padding: 4px 0px 4px 0px;
 }
 
-#enviar{
+#enviar {
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-.button{
+.button {
     width: 100px;
     height: 40px;
     margin: 0;
     padding: 0;
 }
 
+.arrows {
+	width: 60px;
+	height: 72px;
+}
+
+.arrows path {
+	stroke: #2994D1;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
