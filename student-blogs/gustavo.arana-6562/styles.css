@@ -16,7 +16,6 @@ body {
 .items {
     border: 1px solid coral;
     display: flex;
-    
     gap: 10px;
 }
 
