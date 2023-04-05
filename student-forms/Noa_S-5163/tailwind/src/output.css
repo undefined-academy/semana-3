@@ -525,6 +525,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -539,6 +543,10 @@ video {
 
 .max-w-lg {
   max-width: 32rem;
+}
+
+.max-w-6xl {
+  max-width: 72rem;
 }
 
 .resize-none {
@@ -643,6 +651,18 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.leading-3 {
+  line-height: .75rem;
+}
+
+.leading-6 {
+  line-height: 1.5rem;
+}
+
+.leading-8 {
+  line-height: 2rem;
 }
 
 .text-cyan {
