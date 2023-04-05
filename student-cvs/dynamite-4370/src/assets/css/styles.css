@@ -1,3 +1,151 @@
-@media screen and (min-width: 768px) {}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --primary-color: #0db769;
+    --just-white: #fff;
+    --just-black: #333;
+    --background: #f3f4f6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ----------------------------- HEADER ----------------------------------*/
+header {
+    padding: 1rem 2rem;
+    background-color: #f3f4f6;
+}
+
+/* --- Header - Navbar --- */
+.navbar-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu .logo {
+    font-size: 2.4rem;
+    text-decoration: none;
+    padding: 2rem 0;
+}
+
+.header-items .menu-desktop {
+    display: none;
+}
+
+.header-items .button-mobile {
+    border: none;
+    background-color: transparent;
+}
+
+/* --- Header - Section --- */
+.navbar-section {
+    display: grid;
+    place-items: center;
+    height: 25rem;
+}
+
+.navbar-section .container-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.navbar-section .container-info h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.navbar-section .container-info p {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.container-info img {
+    border-radius: 50%;
+    height: 12rem;
+}
+
+/* ----------------------------- FOOTER ----------------------------------*/
+footer {
+    padding: 3rem 2rem;
+    background-color: #333;
+    height: 45rem;
+    width: 100%;
+}
+
+.container-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+.contact-me,
+.links,
+.services,
+.social-media {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+    gap: 2rem;
+    font-size: 1.4rem;
+    width: 120px;
+}
+
+.contact-me h2,
+.links h2,
+.services h2,
+.social-media h2 {
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+}
+
+.contact-me li,
+.links li,
+.services li {
+    padding: 0.5rem 0;
+    color: darkgrey;
+}
+
+.links a,
+.services a {
+    color: darkgrey;
+}
+
+.social-media ul {
+    display: flex;
+    gap: 2rem;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .header-items .button-mobile {
+        display: none;
+    }
+
+    .header-items .menu-desktop {
+        display: flex;
+    }
+}
 
 @media screen and (min-width: 992px) {}
