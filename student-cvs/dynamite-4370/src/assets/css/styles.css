@@ -83,11 +83,15 @@ header {
     height: 12rem;
 }
 
+/* --------------------------- CONTENIDO ----------------------------------- */
+.content {
+    padding: 3rem 2rem;
+}
+
 /* ----------------------------- FOOTER ----------------------------------*/
 footer {
     padding: 3rem 2rem;
     background-color: #333;
-    height: 45rem;
     width: 100%;
 }
 
@@ -133,7 +137,28 @@ footer {
 
 .social-media ul {
     display: flex;
-    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.social-media ul a {
+    color: #fff;
+}
+
+.social-media .icons {
+    font-size: 25px;
+}
+
+.logo-footer {
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.politics {
+    text-align: center;
+    color: grey;
+    font-size: 1.2rem;
 }
 
 
