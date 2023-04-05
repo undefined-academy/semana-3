@@ -1,6 +1,6 @@
 function handleSubmit(event){
     event.preventDefault() 
-    console.log('Hola mundo')
+    console.log('Loremp')
     const form = event.target
     const inputs = form.querySelectorAll('input:not([type="submit"]), select, textarea')
     inputs.forEach(input => input.value = '')

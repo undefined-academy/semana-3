@@ -66,7 +66,7 @@ Agregar la siguiente etiqueta meta a tu HTML de la hoja de vida:
 // main.mjs
 function handleSubmit(event) {
     event.preventDefault(); // 🍎
-    console.log("Hola mundo");
+    console.log("Loremp");
 }
     
 const $form =document.querySelector("form");
