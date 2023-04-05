@@ -10,7 +10,6 @@ html {
 
 body {
     margin: 0 auto;
-    max-width: 50em;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     line-height: 1.5;
     padding: 4em 1em;
@@ -46,65 +45,107 @@ pre {
 }
 
 a {
-    color: #e81c4f;
+  color: #e81c4f;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.projects img {
+  width: 100%;
+}
+
+form {
+	accent-color: #eab308;
+}
+
+.form-group {
+  margin: 20px 0;
+}
+
+label, input:not([type="radio"], [type="checkbox"]) {
+  width: 100%;
+}
+
+select {
+  margin-left: 10px;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  resize: vertical;
+}
+
+.help {
+  font-size: 12px;
+  margin-top: 10px;
+  color: gray;
+}
+
+label, legend {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #444;
+}
+
+input[type="text"], input[type="email"], select, textarea, fieldset  {
+  background-color: #fafafa;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #333;
+}
+
+input:focus-visible, textarea:focus-visible {
+	border: 1px solid #eab308;
+	outline: 2px solid #facc15;
+}
+
+button {
+  padding: 16px 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid #713f12;
+  background: #eab308;
+  text-shadow: -1px -1px rgba(255, 255, 255, 0.6) ;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+button:hover {
+  background: #facc15;
+}
+
+button:active {
+  background: #ca8a04;
+  box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 40em;
   }
 
-  .form-group {
-    margin: 20px 0;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    max-width: 60em;    
   }
 
-  label, input:not([type="radio"], [type="checkbox"]) {
-    width: 100%;
+  .projects {
+    flex-direction: row;
+  }
+  
+  .project img {
+    max-height: 200px;
   }
 
-  select {
-    margin-left: 10px;
-  }
-
-  textarea {
-    display: block;
-    width: 100%;
-    resize: vertical;
-  }
-
-  .help {
-    font-size: 12px;
-    margin-top: 10px;
-    color: gray;
-  }
-
-  label, legend {
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #444;
-  }
-
-  input[type="text"], input[type="email"], select, textarea, fieldset  {
-    background-color: #fafafa;
-    border: 1px solid lightgray;
-    border-radius: 4px;
-    padding: 8px 10px;
-    color: #333;
-  }
-
-  button {
-    padding: 16px 60px;
-    text-transform: uppercase;
-    font-weight: bold;
-    border: 1px solid #713f12;
-    background: #eab308;
-    text-shadow: -1px -1px rgba(255, 255, 255, 0.6) ;
-    border-radius: 8px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-  }
-
-  button:hover {
-    background: #facc15;
-  }
-
-  button:active {
-    background: #ca8a04;
-    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
-  }
+}
