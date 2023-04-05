@@ -1,0 +1,15 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+body {
+    
+    margin: 0 auto;
+    max-width: 50%;
+}
+
+.container{
+    padding: 15px 30px 15px 30px;
+    margin: 15px 30px 15px 30px;
+    background: rgb(78, 204, 204);
+    border-radius: 20px;
+}

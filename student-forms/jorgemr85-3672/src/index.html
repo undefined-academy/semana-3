@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap w/ Vite</title>
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <form action="" method="get">
+    <div class="container">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nombre Completo</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese nombre" required>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput2" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="Ingrese correo" required>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput3" class="form-label">Teléfono</label>
+        <input type="tel" class="form-control" id="exampleFormControlInput3" placeholder="Ingrese número telefono"
+          required>
+      </div>
+      <fieldset>
+        <legend>Presupueto</P>
+        </legend>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="inlineCheckbox1" name="precio" value="10.000" required>
+          <label class="form-check-label" for="inlineCheckbox1">$10.000</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="inlineCheckbox2" name="precio" value="5.000" required>
+          <label class="form-check-label" for="inlineCheckbox2">$5.000</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" id="inlineCheckbox3" name="precio" value="3.000" required>
+          <label class="form-check-label" for="inlineCheckbox3">$3.000</label>
+        </div>
+      </fieldset>
+      <label>Selecciona una opción</label>
+      <select class="form-select" aria-label="Default select example" required>
+        <option selected>Escoje tu Opción</option>
+        <option value="">Pagina Web</option>
+        <option value="">Aplicación Movil</option>
+        <option value="">Diseño</option>
+      </select>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+        <label class="form-check-label" for="flexCheckDefault">
+          Acepto termino y condiciones
+        </label>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </div>
+    </div>
+  </form>
+
+</body>
+
+</html>
