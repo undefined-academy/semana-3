@@ -1,0 +1,23 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+body{
+    background-color:#dfcfff;
+
+    .container{
+        max-width:900px ;
+
+        form{
+            background-color: #9591e6;
+            box-shadow: 1px 3px 110px 13px rgba(0,0,0,0.75);
+            
+            .text{
+
+                p{
+                    font-size: 20px;
+                    font-weight:bold ;
+                }
+            }
+        }
+    }
+}
