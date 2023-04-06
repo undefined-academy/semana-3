@@ -10,10 +10,10 @@ html{
 }
 body{
   background: linear-gradient(180deg, #374151 0%, #111827 100%);
+  font-family: var(--font);
 }
 :root {
-  --mainFont: "Poppins", sans-serif;
-  --titleFont: "Quicksand", sans-serif;
+  --font: 'Patrick Hand', cursive;
 
   --black: #000;
   --white: #fff;
@@ -27,16 +27,51 @@ body{
   --gray700: #374151;
   --gray800: #1F2937;
   --gray900: #111827;
+
+  --small: 18px
+}
+p{
+  color: var(--white);
+}
+/* Hidden sections in the header */
+.header__navbar,.search__input{
+  display: none;
+}
+.container{
+  display: grid;
+  margin: 30px 16px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+.header__menu, .search__icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ion-icon {
+  font-size: 24px;
+  color: var(--gray400);
+}
+.header__logo{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo__image{
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-image: url(./icons/logo.png);
+  background-size: cover;
+}
+.logo__text{
+  font-size: var(--small);
 }
 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: var(--titleFont);
-  margin: 10px;
-}
+
 
