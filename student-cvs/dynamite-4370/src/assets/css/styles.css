@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
     --primary-color: #0db769;
@@ -15,7 +15,7 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 ul {
@@ -86,6 +86,171 @@ header {
 /* --------------------------- CONTENIDO ----------------------------------- */
 .content {
     padding: 3rem 2rem;
+}
+
+/* --- Article - About --- */
+.content-about {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-about h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid #ddd;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 10px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #111;
+}
+
+.content-about h2::after {
+    background: #00BCD4;
+    height: 8px;
+    width: 50px;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    transform: skew(-36deg);
+    -webkit-transform: skew(-36deg);
+}
+
+.content-about p {
+    padding-top: 2rem;
+    font-size: 1.4rem;
+}
+
+
+/* --- Section Services --- */
+.section-services,
+.section-education {
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+.section-services-header {
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+.section-services-header .title {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+.section-services-header p {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    color: grey;
+}
+
+/* cards body */
+.section-services-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    text-align: center;
+    border: 1px solid #0db769;
+    margin-top: 2rem;
+}
+
+.service-card .card {
+    padding: 3.6rem 1.5rem;
+}
+
+.service-card h3 {
+    font-size: 1.8rem;
+}
+
+.service-card p {
+    font-size: 1.4rem;
+}
+
+/* Section -Education */
+.section-education {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.section-education-header {
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+.section-education-header .title {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 0;
+}
+
+.section-education-header p {
+    margin: 1rem 0;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    color: grey;
+}
+
+/* Body */
+.section-education-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.education-card {
+    border: 1px solid #0db769;
+    margin-top: 2rem;
+    position: relative;
+}
+
+.education-card .card::after {
+    content: "";
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 90%;
+    height: 2px;
+    background: #fd4312;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.education-card .card:hover:after {
+    width: 100%;
+}
+
+.education-card .card {
+    padding: 3.6rem 1.5rem;
+}
+
+.education-card span {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.education-card h3 {
+    font-size: 1.8rem;
+}
+
+.education-card p {
+    font-size: 1.4rem;
 }
 
 /* ----------------------------- FOOTER ----------------------------------*/
@@ -164,13 +329,53 @@ footer {
 
 @media screen and (min-width: 768px) {
 
+    header {
+        padding: 1rem 4rem;
+    }
+
     .header-items .button-mobile {
         display: none;
     }
 
-    .header-items .menu-desktop {
+    .header-items .navbar-menu {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
+
+    .navbar-menu .menu-desktop {
+        padding: 0;
+        display: flex;
+        gap: 20px;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    .navbar-menu .button-nav {
+        background-color: #0db769;
+        border-radius: 5px;
+        padding: 0.9rem 2rem;
+    }
+
 }
 
-@media screen and (min-width: 992px) {}
+@media screen and (min-width: 992px) {
+    .header-items {
+        max-width: 100rem;
+        margin: 0 auto;
+    }
+
+    .desktop,
+    .content-services,
+    .content-education,
+    .container-footer {
+        max-width: 100rem;
+        margin: 0 auto;
+    }
+
+
+
+    /* --- Education -- */
+
+
+}
