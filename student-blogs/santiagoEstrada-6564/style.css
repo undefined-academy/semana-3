@@ -1,0 +1,115 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500";
+* {
+  box-sizing: inherit;
+}
+
+/* Moobile First responsive design*/
+
+body {
+  margin: 0 auto;
+  color: #566b78;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  background-color: #0d1117;
+  max-width: 50em;
+  line-height: 1.5;
+  padding: 4em 1em;
+  
+}
+
+header {
+  padding-right: 10%;
+  background-color: #0d1117;
+}
+
+main, footer{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.navbar-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 0 10px;
+  line-height: 80px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #b8b6b6;
+  font-weight: 400;
+}
+
+.nav-item:hover {
+  transform: scale(1.1);
+}
+
+.nav-item:hover .nav-link {
+  color: #d3d5d8;
+}
+
+h1,
+h2,
+p,
+ul,
+table {
+  color: #b8b6b6;
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+a {
+  color: skyblue;
+}
+
+
+/* Css Cards projects*/
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.card_title {
+  font-size: 26px;
+  margin-top: 4px;
+  padding-top: 4px;
+  
+
+}
+
+.card_body {
+  font-weight: 400;
+  font-size: 18px;
+  margin-top: 2px;
+  padding-top: 2px;
+  line-height: 1.7;
+}
+
+.card_img img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.container_projects {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  
+  }
