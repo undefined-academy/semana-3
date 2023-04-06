@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="module" src="./js/main.js"></script>
+        <title>Contacto</title>
+    </head>
+    <body class="container-lg">
+        <h1 class="display-1">Contacto</h1>
+        <form action="/server" method="get" class="needs-validation" novalidate>
+            <div class="input-group mb-3">
+                <label class="input-group-text" id="basic-addon1" for="nombre">Nombre</label>
+                <input type="text" id="nombre" class="form-control" placeholder="Carla" aria-label="Nombre" aria-describedby="basic-addon1" required>
+            </div>
+            <div class="input-group mb-3">
+                <label class="input-group-text" id="basic-addon1" for="apellido">Apellido</label>
+                <input type="text" id="apellido" class="form-control" placeholder="Sosa" aria-label="Apellido" aria-describedby="basic-addon1" required>
+            </div>
+            <div class="input-group mb-3">
+                <label class="input-group-text" id="basic-addon2" for="email">Email</label>
+                <input type="text" id="email" class="form-control" placeholder="@email.com" aria-label="email" aria-describedby="basic-addon2" required>
+            </div>
+
+            <fieldset>
+                <legend>Presupuesto</legend>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
+                    <label class="form-check-label" for="inlineRadio1">1000</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
+                    <label class="form-check-label" for="inlineRadio2">2000</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" required>
+                    <label class="form-check-label" for="inlineRadio3">3000</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Selecciona tu proyecto:</legend>
+                <select class="form-select mb-1" id="validationCustom04" required aria-label="Default select example">
+                    <option selected disabled value="">Elije...</option>
+                    <option value="1">Landing page</option>
+                    <option value="2">Tienda virtual</option>
+                    <option value="3">Portfolio</option>
+                    <option value="4">Otro</option>
+                </select>
+                <div class="invalid-feedback">
+                    Selecciona uno.
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Descripcion:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                </div>
+            </fieldset>
+
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                <label class="form-check-label" for="flexCheckDefault">ACEPTO LOS TERMINOS Y CONDICIONES</label>
+            </div>
+                
+            <div class="d-grid gap-2 col-6 mx-auto">                
+                <input class="btn btn-primary" type="submit" value="ENVIAR">
+            </div>
+
+        </form>
+    </body>
+</html>

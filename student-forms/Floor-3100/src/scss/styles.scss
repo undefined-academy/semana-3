@@ -1,0 +1,13 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+body {
+    background-color: $gray-100;
+}
+
+.input-group-text {
+    background-color: $gray-600;
+    color: $gray-100;
+}
+
+
