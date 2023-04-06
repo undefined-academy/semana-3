@@ -136,15 +136,33 @@ header {
 }
 
 /* header */
-.section-services-header {
-    text-align: center;
-    padding: 0 1.5rem;
+.section-services-header .title {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid #ddd;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 10px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #111;
 }
 
-.section-services-header .title {
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 1rem 0;
+.section-services-header .title::after {
+    background: #00BCD4;
+    height: 8px;
+    width: 50px;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    transform: skew(-36deg);
+    -webkit-transform: skew(-36deg);
 }
 
 .section-services-header p {
@@ -187,15 +205,33 @@ header {
 }
 
 /* Header */
-.section-education-header {
-    text-align: center;
-    padding: 0 1.5rem;
+.section-education-header .title {
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid #ddd;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 0 10px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #111;
 }
 
-.section-education-header .title {
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 1rem 0;
+.section-education-header .title::after {
+    background: #00BCD4;
+    height: 8px;
+    width: 50px;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    content: "";
+    z-index: -1;
+    transform: skew(-36deg);
+    -webkit-transform: skew(-36deg);
 }
 
 .section-education-header p {
@@ -357,6 +393,13 @@ footer {
         padding: 0.9rem 2rem;
     }
 
+    .section-education-body,
+    .section-services-body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -376,6 +419,5 @@ footer {
 
 
     /* --- Education -- */
-
 
 }
