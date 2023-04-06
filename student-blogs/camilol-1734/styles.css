@@ -1,0 +1,159 @@
+html,
+body {
+    height: 100%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid Gainsboro;
+    padding: 10px;
+}
+
+input[type="search"] {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid Gainsboro;
+    width: 400px;
+    background: WhiteSmoke;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px auto auto;
+    gap: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 /4;
+    grid-row: 1 / 2;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.item,
+.grid-item {
+    border: 1px solid gray;
+    height: 50px;
+    width: 200px;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.grid-item {
+    width: auto;
+    height: auto;
+}
+
+.item-a {
+    grid-area: header;
+}
+
+.item-b {
+    grid-area: main;
+}
+
+.item-c {
+    grid-area: sidebar;
+}
+
+.item-d {
+    grid-area: footer;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header header"
+        "main main sidebar sidebar"
+        "footer footer footer footer";
+    height: 100%;
+
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+
+    height: 100%;
+}
+
+.image {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.imagen {
+    width: 800px;
+    height: 300px;
+    border-radius: 10%;
+
+}
+
+.imagen2 {
+    border-radius: 10%;
+    width: 850px;
+    height: 300px;
+}
+
+.contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+}
+
+.contenido p {
+    font-size: 18px;
+    margin: 10px;
+    max-width: 600px;
+    text-align: justify;
+}
+
+.contenido12 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: brown;
+}
+
+.contenido12 img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+}
+
+contenido12 p {
+    font-size: 18px;
+    margin: 10px;
+    max-width: 600px;
+    text-align: justify;
+    flex: 1;
+}
