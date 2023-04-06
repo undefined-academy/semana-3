@@ -6,6 +6,7 @@
 
 # dependencies
 /node_modules
+/student-forms/murquis-5340/node_modules
 
 # misc
 .DS_Store
