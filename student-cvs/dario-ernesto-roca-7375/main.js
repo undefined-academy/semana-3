@@ -1,9 +1,8 @@
-console.log("Hello world");
-function handleSubmit(e) {
-    e.preventDefault();
-    console.log("Preventing the default behavior when sending the form")
+// main.mjs
+function handleSubmit(event) {
+    event.preventDefault(); // 🍎
+    console.log("Hola mundo");
 }
-
-const $form = document.querySelector('form');
-
-$form.addEventListener('submit', handleSubmit);
+    
+const $form =document.querySelector("form");
+$form.addEventListener("submit", handleSubmit);
