@@ -1,0 +1,52 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 50em;
+  min-height: 100vh;
+  line-height: 1.5;
+  color: #566b78;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+header {
+  background-color: #056b90;
+  background-image: url("../../unsplash.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 10vw 0;
+}
+
+header p {
+  background: #056b90;
+}
+
+nav ul li {
+  border-bottom: 2px solid white;
+}
+nav ul li:hover {
+  border-bottom: 2px solid #056b90;
+  transform: scale(1.2);
+}
+
+footer {
+  background-color: #056b90;
+}

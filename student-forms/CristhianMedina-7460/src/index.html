@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0">
+    <link rel="stylesheet" href="./scss/styles.scss">
+    <title>Contact me</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center text-light fs-1 fw-bold">Cristhian Medina</h1>
+      <p class="text-center py-3 text-light">
+        Soy diseñador gráfico y desarrollador front-end.
+      </p>
+    </header>
+
+    <nav class="my-3">
+      <ul class="nav d-flex justify-content-center">
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="/student-cvs/CristhianMedina-7460/index.html">CV</a>
+        </li>
+        <li class="nav-item mx-4">
+          <a class="nav-link" href="/student-blogs/CristhianMedina-7460/index.html">Blog</a>
+        </li>
+        <li class="nav-item mx-4">
+          <a class="nav-link" href="/student-forms/CristhianMedina-7460/index.html">Contact me</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <main>
+      <section class="contact-form">
+        <h2 class="my-4 text-center">Quieres contactarme ??</h2>
+        <form class="bg-light p-3 shadow rounded">
+          <label class="form-label" for="name">Nombre</label>
+          <input class="form-control mb-3" type="text" name="name" id="name" placeholder="Ingrese su nombre completo" required>
+
+          <label class="form-label" for="email">Correo</label>
+          <input class="form-control mb-3" type="email" name="email" id="email" placeholder="Ingrese su correo electrónico" required>
+
+          <fieldset class="form-check mb-3 form-control text-secondary ps-5">
+            <legend class="fs-6 pl-0">¿En que te puedo ayudar?</legend>
+            <div>
+              <input class="form-check-input" type="radio" name="contact-type" id="project" value="project" required>
+              <label class="form-check-label text-dark" for="project">Proyecto</label>
+            </div>
+            <div>
+              <input class="form-check-input" type="radio" name="contact-type" id="job" value="job" required>
+              <label class="form-check-label text-dark" for="job">Trabajo</label>
+            </div>
+            <div>
+              <input class="form-check-input" type="radio" name="contact-type" id="talk" value="talk" required>
+              <label class="form-check-label text-dark" for="talk">Conferencia</label>
+            </div>
+          </fieldset>
+
+          <label for="lenguage" class="form-label">Idíoma</label>
+          <input class="form-control mb-3" list="datalistOptions" name="lenguage" id="lenguage" placeholder="Doble click para seleccionar..." required>
+          <datalist id="datalistOptions">
+            <option value="Español">
+            <option value="Ingles">
+            <option value="Portugues">
+          </datalist>
+          
+          <label class="form-label" for="description">Descripción</label>
+          <textarea class="form-control" name="contact-description" id="description" rows="3" required></textarea>
+          <p class="form-text">Escribe una descripción del tema a tratar.</p>
+
+          <div class="form-check mb-3" for="terms">
+            <input class="form-check-input" type="checkbox" name="terms" id="terms" value="termsAccepted" required>
+            <label class="form-check-label" for="terms">Acepto los terminos y condiciones</label>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="py-3 mt-5">
+      <p class="text-center text-light m-0">Todos los derechos reservados 2023</p>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
