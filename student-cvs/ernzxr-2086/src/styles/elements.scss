@@ -1,0 +1,33 @@
+@use "variables.scss";
+
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+p {
+    font-weight: 400;
+}
+
+h2, .h2-span, .h2-span-skills {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+button {
+    font-weight: 500;
+    padding: 0.5em 2em;
+    font-family: Kanit, Helvetica, Arial, sans-serif;
+    font-size: 1em;
+}
+
+.skills h2, .skills h3, .h2-span-skills {
+    color: var(--color-ebony);
+}
+
+.skills h3 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+}

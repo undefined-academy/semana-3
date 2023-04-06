@@ -1,0 +1,21 @@
+:root {
+--color-athens-gray: #f9fafb;
+
+--color-oxford-blue: #374151;
+--color-ebony-clay: #1f2937;
+--color-ebony: #111827;
+--color-black-pearl: #030712;
+
+--color-mountain-meadow: #22c55e;
+--color-violent-violet: #2e1065;
+
+--container-max-width: 900px;
+}
+
+$breakpoint-lg: 992px;
+
+@mixin desktop {
+    @media screen and (min-width: $breakpoint-lg) {
+        @content;
+    }
+}

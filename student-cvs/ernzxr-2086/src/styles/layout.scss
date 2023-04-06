@@ -1,0 +1,70 @@
+@use "variables.scss";
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Kanit, Helvetica, Arial, sans-serif;
+    background-color: var(--color-black-pearl);
+    color: var(--color-athens-gray);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    width: 100%;
+    max-width: var(--container-max-width);
+    padding: 2em 1em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.exp-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+
+    @include variables.desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    gap: 1em;
+}
+
+footer p {
+    font-weight: 300;
+}
+
+.bkg-primary {
+    background-color: var(--color-athens-gray);
+    color: var(--color-ebony);
+    width: 100%;
+}
+
+.bkg-secundary {
+    background-color: var(--color-ebony);
+    width: 100%;
+}

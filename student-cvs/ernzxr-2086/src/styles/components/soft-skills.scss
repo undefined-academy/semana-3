@@ -1,0 +1,39 @@
+@use "../variables.scss";
+
+.soft-skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: var(--color-athens-gray);
+}
+
+.lang span {
+    text-align: center;
+    background-color: var(--color-ebony-clay);
+    padding: 1em;
+    border-radius: 4px;
+    width: 310px;
+}
+
+.soft-skills span {
+    text-align: center;
+    background-color: var(--color-ebony-clay);
+    padding: 1em;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 310px;
+}
+
+.lang {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.soft-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+}
