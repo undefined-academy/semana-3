@@ -47,10 +47,18 @@ figure.logo {
 
 ul {
   display: flex;
+  list-style: none;
   justify-content: flex-end;
   align-items: center;
   padding: 0px;
   margin: 0px;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .nav-item {
@@ -79,7 +87,14 @@ footer {
 
 section {
   border: 1px solid gray;
+  padding: 20px;
   margin: 5px;
+}
+
+.skills ul {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 img {
