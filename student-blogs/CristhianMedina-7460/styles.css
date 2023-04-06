@@ -45,7 +45,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   line-height: 1.2;
-  padding: 10vw 2em;
+  padding: 10vw 0;
   text-align: center;
 }
 
@@ -56,10 +56,8 @@ header h1 {
 }
 
 header p {
-  display: inline-block;
   color: #f5f7f9;
   background: #056b90;
-  border-radius: 30px;
   padding: 10px 20px;
 }
 
@@ -69,15 +67,15 @@ header strong {
 
 nav {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   width: 100%;
-  padding: 0 32px;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 50px;
+  padding: 0;
+  gap: 32px;
 }
 
 nav ul li {
@@ -89,7 +87,6 @@ nav ul li:hover {
 
 nav ul li a {
   color: #566b78;
-  padding: 0 10px;
 }
 
 .cards-container {
@@ -97,7 +94,6 @@ nav ul li a {
   padding: 0 24px;
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(2, 1fr);
 }
 .card {
   background-color: #bfe7f5;
@@ -169,4 +165,33 @@ footer p {
   font-size: 14px;
   padding: 1rem;
   margin: 0;
+}
+
+@media (min-width: 576px) {
+  header {
+    padding: 10vw 2em;
+  }
+
+  header p {
+    display: inline-block;
+    border-radius: 30px;
+    padding: 10px 20px;
+  }
+
+  nav {
+    justify-content: end;
+    padding: 0 32px;
+  }
+  
+  nav ul {
+    gap: 50px;
+  }
+
+  nav ul li a {
+    padding: 0 10px;
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
