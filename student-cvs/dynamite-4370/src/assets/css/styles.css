@@ -29,7 +29,7 @@ a {
 /* ----------------------------- HEADER ----------------------------------*/
 header {
     padding: 1rem 2rem;
-    background-color: #f3f4f6;
+    background-color: #00bcd482;
 }
 
 /* --- Header - Navbar --- */
@@ -43,6 +43,8 @@ header {
     font-size: 2.4rem;
     text-decoration: none;
     padding: 2rem 0;
+    color: black;
+    font-weight: 600;
 }
 
 .header-items .menu-desktop {
@@ -70,7 +72,7 @@ header {
 .navbar-section .container-info h1 {
     font-size: 3.6rem;
     font-weight: 700;
-    margin-bottom: 2rem;
+    margin: 2rem 0 1rem 0;
 }
 
 .navbar-section .container-info p {
@@ -86,6 +88,7 @@ header {
 /* --------------------------- CONTENIDO ----------------------------------- */
 .content {
     padding: 3rem 2rem;
+    background-color: #f3f4f6;
 }
 
 /* --- Article - About --- */
@@ -182,12 +185,33 @@ header {
 
 .service-card {
     text-align: center;
-    border: 1px solid #0db769;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     margin-top: 2rem;
+    background-color: #fff;
+    transition: all 0.4s ease;
 }
 
 .service-card .card {
     padding: 3.6rem 1.5rem;
+}
+
+.card .icon-card {
+    padding-bottom: 1.2rem;
+}
+
+.card .icon-card span {
+    background: #373737;
+    border: 1px solid #464646;
+    color: #00BCD4;
+    width: 50px;
+    height: 50px;
+    line-height: 48px;
+    border-radius: 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+    font-size: 24px;
+    display: inline-block;
 }
 
 .service-card h3 {
@@ -250,7 +274,9 @@ header {
 }
 
 .education-card {
-    border: 1px solid #0db769;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 4px;
     margin-top: 2rem;
     position: relative;
 }
@@ -350,7 +376,7 @@ fieldset {
     box-sizing: border-box;
     width: 100%;
     padding: 15px;
-    border: 1px solid #a1d1f5;
+    border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     cursor: pointer;
@@ -359,7 +385,7 @@ fieldset {
 }
 
 .field .input:focus {
-    border: 1px solid blue;
+    border: 1px solid #00BCD4;
 }
 
 .field textarea {
@@ -493,6 +519,10 @@ footer {
         gap: 20px;
         font-size: 1.6rem;
         font-weight: 600;
+    }
+
+    .menu-desktop a {
+        color: #333;
     }
 
     .navbar-menu .button-nav {
