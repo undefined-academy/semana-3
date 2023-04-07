@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+    <div class="container py-4 px-3 mx-auto">
+        <h1>Contacto</h1>
+        <form action="/server" method="get">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre completo" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                    placeholder="Ingrese su email" required>
+            </div>
+            <fieldset class="row mb-3">
+                <legend class="col-form-label col-sm-2 pt-0">Presupuesto</legend>
+                <div class="col-sm-10">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="budget" id="5000" value="5000" required>
+                        <label class="form-check-label" for="5000">
+                            $5.000
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="budget" id="10000" value="10000">
+                        <label class="form-check-label" for="10000">
+                            $10.000
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline disabled">
+                        <input class="form-check-input" type="radio" name="budget" id="15000" value="15000" disabled>
+                        <label class="form-check-label" for="15000">
+                            $15.000
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">Tipo de Proyecto</label>
+                <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Seleccione</option>
+                    <option value="Website">Website</option>
+                    <option value="Webapp">Webapp</option>
+                    <option value="Mobile app">Mobile app</option>
+                    <option value="Diseño">Diseño</option>
+                </select>
+
+            </div>
+            <div class="mb-3">
+                <label for="descripcion" class="form-label">Descripcion</label>
+                <textarea class="form-control" id="descripcion" rows="3" required></textarea>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="terms" required>
+                <label class="form-check-label" for="terms">Acepto los terminos y condiciones</label>
+            </div>
+            <div class="d-grid gap-2 col-6 mx-auto">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
