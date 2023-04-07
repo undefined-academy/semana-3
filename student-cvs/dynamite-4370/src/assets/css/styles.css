@@ -30,6 +30,11 @@ a {
 header {
     padding: 1rem 2rem;
     background-color: #00bcd482;
+    height: 100vh;
+}
+
+.header-items {
+    height: 100%;
 }
 
 /* --- Header - Navbar --- */
@@ -60,7 +65,7 @@ header {
 .navbar-section {
     display: grid;
     place-items: center;
-    height: 35rem;
+    height: 80%;
 }
 
 .navbar-section .container-info {
