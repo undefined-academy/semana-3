@@ -14,6 +14,16 @@
 
 <body>
 
+    <nav id="mobile-menu" class="inactive">
+        <ul class="navbar__ul">
+            <li><a href="#welcome">Bienvenida</a></li>
+            <li><a href="#servicios">Mis Servicios</a></li>
+            <li><a href="#educacion">Educación</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <button id="button-closed" class="button-closed"><span class="fa fa-times" aria-hidden="true"></span></button>
+    </nav>
+
     <header class="container-header">
         <div class="header-items">
             <nav class="navbar-menu">
@@ -22,9 +32,9 @@
                     <li><a href="#">Sobre mi</a></li>
                     <li><a href="#">Portafolio</a></li>
                     <li><a href="#">Blog</a></li>
-                    <li><a href="#" class="button-nav">Contáctame</a></li>
+                    <li><a href="#contacto" class="button-nav">Contáctame</a></li>
                 </ul>
-                <button class="button-mobile">
+                <button class="button-mobile" id="button-open">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="36"
                         height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#212121" fill="none"
                         stroke-linecap="round" stroke-linejoin="round">
@@ -72,7 +82,7 @@
         </div>
     </div>
 
-    <div class="content">
+    <div id="servicios" class="content">
         <section class="content-services">
             <div class="section-services">
                 <div class="section-services-header">
@@ -128,7 +138,7 @@
         </section>
     </div>
 
-    <div class="content">
+    <div id="educacion" class="content">
         <section class="content-education">
             <div class="section-education">
                 <div class="section-education-header">
@@ -175,7 +185,7 @@
         </section>
     </div>
 
-    <div class="content">
+    <div id="contacto" class="content">
         <section class="content-form">
             <div class="section-form">
                 <div class="section-form-header">
