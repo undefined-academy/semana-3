@@ -1,0 +1,743 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>David Ochoa</title>
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+<style>
+    html,
+body {
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: linear-gradient(#636162, #b1afaf);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+
+}
+
+@media screen and (max-width: 500px) {
+
+    /*
+@media screen and (max-width: 500px) {*/
+    .header {
+        background-color: #fbb03b;
+        width: 90%;
+
+    }
+
+    .body {
+        word-wrap: break-word;
+        width: 100%;
+    }
+
+    .navigationul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0px;
+        padding: 2px;
+        align-items: center;
+        flex-wrap: wrap;
+        box-shadow: 0 1px 8px #ddd;
+
+
+    }
+
+    .navigationul li {
+        font-size: 8px;
+        display: inline-block;
+        color: white;
+
+
+
+    }
+
+    .main {
+        background-color: white;
+        height: auto;
+        width: 90%;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .left {
+        background-color: #fbb03b;
+        width: 40%;  
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+    }
+
+    .imagendeperfil {
+        width: 90px;
+
+        height: 90px;
+        background-color: #ddd;
+        border-radius: 50%;
+        margin-top: 8px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+        border: 3px solid #fbb03b;
+        box-shadow: 5px 5px 7px 3px #fbb03b73;
+    }
+
+
+    .imagendeperfil img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading {
+
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 5px;
+
+    }
+
+    .heading .p1 {
+        margin: 0;
+        font-size: 8px;
+
+    }
+
+    .heading h1 {
+        margin: 0;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .right {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        flex-wrap: wrap;
+
+    }
+
+    .box2 {
+      
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 8px;
+        padding-right: 5px;
+
+
+
+    }
+
+    .box2 h2 {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 0;
+        margin-right: 0;
+        font-size: 10px;
+        font-weight: bold;
+
+    }
+
+    .box2 .h2titles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+      
+        margin: 0;
+        flex-wrap: nowrap;
+        
+    }
+
+    .box2 .p2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 0;
+        font-size: 8px;
+
+        text-align: left;
+
+    }
+
+
+    .right .contactme {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-top: 5px;
+        margin-bottom: 30px;
+      
+        width: 100%;
+     
+        
+
+
+
+    }
+
+    .contactme .contacto {
+        font-size: 10px;
+        margin: 0;
+
+    }
+
+    .contacticons {
+
+        font-size: 6px;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+
+
+    
+    .githubprofile {
+        font-size: 6px;
+        margin: 0;
+        display: flex;
+        flex-direction:row;
+        justify-content: flex-start;
+    }
+
+    .contacticons {
+
+        font-size: 6px;
+        display: flex;
+        flex-direction:row;
+       justify-content: flex-start;
+        
+    }
+
+
+
+    .habilidades {
+        background-color: #4d4d4d;
+        color: #fbb03b;
+        text-align: left;
+    }
+
+    .habilidadesp1 {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .habilidadesp2 {
+        padding-left: 2px;
+        margin: 0;
+        font-size: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+
+    }
+
+
+
+    .skill-container {
+        width: 90%;
+        background-color: #4d4d4d;
+        margin: 2px 2px;
+
+
+
+    }
+
+    .skill {
+        text-align: right;
+
+        padding-bottom: 2px;
+        color: white;
+    }
+
+    .html {
+        width: 90%;
+        background-color: white;
+    }
+
+    .css {
+        width: 75%;
+        background-color: white;
+    }
+
+    .javascript {
+        width: 60%;
+        background-color: white;
+    }
+
+    .python {
+        width: 70%;
+        background-color: white;
+    }
+
+    .languagep {
+        font-size: 8px;
+        font-weight: bold;
+    }
+
+    .box2strengths {
+        font-size: 8px;
+    }
+
+
+
+
+}
+
+
+
+
+
+@media screen and (min-width: 400px) {
+    .header {
+        background-color: #fbb03b;
+        width: 90%;
+    }
+
+    .header .navigationul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 0px;
+        padding: 5px;
+        align-items: center;
+        flex-wrap: wrap;
+        box-shadow: 0 1px 8px #ddd;
+    }
+
+    .main {
+        background-color: white;
+        height: auto;
+        width: 90%;
+        margin-top: 5%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .left {
+        background-color: #fbb03b;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+
+
+    .left .heading {
+        background-color: #4d4d4d;
+        width: 100%;
+        color: #fbb03b;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 5px;
+       
+       
+
+    }
+    .containerimg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+
+    }
+
+
+    .imagendeperfil {
+        width: 90px;
+        height: 90px;
+        background-color: #ddd;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+
+        margin-top: 8px;
+        margin-bottom: 15px;
+        /*
+        margin-left: 200px;*/
+        border: 3px solid #fbb03b;
+        box-shadow: 5px 5px 7px 3px #fbb03b73;
+    }
+
+
+    .containerimg img {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+
+    .heading {
+
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 5px;
+
+    }
+
+    .heading .p1 {
+        margin: 0;
+        font-size: 8px;
+
+    }
+
+    .heading h1 {
+        margin: 0;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .right {
+        width: 60%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        flex-wrap: wrap;
+
+
+
+    }
+
+   
+
+    .box2 {
+
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .h2titles {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+        margin-right: 0;
+        font-size: 10px;
+        font-weight: bold;
+    }
+
+    li {
+        font-size: 8px;
+
+    }
+
+    .box2 .p2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin: 0;
+        font-size: 8px;
+
+
+
+    }
+
+
+
+
+
+    .right .contactme {
+     
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 5px;
+        margin-bottom: 30px;
+       
+        width: 100%;
+     
+
+
+
+    }
+
+    .contactme .contacto {
+        font-size: 10px;
+        margin: 0;
+        display: flex;
+        flex-direction:row;
+       justify-content: flex-start;
+
+    }
+    .githubprofile {
+        font-size: 10px;
+        margin: 0;
+        display: flex;
+        flex-direction:row;
+        justify-content: flex-end;
+    }
+
+    .contacticons {
+
+        font-size: 6px;
+        display: flex;
+        flex-direction:row;
+       justify-content: flex-start;
+        
+    }
+
+
+
+    .habilidades {
+        background-color: #4d4d4d;
+        color: #fbb03b;
+        text-align: left;
+    }
+
+    .habilidadesp1 {
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .habilidadesp2 {
+        padding-left: 2px;
+        margin: 0;
+        font-size: 8px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+
+    }
+
+
+
+    .skill-container {
+        width: 90%;
+        background-color: #4d4d4d;
+        margin: 2px 2px;
+
+
+
+    }
+
+    .skill {
+        text-align: right;
+
+        padding-bottom: 2px;
+        color: white;
+    }
+
+    .html {
+        width: 90%;
+        background-color: white;
+    }
+
+    .css {
+        width: 75%;
+        background-color: white;
+    }
+
+    .javascript {
+        width: 60%;
+        background-color: white;
+    }
+
+    .python {
+        width: 70%;
+        background-color: white;
+    }
+
+    .languagep {
+        font-size: 8px;
+        font-weight: bold;
+    }
+
+}
+</style>
+
+<body>
+    <div class="header">
+        <nav class="navigation">
+            <ul class="navigationul">
+                <li><a href="#">Home</a></li>
+                <li><a href="./form.html">Contact me</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Commandos Git</a></li>
+            </ul>
+        </nav>
+
+    </div>
+    <div class="main">
+        <div class="left">
+            <div class="containerimg">
+                <div class="imagendeperfil"> <img src="./profile.jpg" alt="profile image"> </div>
+            </div>
+            <div class="box-1">
+                <div class="heading">
+                    <h1>David Ochoa</h1>
+                    <p class="p1">Ingeniero en Mecatronica</p>
+                </div>
+                <div class="habilidades">
+                    <p class="habilidadesp1">Skills</p>
+                </div>
+                <p class="habilidadesp2">HTML
+                <div class="skill-container">
+                    <div class="skill html"></div>
+                </div>
+                </p>
+                <p class="habilidadesp2">CSS
+                <div class="skill-container">
+                    <div class="skill css"></div>
+                </div>
+                </p>
+
+                <p class="habilidadesp2">JAVASCRIPT
+                <div class="skill-container">
+                    <div class="skill javascript"></div>
+                </div>
+                </p>
+
+                <p class="habilidadesp2">PYTHON
+                <div class="skill-container">
+                    <div class="skill python"></div>
+                </div>
+                </p>
+                <div class="habilidades">
+                    <p class="habilidadesp1">Language</p>
+                </div>
+                <p class="languagep">English
+
+                </p>
+
+                <p class="languagep">Spanish
+
+                </p>
+
+
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="contactme">
+                <p class="contacto">Contact me</p>
+                <p class="contacticons"> +52 66-24-62-05-78 <br> imtcdavidochoa@gmail.com </p>
+                <p class="githubprofile">Perfil en github: <a href="https://github.com/DAVOE1">David Ochoa</a></p>
+
+
+            </div>
+            <div class="box2">
+                <h2 class="h2titles">About me</h2>
+                <p class="p2">A year ago I started to get involved in web development. Currently I work in chatbot and
+                    knowledge base
+                    development. <br>
+                    I also develop and analyze monthlly reports for user usage and functionality. I want to become a
+                    full
+                    stack developer.
+                </p>
+                <h2 class="h2titles">Core Strengths</h2>
+
+                <ul class="h2titleslist">
+                    <li>Analytical skills.</li>
+                    <li>Problem solving, research and investigative skills</li>
+                    <li>Knowledgeable in technical and engineering work.</li>
+                    <li>Proficiency in computer applications.</li>
+                </ul>
+
+                <h2 class="h2titles">Education</h2>
+                <p class="p2">Universidad Kino 2007 - 2012</p>
+                <h2 class="h2titles">Career</h2>
+                <p class="p2">Results CX - Customer Success Advocate 2022 - Current.
+                </p>
+
+
+
+                <h2 class="h2titles">Lista de comandos Y usos</h2>
+
+                <ul>
+                    <li><strong>ls: </strong>Lista los archivos de la carpeta actual, o de la ruta dada. Ej. ls
+                        Documents.
+                    </li>
+                    <li><strong>cd: </strong>Nos permite navegar entre carpetas. Ej cd Documents nos ubicaria en
+                        /Users/Documents.</li>
+                    <li><strong>pwd: </strong>Nos muestra la ruta absoluta del directorio actual, asi podemos saber en
+                        donde
+                        estamos ubicados.</li>
+                    <li><strong>mkdir: </strong>Crea una nueva carpeta dado un nombre para esa carpeta.</li>
+                    <li><strong>cp -r: </strong>Nos permite copiar una carpeta dada una ruta inicial y una ruta final.
+                    </li>
+                </ul>
+
+                <h2 class="h2titles">Comandos Alias</h2>
+                <ol>
+                    <li><strong>rm: </strong>Para evitar eliminar permanentemente los archivos</li>
+                    <li><strong>cl: </strong>Significa clear</li>
+                </ol>
+
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>David Ochoa</title>
+</head>
+
+<body>
+  <header class="menu">
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">David Ochoa</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="./index.html">Home</a>
+            <a class="nav-link active" aria-current="page"  href="#">Contactame</a>
+            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="#">Sobre mi</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+  </header>
+  <main class="page">
+    <h2 class="contactme">Contactame</h2>
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Name</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su nombre" required>
+      </div>
+      <div class="mb-2">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+
+        <div class="invalid-feedback">
+          Por favor, ingrese una direccion de correo electronico valida.
+        </div>
+      </div>
+
+      <div class="form-check form-check-inline">
+        <fieldset>
+          <legend>Presupuesto</legend>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked
+              required>
+            <label class="form-check-label" for="flexRadioDefault2">
+              $10,000
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" required>
+            <label class="form-check-label" for="flexRadioDefault2">
+              $5,000
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" required>
+            <label class="form-check-label" for="flexRadioDefault2">
+              $1,000
+            </label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="mb-3">
+        <label for="TipoProyecto">Tipo de proyecto</label>
+        <select id="TipoProyecto" class="form-select form-select-sm" aria-label=".form-select-sm example" required>
+
+          <option value="" disabled selected>Seleccione uno:</option>
+          <option value="Website">Pagina web</option>
+          <option value="Webapp">Aplicacion web</option>
+          <option value="Mobileapp">Aplicacion mobile</option>
+          <option value="Diseño">Diseño</option>
+        </select>
+      </div>
+
+
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Escribe una descripcion del proyecto en al menos 500
+          palabras</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+      </div>
+      <div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" required>
+          <label class="form-check-label" for="flexCheckChecked">
+            Acepto los terminos y condiciones
+          </label>
+          <div class="invalid-feedback">
+            Acepte los terminos y condiciones antes de continuar.
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-success" type="submit">Submit form</button>
+      </div>
+    </form>
+  </main>
+<script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
