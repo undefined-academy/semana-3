@@ -433,8 +433,10 @@ footer {
 .container-footer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 4rem;
+    justify-content: space-around;
+    column-gap: 3rem;
+    padding-top: 4rem;
+    text-align: center;
 }
 
 .contact-me,
@@ -443,7 +445,7 @@ footer {
 .social-media {
     display: flex;
     flex-direction: column;
-    margin-bottom: 4rem;
+    padding-bottom: 4rem;
     gap: 2rem;
     font-size: 1.4rem;
     width: 120px;
@@ -503,6 +505,22 @@ footer {
         padding: 1rem 4rem;
     }
 
+    .navbar-section .container-info h1 {
+        font-size: 4rem;
+        font-weight: 700;
+        margin: 2rem 0 1rem 0;
+    }
+
+    .navbar-section .container-info p {
+        font-size: 2rem;
+        color: #333;
+    }
+
+    .container-info img {
+        border-radius: 50%;
+        height: 15rem;
+    }
+
     .header-items .button-mobile {
         display: none;
     }
@@ -542,6 +560,14 @@ footer {
         padding: 5rem 4rem;
     }
 
+    .container-footer {
+        text-align: left;
+    }
+
+    footer {
+        padding: 3rem 4rem;
+    }
+
 }
 
 @media screen and (min-width: 992px) {
@@ -553,14 +579,11 @@ footer {
     .desktop,
     .content-services,
     .content-education,
-    .container-footer,
-    .content-form {
+    .content-form,
+    .container-footer {
         max-width: 100rem;
         margin: 0 auto;
     }
 
-
-
-    /* --- Education -- */
 
 }
