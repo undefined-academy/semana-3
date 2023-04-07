@@ -151,6 +151,7 @@ header {
 .navbar-section .container-info p {
     font-size: 1.6rem;
     color: #333;
+    font-weight: 600;
 }
 
 .container-info img {
