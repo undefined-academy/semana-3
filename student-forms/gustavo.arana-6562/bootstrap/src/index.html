@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./js/main.js"></script>
+    <title>Contact Form - Bootstrap</title>
+</head>
+<body>
+    <section class="container mt-5">
+        <h1>Contact</h1>
+
+        <form>
+          <div class="row mt-4">
+            
+            <div class="col">
+                <label for="name" class="form-label">Name</label>
+                <input
+                class="form-control"
+                id="name"
+                type="text"
+                placeholder="Write your name"
+                required
+              />
+            </div>
+            
+            <div class="col">
+                <label for="email" class="form-label">Email</label>
+                <input
+                class="form-control"
+                id="email"
+                type="email"
+                placeholder="Write your email"
+                required
+              />
+            </div>
+          </div>
+
+          <fieldset class="mt-4">
+            <div class="form-label">Budget</div>
+
+            <div class="form-check-inline">
+                <input class="form-check-input" type="radio" id="5000" name="budget" />
+                <label class="form-check-label" for="5000">$5,000</label>
+            </div>
+
+            <div class="form-check-inline">
+                <input class="form-check-input" type="radio" id="10000" name="budget" />
+                <label class="form-check-label" for="10000">$10,000</label>
+            </div>
+
+            <div class="form-check-inline">
+                <input class="form-check-input" type="radio" id="30000" name="budget" />
+                <label class="form-check-label" for="30000">$30,000</label>
+            </div>
+          </fieldset>
+
+          <div class="mt-4">
+            <label for="type-project" class="form-label">Type Project:</label>
+            <select class="form-select" name="type-project" id="type-project" required >
+              <option value="" selected disabled>Select one</option>
+              <option value="website">Website</option>
+              <option value="webapp">Webapp</option>
+              <option value="mobile">Mobile App</option>
+              <option value="design">Design</option>
+            </select>
+          </div>
+
+          <div class="mt-4">
+            <label class="form-label" for="description">Description</label>
+            <textarea id="description" class="form-control"></textarea>
+            <div class="form-text">
+              Write a description about the project almost 500 characters.
+            </div>
+          </div>
+
+          <div class="form-check mt-4">
+            <label for="terms" class="form-label">
+              <input id="terms" type="checkbox" required class="form-check-input"/>
+              <span class="form-check-label">Accept terms and conditions</span>
+            </label>
+          </div>
+
+          <button class="btn btn-primary mt-3">Send</button>
+        </form>
+      </section>
+</body>
+</html>
