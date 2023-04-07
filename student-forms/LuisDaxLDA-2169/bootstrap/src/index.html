@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario LuisLDA</title>
+</head>
+
+<body>
+
+    <form id="form-content" class="container py-4 px-3 mx-auto">
+
+        <h2>Formulario de contacto</h2>
+
+        <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Tu nombre" aria-describedby="helpId">
+            <small id="helpId" class="text-muted">Ej: Luis</small>
+        </div>
+
+
+        <div class="form-group">
+            <label for="email">Correo:</label>
+            <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelpId"
+                placeholder="Tu correo">
+            <small id="emailHelpId" class="form-text text-muted">Ej: mail</small>
+        </div>
+
+        <div class="form-group">
+            <label for="asunto">Asunto</label>
+            <input type="text" name="asunto" id="asunto" class="form-control" placeholder="Asunto" aria-describedby="helpId">
+            <small id="helpId" class="text-muted">Ej: Cotización</small>
+        </div>
+
+
+        <div class="mb-3 form-group">
+            <label for="description">Descripción</label>
+            <textarea class="form-control" name="description" id="description" rows="3" placeholder="Comentarios"></textarea>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+        </div>
+
+    </form>
+
+    <script type="module" src="./js/main.js"></script>
+
+</body>
+
+</html>
