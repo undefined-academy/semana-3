@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <section class="mb-4">
+      <h2 class="h1-responsive font-weight-bold text-center my-4">Contacto</h2>
+      <p class="text-center w-responsive mx-auto mb-5">
+        ¿Tienes alguna pregunta? Por favor, no dudes en contactarme por este
+        medio o enviando un correo a
+        <strong>carlos.gamez.glez@gmail.com</strong>
+      </p>
+
+      <div class="container">
+        <form
+          id="contact-form"
+          name="contact-form"
+          action="mail.php"
+          method="POST"
+        >
+          <div class="row">
+            <div class="col-md-6">
+              <div class="md-form mb-0">
+                <label for="name" class="">Nombre</label>
+                <input type="text" id="name" name="name" class="form-control" />
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="md-form mb-0">
+                <label for="email" class="">Email</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <div class="md-form mb-0">
+                <label for="subject" class="">Asunto</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="form-control"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <div class="md-form">
+                <label for="message">Mensaje</label>
+                <textarea
+                  type="text"
+                  id="message"
+                  name="message"
+                  rows="2"
+                  class="form-control md-textarea"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class="text-md-left mt-3">
+          <button class="btn btn-primary">Enviar</button>
+        </div>
+        <div class="status"></div>
+      </div>
+    </section>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
