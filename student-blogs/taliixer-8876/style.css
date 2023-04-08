@@ -37,7 +37,9 @@ p{
   color: var(--white);
 }
 .content{
-  margin: 30px 16px;
+  padding: 30px 16px;
+  max-width: 465px;
+  margin: 0 auto;
 }
 /* Hidden sections in the header */
 .header__navbar,.search__input{
