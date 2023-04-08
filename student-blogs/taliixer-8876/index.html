@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bryan Vera</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link media="screen and (min-width : 600px)" rel="stylesheet" href="./styles/table.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
@@ -14,19 +15,23 @@
     <div class="content">
       <header class="header">
           <span class="header__menu"><ion-icon name="menu"></ion-icon></span>
-          <div class="header__logo">
-            <span class="logo__image"></span>
-            <p class="logo__text">Taliixer</p>
+
+          <div class="header__explorer">
+            <div class="header__logo">
+              <span class="logo__image"></span>
+              <p class="logo__text">Taliixer</p>
+            </div>
+            <nav class="header__navbar">
+              <a href="#">Events</a>
+              <a href="#">Travel</a>
+              <a href="#">Technology</a>
+              <a href="#">Guides</a>
+            </nav>
           </div>
-          <nav class="header__navbar">
-            <a href="#">Events</a>
-            <a href="#">Travel</a>
-            <a href="#">Technology</a>
-            <a href="#">Guides</a>
-          </nav>
+
           <div class="header__search">
             <span class="search__icon"><ion-icon name="search"></ion-icon></span>
-            <input class="search__input" type="search">
+            <input class="search__input" type="search" placeholder="Search">
           </div>
       </header>
 

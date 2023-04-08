@@ -47,6 +47,7 @@ p{
 }
 .header{
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-block-end: 24px;
 }
@@ -68,7 +69,7 @@ ion-icon {
   display: block;
   width: 35px;
   height: 35px;
-  background-image: url(./icons/logo.png);
+  background-image: url(../icons/logo.png);
   background-size: cover;
 }
 .logo__text{
@@ -132,16 +133,16 @@ ion-icon {
   background-size: cover;
 }
 .autor1{
-  background-image: url(./icons/Ellipse\ 1.png);
+  background-image: url(../icons/Ellipse\ 1.png);
 }
 .autor2{
-  background-image: url(./icons/Ellipse\ 4.png);
+  background-image: url(../icons/Ellipse\ 4.png);
 }
 .autor3{
-  background-image: url(./icons/author-3.png);
+  background-image: url(../icons/author-3.png);
 }
 .autor4{
-  background-image: url(./icons/author-4.png);
+  background-image: url(../icons/author-4.png);
 }
 .autor__description{
   display: flex;
