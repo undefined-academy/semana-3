@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background:  #fefefe;
+    line-height: 1.5;
+    color: #333;
+    margin-top: 150px;
+
+}
+
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+h1,h2,h3, strong {
+    color: black;
+}
+
+a {
+    color: red
+}
+
+pre {
+    border-left: 2px solid #69c;
+}
+  .flex-container{
+    display:flex;
+     flex-wrap:wrap;
+     background: #fefefe;
+     max-width: 100%;
+     flex-direction:column;
+
+   }
+   
+   .head{
+     display:flex;
+     flex-wrap:wrap;
+    
+     flex-direction: column;
+     
+   }
+   
+   .description{
+      display:flex;
+     flex-wrap:wrap;
+     padding: 40px;
+   }
+   
+   .flex-time{
+       display:flex;
+     align-items: center;
+     flex-direction: column;}
+   .footer{
+     display:flex;
+    
+    align-items: flex-end;
+    justify-content: flex-end;
+   
+
+    height:  200px;
+    
+   }
+   .flex-address{
+    display:flex;
+    
+     align-self:  flex-end;
+   }
+   .tittle{
+    display:flex;
+ 
+     align-self:  center;
+    
+   }
+   h1{
+text-align: center;
+   }
+   h2{
+    text-align: center;
+   }
+   .education{
+    margin-block-end: 100px;
+   }
+  @media screen and (max-width: 767px) {
+body{
+  margin-top: 0px;
+}
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    body{
+      margin-top: 100px;
+    }
+    .education{
+      margin-block-end: 10px;
+    }
+    
+  }

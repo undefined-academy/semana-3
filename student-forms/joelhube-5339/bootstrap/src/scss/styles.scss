@@ -1,0 +1,12 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+.social-icon{
+    cursor: pointer;
+}
+.social-icon img {
+    transition: 0.4s all;
+}
+.social-icon:hover img {
+    transform: scale(2);
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <form class="container">
+      <h1 class="mt-5 text-center">CONTACT ME</h1>
+      <div class="form-group mt-4">
+        <label for="name">Nombres</label>
+        <input
+          class="form-control"
+          id="name"
+          type="text"
+          placeholder="ingrese su nombre completo"
+          required
+        />
+      </div>
+      <div class="form-group mt-4">
+        <label for="email">E-mail</label>
+        <input
+          class="form-control"
+          id="email"
+          type="email"
+          placeholder="ingrese su correo electronico"
+          required
+        />
+      </div>
+      <div class="form-group mt-4">
+        <label for="phone mt-4">Telefono</label>
+        <input
+          class="form-control"
+          id="phone"
+          type="number"
+          placeholder="ingrese su numero de telefono"
+          required
+        />
+      </div>
+      <div class="form-group mt-4">
+        <label for="description">Descripcion Del Trabajo</label>
+        <textarea
+          class="form-control"
+          id="description"
+          placeholder="Escribe tu oferta en almenos 300 palabras"
+          rows="5"
+        ></textarea>
+      </div>
+      <div class="col-auto">
+        <button class="btn btn-primary mb-3 mt-4 px-3">ENVIAR</button>
+      </div>
+    </form>
+    <ul class="nav justify-content-center align">
+      <li>
+        <span class="social-icon mx-4">
+          <a href="https://www.instagram.com/jorge.hurtado3/" target="_blank">
+            <img src="/icons/instagram-icon.png" height="80px" />
+          </a>
+        </span>
+      </li>
+      <li><span class="social-icon mx-4 ">
+        <a href="https://www.linkedin.com/in/jorge-eliecer-hurtado-bastidas-19670b226/" target="_blank">
+          <img src="/icons/Linkedin-icon.png" height="80px" />
+        </a>
+      </span>
+       
+      </li>
+      <li><span class="social-icon mx-4">
+        <a href="https://github.com/joelhuba" target="_blank"><img src="/icons/github-icon.png" height="80px" /></a>
+      </span>
+       
+      </li>
+    </ul>
+  </body>
+</html>

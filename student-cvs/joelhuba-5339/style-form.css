@@ -1,0 +1,70 @@
+body {
+  margin: 0 auto;
+  max-width: 767px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background: #fefefe;
+  line-height: 1.5;
+  color: #333;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0px 0px;
+
+
+}
+
+label,
+input,
+textarea {
+  border: 2px, black;
+  padding: 6px 8px;
+  border-radius: 10px;
+}
+
+label,
+input {
+  width: 50%;
+  display: block;
+}
+
+label {
+  font-weight: bold;
+  color: #666;
+}
+
+textarea {
+  width: 50%;
+  display: block;
+  resize: vertical;
+}
+
+button {
+  margin: 10px 90px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+}
+h3 {
+  text-align: center;
+}
+@media screen and (min-width: 768px) and (max-width:1023px) {
+
+  button{
+    margin: 10px 180px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  
+  button{
+    margin: 10px 180px;
+  }
+}
