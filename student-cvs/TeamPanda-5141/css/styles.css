@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+#header {
+    display: grid;
+    place-items: center;
+    padding-bottom: 5px;
+    border: 2px solid azure;
+    border-radius: 7px;
+    background-image: url("/semana-3/student-cvs/TeamPanda-5141/img/imagen-fondo-divpanda.jpg");
+}
+
+.mi-nombre {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    -webkit-text-fill-color: #00ffffeb;
+    -webkit-text-stroke: 1px #008b8b7d;
+    font-family: 'Alfa Slab One';
+    font-size: 33px;
+}
+
+.waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
+    font-size: 60px;
+}
+
+.mi-nombre span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+
+}
+
+@keyframes waviy {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0)
+    }
+
+    20% {
+        transform: translateY(-20px)
+    }
+}
+
+code {
+    color: cyan;
+    background-color: #212529;
+    padding: 2px 4px;
+    vertical-align: text-bottom;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 400px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    padding: 2em 1em;
+    background-image: url("/semana-3/student-cvs/TeamPanda-5141/img/imagen-fondo-divpanda.jpg");
+}
+
+#hoja-de-vida {
+    background-color: rgba(53 51 51 / 0.36);
+}
+
+h1,
+h2 {
+    font-family: "Helvetica", "Arial", sans-serif;
+}
+
+h1 {
+    padding-left: 20px;
+    padding-right: 20px;
+    /* aquí puede meterse una fotish */
+    background-repeat: no-repeat;
+    background-position: 509px;
+    background-size: 75px;
+}
+
+#introduccion,
+#hoja-de-vida,
+#experiencia-previa,
+#hobbies-intereses,
+#encuéntrame {
+    border: 2px solid azure;
+    margin: 0 auto;
+    padding: 13px;
+    border-radius: 7px;
+}
+
+#resaltable {
+    font-size: 18px;
+    background-image: url("/semana-3/student-cvs/TeamPanda-5141/img/imagen-fondo-divpanda.jpg");
+    border-radius: 10px;
+    border: 2px solid azure;
+    text-align: center;
+
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#encuéntrame {
+    display: flex;
+    background-image: url("/semana-3/student-cvs/TeamPanda-5141/img/imagen-fondo-divpanda.jpg");
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#botones-encuéntrame {
+    display: flex;
+}
+
+.botones {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#boton-platzi {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    width: 93px;
+    height: 35px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    color: aliceblue;
+    background-color: transparent;
+    border: 2px solid azure;
+    text-decoration: none;
+    background-image: url("/semana-3/student-cvs/TeamPanda-5141/img/platzi-logo.png");
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: contain;
+}
+
+#boton-platzi:hover {
+    background-color: rgba(153, 205, 50, 0.295);
+}
+
+#boton-freecodecamp {
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    width: 159px;
+    height: 35px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    color: aliceblue;
+    background-color: transparent;
+    border: 2px solid azure;
+    text-decoration: none;
+    background-image: url("/semana-3/student-cvs/TeamPanda-5141/img/freecodecamp-logo.png");
+    background-repeat: no-repeat;
+    background-position: 9px;
+    background-size: 25px;
+    align-items: center;
+}
+
+#boton-freecodecamp:hover {
+    background-color: #575353be;
+}
+
+#boton-github {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    color: aliceblue;
+    background-color: transparent;
+    border: 2px solid azure;
+    text-decoration: none;
+    background-image: url("/semana-3/student-cvs/TeamPanda-5141/img/github-logo-dark.png");
+    background-repeat: no-repeat;
+    background-position: 9px;
+    background-size: 25px;
+
+}
+
+#boton-github:hover {
+    background-color: #575353be;
+}
+
+#boton-contáctame {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    height: 35px;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    color: aliceblue;
+    background-color: transparent;
+    border: 2px solid azure;
+    text-decoration: none;
+}
+
+#boton-contáctame:hover {
+    background-color: #575353be;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    hr {
+        display: none;
+    }
+
+    body {
+        max-width: 950px;
+    }
+
+    #prueba {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+        margin-top: 10px;
+        text-align: justify;
+    }
+
+    .mi-nombre {
+        gap: 10px;
+    }
+
+    #encuéntrame {
+        display: grid;
+        grid-column: 1 / 4;
+        width: 100%;
+        place-items: center;
+    }
+
+    ul {
+        padding-left: 15px;
+    }
+
+    #resaltable {
+        padding: 0 10px
+    }
+
+}
