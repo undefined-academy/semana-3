@@ -8,7 +8,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  width: 50%;
+  width: 60%;
   min-width: 450px;
   margin: 0 auto;
 }
@@ -94,7 +94,7 @@ table {
   border: solid gray 2px;
 }
 
-header>h1 {
+header > h1 {
   text-align: center;
 }
 
@@ -103,11 +103,20 @@ header>h1 {
   display: flex;
   flex-direction: column;
 }
-
 .facts {
   gap: 28px;
 }
-
+.tables {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  /* align-items: center; */
+  flex-flow: row wrap;
+}
+.table1,
+.table2 {
+  max-width: 450px;
+}
 .content {
   gap: 32px;
 }
@@ -130,4 +139,21 @@ button {
 button:hover {
   background-color: white;
   cursor: pointer;
+}
+
+@media (min-width: 700px) {
+  h2 {
+    text-align: center;
+  }
+  .contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-me > div {
+    width: fit-content;
+  }
+  .contact-me > div > a {
+    margin: 0 12px;
+  }
 }
