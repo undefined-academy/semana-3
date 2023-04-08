@@ -6,6 +6,7 @@
 html{
   box-sizing: border-box;
   font-size: 62.5%;
+  /* height: 100%; */
 }
 body{
   height: 100%;
@@ -157,5 +158,11 @@ ion-icon {
   font-size: var(--tiny);
   opacity: 0.6;
 }
-
+footer{
+  font-size: var(--small);
+  height: 150px;
+  display: grid;
+  place-content: center;
+  color: var(--gray50);
+}
 
