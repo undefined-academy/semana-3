@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@600&family=Mukta:wght@200;500;800&display=swap');
+
+:root {
+    --font-logo : 'Alkatra', cursive;
+    --font-text : 'Mukta', sans-serif;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+}
+
+.nav {
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+}
+
+.log {
+    color: #ffffff;
+    font-family: var(--font-logo);
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.links {
+    display: flex;
+    list-style:none;
+    gap: 1rem;
+    color: #ffffff;
+}
+
+.fon-img {
+    background-image: url(./img/pexels-olena-bohovyk-1772123.jpg
+    );
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    font-family: var(--font-text);
+    height: 600px;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+
+.presentacion {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.me-parrafo {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+}
+
+.more {
+    width: 50%;
+    align-self: center;
+    padding: 10px;
+    font-weight: 800;
+    border: 5px;
+    border: none;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.388);
+}
+
+main {
+    font-family: var(--font-text);
+}
+
+.tech {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+.title {
+    padding: 3rem 0;
+
+}
+
+.img-proyect {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.img-page {
+    width: 100%;
+}
+
+.more-1 {
+    border: none;
+    padding: 10px 4px;
+    background-color: black;
+    color: #ffffff;
+    margin: 20px;
+}
+
+.contact {
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    width: 100%;
+}
+
+.title-contact {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.parrafo-contact {
+    letter-spacing: .1rem;
+    padding: 20px;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 20px;
+}
+
+.title-label {
+    align-self: self-start;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.text-input {
+    padding: 10px 0;
+}
+
+.redes {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.redes a {
+    color: #ffffff;
+    padding: 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+@media (min-width: 700px) {
+    .img-proyect {
+        display: grid;
+        grid-template-columns: repeat(3 1fr);
+        gap: 2rem;
+    }
+    
+    .proyect-1 {
+        grid-column: 1/2;
+    }
+
+    .proyect-2 {
+        grid-column: 2/3;
+    }
+
+    .fon-img {
+        background-image: url(./img/pexels-lukas-1420709.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+}
+
