@@ -1,0 +1,93 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+body{
+    color: #566b78;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    background-color: f2f2f2;
+}
+
+.container{
+    display: flex;
+    flex-direction: column; 
+    padding: 0 20px;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    padding: 20px 30px;
+    display: flex;
+    justify-content: end;
+}
+
+.nav-item{
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+
+
+.card{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    padding: 30px 20px;
+}
+
+.card img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+strong {
+  color: #333;
+}
+
+a {
+    color: #0062cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.read-more{
+    display: flex;
+    justify-content: end;
+}
+
+footer{
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 900px) {
+
+    article{
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card{
+        width: 300px;
+    }
+  }
+
+
+ 

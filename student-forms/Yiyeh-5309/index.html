@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Freddy Vilches - Yiyeh-5309</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="./main.mjs"></script>
+</head>
+
+<body class="bg-gray-100">
+    <section class="container mx-auto p-4 mt-16">
+        <div class="form-container bg-white rounded-lg shadow-lg p-4">
+            <h1 class="text-xl font-medium text-gray-700">📝 Contacto</h1>
+            <form action="form submit-form.php" method="get" onsubmit="">
+                <div class="form-group">
+                    <label for="name" class="text-gray-700 font-medium">Nombre:</label>
+                    <input type="text" id="name" name="name" placeholder="Ingresa tu nombre" required
+                        class="border rounded-lg w-full p-2">
+                </div>
+                <div class="form-group">
+                    <label for="email" class="text-gray-700 font-medium">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required
+                        class="border rounded-lg w-full p-2">
+                </div>
+                <div class="form-group">
+                    <label for="message" class="text-gray-700 font-medium">Mensaje:</label>
+                    <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí" required
+                        class="border rounded-lg w-full p-2"></textarea>
+                </div>
+                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-lg p-2">Enviar
+                    🚀</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
