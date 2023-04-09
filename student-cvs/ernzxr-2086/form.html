@@ -7,42 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css">
-    <link rel="stylesheet" href="/src/styles/main.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script type="module" src="/src/js/main.mjs"></script>
+    <script type="module" src="main.mjs"></script>
 </head>
 
 <body>
     <header class="main-header">
         <nav class="navbar">
             <ul>
-            <li><a href="/index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">Blog</a></li>
-            <li class="active-navbar"><a href="#">Contact</a></li>
+            <li class="active-navbar"><a href="form.html">Contact</a></li>
             </ul>
-            <button><a href="https://github.com/ernzxr" target="_blank">GitHub</a></button>
+            <button class="github"><a href="https://github.com/ernzxr" target="_blank"><img src="/src/images/rrss/github.png" /></a></button>
         </nav>
     </header>
-  
 
-    <div class="bkg-primary" id="form-height">
-    <section class="contact-form">
-        <header>
-        <h1 class="form-h1">Let's work together!</h1>
-        <p>Or just say hi :)</p>
-        </header>
-        <form class="form-container" action="/server" method="get">
-            <label class="form-name" for="name">Name</label>
-            <input id="name" name='name' type="text" placeholder="Tell me your name!" required>
-            <label class="form-email" for="email">Email</label>
-            <input id='email' name="email" type="email" placeholder="Email for contact?" required>
-            <label class="form-message" for="message">Description</label>
-            <textarea id="message" name="message" placeholder="Alright, what's on your mind?" required rows="5"></textarea>
-            <button class="send-button">Send</button>
-        </form>
-    </section>
+    <div class="bkg-secundary">
+        <section class="fit-height">
+            <div class="contact-form bkg-primary ">
+            <header>
+            <h1 class="form-h1">Let's work together!</h1>
+            <p class="form-p">Or just say hi :)</p>
+            </header>
+            <form class="form-container" action="/server" method="get">
+                <label class="form-name" for="name">Name</label>
+                <input id="name" name='name' type="text" placeholder="Tell me your name!" required>
+                <label class="form-email" for="email">Email</label>
+                <input id='email' name="email" type="email" placeholder="Email for contact?" required>
+                <label class="form-message" for="message">Description</label>
+                <textarea id="message" name="message" placeholder="Alright, what's on your mind?" required rows="5"></textarea>
+                <button class="send-button">Send</button>
+            </form>
+            </div>
+        </section>
     </div>
 
     <footer>
@@ -56,6 +57,6 @@
         </div> 
         <p>Web in development by ernzxr © 2023</p>
     </footer>
-</body>
 
+</body>
 </html>

@@ -41,6 +41,10 @@ section {
   gap: 1.5em;
 }
 
+.bio-height {
+  padding: 5em 1em;
+}
+
 .exp-grid {
   display: flex;
   flex-direction: column;
@@ -77,6 +81,13 @@ footer p {
 .bkg-secundary {
   background-color: var(--color-ebony);
   width: 100%;
+}
+
+.fit-height {
+  min-height: calc(100vh - 183.75px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 li,
@@ -174,7 +185,19 @@ button {
 @media screen and (min-width: 992px) {
   .navbar button {
     display: flex;
+    align-self: center;
+    padding: 0 0.4em;
+    height: 32px;
   }
+}
+
+.navbar button a {
+  display: flex;
+}
+
+.github img {
+  width: 65px;
+  align-self: center;
 }
 
 .bio {
@@ -371,6 +394,10 @@ button {
   display: flex;
   flex-direction: column;
   box-shadow: 1px 1px 2px var(--color-black-pearl);
+  width: 100%;
+  max-width: 800px;
+  padding: 1.5em;
+  gap: 1.5em;
 }
 
 .form-container {
@@ -400,11 +427,14 @@ form input, form textarea {
   border-bottom: 1px solid rgb(131, 131, 131);
 }
 
-#form-height {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.form-h1 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.form-p {
+  font-size: 1em;
+  text-align: center;
 }
 
 .rrss-footer {
