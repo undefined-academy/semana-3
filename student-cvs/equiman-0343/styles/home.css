@@ -1,0 +1,113 @@
+
+main {
+    width: 100%;
+}
+
+main > section:not(:first-child){
+    max-width: 50em;
+    padding: 1em 1em;
+}
+
+.me {
+    background-color: var(--sky-950);
+    background-image: url("https://user-images.githubusercontent.com/933393/164779706-9434093e-61cd-4e6e-86a9-5c23ec90b1b1.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    padding: 1vw 1em;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.me h1 {
+    color: var(--text-secondary);
+    font-size: 2.5em;
+    font-weight: 300;
+    padding: 1rem;
+}
+
+@media (max-width: 700px) {
+    .me h1{
+        font-size: 1.5em;
+    }
+
+    .me p {
+        font-size: 0.9em;
+    }
+}
+
+.me .profile-avatar {
+    display: inline-block;
+    height: 120px;
+    vertical-align: top;
+    width: 120px;
+    border-radius: 50%;
+    border: 4px solid var(--bg-light);
+    margin-bottom: 1em;
+}
+
+.me p {
+    max-width: 40em;
+    color: var(--text-secondary);
+    font-weight: 300;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: var(--sky-950-smoke);
+    border-radius: 8px;
+}
+
+.me strong {
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+pre,
+code {
+    font-family: monospace;
+}
+
+code {
+    padding: 2px 4px;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+    width: 100%;
+    padding: 1rem 1rem 0 1rem;
+    overflow-x: auto;
+    background-color: var(--bg-dark);
+    color: var(--placeholder);
+    border-radius: 8px;
+    border: 2px solid var(--sky-700);
+}
+
+table {
+    width: 100%;
+}
+
+table, th, tr, td {
+    border: 1px solid var(--sky-700);
+    border-collapse: collapse;
+}
+
+th {
+    font-weight: 600;
+    background: var(--sky-700);
+    color: var(--text-secondary);
+}
+
+th, td {
+    padding: 4px 8px;
+}
+
+td:first-child {
+    width: 8em;
+}
+
+td:last-child {
+    width: 22em;
+}
+
