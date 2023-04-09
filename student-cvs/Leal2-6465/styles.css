@@ -29,3 +29,30 @@ body {
   display: flex;
   justify-content: center;
  }
+
+ @media screen and (min-width: 720px) {
+  body {
+    background-color: rgb(28, 74, 28);
+    max-width: 60%;
+  }
+
+  .container {
+    margin: auto 4px;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+   }
+
+  .cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
+
+  footer {
+    align-items: center;
+    justify-items: center;
+  }
+}
+
