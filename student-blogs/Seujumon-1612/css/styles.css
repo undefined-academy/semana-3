@@ -16,7 +16,6 @@ body{
     background-color: #3d348b;
     border-radius: 8px;
     border-bottom: solid 4px #957fef;
-    /*border-right: solid 4px #957fef;*/
     border-left: solid 4px #957fef;
 
 }
@@ -31,12 +30,12 @@ body{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, auto-fit);
-    gap: 16px;/*Espacio entre items*/
+    gap: 16px;
     background-color: #7678ed;
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
-    /*grid-template-areas: "principal principal principal " "secb secc secd sece";*/
+    
 }
 .leer{
 
@@ -54,7 +53,7 @@ body{
     
 }
 .gridbig{
-    /*grid-area: principal;*/
+    
     grid-column: 1/5;
     grid-row: 1/5;
 }
@@ -173,7 +172,7 @@ h1{
     display: flex;
     width: 100%;
     background-color: #3d348b;
-    /*border: solid 1px magenta;*/
+    
     color: #ffafcc;
     padding: 4px 8px;
 }

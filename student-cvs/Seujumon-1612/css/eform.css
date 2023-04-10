@@ -64,9 +64,7 @@ form{
     border-right: solid 1px rgb(209, 188, 188);
     border-left: solid 1px rgb(209, 188, 188);
     border-radius: 16px 0 16px 0;
-	/*padding: 5px 180px;*/
 	accent-color: palevioletred;
-
 }
 
 button{
