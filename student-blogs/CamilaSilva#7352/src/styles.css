@@ -1,0 +1,109 @@
+body {
+  background-color: rgb(229, 227, 216);
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.page {
+  border: 3px solid black; 
+}
+
+.header_container {
+  display: flex; 
+  border-bottom: 3px solid black;
+}
+
+.header_logo{
+  display: grid;
+  width: 20%;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+  border-right: 3px solid black;
+}
+
+.header_logo img {
+  width: 70px;
+}
+
+.header_texts {
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+  border-right: 3px solid black;
+}
+
+.header_texts-date {
+  margin: 6px;
+  font-size: 15px;
+}
+
+.header_texts-title {
+  margin: 0;
+  font-size: 50px;
+}
+
+.header_texts-subtitle {
+  margin: 6px;
+  font-size: 20px;
+}
+
+.header_autors {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 20%;
+}
+
+.header_autors h3 {
+  margin: 0 0 12px 0;
+  font-weight: 800;
+}
+
+.header_autors p {
+  margin: 0px;
+}
+
+.header_autors p:nth-child(1) {
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  height: 35px;
+}
+
+.navbar li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  list-style: none;
+  text-decoration: none;
+}
+
+.navbar li:nth-child(1) {
+  border-right: 3px solid black;
+}
+.navbar li:nth-child(2) {
+  border-right: 3px solid black;
+}
+.navbar li:nth-child(3) {
+  border-right: 3px solid black;
+}
+
+.navbar li a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar li:hover  a{
+  color:  rgb(255, 124, 124);
+  font-weight: 800;
+}
+
+.navbar li:hover {
+  background-color:rgb(222, 218, 198);
+}
