@@ -1,0 +1,64 @@
+@import "bootstrap/scss/bootstrap";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: monospace;
+}
+
+.title {
+    font-size: 2.4rem;
+    padding-bottom: 20px;
+}
+
+.container {
+    width: 80%;
+    text-align: center;
+    max-width: 600px;
+    border: 1px solid navy;
+    border-radius: 10px;
+    margin-top: 2rem;
+    padding: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form-group input {
+    background-color: aliceblue;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+textarea {
+    margin-bottom: 20px;
+    background-color: rgb(13,110,253);
+    color: black;
+    border-radius: 5px;  
+    border: none;
+    padding: 2px 5px;
+    outline: none;
+
+}
+
+textarea:focus{
+    background-color: rgb(111, 168, 254);
+    transition: .5s;
+
+}
+
+
+.btn {
+    width: 50%;
+    margin: auto;
+}
