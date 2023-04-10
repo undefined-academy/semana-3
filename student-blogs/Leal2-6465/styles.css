@@ -132,7 +132,7 @@ header {
 
 .cards img {
   width: 90%;
-  height: 160px;
+  height: 70%;
   padding: 4px 0;
   border-radius: 4px;
   margin: auto;
@@ -163,10 +163,13 @@ header {
 }
 
 @media screen and (min-width: 720px) {
+  
+ 
   .blogs-container {
     display: grid;
-    grid-template: repeat(3, 1fr) / 1fr 2fr 1fr ;
-    grid-gap: 20px;
+    grid-template-columns:repeat(1, 1fr) 2fr repeat(1, 1fr) ;
+    grid-gap: 12px;
+
   }
 
   .cards {
@@ -179,6 +182,7 @@ header {
     border-color: #5e5353;
     align-items: center;
   }
+
 
   .post-Title {
     padding: 4px 0;
