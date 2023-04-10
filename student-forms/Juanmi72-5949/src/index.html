@@ -12,16 +12,16 @@
 <body>
     <main>
 
-        <div class="row">
+        <div class="row gy-5">
             <div class="col">
-                <h1>Bootcamp Guillermo Rodas, alumno Juan Miguel Fernández</h1>
+                <h1 class="p-3 mb-2 bg-primary text-white">Bootcamp Guillermo Rodas, alumno Juan Miguel Fernández</h1>
             </div>   
-            <div class="col">
+            <div class="col bg-primary">
                 <nav class="menu">
                     <ul class="nav flex-colum">
-                        <li class="nav-item"><a class="nav-link active" href="#">🚀 Semana 1</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#">🚀 Semana 2</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="#">🚀 Semana 3</a></li>
+                        <li class="nav-item"><a class="nav-link active text-white" href="#">🚀 Semana 1</a></li>
+                        <li class="nav-item"><a class="nav-link active text-white" href="#">🚀 Semana 2</a></li>
+                        <li class="nav-item"><a class="nav-link active text-white" href="#">🚀 Semana 3</a></li>
                     </ul>
                 </nav>
             </div>
@@ -30,9 +30,9 @@
         
         <div  class="container text-center">
 
-            <section class="col">
+            <section class="col ">
                 <header>
-                    <h2>📈 Datos de la Semana 1</h2>
+                    <h2 class="p-3 mb-2 bg-secondary-subtle text-emphasis-secondary">📈 Datos de la Semana 1</h2>
                     <p>Alumno Juan Miguel Fernández realizado con 14 commit el <time datetime="2023-03-10">10 de 
                         Marzo de 2023
                     </time></p>
@@ -64,7 +64,7 @@
             </section>
             <section class="col">
                 <header>
-                    <h2>📈 Datos de la Semana 2</h2>
+                    <h2 class="p-3 mb-2 bg-secondary-subtle text-emphasis-secondary">📈 Datos de la Semana 2</h2>
                     
                 </header>
                 
@@ -87,37 +87,44 @@
             </section>
             <section class="col">
                 <header>
-                    <h2>📈 Datos de la Semana 3</h2>
+                    <h2 class="p-3 mb-2 bg-secondary-subtle text-emphasis-secondary">📈 Datos de la Semana 3</h2>
                     <p>Alumno Juan Miguel Fernández realizado con muchos commit el <time datetime="2023-03-20">30 de 
                         Marzo de 2023
                     </time></p>
                     <p>Englobamos los datos de la semana 1 y la semana 2 y aplicamos las Bootstrap 5 y tailwindCSS</p>
                 </header>
             </section>
-
-            <section class="col form-section">
-                <h2>Formulario de Contacto</h2>
+        </div>    
+        
+        
+        
+            <section>
+                <div class="container text-left">
+                    <div class="col">
+                <h2 class="p-3 mb-2 bg-secondary-subtle text-emphasis-secondary text-center">Formulario de Contacto</h2>
                 <form action="/server" method="get">
-                    <div class="form-group">
-                        <label for="name">Nombre</label>
-                        <input id="name" name="name" type="text" placeholder="Introduce tu nombre" required>
-                        <label for="apellidos">Apellidos</label>
-                        <input id="apellidos" name="apellidos" type="text" placeholder="Introduce tus apellidos" required>
+                    <div class="form-group mb-3 ">
+                        <label for="name" class="form-label text-start">Nombre</label>
+                        <input id="name" class="form-control" name="name" type="text" placeholder="Introduce tu nombre" required>
+                        <label for="apellidos" class=" form-label">Apellidos</label>
+                        <input id="apellidos"  class="form-control" name="apellidos" type="text" placeholder="Introduce tus apellidos" required>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>   
-                        <input id="email" name="email" type="email" placeholder="Introduce tu correo electrónico" required> 
+                    <div class="form-group mb-3">
+                        <label for="email" class="form-label text-start">Email</label>   
+                        <input id="email" class="form-control" name="email" type="email" placeholder="Introduce tu correo electrónico" required> 
                     </div>
-                    <button class="enviar">Enviar</button>
+                    <button class="enviar btn btn-primary">Enviar</button>
                 </form>
-                
+            </div>
+        </div>    
             </section>
         
 
-            <footer class="col">
+            <footer class="p-3 text-center" >
                 <p>&copy; 2023</p>
             </footer>
-        </div>    
+            
+            
     </main>  
 </body>
 </html>
