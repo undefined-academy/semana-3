@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 596px;
+    margin: 0;
+    
+}
+
+.header img {
+    border-radius: 175px;
+    position: relative;
+}
+
+.header h1 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 82%;
+    text-align: center;
+    letter-spacing: -2.17241px;
+    color: #000000;
+    position: relative;
+    top: 38px;
+}
+
+.header h2 {
+    font-family: 'PT Sans Narrow';
+    font-family: 'PT Sans Narrow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #9E8C6C;
+    position: relative;
+    top: 24px;
+}
+
+.header button{
+    width: 225px;
+    height: 60px;
+    position: relative;
+    top: 78px;
+    background: #0699A6;
+    border: 1px solid #9E8C6C;
+    border-radius: 4px;
+    font-family: 'PT Sans Narrow';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/* Formulario de contacto */
+  /* .page {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 0 40px;
+  }
+
+  .form-group {
+    margin: 20px 0;
+  }
+
+  label, input:not([type="checkbox"]) {
+    width: 100%;
+  }
+
+  label, input {
+    vertical-align: middle;
+  }
+
+  label {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #444;
+  }
+
+  textarea {
+    display: block;
+    width: 100%;
+    resize: vertical;
+  }
+  
+  input[type="text"], input[type="email"], input[type="tel"], textarea {
+    background: #f7f5ea;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 8px 10px;
+    color: #3D405B;
+  }
+
+  button {
+    padding: 16px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid #3D405B;
+    background: #81B29A;
+    color: #333;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #86aa99;
+  }
+  
+  button:active {
+    background: #dba697;
+    box-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+  }
+
+  form {
+    accent-color: #81B29A;
+  }
+
+  input:focus-visible, textarea:focus-visible {
+    border: 1px solid #81B29A;
+    outline: 2px solid #9dd1b8;
+  } */
