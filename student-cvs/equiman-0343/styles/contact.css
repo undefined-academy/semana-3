@@ -52,7 +52,8 @@ textarea {
     font-size: 0.85em;
 }
 
-input[type=checkbox]
+input[type=checkbox],
+input[type=radio]
 {
     transform: scale(1.2);
 }
