@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Profile Form</title>
+  </head>
+
+  <body class="grid place-content-center bg-blue-950 text-gray-100">
+    <form class="flex flex-col justify-center items-center gap-12 relative p-16 bg-blue-900 h-screen">
+      <div class="w-full md:flex md:gap-6 md:justify-center md:items-center">
+        <label class="text-3xl block mb-6 md:mb-0" for="name">Name:</label>
+        <input
+          class="text-2xl rounded p-2 text-gray-100 bg-gray-700 border border-gray-600 focus:ring-blue-500 focus:border-blue-500"
+          id="name" type="name" name="name" required>
+      </div>
+      <div class="w-full md:flex md:gap-6 md:justify-center md:items-center">
+        <label class="text-3xl block mb-6 md:mb-0" for="email">Email:</label>
+        <input
+          class="text-2xl rounded p-2 text-gray-100 bg-gray-700 border border-gray-600 focus:ring-blue-500 focus:border-blue-500"
+          id="email" type="email" name="email" required>
+      </div>
+      <div class="w-full md:flex md:gap-6 md:justify-center md:items-center">
+        <label class="text-3xl block mb-6 md:mb-0" for="message">Message:</label>
+        <textarea
+          class="text-2xl h-full rounded p-2 text-gray-100 bg-gray-700 border border-gray-600 focus:ring-blue-500 focus:border-blue-500"
+          name="message" id="message" required></textarea>
+      </div>
+      <div class="w-full">
+        <button class="mt-12 p-4 bg-purple-900 rounded-lg text-3xl" type="submit">Enviar</button>
+      </div>
+    </form>
+
+  </body>
+
+</html>
