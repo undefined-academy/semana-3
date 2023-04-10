@@ -43,6 +43,10 @@ section:not(.me) > h1 {
     align-items: center;
 }
 
+.company-logo {
+    padding: 8px 0;
+}
+
 .company-name {
     font-family: 'Leckerli One', cursive;
     font-size: 1.2rem;
