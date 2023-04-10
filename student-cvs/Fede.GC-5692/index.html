@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Playfair+Display:wght@900&display=swap"
         rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Hoja de vida</title>
 </head>
 
@@ -18,15 +19,40 @@
     <div class="page">
         <header class="section header">
             <div class="profileimg">
-            <img src="https://i.ibb.co/Tc24bSQ/profile-pic.png" width="160" alt="profile-pic" border="0">
+                <img src="https://i.ibb.co/Tc24bSQ/profile-pic.png" width="160" alt="profile-pic" border="0">
             </div>
-            <h2>Web Developer</h2>
-            <h1>Federico Gomez Conde</h1>
-            <button>CONTACT ME</button>
+            <div class="desktop-header">
+                <h2>Web Developer</h2>
+                <h1>Federico<br>Gomez Conde</h1>
+                <a href="form.html"><button>CONTACT ME</button></a>
+            </div>
+            
         </header>
 
-        <main class="section articles">
-            <article>
+        <main class="section content">
+            <section>
+                <h3>About Me</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, magnam corrupti. Quibusdam
+                    facere corrupti obcaecati tempore temporibus minima labore alias, modi, natus, officia ratione ipsa
+                    neque voluptatibus voluptate praesentium sequi.</p>
+            </section>
+
+            <div class="rectangle"></div>
+
+            <section>
+                <h3>Education</h3>
+                <ul>
+                    <li>Full Stack Javascript Developer - Undefined Academy - in process</li>
+                    <li>React JS - Coderhouse - 2022</li>
+                    <li>Profesional Certification in Python - ITBA - 2022</li>
+                    <li>Javascript - Coderhouse - 2022</li>
+                    <li>Civil Engineer - Universidad Nacional del Sur (Argentina) - 2017</li>
+                </ul>
+            </section>
+
+            <div class="rectangle"></div>
+
+            <section>
                 <h3>Skills</h3>
                 <ul>
                     <li>HTML</li>
@@ -36,37 +62,28 @@
                     <li>Python</li>
                     <li>Git y Github</li>
                 </ul>
-            </article>
+            </section>
 
-            <article>
-                <h3>Studies</h3>
-                <ul>
-                    <li>Full Stack Javascript Developer - Undefined Academy - in process</li>
-                    <li>React JS - Coderhouse - 2022</li>
-                    <li>Profesional Certification in Python - ITBA - 2022</li>
-                    <li>Javascript - Coderhouse - 2022</li>
-                    <li>Civil Engineer - Universidad Nacional del Sur (Argentina) - 2017</li>
-                </ul>
-            </article>
+            <div class="rectangle"></div>
 
-            <article>
+            <section>
                 <h3>Languages</h3>
                 <ul>
                     <li>English - Intermediate</li>
                     <li>Spanish - Native</li>
                     <li>French - Basic</li>
                 </ul>
-            </article>
+            </section>
         </main>
 
         <footer class="section footer">
             <address>
-                You can catch me on:
-                <div>
-                    <a href="https://www.linkedin.com/in/federico-gomez-conde">Linkedin</a><br>
-                    <a href="https://github.com/fedegomezc">Github</a><br>
-                    <a href="mailto:fedegomezconde@gmail.com">Gmail</a><br>
-                    <a href="form.html">Formulario de contacto</a>
+                <h1>Get in touch!</h1>
+                <div class="contact_icons">
+                    <a href="https://www.linkedin.com/in/federico-gomez-conde"><i
+                            class='bx bxl-linkedin-square bx-md bx-tada-hover'></i></a><br>
+                    <a href="https://github.com/fedegomezc"><i class='bx bxl-github bx-md bx-tada-hover'></i></a><br>
+                    <a href="form.html"><i class='bx bxs-envelope bx-md bx-tada-hover'></i></a><br>
                 </div>
             </address>
         </footer>
