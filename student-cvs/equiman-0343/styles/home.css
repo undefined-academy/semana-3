@@ -1,13 +1,4 @@
 
-main {
-    width: 100%;
-}
-
-main > section:not(:first-child){
-    max-width: 50em;
-    padding: 1em 1em;
-}
-
 .me {
     background-color: var(--sky-950);
     background-image: url("https://user-images.githubusercontent.com/933393/164779706-9434093e-61cd-4e6e-86a9-5c23ec90b1b1.png");
@@ -22,19 +13,9 @@ main > section:not(:first-child){
 
 .me h1 {
     color: var(--text-secondary);
-    font-size: 2.5em;
+    font-size: 1.5em;
     font-weight: 300;
     padding: 1rem;
-}
-
-@media (max-width: 700px) {
-    .me h1{
-        font-size: 1.5em;
-    }
-
-    .me p {
-        font-size: 0.9em;
-    }
 }
 
 .me .profile-avatar {
@@ -55,6 +36,7 @@ main > section:not(:first-child){
     padding: 1em;
     background-color: var(--sky-950-smoke);
     border-radius: 8px;
+    font-size: 0.9em;
 }
 
 .me strong {
@@ -62,52 +44,74 @@ main > section:not(:first-child){
     font-weight: 600;
 }
 
-pre,
-code {
-    font-family: monospace;
+.blog .post-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
 }
 
-code {
-    padding: 2px 4px;
-}
-
-pre {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    text-align: justify;
-    width: 100%;
-    padding: 1rem 1rem 0 1rem;
-    overflow-x: auto;
-    background-color: var(--bg-dark);
-    color: var(--placeholder);
+.post > :first-child{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
+    border: 1px solid var(--sky-200);
+    background-color: var(--sky-100);
     border-radius: 8px;
-    border: 2px solid var(--sky-700);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-table {
-    width: 100%;
+.post a {
+    color: var(--text-primary);
+    text-decoration: none;
 }
 
-table, th, tr, td {
-    border: 1px solid var(--sky-700);
-    border-collapse: collapse;
+.post header {
+    font-weight: bold;
+    font-size: 1.1rem;
 }
 
-th {
-    font-weight: 600;
-    background: var(--sky-700);
-    color: var(--text-secondary);
+.post img {
+    padding: 0.5em 0;
 }
 
-th, td {
-    padding: 4px 8px;
+.post p {
+    font-size: 1rem;
+    text-align: justify;
 }
 
-td:first-child {
-    width: 8em;
+.post footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding-top: 0.5rem;
+    color: var(--text-title);
 }
 
-td:last-child {
-    width: 22em;
+.post .tags {
+    justify-self: flex-end;
 }
 
+@media only screen and (min-width: 576px) {
+    .blog .post-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .blog .post-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .me h1{
+        font-size: 2.5em;
+    }
+
+    .blog .post-list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

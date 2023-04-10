@@ -7,7 +7,7 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
-header {
+.header {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -18,6 +18,24 @@ header {
     background: linear-gradient(to left, var(--sky-800), var(--sky-950));
     height: 50px;
     padding: 1em;
+
+    position: fixed;
+    width: 100%;
+}
+
+.header + main{
+    margin-top: 50px;
+}
+
+main > section:not(.me){
+    max-width: 50em;
+    padding: 1em 1em;
+    margin: 0 auto;
+}
+
+section:not(.me) > h1 {
+    padding: 1rem;
+    color: var(--text-title);
 }
 
 .company {
@@ -108,7 +126,8 @@ nav ul li:hover {
     transform: rotate(-405deg);
 }
 
-@media (max-width: 700px) {
+
+@media only screen and (max-width: 768px) {
     .menu-button-container {
         display: flex;
     }
@@ -150,11 +169,12 @@ nav ul li:hover {
     }
 }
 
+
 main {
-    justify-self: center;
+    width: 100%;
 }
 
-footer {
+.footer {
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -164,13 +184,13 @@ footer {
     gap: 12px;
 }
 
-footer a,
-footer strong {
+.footer a,
+.footer strong {
     color: var(--sky-100);
     text-decoration: none;
 }
 
-footer .social {
+.footer .social {
     max-width: 50em;
     display: flex;
     flex-wrap: wrap;
