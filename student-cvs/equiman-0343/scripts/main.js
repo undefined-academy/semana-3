@@ -1,5 +1,4 @@
 const handleCloseMenu = (event) => {
-    event.preventDefault();
     const $menuToggle = document.querySelector("#menu-toggle")
     $menuToggle.checked = false;
 }
