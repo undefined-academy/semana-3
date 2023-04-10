@@ -1,18 +1,10 @@
-let postList = []
-
-document.addEventListener("DOMContentLoaded", function(){
-    getPosts()
-});
-
-const getPosts = () => {
-    const url = new URL('https://dev.to/api/articles')
-    url.searchParams.set('username', 'equiman');
-
-    fetch(url)
-        .then((response) => response.json())
-        .then(data => {
-            postList.length = 0
-            postList = [...data]
-        })
-        .catch((error) => console.error(error));
+const handleCloseMenu = (event) => {
+    event.preventDefault();
+    const $menuToggle = document.querySelector("#menu-toggle")
+    $menuToggle.checked = false;
 }
+
+const $menuItems = document.querySelectorAll("nav li");
+$menuItems.forEach(item => {
+    item.addEventListener("click", handleCloseMenu);
+});
