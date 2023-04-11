@@ -1,0 +1,141 @@
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Custom properties */
+:root {
+  --clr-1: #4D4D4D;
+  --clr-2: #B46060;
+  --clr-3: #FFBF9B;
+  --clr-4: #FFF4E0;
+
+  --font: Verdana, Geneva, Tahoma, sans-serif
+}
+
+html {
+  box-sizing: border-box;
+  color: var(--clr-1);
+  font-family: var(--font);
+}
+
+* {
+  box-sizing: inherit;
+}
+
+header,
+.sidebar,
+.footer {
+  padding: 2.5%;
+  background: var(--clr-1);
+  color: var(--clr-4);
+}
+
+.sidebar {
+  background: var(--clr-2);
+}
+
+.image-crop {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  clip-path: circle(75px at center);
+}
+
+.image-crop img {
+  position: absolute;
+  top: -5%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+}
+
+header,
+.skills,
+.education {
+  text-align: center;
+}
+
+.divider {
+  background: var(--clr-3);
+  height: 5px;
+}
+
+.content {
+  background: var(--clr-4);
+  padding: 0% 5% 5% 5%;
+  text-align: justify;
+  text-justify: inter-;
+}
+
+.form {
+  padding: 10px 40px;
+  background: var(--clr-2);
+  color: var(--clr-3);
+  display: flex;
+  justify-content: center;
+}
+
+#name,
+#email,
+#type {
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  background: var(--clr-4);
+
+}
+
+.footer {
+  text-align: center;
+}
+
+a {
+  color: var(--clr-4);
+  text-transform: uppercase;
+}
+
+h2 {
+  padding: 2.5% 0% 2.5% 5%;
+}
+
+h3 {
+  margin-top: 1%;
+  margin-bottom: 0.5%;
+}
+
+@media screen and (min-width:700px) {
+  .information {
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  .contact {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .footer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form {
+    width: 100%;
+    background: var(--clr-1);
+  }
+}
