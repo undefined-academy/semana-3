@@ -119,7 +119,6 @@ body {
 .hero_container {
   display: flex;
   border-bottom: 1px solid black;
-  margin-bottom: 100px;
 }
 
 .hero_article-container {
@@ -202,17 +201,80 @@ body {
 
 .hero_aside-img {
   width: 90%;
-  min-height: 50%;
   margin: 0;
   
 }
 .hero_aside-img  img{
   width: 100%;
   object-fit: cover;
+  margin-bottom: -60px;
+}
+
+.hero_aside-text {
+  font-size: 58px;
+  margin-bottom: 0;
+}
+/* ________________________________________ */
+
+
+/* Sección posts */
+
+.posts_container {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  border-bottom: 1px solid black;
+}
+
+.posts_card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  width: 33.33%;
+  padding: 20px;
+  border-right: 1px solid black;
+}
+
+.post_card-img {
+  width: 100%;
+  margin: 0;
+}
+
+.post_card-img img {
+  width: 100%;
+  object-fit: cover;
 
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
-.hero_aside-text {
-  font-size: 44px;
+.posts_card-texts h2 {
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.posts_card-texts p{
+  margin-top: 0;
+}
+
+.post_link {
+  justify-self: end;
+  align-self: flex-end;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(222, 218, 198);
+}
+
+footer p {
+  font-size: 26px;
+  color: rgb(255, 124, 124);
+}
+
+.footer_img img {
+  width: 60px;
 }
