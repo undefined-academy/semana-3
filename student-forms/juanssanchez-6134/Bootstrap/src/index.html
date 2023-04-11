@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./js/main.js"></script>
+    <title>Formulario de Contacto</title>
+</head>
+
+<body class="bg-darker-green">
+    <dIv class="w-11/12 max-w-6xl mx-auto"></dIv>
+    <header>
+        <h1 class="text-green text-center">Contáctame</h1>
+        <p class="text-light-green text-center">Completa este formulario para ponerte en contacto conmigo</p>
+    </header>
+
+    <div class="container mx-auto">
+        <form class="container rounded bg-gray">
+            <div class="container">
+                <h2>Formulario de Contacto</h2>
+            </div>
+            <label for="Nombre" class="form-label text-magenta">Nombre</label>
+            <input type="Nombre" class="form-control bg-light-green text-darker-green" id="Nombre">
+            <div class="mb-3">
+                <label for="Email" class="form-label text-magenta">Correo</label>
+                <input type="email" class="form-control bg-light-green" id="Email" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text text-darker-green">No compartiremos tu información personal con
+                    nadie</div>
+            </div>
+            <div class="d-flex flex-column gap-2 mb-4">
+                <label class="text-magenta" for="message">Mensaje</label>
+                <textarea class="form-control bg-light-green" id="message" rows="3"
+                    placeholder="¿Qué necesitas?"></textarea>
+            </div>
+            <label class="text-magenta" for="type">Animal Favorito</label>
+            <select class="form-select bg-light-green" aria-label=".form-select-lg example">
+                <option disabled selected value="">Seleccione uno</option>
+                <option>Gatos🐱</option>
+                <option>Perros🐶</option>
+                <option>Pandas🐼</option>
+                <option>Otros🐱‍🐉</option>
+            </select>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label text-darker-green" for="exampleCheck1">Acepto los términos y
+                    condiciones</label>
+            </div>
+            <button type="submit" class="btn bg-magenta mt-2 mb-3">Enviar</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

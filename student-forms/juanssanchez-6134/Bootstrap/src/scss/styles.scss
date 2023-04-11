@@ -1,0 +1,14 @@
+// Import all of Bootstrap's CSS
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+
+$theme-colors: (
+    "darker-green": #0f380f,
+    "dark-green": #306230,
+    "green": #8bac0f,
+    "light-green": #9bbc0f,
+    "gray": #aaaaaa,
+    "magenta": 	#9a2257,
+);
+
+@import "~bootstrap/scss/bootstrap";
