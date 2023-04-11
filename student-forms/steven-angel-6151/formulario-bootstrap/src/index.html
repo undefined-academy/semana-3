@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" class="d-flex justify-content-center">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Form</title>
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body class="font-family-base p-3 mb-2 bg-secondary text-white w-75" >
+  <header >
+    <h1 class='d-flex justify-content-center m-5'>CONTACT FORM</h1>
+  </header>
+  <form >
+    <fieldset class="align-items-center">
+      <legend class="d-flex justify-content-center">General Information</legend>
+      <div class="mb-3 ">
+        <label for="name" class="col-form-label">Name</label>
+        <input type="text" id="name" class="form-control border border-info" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="mb-3 ">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" class="form-control border border-info" placeholder="Enter your email" required>
+      </div>
+
+      <div class="mb-3 ">
+        <label for="company-name" class="form-label">Company Name</label>
+        <input type="text" id="company-name" class="form-control border border-info" placeholder="Enter company name" required>
+      </div>
+      <div class="mb-3">
+        <label for="type">Country</label>
+        <select class="form-select border border-info" aria-label="Default select example" required>
+          <option disabled selected>Select your country</option>
+          <option value="argentina">Argentina</option>
+          <option value="australia">Australia</option>
+          <option value="belgium">Belgium</option>
+          <option value="bolivia">Bolivia</option>
+          <option value="brazil">Brazil</option>
+          <option value="canada">Canada</option>
+          <option value="chile">Chile</option>
+          <option value="china">China</option>
+          <option value="colombia">Colombia</option>
+          <option value="denmark">Denmark</option>
+          <option value="ecuador">Ecuador</option>
+          <option value="el_salvador">El Salvador</option>
+          <option value="finland">Finland</option>
+          <option value="france">France</option>
+          <option value="germany">Germany</option>
+          <option value="greece">Greece</option>
+          <option value="guatemala">Guatemala</option>
+          <option value="iceland">Iceland</option>
+          <option value="india">India</option>
+          <option value="italy">Italy</option>
+          <option value="jamaica">Jamaica</option>
+          <option value="japan">Japan</option>
+          <option value="kuwait">Kuwait</option>
+          <option value="luxembourg">Luxembourg</option>
+          <option value="mexico">Mexico</option>
+          <option value="monaco">Monaco</option>
+          <option value="montenegro">Montenegro</option>
+          <option value="netherlands">Netherlands</option>
+          <option value="new_zealand">New Zealand</option>
+          <option value="norway">Norway</option>
+          <option value="panama">Panama</option>
+          <option value="paraguay">Paraguay</option>
+          <option value="peru">Peru</option>
+          <option value="poland">Poland</option>
+          <option value="portugal">Portugal</option>
+          <option value="qatar">Qatar</option>
+          <option value="romania">Romania</option>
+          <option value="russia">Russia</option>
+          <option value="serbia">Serbia</option>
+          <option value="south_korea">South Korea</option>
+          <option value="sri_lanka">Sri Lanka</option>
+          <option value="sweden">Sweden</option>
+          <option value="switzerland">Switzerland</option>
+          <option value="turkey">Turkey</option>
+          <option value="ukraine">Ukraine</option>
+          <option value="united_kingdom">United Kingdom</option>
+          <option value="united_states_of_america">United States of America</option>
+          <option value="uruguay">Uruguay</option>
+        </select>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend class="d-flex justify-content-center">Project description</legend>
+      <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea class="form-control border border-info" id="description" rows="4" cols="10" required></textarea>
+        <div id="help-text" class="form-text">
+          Write a description of the project in at least 500 words.
+        </div>
+      </div>
+
+      <div class="form-check">
+        <input class="form-check-input border border-info" type="checkbox" value="" id="terms">
+        <label class="form-check-label" for="terms">
+          I accept the sending of the entered data
+        </label>
+      </div>
+
+    </fieldset>
+
+    <div class="col-6 d-grid gap-2 mx-auto">
+      <button class="btn btn-info btn-lg mt-4" type="button">Submit</button>
+    </div>
+
+
+  </form>
+</body>
+
+</html>
