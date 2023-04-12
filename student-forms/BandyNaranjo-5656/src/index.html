@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <section>
+        <div class="form">
+            <header>
+                <h1>Contact me</h1></header>
+            <form class="w-75 p-3">
+                <div class="form-group row mb-3">
+                    <label for="name" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-7">
+                        <input id=name type="text" placeholder="Please enter your name" class="form-control" required>
+                    </div>  
+                </div>
+                <div class="form-group row mb-3">
+                    <label for="email" class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-7">
+                        <input id="email" type="email" placeholder="Please enter your email"  class="form-control" required>
+                    </div>  
+                </div>
+                <div class="form-group row mb-3">
+                    <label for="projectType" class="col-sm-2 col-form-label">Project Type</label>
+                    <div class="col-7">
+                        <select multiple class="form-control" id="projectType">
+                            <option>Website</option>
+                            <option>Mobile</option>
+                            <option>Web Design</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                <fieldset class="form-group mb-3">
+                    <div class="row">
+                      <legend class="col-form-label col-sm-2 pt-0">Budget</legend>
+                      <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="budget" id="1000" value="1000">
+                            <label class="form-check-label" for="1000">1000</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="budget" id="5000" value="5000">
+                            <label class="form-check-label" for="5000">5000</label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" type="radio" name="budget" id="10000" value="10000">
+                            <label class="form-check-label" for="10000">10000</label>
+                        </div>
+                      </div>
+                    </div>
+                </fieldset>
+                
+                <div class="form-group row mb-3">
+                <div class="form-group row ">
+                    <div class="col-sm-2">
+                        <label for="description">Description</label>
+                    </div>
+                    <div class="col-7">
+                        <textarea id="description" class="form-control" required rows="5"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group row mb-3">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input id="terms" type="checkbox" class="form-check-input" required>
+                        <label class="form-check-label" for="terms">I agree to the terms and conditions</label>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="form-group row mb-3">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-10">
+                      <button type="submit" class="btn btn-primary">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script>
+        const form = document.getElementsByClassName("contactMeForm");
+        form[0].addEventListener("submit", function(event) {
+            event.preventDefault();
+        })
+    </script>
+  </body>
+</html>
