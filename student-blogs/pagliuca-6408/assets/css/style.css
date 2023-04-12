@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #C6C7C4 !important;
+}
+
+.card {
+    background-color: #EEF0F2 !important;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+.emphatic {
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.paragraph {
+    margin-top: 40px;
+}
+
+/*
+####################################################
+M E D I A  Q U E R I E S
+####################################################
+*/
+
+/*
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+Bootstrap breakpoints
+*/
+
+@media (min-width: 320px) {
+    .img-resizing {
+        width: inherit !important;
+        height: inherit !important;
+        aspect-ratio: inherit;
+        object-fit: inherit;
+    }
+}
+
+@media (min-width: 1024px) {
+    .img-resizing {
+        width: 355px !important;
+        height: 140px !important;
+        aspect-ratio: 3/2;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 1200px) {
+    .img-resizing {
+        width: 420px !important;
+        height: 180px !important;
+        aspect-ratio: 3/2;
+        object-fit: cover;
+    }    
+}

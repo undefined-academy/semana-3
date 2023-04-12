@@ -1,6 +1,5 @@
 ***
-## Practica Semana 2, practica 1. ![Nu Html Checker](https://validator.w3.org/nu/)
-![HTML Checker](https://raw.githubusercontent.com/Alexander-Solis-Brenes/semana-2/main/student-cvs/pagliuca-6408/result_nu_html_checker.png)
+## Practica Semana 3, practica 1. Crear su propio layout de cards que muestre las entradas de su blog usando el layout visto en clase.
 ***  
 
 # Biografía  

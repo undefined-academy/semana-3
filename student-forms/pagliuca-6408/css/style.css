@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+        url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
+    background-size:cover;
+    -webkit-animation: slidein 100s;
+    animation: slidein 100s;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;              
+    }
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+h1, label, legend, p {
+    color: white;
+}
+
+@-webkit-keyframes slidein {
+from {background-position: top; background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
+
+@keyframes slidein {
+from {background-position: top;background-size:3000px; }
+to {background-position: -100px 0px;background-size:2750px;}
+}
