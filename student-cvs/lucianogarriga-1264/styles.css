@@ -112,8 +112,7 @@ h2{
     margin: 1rem 0;
     font-size: 2rem;
 } 
-section, header{ 
-    display: flex; 
+section, header{  
     justify-content: center;
     align-items: center;
 } 
@@ -185,7 +184,10 @@ section h3 a:hover{
     padding: 5px;
     border-radius: 9px;
 }
-
+h5{
+    font-size: 1rem;
+    text-align: center;
+}
 
 /* SECTION PAGES */
 .section-pages{
@@ -212,7 +214,7 @@ section h3 a:hover{
 
 /* CONTACT PAGE STYLES */ 
 .contact-page{
-    max-width: 40em;
+    max-width: 50em;
     margin: 0 auto;
 } 
 .contact{
@@ -289,6 +291,7 @@ button:active{
 }
 form{
     accent-color: #6c9cc8;
+    padding-bottom: 3rem;
 }
 input:focus-visible,
 textarea:focus-visible{
@@ -337,13 +340,12 @@ textarea:focus-visible{
         min-height: 100px;
         padding-bottom: 1.5rem; 
     }   
-    footer p, footer address{
-        font-size: 1rem;
-        text-align: center;
+    footer p, footer address, h5{
+        font-size: 1.2rem; 
     }
     .contact{
         font-size: 2.8rem; 
-    }
+    } 
 }
 @media screen and (min-width: 992px){
     p{
@@ -395,14 +397,14 @@ textarea:focus-visible{
     .main-article{
         max-width: 40em;
         margin: 0 auto;
+        padding-bottom: 60px;
     }
 
     footer{   
         min-height: 100px;
         padding-bottom: 1.5rem; 
     }   
-    footer p, footer address{
-        font-size: 1.3rem;
-        text-align: center;
-    } 
+    footer p, footer address, h5{
+        font-size: 1.4rem; 
+    }
 }
