@@ -17,7 +17,7 @@ header, section, aside, footer{
     color: #cac6c6;
     color: #363636;
 } 
-main, .header{
+.header{
     background: #f8f8f8;
 }  
 .fixed{
@@ -162,5 +162,9 @@ a h3{
     .wrapper{
         margin: auto;
         max-width: 85em;
+    }
+    .main-container{
+        max-width: 60em;
+        margin: 20px auto 50px auto;
     }
 }
