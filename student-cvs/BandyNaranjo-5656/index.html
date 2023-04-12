@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <button class="toggle-menu">&#9776;</button>
+            <ul class="menu">
+                <li><a href="#aboutMe">Profile</a></li>
+                <li><a href="#experience">Exprience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#contactMe">Contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <section id="aboutMe">
+            <h2>About me</h2>
+            <header>
+                <figure>
+                    <img src="images/BandyNaranjo.png" alt="Imagen Bandy Naranjo">
+                    <figcaption>✨ Luz Bandy Naranjo ✨</figcaption>
+                </figure>
+                <div class="basicInfo">
+                    <h4>Salesforce Developer</h4> 
+                    <p><a href="mailto:bandy.naranjo@gmail.com">bandy.naranjo@gmail.com</a></p>
+                    <div class="socialMedia">
+                        <p><a href="https://linkedin.com/in/luz-bandy-naranjo-martínez-7200b1143"><img src="images/linkedin.png"></a></p>
+                        <p><a href="https://trailblazer.me/id/bnaranjo3"><img src="images/Trailhead.png"></a></p>
+                        <p><a href="https://github.com/lubana2"><img src="images/github.png"></a></p>
+                    </div>
+                    
+                </div>
+            </header>
+            <p> <strong>Bioengineer</strong> with good programming skills, good interpersonal relationships, ability
+                to work in teams, willingness to obtain new knowledge and great ability to take on
+                challenges.</p>
+            <p>👌 I have experience as <em>Salesforce Developer, DB Administrator</em> * 😒 and <em>Mainframe Developer</em> 🤡.</p>
+            <p>🌱 I’m currently learning <em>JavaScript</em>.</p>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <ul>
+                <li>Junior Salesforce Developer Forté Group</li>
+                <li>Application Developer Engineer trainee Unisys</li>
+                <li>Enterprise SYS SPT - Analyst 4 Unisys</li>
+                <li>Robotics Teacher Pygmalion</li>
+                <li>Assistant Professor University of Antioquia</li>
+            </ul>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Salesforce Bootcamp - Forté Group</li>
+                <li>English Bootcamp - Team International</li>
+                <li>Bachelor degree in Bioengineering - University of Antioquia</li>
+            </ul>  
+            <h2>Certifications</h2>
+            <ul>
+                <li>Development Course - Oficina de la OIT para los Países Andinos</li>
+                <li>Scrum Master Professional Certificate - SMPC - Certiprof</li>
+                <li>Scrum Developer Professional Certificate - Certiprof</li>
+            </ul>
+        </section> 
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <div class="hobbies">
+                <div class="hobby">
+                    <img src="images/miyuki.jpg" alt="Miyuki">
+                    <h1>Miyuki Accessories</h1>
+                    <p>When I was in University I used to make accessories in miyuki and I had a brand called Sweet Orange, now I only make accessories for personal use.</p>
+                </div>
+                <div class="hobby">
+                    <img src="images/macrame.jpg" alt="Macrame">
+                    <h1>Macrame Crafts</h1>
+                    <p>I have been making macrame crafts since the pandemic, it was one of my ways of coping with the confinement</p>
+                </div>
+                <div class="hobby">
+                    <img src="images/crossfit.jpg" alt="Crossfit">
+                    <h1>Crossfit</h1>
+                    <p>I practice crossfit for 3 years about 4 or 5 times a week</p>
+                </div>
+                <div class="hobby">
+                    <img src="images/yoga.jpeg" alt="yoga">
+                    <h1>Yoga</h1>
+                    <p>Yoga was another of the activities that I adopted in the pandemic, I still practice it</p>
+                </div>
+            </div>
+        </section>
+        <section id="contactMe">
+            <header>
+                <h1>Contact me</h1></header>
+            <form class="contactMeForm">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input id=name type="text" placeholder="Ingrese su nombre completo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="Ingrese su correo" required>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Presupuesto</legend>
+                        <input id="10000" name="budge" type="radio"><label for="10000">$10000</label>
+                        <input id="5000" name="budge" type="radio"><label for="5000">$5000</label>
+                        <input id="2000" name="budge" type="radio"><label for="2000">$2000</label>
+                    </fieldset>
+                    <div class="help">Este presupuesto es una base no el total</div>
+                </div>
+                <div class="form-group">
+                    <label for="type">Tipo de proyecto</label>
+                    <select id="type" required>
+                        <option disabled selected>Seleccione uno</option>
+                        <option>Website</option>
+                        <option>Mobile app</option>
+                        <option>Diseño</option>
+                    </select> 
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" required rows="5"></textarea>
+                    <div class="help">Escribe una descripción</div>
+                </div>
+                <div class="form-group">
+                    <label for="terms">
+                        <input id="terms" type="checkbox" required>
+                        <span>Acepto los términos y condiciones</span>
+                    </label>
+                </div>
+                <button class="sendButton">Send</button>
+            </form>
+        </section>
+    </article>
+    <script>
+        const form = document.getElementsByClassName("contactMeForm");
+        form[0].addEventListener("submit", function(event) {
+            event.preventDefault();
+        })
+
+        const burger = document.querySelector('.toggle-menu');
+        const navLinks = document.querySelector('.menu');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+        
+
+    </script>
+</body>
+</html>
