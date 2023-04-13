@@ -23,6 +23,7 @@ nav {
     display: flex;
     overflow: hidden;
     background-color: #0A2647;
+    width: 100%;
 }
 
 nav a {
@@ -45,16 +46,15 @@ section, header {
     justify-content: center;
     align-items: center;
     min-height: 300px;
-    padding: 14px 16px;
 }
 
 .content {
     background: #ecf0f1;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
   .rdb {
-    display: none!important;
+    display: inline!important;
   }  
   .copy {
         height: 60px;
