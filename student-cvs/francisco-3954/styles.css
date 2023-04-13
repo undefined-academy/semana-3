@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    padding: 2em;
+    background: rgb(226 232 240);
+}
+
+header div {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.github-section {
+    display: flex;
+    align-items: center;
+}
+
+.github-section span {
+    padding-left: .5em;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+    padding: 2em 1em;
+    color: rgb(55 65 81);
+}
+
+hr {
+    margin: 0;
+}
+
+h1,
+h2 {
+    color: rgb(17 24 39);
+}
+
+p {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+table {
+    width: 100%;
+    margin: .5em;
+    border-collapse: collapse;
+}
+
+table,
+thead,
+th,
+td {
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+code {
+    padding: 0.5em;
+    background: rgb(226 232 240);
+    border-radius: .5em;
+}
+
+a {
+    color: rgb(13 148 136);
+}
+
+footer {
+    padding: 1em;
+    background: rgb(196, 210, 228);
+    display: flex;
+    justify-content: center;
+}
+
+
+form {
+    background-color: rgb(252, 252, 252);
+    border: 2px solid rgb(196, 196, 196);
+    padding: 1.5em;
+    border-radius: 6px;
+}
+
+
+
+.input-group {
+    margin-top: 20px;
+}
+
+input, label {
+    vertical-align: baseline;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    display: block;
+    width: 100%;
+    padding: 10px 8px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    
+}
+
+label,
+legend {
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(78, 78, 78);
+    text-transform: uppercase;
+}
+
+fieldset {
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: rgb(84, 163, 163);
+    color: white;
+}
+
+button:hover {
+    background-color: teal;
+}
+
+
+@media screen and (min-width: 900px) {
+
+header div {
+    max-width: 1000px;
+}
+
+    main {
+        max-width: 1000px;
+        display: grid;
+        grid-template-columns: 6fr 4fr;
+        gap: 40px;
+    }
+
+    article {
+        padding: 0 40px;
+    }
+}
