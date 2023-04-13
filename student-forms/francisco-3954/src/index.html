@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+
+<body class="grid place-content-center min-h-screen font-sans bg-gray-100">
+
+    <div class="p-20 rounded-md bg-white shadow-xl ">
+
+        <h1 class="text-3xl font-bold mb-8">Formulario de contacto</h1>
+
+        <form id="contact-form" class="text-xl ">
+            <div class="py-4">
+                <label for="name" class="block uppercase text-sm font-bold">Nombre</label>
+                <input class="block min-w-full bg-gray-100 p-2 rounded-md text-gray-600" placeholder="Escribe tu nombre completo"
+                    type="text" name="name" id="name" required>
+            </div>
+
+            <div class="py-4">
+                <label for="email" class="block uppercase text-sm font-bold">Correo</label>
+                <input class="block min-w-full bg-gray-100 p-2 rounded-md text-gray-600" type="email" name="email" id="email"
+                    placeholder="E-mail" required>
+            </div>
+            <div class="py-4">
+                <label for="phone" class="block uppercase text-sm font-bold ">Número de telefono</label>
+                <input class="block min-w-full bg-gray-100 p-2 rounded-md text-gray-600" type="tel" placeholder="xxxx-xxxx"
+                    name="phone" id="phone" required>
+            </div>
+
+            <div class="py-4">
+                <fieldset class="flex justify-between">
+                    <legend class="block uppercase text-sm font-bold">Presupuesto</legend>
+                    <div>
+                        <input type="radio" name="budget" id="1000">
+                        <label for="1000" class="text-sm
+                         text-gray-600">1000</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="budget" id="2000">
+                        <label for="2000" class="text-sm
+                        text-gray-600">2000</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="budget" id="5000">
+                        <label for="5000" class="text-sm
+                        text-gray-600">5000</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="budget" id="10000" checked>
+                        <label for="10000" class="text-sm
+                        text-gray-600">10000</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <div class="py-4">
+                <label for="work" class="block uppercase text-sm font-bold">Tipo de trabajo</label>
+                <select name="work" id="work" required class="p-3 rounded-md min-w-full text-sm uppercase">
+                    <option value="" >Seleccione una</option>
+                    <option value="web" >Desarrollo Web</option>
+                    <option value="mobile" >Desarrollo Móvil</option>
+                    <option value="consultancy" >Asesoría</option>
+                </select>
+            </div>
+
+            <div class="py-4">
+                <input class="" type="checkbox" name="terms" id="terms" required>
+                <label class="text-sm uppercase" for="terms">Acepto terminos y condiciones</label>
+            </div>
+
+            <div class="py-4">
+                <button type="submit" class="min-w-full rounded-full p-2 bg-black text-white">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
