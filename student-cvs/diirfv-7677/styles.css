@@ -22,19 +22,24 @@ html{
 /*Asigno tamaño de letra de 16px*/
 body{
     font-size: 1.6rem;
-    margin: 0 auto;
-    max-width: 900px; /*Asigno ancho máximo para ver mi página centrada*/
-    background-size: auto 100%;
     background-color: #fafafa;
     font-family: 'Ubuntu', sans-serif;
     line-height: 1.5;
     color:#6A6555;
 }
 
+.main-container{
+    padding: 0 2rem;
+    margin: 0 auto;
+    max-width: 900px; /*Asigno ancho máximo para ver mi página centrada*/
+
+}
+
 .header-nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     background-color:#d1d5db;
     border-radius: 0 0 8px 8px;
 }
@@ -42,7 +47,7 @@ body{
 /*Defino tamaño del logo*/
 .img-logo{
     max-width: 150px;
-    margin: 1rem 3rem;
+    margin: 0 3rem;
     transition: transform .2s;
 }
 
@@ -53,7 +58,7 @@ body{
 /*Configuración del nav*/
 .ul-nav{
     display: flex;
-    margin: 1rem 1rem;
+    margin: 0 1rem 1rem;
     padding: 0;
     list-style: none; /*elimino las viñetas de los li*/
 }
@@ -76,12 +81,14 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin: 5rem 0;
+    flex-direction: column;
+    margin: 2rem 0;
 }
 
 .aboutme-text{
-    width: 60%;
-    margin-left: 2rem;
+    width: 100%;
+    padding: 0 3rem;
+    margin-top: 1rem;
 }
 
 .tittle{
@@ -92,7 +99,7 @@ body{
 }
 
 .profile-img-content{
-    width: 30%;
+    width: 40%;
 }
 
 /*Defino tamaño de la imagen de perfil*/
@@ -121,30 +128,37 @@ body{
     transition-duration: .8s;
 }
 
-/*Contenedor padre de las cards*/
+/************************************/
+/**Contenedor padre cards projects**/
+/***********************************/
 .projects-cards-container{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-/*Elementos de cards*/
+/************************************/
+/****Elementos de cards projects****/
+/***********************************/
 .projects-section{
+    padding: 0 3rem;
     margin-bottom: 5rem;
 }
 
-.project-card-1, .project-card-2, .project-card-3{
+.project-card{
    color:#6A6555;
    border-radius: 2%;
-   margin: 0 1rem;
+   margin: 1rem 1rem;
    background-color:#d1d5db;
    border-radius: 10px;
    overflow:hidden;
-   box-shadow: 1px 1px 3px rgba(116, 116, 116, 0.798)
+   box-shadow: 1px 1px 3px rgba(116, 116, 116, 0.798);
+   max-width: 250px;
 }
 
-.project-card-1:hover, .project-card-2:hover, .project-card-3:hover{
+.project-card:hover{
     filter: opacity(.8);
     cursor: pointer;
     -webkit-transform:scale(1.03);
@@ -175,7 +189,13 @@ body{
     color:#6A6555;
 }
 
-/******Estilos del formulario******/
+/************************************/
+/********Estilos del formulario******/
+/***********************************/
+.article-contactame{
+    margin-top: 5rem;
+}
+
 .form-group{
     border: 1px;
     margin: 20px 0px;
@@ -248,7 +268,9 @@ input:focus-visible, textarea:focus-visible, select:focus-visible {
     outline: 2px solid hsl(46, 11%, 37%, 0.2);
 }
 
-/******Footer*****/
+/************************************/
+/*********Estilos del footer*********/
+/***********************************/
 .footer{
     height: 100px;
     background-color: #d1d5db;
@@ -276,7 +298,9 @@ input:focus-visible, textarea:focus-visible, select:focus-visible {
     align-items: center;
 }
 
-/******Estilos cv page******/
+/************************************/
+/**********Estilos cv page**********/
+/***********************************/
 .cv-container{
     margin-top: 5rem;
 }   
@@ -303,7 +327,9 @@ ul{
     font-weight:normal;
 }
 
-/********Estilos project page*******/
+/************************************/
+/********Estilos project page********/
+/***********************************/
 .main-projects{
     margin: 5rem 2rem 0;
 }
@@ -320,14 +346,57 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .project-img-container figure{
     text-align: center;
-    width: 40%;
+    max-width: 320px;
 }
 
 .project-img-container img{
     width: 100%;
     padding: 2rem 2rem 1rem;
+}
+
+@media screen and (min-width: 590px) {
+    .header-nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .img-logo{
+        margin: 1rem 3rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .article-aboutme{
+        margin: 5rem 0;
+        flex-direction: row;
+    }
+
+    .aboutme-text{
+        width: 60%;
+        margin-left: 2rem;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .profile-img-content{
+        width: 30%;
+    }
+
+    .projects-section{
+        padding: 0;
+    }
+
+    .project-card{
+        margin: 0 1rem;
+    }
+    
+    .project-img-container figure{
+        width: 40%;
+        max-width: 40%;
+    }
 }
