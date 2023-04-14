@@ -14,7 +14,7 @@ html {
     padding-bottom: 5px;
     border: 2px solid azure;
     border-radius: 7px;
-    background-image: url("./img/imagen-fondo-divpanda.jpg");
+    background-image: url("../img/imagen-fondo-divpanda.jpg");
 }
 
 .mi-nombre {
