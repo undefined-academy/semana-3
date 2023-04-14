@@ -116,6 +116,11 @@ body{
     max-width: 250px;
 }
 
+.article-card a{
+    text-decoration: none;
+    color: #323132;
+}
+
 .article-card:hover{
     filter: opacity(.7);
     -webkit-transform:scale(1.03);
