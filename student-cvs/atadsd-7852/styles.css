@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @media only screen and (max-width: 400px) {
     body {
 
@@ -13,9 +9,8 @@
 
 
     header {
-        background-image: url(/semana-3/fotos/fotofondo.png);
-        width: 100%;
-        height: 100%;
+        background-image: url(/fotos/fotofondo.png);
+       
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -80,7 +75,7 @@
     }
 
     #redes {
-        background-image: url(/semana-3/fotos/Fondoredes.png);
+        background-image: url(/fotos/Fondoredes.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -168,7 +163,7 @@
     }
 
     #redes {
-        background-image: url(/semana-3/fotos/Fondoredes.png);
+        background-image: url(/fotos/Fondoredes.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -189,7 +184,7 @@
     }
 
     header {
-        background-image: url(/semana-3/fotos/fotofondo.png);
+        background-image: url(/fotos/fotofondo.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -288,7 +283,7 @@
         align-items: center;
         justify-content: center;
         border: 2px solid black;
-        background-image: url(/semana-3/fotos/Fondoredes.png);
+        background-image: url(/fotos/Fondoredes.png);
 
         background-position: center;
         background-repeat: no-repeat;
@@ -300,7 +295,7 @@
 
 @media only screen and (min-width: 961px) {
     header {
-        background-image: url(/semana-3/fotos/fotofondo.png);
+        background-image: url(/fotos/fotofondo.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -536,7 +531,7 @@
         flex-wrap: wrap;
         background-color: whitesmoke;
         border: 2px solid black;
-        background-image: url(/semana-3/fotos/Fondoredes.png);
+        background-image: url(/fotos/Fondoredes.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

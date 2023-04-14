@@ -7,7 +7,7 @@
     }
 
     header {
-        background-image: url(/semana-3/fotos/fotofondo.png);
+        background-image: url(/fotos/fotofondo.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -51,7 +51,7 @@
     }
 
     #redes {
-        background-image: url(/semana-3/fotos/Fondoredes.png);
+        background-image: url(/fotos/Fondoredes.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -75,7 +75,7 @@
     }
 
     header {
-        background-image: url(/semana-3/fotos/fotofondo.png);
+        background-image: url(/fotos/fotofondo.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -119,7 +119,7 @@
     }
 
     #redes {
-        background-image: url(/semana-3/fotos/Fondoredes.png);
+        background-image: url(/fotos/Fondoredes.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -135,7 +135,7 @@
 
 @media only screen and (min-width: 961px) {
     header {
-        background-image: url(/semana-3/fotos/fotofondo.png);
+        background-image: url(/fotos/fotofondo.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -228,7 +228,7 @@
         flex-wrap: wrap;
         background-color: whitesmoke;
         border: 2px solid black;
-        background-image: url(/semana-3/fotos/Fondoredes.png);
+        background-image: url(/fotos/Fondoredes.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;

@@ -8,7 +8,7 @@ color: whitesmoke;
 
 }
 header{
-    background-image: url(/semana-3/fotos/fotofondo.png);
+    background-image: url(/fotos/fotofondo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,8 +16,7 @@ header{
     line-height: 1.2;
     padding: 5vw 2em;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: center;    justify-content: center;
     flex-wrap: wrap;
     border: 2px solid black;
     
@@ -45,7 +44,7 @@ a:link, a:visited {
 
    #redes{
     border: 2px solid black;
-    background-image: url(/semana-3/fotos/Fondoredes.png);
+    background-image: url(/fotos/Fondoredes.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -67,7 +66,7 @@ a:link, a:visited {
     
     }
     header{
-        background-image: url(/semana-3/fotos/fotofondo.png);
+        background-image: url(/fotos/fotofondo.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -104,7 +103,7 @@ a:link, a:visited {
     
        #redes{
         border: 2px solid black;
-        background-image: url(/semana-3/fotos/Fondoredes.png);
+        background-image: url(/fotos/Fondoredes.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -120,7 +119,7 @@ a:link, a:visited {
     @media only screen and (min-width: 961px) {
         
 header {
-    background-image: url(/semana-3/fotos/fotofondo.png);
+    background-image: url(/fotos/fotofondo.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -183,7 +182,7 @@ body {
     gap: 50px;
     background-color: whitesmoke;
     border: 2px solid black;
-    background-image: url(/semana-3/fotos/Fondoredes.png);
+    background-image: url(/fotos/Fondoredes.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
