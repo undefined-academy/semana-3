@@ -44,3 +44,36 @@ footer {
     text-align: end;
     padding-right: 10%;
 }
+
+@media only screen and (min-width: 992px) {
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+
+    header h1 {
+        position: inherit;
+        display: grid;
+        place-items: center;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    main ul li {
+        list-style: none;
+    }
+
+    .all {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        height: 100vh;
+    }
+
+    main {
+
+        display: grid;
+        place-items: center;
+    }
+}
