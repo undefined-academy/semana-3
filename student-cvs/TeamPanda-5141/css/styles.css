@@ -10,12 +10,11 @@ html {
 }
 
 #header {
-    display: grid;
-    place-items: center;
+    text-align: center;
     padding-bottom: 5px;
     border: 2px solid azure;
     border-radius: 7px;
-    background-image: url("/semana-3/student-cvs/TeamPanda-5141/img/imagen-fondo-divpanda.jpg");
+    background-image: url("./img/imagen-fondo-divpanda.jpg");
 }
 
 .mi-nombre {
@@ -34,6 +33,10 @@ html {
     position: relative;
     -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
     font-size: 60px;
+}
+
+#p-mi-nombre {
+    margin: 15px 0px;
 }
 
 .mi-nombre span {
@@ -73,7 +76,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     padding: 2em 1em;
-    background-image: url("/semana-3/student-cvs/TeamPanda-5141/img/imagen-fondo-divpanda.jpg");
+    background-image: url("../img/imagen-fondo-divpanda.jpg");
 }
 
 #hoja-de-vida {
@@ -94,6 +97,14 @@ h1 {
     background-size: 75px;
 }
 
+h2 {
+    text-align: center;
+}
+
+ul {
+    padding-left: 15px;
+}
+
 #introduccion,
 #hoja-de-vida,
 #experiencia-previa,
@@ -107,10 +118,11 @@ h1 {
 
 #resaltable {
     font-size: 18px;
-    background-image: url("/semana-3/student-cvs/TeamPanda-5141/img/imagen-fondo-divpanda.jpg");
+    background-image: url("../img/imagen-fondo-divpanda.jpg");
     border-radius: 10px;
     border: 2px solid azure;
     text-align: center;
+    padding: 15px;
 
 }
 
@@ -120,7 +132,7 @@ h1 {
 
 #encuéntrame {
     display: flex;
-    background-image: url("/semana-3/student-cvs/TeamPanda-5141/img/imagen-fondo-divpanda.jpg");
+    background-image: url("../img/imagen-fondo-divpanda.jpg");
     flex-direction: column;
     align-items: center;
 
@@ -150,7 +162,7 @@ h1 {
     background-color: transparent;
     border: 2px solid azure;
     text-decoration: none;
-    background-image: url("/semana-3/student-cvs/TeamPanda-5141/img/platzi-logo.png");
+    background-image: url("../img/platzi-logo.png");
     background-repeat: no-repeat;
     background-position: initial;
     background-size: contain;
@@ -173,7 +185,7 @@ h1 {
     background-color: transparent;
     border: 2px solid azure;
     text-decoration: none;
-    background-image: url("/semana-3/student-cvs/TeamPanda-5141/img/freecodecamp-logo.png");
+    background-image: url("../img/freecodecamp-logo.png");
     background-repeat: no-repeat;
     background-position: 9px;
     background-size: 25px;
@@ -198,7 +210,7 @@ h1 {
     background-color: transparent;
     border: 2px solid azure;
     text-decoration: none;
-    background-image: url("/semana-3/student-cvs/TeamPanda-5141/img/github-logo-dark.png");
+    background-image: url("../img/github-logo-dark.png");
     background-repeat: no-repeat;
     background-position: 9px;
     background-size: 25px;
@@ -227,7 +239,10 @@ h1 {
     background-color: #575353be;
 }
 
-
+.footer-body {
+    text-align: center;
+    opacity: .9;
+}
 
 @media screen and (min-width: 768px) {
 
