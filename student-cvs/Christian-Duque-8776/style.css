@@ -454,7 +454,7 @@ a{
     width: 250px;
 }
 
-@media screen and (min-width:400px) {
+@media screen and (min-width:450px) {
 
     html{
         max-width: 450px;
