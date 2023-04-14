@@ -169,10 +169,12 @@ section,
   margin-right: 10px;
   display: flex;
   justify-content: flex-end;
+  max-width: 100%;
   align-items: center;
 }
 
 .linksField {
+  display: flex;
   justify-content: right;
   width: 33%;
 }
@@ -202,6 +204,7 @@ a {
   margin: 60px 5%;
   justify-content: space-around;
   max-height: 1000px;
+  max-width: 100%;
 }
 .textHome {
   font-size: 150%;
@@ -227,6 +230,7 @@ a {
   padding: 70px 10%;
   justify-content: space-around;
   align-content: center;
+  max-width: 100%;
 }
 
 /* Tech Card */
@@ -268,6 +272,7 @@ a {
 }
 
 .containerProjects {
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -398,15 +403,15 @@ textarea {
 
 /*media sizing*/
 /* mobile*/
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 320px) {
   .navBar {
     height: 70px;
   }
   .linksField {
-    visibility: hidden;
+    display: none;
   }
   .logoTxt {
-    display: none;
+    visibility: hidden;
   }
   .logo {
     display: block;
@@ -418,17 +423,19 @@ textarea {
 /* Tablet */
 
 @media screen and (min-width: 768px) {
-  .dropBtn {
-    display: none;
-  }
-  #logo {
-    display: none;
+  .navBar {
+    height: 70px;
   }
   .linksField {
-    visibility: visible;
+    display: none;
   }
   .logoTxt {
+    visibility: hidden;
+  }
+  .logo {
     display: block;
+    position: absolute;
+    padding-left: 15px;
   }
 
   .imgTech {
@@ -450,11 +457,21 @@ textarea {
 }
 /* Desk */
 @media screen and (min-width: 1024px) {
+  nav{
+    width: 100%;
+  }
   .dropBtn {
     display: none;
   }
+  .logoTxt {
+    display: block;
+    visibility: visible;
+  }
   #logo {
     display: none;
+  }
+  .linksField {
+    display: block;
   }
   .containerHome {
     display: flex;
