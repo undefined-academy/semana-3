@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    color: #eceff1;
+    /* background-color: #ECEFF1; */
+    background-image: url("../assets/images/backgrounddeformado2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+  }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+    <main class="container">
+        <div>
+            <h2 class="d-none">nabvar</h2>
+            <nav class="navbar navbar-dark fixed-top bg-primary d-flex justify-content-end font-weight-bold px-3 rounded-bottom">
+              <a class="float-left text-white text-decoration-none px-5 py-1" href="/index"> Inicio</a>
+            </nav>
+          </div>
+        <section class="contact mx-auto max-w-600 px-4 py-4 mt-5 mb-5">
+          <h1>Contacto</h1>
+            <form action="/server" method="get">
+              <div class="my-4">
+                <label class="align-middle w-100 fw-bold fs-6 text-uppercase text-light" for="name">Nombre</label>
+                <input class="align-middle w-100 bg-white border border-1 border-secondary rounded-1 py-2 px-3" id="name" name="name" type="text" placeholder="Ingrese su nombre completo"
+                  required />
+              </div>
+              <div class="my-4">
+                <label class="align-middle w-100 fs-6 fw-bold text-uppercase text-light" for="email">Email</label>
+                <input class="align-middle w-100 bg-white border border-1 border-secondary rounded-1 py-2 px-3" id="email" name="email" type="email" placeholder="Ingrese su correo electronico" required />
+              </div>
+              <div class="my-4">
+                <fieldset class=" d-block w-100 border border-1 border-secondary rounded-1 py-2 px-3">
+                  <legend class="fs-6 fw-bold text-uppercase text-light">presupuesto</legend>
+                  <input id="10000" name="budget" type="radio" value="10000" required/>
+                  <label class="fw-bold fs-6 text-uppercase text-light px-2" for="10000"> $10.000</label>
+                  <input id="5000" name="budget" type="radio" value="5000" required/>
+                  <label class="fw-bold fs-6 text-uppercase text-light px-2" for="5000"> $5.000</label>
+                  <input id="1000" name="budget" type="radio" value="1000" required/>
+                  <label class="fw-bold fs-6 text-uppercase text-light px-2" for="1000"> $1.000</label>
+                </fieldset>
+                <div class="fs-6 mt-2 text-secondary">
+                  Este presupuesto es la base no el total
+                </div>
+              </div>
+              <div class="my-4">
+                <label class="fw-bold fs-6 text-uppercase text-light pe-2" for="type">Tipo de Proyecto</label>
+                <select name="type" id="type" required>
+                  <option disabled selected value="">Seleccione uno</option>
+                  <option value="Website">Website</option>
+                  <option value="aplicacionweb">Aplicación Web</option>
+                  <option value="aplicacionmovil">Aplicación Movil</option>
+                  <option value="disenoweb">Diseño Web</option>
+                </select>
+              </div>
+              <div class="my-4">
+                <label class="fw-bold fs-6 text-uppercase text-light" for="description">Descripción</label>
+                <textarea class="d-block w-100 bg-white border border-1 border-secondary rounded-1 py-2 px-3" name="description" id="description" cols="30" rows="8" placeholder="Ingrese una descripción de su proyecto" required></textarea>
+                <div class="fs-6 mt-2 text-secondary">
+                  Escribe una descripción del proyecto en al menos 500 palabras
+                </div>
+              </div>
+              <div class="my-4">
+                <label for="mt-2 fs-6 text-uppercase text-light">
+                  <input type="checkbox" name="termsandconditions" id="termsandconditions" required />
+                  <span>Acepto los terminos y condiciones</span>
+                </label>
+              </div>
+              <button class="py-2 px-5 text-uppercase fw-bold border border-secondary text-light rounded-2 shadow btn btn-primary btn-lg cursor-pointer" id="submit">Enviar</button>
+            </form>
+          </section>
+    </main>
+    
+</body>
+</html>
+
+
+
+

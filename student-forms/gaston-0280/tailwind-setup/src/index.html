@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output.css">
+</head>
+
+
+<body>
+    <main class="container max-w-full">
+        <div>
+            <h2 class="invisible">nabvar</h2>
+            <nav class="bg-purple-600 rounded-b-md fixed top-0 w-full font-sans text-base px-5 py-2">
+              <a class="float-left text-gray-100 no-underline py-1 px-10" href="/index"> Inicio</a>
+            </nav>
+          </div>
+        <section class="mx-auto my-20 max-w-4xl ">
+          <h1 class="text-4xl">Contacto</h1>
+            <form action="/server" method="get">
+              <div class="my-4">
+                <label class="font-bold uppercase text-sm text-gray-100" for="name">Nombre</label>
+                <input class="flex items-center justify-center w-full bg-white border border-gray-300 rounded-md py-2 px-3" id="name" name="name" type="text" placeholder="Ingrese su nombre completo"
+                  required />
+              </div>
+              <div class="my-4">
+                <label class="font-bold uppercase text-sm text-gray-100" for="email">Email</label>
+                <input class="flex items-center justify-center w-full bg-white border border-gray-300 rounded-md py-2 px-3" id="email" name="email" type="email" placeholder="Ingrese su correo electronico" required />
+              </div>
+              <div class="my-4">
+                <fieldset class=" d-block w-100 border border-1 border-secondary rounded-1 py-2 px-3">
+                  <legend class="font-bold uppercase text-sm text-gray-100">presupuesto</legend>
+                  <input id="10000" name="budget" type="radio" value="10000" required/>
+                  <label class="font-bold uppercase text-sm text-gray-100" for="10000"> $10.000</label>
+                  <input id="5000" name="budget" type="radio" value="5000" required/>
+                  <label class="font-bold uppercase text-sm text-gray-100" for="5000"> $5.000</label>
+                  <input id="1000" name="budget" type="radio" value="1000" required/>
+                  <label class="font-bold uppercase text-sm text-gray-100" for="1000"> $1.000</label>
+                </fieldset>
+                <div class="text-gray-500 text-sm mt-2">
+                  Este presupuesto es la base no el total
+                </div>
+              </div>
+              <div class="my-4">
+                <label class="font-bold uppercase text-sm text-gray-100 me-2" for="type">Tipo de Proyecto</label>
+                <select class=" text-black border border-gray-300 rounded-md shadow-sm py-2 px-3 text-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500" name="type" id="type" required>
+                  <option disabled selected value="">Seleccione uno</option>
+                  <option value="Website">Website</option>
+                  <option value="aplicacionweb">Aplicación Web</option>
+                  <option value="aplicacionmovil">Aplicación Movil</option>
+                  <option value="disenoweb">Diseño Web</option>
+                </select>
+              </div>
+              <div class="my-4">
+                <label class="font-bold uppercase text-sm text-gray-100" for="description">Descripción</label>
+                <textarea class="block w-full resize-vertical rounded-md py-2 px-3" cols="30" rows="8" placeholder="Ingrese una descripción de su proyecto" required></textarea>
+                <div class= "text-gray-500 text-sm mt-2">
+                  Escribe una descripción del proyecto en al menos 500 palabras
+                </div>
+              </div>
+              <div class="my-4">
+                <label for="font-bold uppercase text-sm text-gray-100">
+                  <input type="checkbox" name="termsandconditions" id="termsandconditions" required />
+                  <span>Acepto los terminos y condiciones</span>
+                </label>
+              </div>
+              <button class="uppercase font-bold text-lg px-10 py-4 border border-purple-300 rounded-lg bg-purple-600 text-white shadow-md hover:bg-purple-700 active:bg-purple-800" id="submit">Enviar</button>
+            </form>
+          </section>
+    </main>
+    
+</body>
+
+
+
+</html>
