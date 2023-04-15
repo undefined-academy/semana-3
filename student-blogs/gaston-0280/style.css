@@ -1,0 +1,179 @@
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: inherit;}
+  
+ 
+  
+  body {
+    color: #eceff1;
+    /* background-color: #ECEFF1; */
+    background-image: url("../gaston-0280/assets/backgrounddeformado2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+    
+
+  
+  
+  nav {
+      background-color:indigo;
+    border-radius: 0px 0px 6px 6px;
+    overflow: hidden;
+    position: fixed; /* Fija la barra de navegación en la parte superior */
+    top: 0; /* Coloca la barra de navegación en la parte superior */
+    width: 100%; /* Hace que la barra de navegación ocupe todo el ancho de la página */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px 20px;
+    z-index: 1;
+    min-height: 5px;
+  }
+
+  /* nav {
+    padding: 0 20px;
+    position:sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(52, 143, 143);
+    color: #eee;
+    z-index: 1;
+} */
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+
+input[type="search"] {
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: 1px solid Gainsboro;
+    width: 300px;
+    background: WhiteSmoke;
+    margin: 5px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1240px;
+  margin: 20px auto;
+  
+  display: grid;
+  
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  
+}
+
+.title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer{
+    font-size: 12px;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+
+  
+@media only screen and (min-width: 500px) {
+    .container {
+      grid-template-columns: 1fr 1fr;
+    }  
+    .item-1 {
+    grid-column: 1/ span 2;
+    }
+    .item-1 h1 {
+        font-size: 30px;
+    }
+  }
+  
+  @media only screen and (min-width: 850px) {
+    .container {
+      grid-template-columns: 1fr 1fr 1fr;
+      margin: 80px auto;
+    }
+
+    .footer{
+        font-size: 12px;
+        justify-content: center;
+        align-content: center;
+        display: flex;
+    }
+  }
+  
+  /* card */
+  
+  .card {
+    min-height: 100%;
+    background :darkslateblue;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #ffffff;
+    position: relative;
+    top: 0;
+    border-radius: 6px;
+    transition: all .1s ease-in;
+  }
+  
+  .card:hover {
+    top: -5px;
+    box-shadow: 0px 0px 10px 5px rgba(5, 143, 255, 0.975);
+  }
+  
+  .card article {
+    padding: 20px;
+    display: flex;
+    
+    flex: 1;
+    justify-content: space-between;
+    flex-direction: column;
+    
+  }
+  .card .thumb {
+    margin: 20px;
+    padding-bottom: 60%;
+    background-size: cover;
+    background-position: center center;   
+  }
+  
+  .card p { 
+    flex: 1; 
+    line-height: 1.4;
+  }
+  
+  h1 {
+    font-size: 20px;
+    margin: 0;
+    color:  rgb(136, 201, 255);
+  }
+  
+  .card span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin: 2em 0 0 0;
+  }
