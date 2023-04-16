@@ -1,0 +1,125 @@
+/* normalice body */
+body,
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+
+body {
+    background-color: snow;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    margin: 0 auto;
+
+
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    align-items: start;
+    column-gap: 10px;
+   
+}
+
+img {
+    width: 100%;
+}
+
+.header-background {
+    background: url(./backgroundheader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   min-height: 500px;
+   
+    grid-column-start: 1;
+    grid-column-end: -1;
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-bottom: 8px ridge #ffbe33;
+   
+    color: rgb(251, 253, 226);
+  
+}
+
+.element-menu:hover{
+    color:#ffbe33 ;
+}
+.come{
+    margin-top: 15rem;
+    
+}
+
+.bar-menu{
+    grid-column-start: 1;
+    grid-column-end: -1;
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color:#442aa3;
+    margin-bottom: 2rem;
+}
+
+
+ .contenedor-menu-flex{
+    list-style: none;
+  
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #e5c8f5;
+    font-weight: 800;
+    padding: 5px;
+ }
+
+ .article-feature-flex{
+    display: flex;
+    color: rgb(29, 55, 77);
+  flex-direction: column;
+  border: 1px solid #442aa3;
+  border-radius: 5px;
+  padding: 10px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: left;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    min-height: 100%;
+    margin: 15px 30px;
+ 
+ }
+
+ .articles-flex{
+    display: flex;
+    color: rgb(29, 55, 77);
+  flex-direction: column;
+ 
+  border: 1px solid #442aa3;
+  border-radius: 5px;
+  padding: 10px;
+  min-height: cal(100%-15px);
+  margin: 15px 10px;
+ 
+ }
+
+ 
+
+ .footer-flex{
+    background-color: rgb(202, 55, 74);
+    color: rgb(230, 248, 207);
+    grid-column-start: 1;
+    grid-column-end: -1;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+    ;
+    margin-top: 10px;
+ }
