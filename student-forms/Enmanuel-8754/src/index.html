@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+
+    <main>
+        <h1>Contacto</h1>
+        <form action="/server" method="get" id="form">
+
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre completo</label>
+                <input id="name" type="text" class="form-control" placeholder="Escriba su nombre completo" required>
+                <div id="emailHelp" class="form-text">Informacion personal protegida</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input id="email" type="email" class="form-control" placeholder="Escriba su correo electrónico"
+                    required>
+            </div>
+
+
+            <div class="form-check">
+                <fieldset>
+                    <legend>Presupuesto</legend>
+                    <input id="3000" name="budget" type="radio"><label for="3000">3000$</label>
+                    <input id="2000" name="budget" type="radio"><label for="2000">2000$</label>
+                    <input id="1000" name="budget" type="radio"><label for="1000">1000$</label>
+                </fieldset>
+            </div>
+
+            <div class="mb-3">
+                <label for="type" class="form-label">Seleccione el proyecto</label>
+                <select id="type" class="form-select" required>
+                    <option disabled selected>Seleccione el tipo</opcion>
+                    <option value="WebApp">WebApp</option>
+                    <option value="mobileapp">MobileApp</option>
+                    <option value="Web">Website</option>
+                    <option value="Design">Diseño </option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="description" class="form-label">Descripción Del Proyecto</label>
+                <textarea id="description" class="form-control" required rows="3"></textarea>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Acepto los terminos</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+
+    </main>
+
+
+
+</body>
+</html>
