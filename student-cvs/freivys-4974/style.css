@@ -37,9 +37,14 @@ body {
   width: 100%;
 }
 
-/* Page Styles */
+hr {
+  background-image: linear-gradient(to right, #f0f0f0, var(--hoverColor), var(--textColor), #f0f0f0);
+  border: 0;
+  height: 1px;
+  margin: 10px 0;
+}
 
-/* Header */
+/* Page Styles */
 .Header {
   background-image: url("./header2.jpg");
   background-position: center center;
@@ -47,25 +52,25 @@ body {
   background-size: cover;
   color: var(--whiteColor);
   line-height: 1.2;
-  padding: 5vw 2em;
+  padding: 5vh .5em;
   text-align: center;
   max-width: 100%;
 }
 
 .Header-logo {
   display: inline-block;
-  height: 120px;
+  height: 60px;
   vertical-align: top;
-  width: 120px;
+  width: 60px;
 }
 
 .Header-title {
-  font-size: 2.5em;
+  font-size: 3em;
   font-weight: 300;
   margin: 20px 0;
 }
 
-.Header-paragraph {
+.Header-subtitle {
   margin: 30px 0;
 }
 
@@ -73,7 +78,8 @@ body {
   border: 1px solid var(--hoverColor);
   border-radius: 20px;
   color: var(--whiteColor);
-  font-size: 0.6em;
+  font-size: .7em;
+  font-weight: bold;
   letter-spacing: 0.2em;
   padding: 1em 2em;
   text-transform: uppercase;
@@ -88,27 +94,42 @@ body {
 
 .Subtitle {
   color: var(--subtitleColor);
+  text-align: center;
+  text-decoration: underline;
   text-transform: uppercase;
-  margin: 1em 0 .5em;
-  padding: 1em 0 .5em;
+  margin: 1em auto;
+  padding: 1em 0;
 }
 
-/* Main */
 .Main,
 .Footer {
-  max-width: 50em;
+  max-width: 100%;
   margin: 0 auto;
 }
 
+.About {
+  line-height: 1.7;
+  min-height: 40vh;
+}
+
 .About-paragraph {
+  font-size: 1.25em;
   line-height: 1.7;
 }
 
-/* Form */
+.Stack-img {
+  text-align: center;
+}
+
+.Stack-logo {
+  height: 40px;
+  margin: 5px;
+}
+
 .Form {
   border: 2px solid var(--hoverColor);
   border-radius: 10px;
-  padding: 20px 20px;
+  padding: 10px 5px;
   width: 100%;
 }
 
@@ -121,7 +142,6 @@ body {
 .Form-select,
 .Form-textarea {
   color: var(--textColor);
-  font-size: 14px;
   vertical-align: middle;
   padding: 8px 4px;
   width: 100%;
@@ -146,10 +166,6 @@ body {
   background: var(--whiteColor);
 }
 
-.Form-project {
-  font-size: 14px;
-}
-
 .Form-description {
   display: block;
   resize: vertical;
@@ -162,7 +178,7 @@ body {
 
 .Form-help {
   color: var(--textColor);
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .Form-btn {
@@ -192,10 +208,9 @@ body {
   background-color: #9b0d31;
 }
 
-/* Footer */
 .Footer {
-  margin: 40px auto 10px;
-  padding: 5px 0;
+  margin: 20px auto 5px;
+  padding: 2.5px 0;
   text-align: center;
 }
 
@@ -204,8 +219,8 @@ body {
 }
 
 .Footer-anchor {
-  color: var(--subtitleColor);
-  padding: 5px;
+  color: var(--hoverColor);
+  padding: 2.5px;
   text-decoration: none;
 }
 
@@ -215,4 +230,50 @@ body {
   color: var(--whiteColor);
   transition: none 200ms ease-out;
   transition-property: color, background;
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  .Header {
+    padding: 5vw 2em;
+  }
+
+  .Header-logo {
+    height: 120px;
+    width: 120px;
+  }
+
+  .Header-title {
+    font-size: 2.5em;
+  }
+
+  .Header-github {
+    font-size: 0.6em;
+  }
+
+  .Main,
+  .Footer {
+    max-width: 50em;
+  }
+
+  .Form {
+    padding: 20px;
+  }
+
+  .Form-project {
+    font-size: 14px;
+  }
+
+  .Form-help {
+    font-size: 10px;
+  }
+
+  .Footer {
+    margin: 40px auto 10px;
+    padding: 5px 0;
+  }
+
+  .Footer-anchor {
+    padding: 5px;
+  }
 }
