@@ -11,12 +11,12 @@ body {
     font-family: 'Comfortaa', cursive
   }
 
-  h1,  h3 {
+  h1,h3 {
     margin-top: 1em;
     padding-top: 1em;
-    color:rgb(38, 39, 40)
+    color:rgb(38, 39, 40);
  }
- p , li{
+ p, li{
  font-size: 18px;
  font-family: 'Acme', sans-serif;
  }
@@ -30,7 +30,7 @@ body {
   justify-content: center;
  }
 
- @media screen and (min-width: 720px) {
+ @media screen and (min-width: 992px) {
   body {
     background-color: rgb(28, 74, 28);
     max-width: 60%;
