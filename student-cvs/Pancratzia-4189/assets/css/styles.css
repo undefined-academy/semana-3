@@ -251,6 +251,38 @@ ul{
 
 /**formulario**/
 
+@media only screen and (min-width: 768px) {
+  .formulario form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .formulario .section-titulo{
+    margin-bottom: 3rem;
+  }
+
+  .telefono{
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .email{
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+
+  .mensaje{
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+
+  .botones{
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+}
+
 .form-group input, .form-group textarea {
 	background: none;
   border: none;
@@ -300,12 +332,18 @@ textarea{
 
 @media only screen and (min-width: 768px) {
   .botones{
-    text-align: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .botones input{
+    margin: 0;
   }
 }
 
 .form-btn {
-  padding: 15px 25px;
   background: none;
   border: solid 2px var(--oscuro);
   color: var(--oscuro);
@@ -317,12 +355,22 @@ textarea{
   outline: none;
   padding: 20px 35px;
   text-transform: uppercase;
-	transition: all 0.3s ease;
-  
+	transition: all 0.3s ease; 
+}
+
+@media only screen and (min-width: 768px) {
+  .form-btn{
+    width: 5rem;
+  }
 }
 
 .form-btn:active {
   background: var(--oscuro);
+  color: var(--blanco);
+}
+
+.form-btn:hover {
+  
   color: var(--blanco);
 }
 
@@ -376,4 +424,46 @@ textarea{
     margin-top:0;
   }
 }
+
+/*RESPONSIVE GRID DISPLAY FOR 768PX+*/
+
+
+@media only screen and (min-width: 768px) {
+  .contenedor-principal{
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+      "sobre-mi tecnologias"
+      "idiomas tecnologias"
+      "educacion-y-experiencia tecnologias"
+      "formulario formulario";
+  }
+  .sobre-mi{
+    grid-area: sobre-mi;
+  }
+  .educacion-y-experiencia{
+    grid-area: educacion-y-experiencia;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .tecnologias{
+    grid-area: tecnologias;
+  }
+  .idiomas{
+    grid-area: idiomas;
+  }
+  .formulario{
+    grid-area: formulario;
+  }
+
+  .sobre-mi, .idiomas{
+    border-bottom: none;
+  }
+
+}
+
+
+/*END RESPONSIVE GRID DISPLAY*/
 
