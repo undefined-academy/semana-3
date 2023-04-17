@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario</title>
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1><strong>Contacto</strong></h1>
+
+    <form action="/server" method="get">
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+        <input type="text" name="name" class="form-control" id="name" placeholder="Ingrese su nombre" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Apellido</label>
+        <input type="text" name="surname" class="form-control" id="surname" placeholder="Ingrese su apellido" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+        <input type="email" name="email" class="form-control" id="email" placeholder="hola@dominio.com" required>
+      </div>
+
+      <div class="input-group">
+        <fieldset name="budget" id="budget" class="input-group-text fieldset-padding">
+          <legend class="budget-legend">Presupuesto base</legend>
+          <input id="10000" name="budget" type="radio" class="form-check-input" required><label for="10000">USD$
+            10000</label>
+          <input id="5000" name="budget" type="radio" class="form-check-input" required><label for="5000">USD$
+            5000</label>
+          <input id="1000" name="budget" type="radio" class="form-check-input" required><label for="1000">USD$
+            1000</label>
+        </fieldset>
+      </div>
+      <div class="btn-group dropend">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          Tipo de Proyecto
+        </button>
+
+        <ul class="dropdown-menu">
+          <li><button class="dropdown-item" type="button">Sitio Web</button></li>
+          <li><button class="dropdown-item" type="button">Modelo de datos</button></li>
+          <li><button class="dropdown-item" type="button">Visualización de datos/Informe</button></li>
+          <li><button class="dropdown-item" type="button">Asesoramiento</button></li>
+          <li><button class="dropdown-item" type="button">Otro</button></li>
+        </ul>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Descripción:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+          placeholder="¿Qué podemos hacer por usted?"></textarea>
+      </div>
+
+      <div class="help">Escriba una descripción de las tareas requeridas.</div>
+
+      <label for="terms">
+        <input id="terms" type="checkbox" required>
+        <span>Acepto Términos y Condiciones</span>
+      </label>
+
+      <br>
+      <br>
+      <div>
+        <button type="button" class="btn btn-primary btn-lg">ENVIAR</button>
+      </div>
+
+    </form>
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+html, body {
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    height: 100%;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+.container {
+    max-width: 40em;
+    padding: 2% 3% 0 3%;
+    background-color: slategray;
+    height: 100%;
+    color: aliceblue;
+}
+
+form {
+    accent-color: lightseagreen;
+}
+
+.fieldset-padding {
+    justify-content: space-between;
+    padding: 0 2em 0 0;
+    width: 100%;
+}
+
+.budget-legend {
+    font-size: 1em;
+    text-align: start;
+    width: 40%;
+    height: 2.5em;
+    padding: 1.5% 0 0 1em;
+    margin: 0;
+}
+
+.help {
+    font-size: 10px;
+    margin: 0 0 10px 10px;
+    color: aliceblue;
+}
+
+.btn-lg {
+    background: lightseagreen;
+}
+
+.dropdown-toggle {
+    background: lightseagreen;
+    margin: 10px 0 10px 0;
+}
