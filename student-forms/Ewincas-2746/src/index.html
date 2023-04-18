@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+
+    <form class="g-3 needs-validation" novalidate>
+        <div class="mb-4">
+            <label for="name" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre completo" required>
+            <div class="invalid-feedback">
+                Por favor, proporcione su nombre
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electronico" required>
+            <div class="invalid-feedback">
+                Por favor, proporcione un correo electronico
+            </div>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend class="from-legend">Presupuesto</legend>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="10000" name="bugde" value="10000" required>
+                    <label for="10000" class="form-check-label">$10000</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="5000" name="bugde" value="5000" required>
+                    <label for="5000" class="form-check-label">$5000</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" id="1000" name="bugde" value="1000" required>
+                    <label for="1000" class="form-check-label">$1000</label>
+                </div>
+            </fieldset>
+            <div class="invalid-feedback">
+                Por favor, Seleccione el valor de su Presupuesto
+            </div>
+        </div>
+
+        <div>
+            <label class="form-check-label">Tipo de proyecto</label>
+            <select class="form-select" aria-label="Default select" required>
+                <option selected disabled value="">Seleccione uno</option>
+                <option value="Website" required>Website</option>
+                <option value="Webapp" required>Webapp</option>
+                <option value="Mobile" required>Mobile</option>
+                <option value="Diseño" required>Diseño</option>
+            </select>
+            <div class="invalid-feedback">
+                Seleccione algun tipo de proyecto
+            </div>
+        </div>
+
+        <div>
+            <label class="form-label" for="description">Descripcion</label>
+            <textarea class="form-control" id="description" name="description" required rows="8" cols=""></textarea>
+            <div class="invalid-feedback">
+                Descripcion del proyecto necesaria
+            </div>
+        </div>
+
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="terms" required>
+            <label class="form-check-label" for="terms">Acepto terminos y condiciones</label>
+            <div class="invalid-feedback">
+                Debe aceptar los terminos y condiciones
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-outline-primary">Enviar</button>
+    </form>
+
+</body>
+
+</html>
