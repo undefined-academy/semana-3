@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap w/ Vite</title>
+    <title>Formulario de contacto</title>
     <script type="module" src="./js/main.js"></script>
 </head>
 
@@ -29,7 +29,7 @@
 
         <div>
             <fieldset>
-                <legend class="from-legend">Presupuesto</legend>
+                <legend>Presupuesto</legend>
                 <div class="form-check form-check-inline">
                     <input class="form-check-input" type="radio" id="10000" name="bugde" value="10000" required>
                     <label for="10000" class="form-check-label">$10000</label>
@@ -64,9 +64,11 @@
             </div>
         </div>
 
-        <div>
+        <div mb-8>
             <label class="form-label" for="description">Descripcion</label>
-            <textarea class="form-control" id="description" name="description" required rows="8" cols=""></textarea>
+            <textarea class="form-control" id="description" name="description" required rows="8" cols=""
+                aria-describedby="help"></textarea>
+            <div class="form-text" id="help">Escribe una Descripción del proyecto en al menos 500 palabras.</div>
             <div class="invalid-feedback">
                 Descripcion del proyecto necesaria
             </div>
