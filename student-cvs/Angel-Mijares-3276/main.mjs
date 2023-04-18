@@ -1,8 +1,8 @@
-function handleSumit(event) {
+function handleSubmit(event) {
     event.preventDefault()
     console.log("Hola Mundo");
 }
 
 const $form = document.querySelector("form");
 
-$form.addEventListener("submit", handleSumit)
+$form.addEventListener("submit", handleSubmit)
