@@ -1,13 +1,21 @@
-function changeWebMode(){
-    let webMode = document.body;
-    webMode.classList.toggle("darkMode");
-}
+const bodyElement = document.getElementById('bodyMode');
+const btnScr = document.getElementById('btnScroll');
+const changeMode = document.querySelectorAll('.buttonMode');
 
+changeMode.forEach(element => {
+    element.addEventListener('click', changeWebMode);
+});
+
+btnScr.addEventListener('click',upButton);
+
+function changeWebMode(){
+    bodyElement.classList.toggle("darkMode");
+}
 
 function scrollTop(){
     let topScroll = document.getElementById('btnScroll');
     let imgScroll = document.getElementById('arrowImg')
-    if(document.body.scroll > 20 || document.documentElement.scrollTop > 20){
+    if(bodyElement.scroll > 20 || document.documentElement.scrollTop > 20){
         topScroll.style.visibility = 'visible';
         imgScroll.style.visibility = 'visible';
     }else{
@@ -17,10 +25,10 @@ function scrollTop(){
 }
 
 function upButton(){
-    document.body.scrollTop = 0;
+    bodyElement.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-    
 }
+
 window.onscroll = function(){
     scrollTop()
 }

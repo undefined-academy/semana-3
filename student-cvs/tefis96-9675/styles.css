@@ -7,6 +7,7 @@ body {
   max-width: 1440px;
   min-height: 100%;
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
 
 /* Background mode*/
@@ -38,7 +39,9 @@ body {
 }
 
 /* Size img */
-
+.dropOptions{
+  background-color: #18181878;
+}
 .logoTxt {
   position: absolute;
   visibility: visible;
@@ -48,7 +51,7 @@ body {
 .logo {
   position: absolute;
   display: block;
-  width: 10%;
+  width: 50px;
 }
 
 .profileImg {
@@ -85,21 +88,16 @@ body {
 
 /* DropBox Menu */
 
-.dropDown > .dropDown {
-  visibility: inherit;
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  position: relative;
-  align-content: center;
-}
+
 .dropOptions {
   visibility: hidden;
   position: absolute;
+  right: 2px;
   color: rgba(2, 232, 232, 0.802);
 }
 .dropDown:hover .dropOptions {
   visibility: visible;
+  
 }
 
 .dropBtn {
@@ -153,7 +151,7 @@ section,
   align-items: center;
 }
 
-.buttonMode {
+.imgMode {
   background-color: #181818;
   border-color: #181818;
   display: block;

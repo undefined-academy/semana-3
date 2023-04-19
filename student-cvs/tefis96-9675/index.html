@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" >
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0" >
-    <script src="./js/bgButton.js"></script>
+    <link rel="shortcut icon" href="./img/logoSCS.png" type="image/x-icon">
+    <script type="module" src="./js/bgButton.js"></script>
     <title>Stephany Castro Salas</title>
 </head>
 
-<body class="Mode darkMode">
+<body class="Mode darkMode" id="bodyMode">
     <nav class="navBar">
         <div class="logoField">
             <img class="logoTxt" src="img/logo-removebg-preview.png" alt="logoSCS">
@@ -20,7 +21,7 @@
         <div class="containerMenu">
             <div class="linksField">
                 <ul>
-                    <li><a class="buttonMode" onclick="changeWebMode()"><img class="buttonMode" src="img/mode.svg"
+                    <li><a class="buttonMode" ><img class="imgMode" src="img/mode.svg"
                                 alt="luna"></a>
                     </li>
                     <li><a href="#Home">Home</a></li>
@@ -33,7 +34,7 @@
                 <button class="dropBtn"><img class="menu" id="menu" src="img/icons8-menu-rounded-50.png"
                         alt="icons8-menu-rounded-50"></button>
                 <div class="dropOptions">
-                    <a class="buttonMode" onclick="changeWebMode()"><img class="buttonMode" src="img/mode.svg"
+                    <a class="buttonMode"><img class="imgMode" src="img/mode.svg"
                             alt="luna"></a>
                     <a href="#Home">Home</a>
                     <a href="#aboutMe">About Me</a>
@@ -45,7 +46,7 @@
     </nav>
     <!-- Section -->
     <div class="containerScrollBtn">
-        <button class="scroll" id="btnScroll" onclick="upButton()"><img class="scroll" id="arrowImg"
+        <button class="scroll" id="btnScroll"><img class="scroll" id="arrowImg"
                 src="https://cdn-icons-png.flaticon.com/512/3148/3148343.png" alt="luna"></button>
     </div>
     <section class="home" id="Home">
@@ -65,8 +66,8 @@
             <div class="textAboutMe">
                 <h3>Sobre Mi</h3>
                 <p>Estoy iniciando en desarrollo, me estoy preparando para ser <strong>FullStack</strong>
-                    He participado en fundamentos de programación en MINTIC, donde desarrollamos pequeños proyectos
-                    usandodiferentes tecnologias y metodologías agiles.</p>
+                    He participado en fundamentos de programación en "MINTIC", donde desarrollamos pequeños proyectos
+                    usando diferentes tecnologias y metodologías agiles.</p>
             </div>
             <h3>Tengo conocimientos en:</h3>
             <div class="tech">
@@ -78,7 +79,7 @@
                         <img class="iconTech"
                             src="https://icongr.am/devicon/java-original.svg?size=50&color=currentColor" alt="Java">
                         <img class="iconTech"
-                            src="https://4.bp.blogspot.com/-ou-a_Aa1t7A/W6IhNc3Q0gI/AAAAAAAAD6Y/pwh44arKiuM_NBqB1H7Pz4-7QhUxAgZkACLcBGAs/s1600/spring-boot-logo.png"
+                            src="https://img.icons8.com/color/512/spring-logo.png"
                             alt="Spring Boot">
                         <img class="iconTech" src="https://icongr.am/devicon/mongodb-original.svg?size=34&color=d4b5b5"
                             alt="MongoDB">
@@ -104,7 +105,7 @@
                         <img class="iconTech"
                             src="https://icongr.am/devicon/javascript-original.svg?size=34&color=currentColor"
                             alt="JavaScript">
-                        <img class="iconTech" src="https://www.datocms-assets.com/45470/1631110818-logo-react-js.png"
+                        <img class="iconTech" src="https://ionicframework.com/docs/icons/logo-react-icon.png"
                             alt="React">
                     </div>
                 </div>
@@ -179,7 +180,7 @@
                         <img class="iconTech"
                             src="https://icongr.am/devicon/javascript-original.svg?size=34&color=currentColor"
                             alt="JavaScript">
-                        <img class="iconTech" src="https://www.datocms-assets.com/45470/1631110818-logo-react-js.png"
+                        <img class="iconTech" src="https://ionicframework.com/docs/icons/logo-react-icon.png"
                             alt="React">
                     </div>
                     <div class="description">
@@ -229,9 +230,5 @@
             <h3>StephanyCastroSalas 😁</h3>
         </div>
     </footer>
-
-
-
 </body>
-
 </html>
