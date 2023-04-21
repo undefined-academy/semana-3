@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="output.css" />
+        <title class="text-gray-700 font-bold">Tailwind Form</title>
+    </head>
+    <body>
+        <div class="flex justify-center items-center min-h-screen">
+            <form
+                action="#"
+                method="get"
+                class="bg-white shadow-[8.0px_8.0px_8.0px_rgba(0,_150,_136,_0.7)] rounded-lg px-8 pt-6 pb-8 mb-4"
+            >
+                <h1 class="text-center font-bold text-teal-800">
+                    Tailwind Form
+                </h1>
+                <div class="my-5">
+                    <label
+                        class="block text-teal-800 text-sm font-bold mb-2"
+                        for="username"
+                    >
+                        Username
+                    </label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="username"
+                        type="text"
+                        placeholder="Username"
+                    />
+                </div>
+                <div class="mb-4">
+                    <label
+                        class="block text-teal-800 text-sm font-bold mb-2"
+                        for="email"
+                    >
+                        Email
+                    </label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                        id="email"
+                        type="email"
+                        placeholder="janedoe@email.com"
+                    />
+                </div>
+                <div class="mb-4">
+                    <label
+                        class="block text-teal-800 text-sm font-bold mb-2"
+                        for="asunto"
+                    >
+                        Asunto
+                    </label>
+                    <input
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                        type="text"
+                        name="asunto"
+                        id="asunto"
+                        placeholder="Asunto"
+                    />
+                </div>
+                <div class="mb-4">
+                    <label
+                        class="block text-teal-800 text-sm font-bold mb-2"
+                        for="descripcion"
+                    >
+                        Descripcion
+                    </label>
+                    <textarea
+                        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline"
+                        name="descripcion"
+                        id="descripcion"
+                        rows="8"
+                        cols="30"
+                        placeholder="Descripcion del asunto.."
+                    ></textarea>
+                </div>
+                <div class="flex items-center justify-between">
+                    <button
+                        class="bg-teal-800 hover:bg-teal-500 w-full text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                        type="button"
+                    >
+                        Contactame
+                    </button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
