@@ -2,6 +2,7 @@
 
 html {
     box-sizing: border-box;
+    color-scheme: dark;
 }
 
 * {
@@ -16,7 +17,6 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     padding: 2em 1em;
-    background-image: url("/semana-3/student-cvs/TeamPanda-5141/img/imagen-fondo-divpanda.jpg");
     color: #d6dee6;
 }
 
@@ -26,7 +26,7 @@ main {
 }
 
 h1 {
-    background-image: url("/semana-3/student-cvs/TeamPanda-5141/img/imagen-fondo-divpanda.jpg");
+    background-image: url("/img/imagen-fondo-divpanda.jpg");
     border-radius: 8px;
     border: 1px solid #f0ffff;
     display: flex;
@@ -63,7 +63,8 @@ textarea {
 
 input:not([type="checkbox"]),
 textarea {
-    background-image: url("/semana-3/student-cvs/TeamPanda-5141/img/imagen-fondo-divpanda.jpg");
+    background-image: url("/img/imagen-fondo-divpanda.jpg");
+    background-size: contain;
     color: #d5dee6;
     border: 1px solid #f0ffff;
     border-radius: 5px;

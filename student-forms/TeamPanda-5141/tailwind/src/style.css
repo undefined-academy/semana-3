@@ -23,8 +23,9 @@
     }
 
     input:not([type="checkbox"]), textarea {
-        @apply border border-solid border-100 rounded-md text-50 py-2 px-3;
+        @apply border border-solid border-100 rounded-md text-50 py-2 px-3 font-bold;
         background-image: url('/img/imagen-fondo-divpanda.jpg');
+        background-size: contain;
     }
 
     ::placeholder {

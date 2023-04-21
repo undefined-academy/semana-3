@@ -30,6 +30,7 @@ nav {
     border: 1px solid azure;
     border-radius: 10px;
     background-image: url("./img/imagen-fondo-divpanda.jpg");
+    background-size: contain;
 }
 
 ul {

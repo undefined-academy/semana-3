@@ -119,6 +119,7 @@ ul {
 #resaltable {
     font-size: 18px;
     background-image: url("../img/imagen-fondo-divpanda.jpg");
+    background-size: cover;
     border-radius: 10px;
     border: 2px solid azure;
     text-align: center;
