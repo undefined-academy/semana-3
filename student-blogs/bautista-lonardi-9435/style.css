@@ -1,0 +1,79 @@
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  border-box: inherit;
+  font-family: monospace;
+  color: #fff;
+}
+
+.container {
+  height: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  background: #3f6212;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 48px auto;
+  grid-template-areas:
+    "header header header header"
+    "card card card card"
+    "notice notice notice notice";
+}
+
+.section-header {
+  grid-area: header;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.section-header ul {
+  padding: 0;
+  display: flex;
+  gap: 16px;
+}
+
+.section-header ul li {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.section-header input {
+  padding: 8px;
+}
+
+
+.section-cards {
+  grid-area: card;
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  margin: 2em auto;
+}
+
+.card {
+  border: 1px solid #fff;
+  padding: 10px;
+  width: auto;
+  border-radius: 4px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: inherit;
+}
+
+.section-notice {
+  grid-area: notice;
+  width: 80%;
+  margin: 2em auto;
+}
