@@ -1,0 +1,71 @@
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: rgb(25, 2, 47);
+}
+* {
+    box-sizing: inherit;
+}
+
+header, body {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+.nav-enlaces, .nav-iconos {
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    color: rgb(107, 107, 211);
+    font-size: 18px;
+}
+
+
+body {
+    background: rgb(72, 203, 220);
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+    width: min(90%,1200px);
+    margin: 0 auto;
+    border: 2px dashed rebeccapurple;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    background-color: rgb(203, 244, 244);
+    padding: 10px;
+}
+
+.item p {
+    background-color: rgb(203, 244, 244);
+}
+
+.principal {
+    grid-area: cabeza;
+}
+
+.secundario {
+    grid-area: cuerpo;
+}
+
+.final {
+    grid-area: cola;
+}
