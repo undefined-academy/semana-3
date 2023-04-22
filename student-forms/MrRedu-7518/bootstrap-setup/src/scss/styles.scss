@@ -1,0 +1,36 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+body {
+    background-color: #282828;
+    color: #d1d1d1;
+    margin: 50px auto 0;
+    width: 100%;
+}
+
+// sm 576px
+@include media-breakpoint-up(sm) {
+    body {
+        color: #3e3;
+    }
+}
+
+// // sm 768px
+// @include media-breakpoint-up(md) {
+//     background-color: #eee;
+// }
+
+// // lg: 992px
+// @include media-breakpoint-up(lg) {
+
+// }
+
+// // xl: 1200px
+// @include media-breakpoint-up(xl) {
+
+// }
+
+// // xxl: 1400px
+// @include media-breakpoint-up(xxl) {
+    
+// }

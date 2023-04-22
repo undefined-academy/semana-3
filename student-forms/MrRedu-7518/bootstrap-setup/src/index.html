@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="./js/main.js"></script>
+    
+</head>
+<body>
+
+    <!-- <div class="container py-4 px-3 mx-auto">
+      <h1>Hello, Bootstrap and Vite!</h1>
+      <button class="btn btn-primary">Primary button</button>
+    </div> -->
+        
+  <header class="header">
+      <h1>
+          👾 <em>Sup! </em><strong>Mr Redu</strong> <em>is here</em> 👾
+      </h1>
+  </header>
+
+  <article>
+      <main class="form">
+          <h1>Contacto</h1>
+          <form action="" method="post">
+
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label">Nombres y apellidos</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="abc">
+            </div>           
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Correo eléctronico</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="e-mail@abc.com" required>
+                <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie.</div>
+              </div>
+
+              <div class="form-content">
+                <label for="type">Tipo de proyecto</label>
+                <select class="form-select" aria-label="Default select example" name="type" id="type">
+                  <option selected disabled>Open this select menu</option>
+                  <option value="1">Website 🖥️</option>
+                  <option value="2">WebApp 📱</option>
+                </select>
+              </div>
+
+              <div class="form-content">
+                  <label for="quantity">Número de proyectos</label>
+                  <input type="number" name="quantity" id="quantity" min="1" max="5" placeholder="n" required>
+              </div>
+
+              <div class="form-content">
+                  <fieldset>
+                      <legend>Presupuesto</legend>
+                      <div class="opciones">
+                          <div class="opcion">
+                              <input id="275" type="radio" name="budget" value="275" required>
+                              <label for="275">$ 275</label>
+                          </div>
+                          <div class="opcion">
+                              <input id="350" type="radio" name="budget" value="350" required>
+                              <label for="350">$ 350</label>
+                          </div>
+                          <div class="opcion">
+                              <input id="475" type="radio" name="budget" value="475" required>
+                              <label for="475">$ 475</label>
+                          </div>
+                          <div class="opcion">
+                              <input id="725" type="radio" name="budget" value="725" required>
+                              <label for="725">$ 725</label>
+                          </div>
+                          <div class="opcion">
+                              <input id="925" type="radio" name="budget" value="925" required>
+                              <label for="925">$ 925</label>
+                          </div>
+                          <div class="opcion">
+                              <input id="1200" type="radio" name="budget" value="1200" required checked>
+                              <label for="1200">$ 1200</label>
+                          </div>
+                      </div>
+                  </fieldset>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label" for="description">Descripción</label>
+                <textarea name="description" id="description" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="¡Buenas, buenas!..." required></textarea>
+                <div id="emailHelp" class="form-text">
+                  Escribe una descripción del proyecto en al menos 500 palabras.
+              </div>
+              </div>
+
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Acepto los términos y condiciones</label>
+              </div>
+
+              <div class="botones">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+
+          </form>
+      </main>
+  </article>
+    
+    
+        <!-- <script src="form-contacto_js.js"></script> -->
+        <!-- <script type="module" src="/main.mjs"></script> -->
+
+
+</body>
+</html>
