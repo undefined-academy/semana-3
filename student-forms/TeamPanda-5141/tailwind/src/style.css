@@ -5,32 +5,35 @@
 @layer base {
     
     body {
-        min-width: 400px;
-        background-image: url('/img/imagen-fondo-divpanda.jpg');
+        min-width: 425px;
+        background-image: url('/img/fondo-divpanda-cv-mobile.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     main {
-        max-width: 425px;
+        max-width: 500px;
     }
     
     h1 {
-        @apply grid place-items-center border border-solid border-100 rounded-md font-semibold text-2xl my-5 h-12;
-        background-image: url('/img/imagen-fondo-divpanda.jpg');
+        @apply grid place-items-center rounded-md font-semibold text-4xl my-5 h-12;
     }
 
     label {
-        @apply font-bold;
+        @apply font-bold text-xl;
     }
 
     input:not([type="checkbox"]), textarea {
-        @apply border border-solid border-100 rounded-md text-50 py-2 px-3 font-bold;
-        background-image: url('/img/imagen-fondo-divpanda.jpg');
-        background-size: contain;
+        @apply bg-300 border border-solid border-100 rounded-md text-50 text-lg py-2 px-3 font-bold;
     }
 
     ::placeholder {
-        @apply text-100;
+        @apply text-100 ;
         
+    }
+
+    footer {
+        @apply text-center font-semibold text-lg;
     }
     
 }
