@@ -14,7 +14,7 @@ html {
     padding-bottom: 5px;
     border: 2px solid azure;
     border-radius: 7px;
-    background-image: url("../img/imagen-fondo-divpanda.jpg");
+    background-image: url("");
 }
 
 .mi-nombre {
@@ -23,7 +23,7 @@ html {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    -webkit-text-fill-color: #00ffffeb;
+    -webkit-text-fill-color: #00ffffd7;
     -webkit-text-stroke: 1px #008b8b7d;
     font-family: 'Alfa Slab One';
     font-size: 33px;
@@ -76,11 +76,21 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
     padding: 2em 1em;
-    background-image: url("../img/imagen-fondo-divpanda.jpg");
+    background-image: url("/img/fondo-divpanda-cv-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 150% 100%;
 }
 
-#hoja-de-vida {
-    background-color: rgba(53 51 51 / 0.36);
+#main-content {
+    margin-top: 12px;
+}
+
+#main-content,
+.cards-exp-hob {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
 }
 
 h1,
@@ -91,7 +101,6 @@ h2 {
 h1 {
     padding-left: 20px;
     padding-right: 20px;
-    /* aquí puede meterse una fotish */
     background-repeat: no-repeat;
     background-position: 509px;
     background-size: 75px;
@@ -106,7 +115,6 @@ ul {
 }
 
 #introduccion,
-#hoja-de-vida,
 #experiencia-previa,
 #hobbies-intereses,
 #encuéntrame {
@@ -114,12 +122,12 @@ ul {
     margin: 0 auto;
     padding: 13px;
     border-radius: 7px;
+    background-color: #353333c9;
+    width: 100%;
 }
 
 #resaltable {
     font-size: 18px;
-    background-image: url("../img/imagen-fondo-divpanda.jpg");
-    background-size: cover;
     border-radius: 10px;
     border: 2px solid azure;
     text-align: center;
@@ -133,9 +141,9 @@ ul {
 
 #encuéntrame {
     display: flex;
-    background-image: url("../img/imagen-fondo-divpanda.jpg");
     flex-direction: column;
     align-items: center;
+    background-color: unset;
 
 }
 
@@ -145,56 +153,41 @@ ul {
 
 .botones {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-#boton-platzi {
+.plataformas-educativas {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
-    box-sizing: border-box;
-    width: 93px;
-    height: 35px;
-    border-radius: 15px;
-    padding: 10px;
-    margin: 10px;
-    color: aliceblue;
-    background-color: transparent;
-    border: 2px solid azure;
+}
+
+
+
+a {
+    display: contents;
+    gap: 10px;
     text-decoration: none;
-    background-image: url("../img/platzi-logo.png");
-    background-repeat: no-repeat;
-    background-position: initial;
-    background-size: contain;
+    color: inherit;
+}
+
+a>img {
+    height: 50px;
+    object-fit: contain;
+}
+
+a>p{
+    margin: 0;
+    text-align: center;
+    font-size: larger;
 }
 
 #boton-platzi:hover {
     background-color: rgba(153, 205, 50, 0.295);
 }
 
-#boton-freecodecamp {
-    display: flex;
-    justify-content: flex-end;
-    box-sizing: border-box;
-    width: 159px;
-    height: 35px;
-    border-radius: 15px;
-    padding: 10px;
-    margin: 10px;
-    color: aliceblue;
-    background-color: transparent;
-    border: 2px solid azure;
-    text-decoration: none;
-    background-image: url("../img/freecodecamp-logo.png");
-    background-repeat: no-repeat;
-    background-position: 9px;
-    background-size: 25px;
-    align-items: center;
-}
-
 #boton-freecodecamp:hover {
-    background-color: #575353be;
+    background-color: #575353;
 }
 
 #boton-github {
@@ -245,24 +238,38 @@ ul {
     opacity: .9;
 }
 
-@media screen and (min-width: 768px) {
+hr {
+    display: none;
+}
 
-    hr {
-        display: none;
-    }
+@media screen and (min-width: 768px) {
 
     body {
         max-width: 950px;
+        background-image: url("../img/fondo-divpanda-cv.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
     }
 
-    #prueba {
+    #main-content {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
-        column-gap: 10px;
-        row-gap: 10px;
-        margin-top: 10px;
-        text-align: justify;
+        column-gap: 12px;
+        row-gap: 14px;
+        margin-top: 14px;
+    }
+
+    #introduccion {
+        grid-column: 1 / 4;
+    }
+
+    .cards-exp-hob {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column: 1 / 4;
+        column-gap: 14px;
     }
 
     .mi-nombre {
@@ -281,7 +288,8 @@ ul {
     }
 
     #resaltable {
-        padding: 0 10px
+        padding: 0 10px;
+        background-image: url("/img/fondo-divpanda-cv.jpg");
     }
 
 }

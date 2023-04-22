@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DivPanda</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1531/1531344.png" type="image/x-icon">
@@ -36,7 +36,7 @@
             </section>
         </header>
         <hr>
-        <main id="prueba">
+        <main id="main-content">
             <section id="introduccion">
 
                 <header>
@@ -56,54 +56,67 @@
                             class="bold">superando</span> los retos que traiga el porvenir 💪🏻.</p>
                 </div>
             </section>
-            <hr>
-            <section id="experiencia-previa">
-                <header>
-                    <h2>Experiencia previa en este campo 🏗️</h2>
-                </header>
-                <p>Antes de este Bootcamp, estudié por mi cuenta y en plataformas como:</p>
-                <section class="botones">
-                    <div>
-                        <a id="boton-platzi" href="https://platzi.com/" title="https://platzi.com/">Platzi</a>
-                    </div>
 
-                    <div>
-                        <a id="boton-freecodecamp" href="https://www.freecodecamp.org/" title="https://www.freecodecamp.org/">Freecodecamp</a>
-                    </div>
+            <hr>
+
+            <div class="cards-exp-hob">
+                <section id="experiencia-previa">
+                    <header>
+                        <h2>Experiencia previa en este campo 🏗️</h2>
+                    </header>
+                    <p>Antes de este Bootcamp, estudié por mi cuenta y en plataformas como:</p>
+                    <section class="botones">
+                        <div id="boton-platzi" class="plataformas-educativas">
+                            <a href="https://platzi.com/" title="https://platzi.com/">
+                                <img class="img-plataformas-educativas" src="/img/platzi-logo.png" alt="Platzi">
+                                <p>Platzi</p>
+                            </a>
+                        </div>
+
+                        <div id="boton-freecodecamp" class="plataformas-educativas">
+                            <a href="https://www.freecodecamp.org/" title="https://www.freecodecamp.org/">
+                                <img class="img-plataformas-educativas" src="/img/freecodecamp-logo.png" alt="Freecodecamp">
+                            <p>Freecodecamp</p>
+                            </a>
+                            
+                        </div>
+                    </section>
+                    <p>Donde obtuve conocimientos en:</p>
+                    <ul>
+
+                        <li>Bases teóricas de programación e informática 📖.</li>
+                        <li>HTML, CSS y JavaScript 💻</li>
+                        <li>Habilidades blandas 🤝🏻</li>
+                        <li>Y más... 👀</li>
+                    </ul>
                 </section>
-                <p>Donde obtuve conocimientos en:</p>
-                <ul>
+                <hr>
+                <section id="hobbies-intereses">
+                    <header>
+                        <h2>Hobbies e Intereses 🎮👦🏻</h2>
+                    </header>
 
-                    <li>Bases teóricas de programación e informática 📖.</li>
-                    <li>HTML, CSS y JavaScript 💻</li>
-                    <li>Habilidades blandas 🤝🏻</li>
-                    <li>Y más... 👀</li>
-                </ul>
-            </section>
+                    <h3>Me gusta:</h3>
+
+                    <ul>
+                        <li>La música y de forma autodidacta aprendí a tocar el piano 🎹🎵.</li>
+                        <li>Enseñar 👨🏻‍🏫. Es una forma muy positiva de fijar conocimientos y apoyar a otros en el
+                            proceso
+                            🧠✨.</li>
+                        <li>Optimizar 🔧. Creo que para casi todo existe la forma más óptima para hacerla 🙌🏻.</li>
+                        <li>Investigar 🔬🤔. Disfruto buscar y entender el <strong>"¿Por qué?"</strong> de las cosas.
+                    </ul>
+                    <h3>Me interesa🏁</h3>
+                    <ul>
+                        <li><strong>Elevar</strong> mi nivel y conocimientos de programación 📚💻.</li>
+                        <li>Desenvolverme profesionalmente como <strong>Desarrollador</strong> 🙋🏻‍♂️.</li>
+                        <li>Crear producto de <strong>valor</strong> para el mundo 🌎.</li>
+                    </ul>
+                </section>
+            </div>
+
             <hr>
-            <section id="hobbies-intereses">
-                <header>
-                    <h2>Hobbies e Intereses 🎮👦🏻</h2>
-                </header>
 
-                <h3>Me gusta:</h3>
-
-                <ul>
-                    <li>La música y de forma autodidacta aprendí a tocar el piano 🎹🎵.</li>
-                    <li>Enseñar 👨🏻‍🏫. Es una forma muy positiva de fijar conocimientos y apoyar a otros en el
-                        proceso
-                        🧠✨.</li>
-                    <li>Optimizar 🔧. Creo que para casi todo existe la forma más óptima para hacerla 🙌🏻.</li>
-                    <li>Investigar 🔬🤔. Disfruto buscar y entender el <strong>"¿Por qué?"</strong> de las cosas.
-                </ul>
-                <h3>Me interesa🏁</h3>
-                <ul>
-                    <li><strong>Elevar</strong> mi nivel y conocimientos de programación 📚💻.</li>
-                    <li>Desenvolverme profesionalmente como <strong>Desarrollador</strong> 🙋🏻‍♂️.</li>
-                    <li>Crear producto de <strong>valor</strong> para el mundo 🌎.</li>
-                </ul>
-            </section>
-            <hr>
             <section id="encuéntrame">
                 <h2>Encuéntrame 🔎</h2>
                 <div id="botones-encuéntrame">
@@ -111,8 +124,7 @@
                         <a id="boton-github" href="https://github.com/DivPanda">Github</a>
                     </div>
                     <div class="botones">
-                        <a id="boton-contáctame"
-                            href="/form.html">Contáctame 📲</a>
+                        <a id="boton-contáctame" href="/form.html">Contáctame 📲</a>
                     </div>
                 </div>
 
