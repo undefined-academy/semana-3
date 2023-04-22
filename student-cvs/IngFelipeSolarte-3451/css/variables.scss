@@ -1,0 +1,18 @@
+
+$color-first: #2F4858;
+$color-second: #33658A;
+$color-third: #2EC4B6;
+$color-fourth: #FF3366;
+$color-fifth: #F6F7F8;
+
+$tablet-screen: 768px;
+$laptop-screen: 992px;
+$desktop-screen: 1200px;
+
+$flat-screen: 2500px;
+
+@mixin transition03s{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}

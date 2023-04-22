@@ -1,0 +1,409 @@
+@use "variables.scss" as v;
+
+
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+.flags {
+    border-radius: 5px;
+    max-height: 30px;
+    height: 1.4em;
+}
+
+
+img.gatito {
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+p {
+    text-align: justify;
+
+}
+
+
+
+/*CSS FOR FORM*/
+
+.container {
+    margin-top: 2.25em;
+}
+
+// Title and First article
+
+.title-small {
+    color: v.$color-third;
+    font-weight: 700;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+
+}
+
+.title-big {
+    color: v.$color-first;
+    font-weight: 900;
+    margin-top: 0px;
+}
+
+.first-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //  border: 1px dotted dodgerblue;
+}
+
+.first-article-text {
+    font-weight: 400;
+    font-size: 1.2em;
+    color: v.$color-third;
+}
+
+
+
+.contact-me {
+    color: v.$color-fifth;
+    background-color: v.$color-second;
+    border-radius: 10px;
+    border-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 7px 10px 7px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 100;
+
+
+    @include v.transition03s;
+}
+
+.contact-me:hover {
+    color: v.$color-second;
+    background-color: v.$color-fifth;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-color: transparent;
+
+    @include v.transition03s;
+}
+
+.nav-studies {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: v.$color-third;
+    border-radius: 25px;
+    cursor: pointer;
+    ;
+}
+
+.nav-studies a:not(.nav-studies-active) {
+    color: whitesmoke;
+    padding: 10px 20px;
+    text-decoration: none;
+
+    @include v.transition03s;
+}
+
+.nav-studies a:hover {
+    background-color: rgba($color: v.$color-second, $alpha: 0.3);
+    text-decoration: underline;
+    border-radius: 10px;
+    @include v.transition03s;
+}
+
+.nav-studies-active {
+    background-color: whitesmoke;
+    color: v.$color-second;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 20px;
+    @include v.transition03s;
+}
+
+.nav-studies-active:hover {
+    background-color: v.$color-second;
+    color: whitesmoke;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 20px;
+    @include v.transition03s;
+}
+
+
+.studies-hidden {
+    display: none;
+}
+
+
+.studies {
+    --s: 10px;
+    /* control the size */
+    padding: var(--s);
+    border: calc(2*var(--s)) solid #0000;
+    outline: 2px solid v.$color-third;
+    outline-offset: calc(-1*var(--s));
+    background: conic-gradient(from 90deg at 2px 2px, #0000 25%, v.$color-third 0);
+}
+
+
+.studies-image {
+    border-radius: 50%;
+    width: 80px;
+    margin: 5px;
+}
+
+.studies-title {
+    font-size: 2.6em;
+    text-align: center;
+    color: v.$color-first;
+    text-shadow: 1px 1px gray;
+    margin: 5px 10px;
+}
+
+.studies-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (min-width: v.$desktop-screen) {
+
+    .first-article {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        //  border: 1px dotted dodgerblue;
+
+    }
+
+
+
+    .first-article-text {
+        max-width: 350px;
+        text-align: justify;
+    }
+}
+
+
+
+
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    height: 500px;
+    width: 100%;
+    background-color: v.$color-first;
+    border-radius: 10px 10px 10px 10px;
+
+
+    @media screen and (min-width: v.$laptop-screen) {
+
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 300px;
+
+
+
+    }
+
+    @media screen and (min-width: v.$desktop-screen) {
+
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: 300px;
+
+    }
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 10px 10px 10px 10px;
+
+}
+
+.skill-title {
+    font-size: 1.2em;
+}
+
+.skills .skill:nth-child(2n) {
+    background-color: v.$color-second;
+}
+
+.skills .skill:nth-child(2),
+.skill:nth-child(3),
+.skill:nth-child(7),
+.skills .skill:nth-child(6),
+.skills .skill:nth-child(10) {
+    background-color: v.$color-third;
+}
+
+.skills .skill:hover {
+    background-color: whitesmoke !important;
+    color: v.$color-first;
+    @include v.transition03s;
+}
+
+@media screen and (min-width: v.$laptop-screen) {
+    .skills .skill:nth-last-child(3n) {
+        background-color: v.$color-second;
+    }
+
+    .skills .skill:nth-last-child(2n) {
+        background-color: v.$color-first;
+    }
+
+    .skills .skill:nth-child(1),
+    .skills .skill:nth-child(3),
+    .skills .skill:nth-child(9) {
+        background-color: v.$color-third;
+    }
+
+    .skill:last-child {
+        grid-column-end: 4;
+    }
+
+    .skills .skill:nth-child(8) {
+        background-color: v.$color-third;
+    }
+}
+
+@media screen and (min-width: v.$desktop-screen) {
+    .skills .skill:nth-child(2n) {
+        background-color: v.$color-second;
+    }
+
+    .skills .skill:nth-child(3n) {
+        background-color: v.$color-third;
+    }
+
+    .skills .skill:nth-child(5) {
+        background-color: v.$color-third;
+    }
+
+    .skills .skill:nth-child(6) {
+        background-color: v.$color-second;
+    }
+
+    .skills .skill:nth-child(7) {
+        background-color: v.$color-third;
+    }
+
+    .skill:hover,
+    .skills .skill:nth-child(2n):hover,
+    .skills .skill:nth-child(3n):hover {
+        background-color: whitesmoke;
+        color: v.$color-first;
+        @include v.transition03s;
+    }
+
+    .skill:last-child {
+        grid-column-end: 6;
+    }
+}
+
+
+.leadership{
+    box-sizing: border-box;
+}
+
+.leadership ul{
+    padding: 0px 0px;
+    box-sizing: border-box;
+}
+
+.leadership ul li {
+    list-style: none;
+    padding: 15px 15px;
+    text-transform: capitalize;
+    background-color: v.$color-third;
+    margin-bottom: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 1em;
+    color: white;
+    box-sizing: border-box;
+    @include v.transition03s
+}
+
+
+.leadership ul li:hover {
+    background-color: v.$color-fourth;
+}
+
+
+.leadership ul li:nth-child(2n){
+    background-color: v.$color-second;
+}
+
+.leadership ul li:nth-child(2n):hover{
+    background-color: v.$color-fourth;
+}
+
+
+.card {
+    border-radius: 10px;
+    filter: drop-shadow(0 5px 10px 0 #ffffff);
+    background-color: #ffffff;
+    padding: 20px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in;
+    color: v.$color-first;
+    margin: 10px 0px 10px 0px;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -15px;
+    right: -15px;
+    background: v.$color-third;
+    height: 100%;
+    ;
+    width: 25px;
+    border-radius: 32px;
+    @include v.transition03s
+
+}
+
+.card:hover::before {
+    transition-delay: 0.2s;
+    transform: scale(100);
+}
+
+.card:hover {
+    color: white
+}
+
+.card p {
+    padding: 10px 0;
+}

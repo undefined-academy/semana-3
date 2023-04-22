@@ -1,0 +1,119 @@
+@use "variables.scss" as v;
+
+/*\
+font-family: 'Inter', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+nav {
+    width: 100%;
+}
+
+h1,h2,h3{
+    font-family: 'Inter', sans-serif;
+    padding: 10px 0px;
+}
+
+h1{
+    font-size: 2.4em;
+}
+h2{
+    font-size: 2em;
+}
+h3{
+    font-size: 1.7em;
+}
+
+h4,h5,p{
+    font-family: 'Open Sans', sans-serif;;
+}
+h4{
+    font-size: 1.6em;
+}
+h5{
+    font-size: 1.5em;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 18px;
+    background-color: v.$color-first;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links,
+.logo {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 22px;
+}
+
+.navbar-toggle {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
+}
+
+.main-nav li a:hover{
+    color: white;
+}
+
+.active {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 0;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main-nav {
+        display: flex;
+        margin-right: 30px;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .main-nav li {
+        margin: 0;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+    }
+
+    .logo {
+        margin-top: 0;
+    }
+
+    .navbar-toggle {
+        display: none;
+    }
+
+    .logo:hover,
+    .nav-links:hover {
+        color: rgba(255, 255, 255, 1);
+    }
+}

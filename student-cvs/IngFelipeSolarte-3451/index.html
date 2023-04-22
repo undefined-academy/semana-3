@@ -1,97 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/img/download.png" type="image/x-icon">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/style.scss">
+    <link rel="stylesheet" href="css/header.scss">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400&display=swap"
+        rel="stylesheet">
     <title>Pipe's Resume</title>
 </head>
 
 <body>
-    <main>
 
-        <!--Nav bar-->
-        <nav>
-            <div class="navbar">
-                <ul>
-                    <li>
-                        <a href="/forms/form.html">Contacto</a>
-                    </li>
-                    <li>
-                        <a href="/index.html">Resume</a>
-                    </li>
-                </ul>
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <div id="mainLogo" href="#" class="logo"><img src="/img/nplogo.svg" width="50px"></div>
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="#home" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="#education" class="nav-links">Education</a>
+            </li>
+            <li>
+                <a href="#skills" class="nav-links">Skills</a>
+            </li>
+            <li>
+                <a href="#leadership" class="nav-links">Leadership Skills</a>
+            </li>
+            <li>
+                <a href="#work" class="nav-links">Work Experience</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <main class="container"> <!--Nav bar-->
+
+        <section id="home">
+            <h5 class="title-small">Hello, I'm</h5>
+            <h1 class="title-big"> Pipe Solarte - Software Developer</h1>
+
+            <article class="first-article">
+                <img class="picture-resume" src="img/dev-pic.png">
+                <div>
+                    <p class="first-article-text">I'm bilingual, a tech lover, and a coder. I've been coding for a long
+                        time, but this time, I will do it at a higher level.</p>
+                    <p class="first-article-text"> Currently learning to become a fullstack javascript developer at
+                        Guillermo Rodas' Bootcamp
+                    </p>
+                    <button class="contact-me">Contact me</button>
+                </div>
+            </article>
+
+        </section>
+
+        <section id="education">
+            <h2 class="title-big">Education</h2>
+            <nav class="nav-studies">
+                <a id="showSoftware">Software</a>
+                <a id="showProfessional">Professional</a>
+                <a id="showCourses">Courses</a>
+            </nav>
+
+            <article id="software" class="studies">
+                <h2 class="studies-title">Studies </h2>
+
+                <div class="studies-info">
+                    <img src="/img/js.jpg" alt="" class="studies-image">
+                    <p class="studies-text">Fullstack Javascript Bootcamp (Guillermo Rodas)</p>
+                </div>
+
+                <div class="studies-info">
+                    <img src="/img/angular.jpg" alt="" class="studies-image">
+                    <p class="studies-text">
+                        Fullstack Java JPA Angular (Self & Platzi)</p>
+                </div>
+
+
+            </article>
+            <article id="professional" class="studies-hidden studies">
+
+                <h2 class="studies-title">Professional </h2>
+
+                <div class="studies-info">
+                    <img src="/img/auto1.jpg" alt="" class="studies-image">
+                    <p class="studies-text">Industrial Automation Engineer</p>
+                </div>
+
+                <div class="studies-info">
+                    <img src="/img/auto2.jpg" alt="" class="studies-image">
+                    <p class="studies-text">High Technitian in Industrial Automation</p>
+                </div>
+            </article>
+            <article id="courses" class="studies-hidden studies">
+
+
+                <h2 class="studies-title">Courses </h2>
+
+                <div class="studies-info">
+                    <img src="/img/java.jpg" alt="" class="studies-image">
+                    <p class="studies-text">Fullstack Java developer (Bootcamp at Edutecno Chile)</p>
+                </div>
+
+                <div class="studies-info">
+                    <img src="/img/mintic.jpg" alt="" class="studies-image">
+                    <p class="studies-text">Educational IT Skills by IT Ministry of Colombia</p>
+                </div>
+
+                <div class="studies-info">
+                    <img src="/img/savigent.jpg" alt="" class="studies-image">
+                    <p class="studies-text">Platform Foundation Certification by Savigent</p>
+                </div>
+            </article>
+        </section>
+
+        <section id="skills">
+            <h2 class="title-big">Skills</h2>
+            <div class="skills">
+                <article class="skill">
+                    <div><span class="skill-title">Rockwell Automation</span></div>
+                    <div><span><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i
+                                class="fa-solid fa-star "></i><i class="fa-regular fa-star"></i><i
+                                class="fa-regular fa-star"></i></span></div>
+                </article>
+                <article class="skill">
+                    <div><span class="skill-title">Javascript</span></div>
+                    <div><span><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i
+                                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                                class="fa-regular fa-star"></i></span></div>
+                </article>
+                <article class="skill">
+                    <div><span class="skill-title">Java</span></div>
+                    <div><span><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i
+                                class="fa-solid fa-star "></i><i class="fa-regular fa-star"></i><i
+                                class="fa-regular fa-star"></i></span></div>
+                </article>
+                <article class="skill">
+                    <div><span class="skill-title">SpringBoot</span></div>
+                    <div><span><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i
+                                class="fa-solid fa-star "></i><i class="fa-regular fa-star"></i><i
+                                class="fa-regular fa-star"></i></span></div>
+                </article>
+                <article class="skill">
+                    <div><span>HTML</span></div>
+                    <div><span><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i
+                                class="fa-solid fa-star "></i><i class="fa-regular fa-star"></i><i
+                                class="fa-regular fa-star"></i></span></div>
+                </article>
+                <article class="skill">
+                    <div><span class="skill-title">CSS</span></div>
+                    <div><span><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i
+                                class="fa-solid fa-star "></i><i class="fa-regular fa-star"></i><i
+                                class="fa-regular fa-star"></i></span></div>
+                </article>
+                <article class="skill">
+                    <div><span class="skill-title">Arduino</span></div>
+                    <div><span><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i
+                                class="fa-solid fa-star "></i><i class="fa-regular fa-star"></i><i
+                                class="fa-regular fa-star"></i></span></div>
+                </article>
+                <article class="skill">
+                    <div><span class="skill-title">Vue</span></div>
+                    <div><span><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i
+                                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                                class="fa-regular fa-star"></i></span></div>
+                </article>
+                <article class="skill">
+                    <div><span class="skill-title">ReactJS</span></div>
+                    <div><span><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i
+                                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                                class="fa-regular fa-star"></i></span></div>
+                </article>
+                <article class="skill">
+                    <div><span class="skill-title">MySql</span></div>
+                    <div><span><i class="fa-solid fa-star "></i><i class="fa-solid fa-star "></i><i
+                                class="fa-solid fa-star "></i><i class="fa-regular fa-star"></i><i
+                                class="fa-regular fa-star"></i></span></div>
+                </article>
 
             </div>
-        </nav>
-
-        <h1 id="software-developer-pipe-solarte-colombia-">Software Developer - Pipe Solarte <img
-                src="/img/colombia.jpg" alt="CO" class="flags"></h1>
-        <section>
-            <h2 id="currently">Currently <img src="/img/now.png" alt="CO" class="flags"></h2>
-            <article>
-                <h2 id="job">Job <img src="/img/now.png" alt="CO" class="flags"></h2>
-                <ul>
-                    <li>WordPress Software Developer (Freelance)</li>
-                </ul>
-            </article>
-            <article>
-                <h2 id="studies">Studies <img src="/img/now.png" alt="CO" class="flags"></h2>
-                <ul>
-                    <li>Fullstack Javascript Bootcamp (Guillermo Rodas)</li>
-                </ul>
-                <ul>
-                    <li>Fullstack Java JPA Angular (Self & Platzi)</li>
-                </ul>
-            </article>
         </section>
-        <section id="education">
-            <h2 id="education-man_student-">Education <img src="/img/download.png" alt="CO" class="flags"></h2>
+        <section id="leadership">
 
-            <article>
-                <h2 id="professional">Professional <img src="/img/download.png" alt="CO" class="flags"></h2>
-
-                <ul>
-                    <li>Industrial Automation Engineer </li>
-                    <li>High Technitian in Industrial Automation</li>
-                </ul>
-            </article>
-            <article>
-                <h2 id="courses-">Courses <img src="/img/course.png" alt="CO" class="flags"></h2>
-                <ul>
-                    <li>Fullstack Java developer (Bootcamp at Edutecno Chile)</li>
-                    <li>Platform Foundation Certification by Savigent</li>
-                    <li>Educational IT Skills by IT Ministry of Colombia</li>
-                </ul>
-            </article>
-        </section>
-
-        <section id="skils">
-            <h2>Skills</h2>
-            <article>
-                <h2 id="programming-languages-automation-">Programming Languages (Automation) <img
-                        src="/img/automation.png" alt="CO" class="flags"></h2>
-
-                <ul>
-                    <li>Rockwell Automation ⭐⭐⭐</li>
-                    <li>Unitronic (Ladder) ⭐⭐⭐</li>
-                </ul>
-            </article>
-            <article>
-                <h2 id="programming-languages-software-">Programming Languages (Software) <img src="/img/code.png"
-                        alt="CO" class="flags"></h2>
-                <ul>
-                    <li>Java ⭐⭐</li>
-                    <li>SpringBoot ⭐⭐</li>
-                    <li>HTML, CSS ⭐⭐</li>
-                    <li>WordPress ⭐⭐⭐</li>
-                </ul>
-            </article>
-            <article>
-
-                <h2 id="soft-skills-">Soft Skills <img src="/img/soft.png" alt="CO" class="flags"></h2>
+            <h2 class="title-big">Leadership Skills</h2>
+            <article class="leadership">
                 <ul>
                     <li>Strong communication and presentation</li>
                     <li>Inspiring leadership and coaching</li>
@@ -101,75 +207,49 @@
             </article>
         </section>
 
-        <section>
-            <h2>Working Experience <img src="/img/work.png" alt="CO" class="flags"></h2>
+        <section id="work">
+            <h2 class="title-big">Work Experience</h2>
             <article>
-                <h2>Professional Experience <img src="/img/work.png" alt="CO" class="flags"></h2>
-                <ul>
-                    <li><strong>CEO - Software Developer Limited Colombia</strong> - <strong>June 2021 -
-                            Present</strong>
-                        Developing and sustain the website of Limited Colombia through Word-
+
+
+                <div class="card">
+                    <h4><strong> CEO - Software Developer Limited Colombia - June 2021 - current</strong></h4>
+                    <p>Developing and sustain the website of Limited Colombia through Word-
                         Press and a local server.
                         Customize the operations using WP Plugins, CSS3, JS and HTML5 creating stagings to verify
                         performance and check bugs.
-                        Attend and fix minor issues in the website and server at anytime.</li>
+                        Attend and fix minor issues in the website and server at anytime.</p>
+                </div>
 
-                    <li> <strong>Software & Project Engineer I OMNICON S.A</strong> - <strong>Dec 2020 – Dec
-                            2021</strong>
 
-                        Developing SCADA systems in Rockwell Automation technology, using Factory Talk View, Studio 5000
-                        and other tool related to the software.
-                        Attended local plants seeking to solve issues in the control systems among any other problems
-                        associated with the industrial process.
-                        Participated in training for Ignition Software, SEPASOFT, Power BI.</li>
-
-                    <li> <strong>Country Director
-                            Smaller Earth Chile SpA</strong> - <strong>2017 Feb – 2020 May</strong>
-                        Responsible for management of the company in all its financial, strategic and market positioning
+                <div class="card">
+                    <h4><strong>Software & Project Engineer I OMNICON S.A - Dec 2020 – Dec
+                            2021</strong></h4>
+                    <p>Responsible for management of the company in all its financial, strategic and market positioning
                         functions.
                         Responsible for conducting interviews in English to participants, make reports and take them
                         through the process of the company.
                         Lectured at Universities and professional institutes as well as carrying out visa procedures for
-                        the participants attending the American Embassy</li>
+                        the participants attending the American Embassy.</p>
+                </div>
 
-                </ul>
-            </article>
-        </section>
-
-        <section id="miscellaneous">
-            <h2>random but important</h2>
-            <article>
-
-                <h2 id="languages-u7533-">Languages <img src="/img/language.png" alt="CO" class="flags"></h2>
-                <ul>
-                    <li>Español: ⭐⭐⭐⭐⭐</li>
-                    <li>English: ⭐⭐⭐⭐</li>
-                </ul>
-            </article>
-            <article>
-                <h2 id="hobbies-">Hobbies <img src="/img/soccer.png" alt="CO" class="flags"></h2>
-                <ul>
-                    <li>Watch Soccer</li>
-                    <li>Play soccer</li>
-                    <li>Traveling</li>
-                </ul>
-            </article>
-            <article>
-                <h2 id="nationalities">Nationalities <img src="/img/world.png" alt="CO" class="flags"></h2>
-                <ul>
-                    <li>Colombia <img src="/img/colombia.jpg" alt="CL" class="flags"></li>
-                    <li>Chile (Resident) <img src="/img/chile.jpg" alt="CO" class="flags"></li>
-                </ul>
+                <div class="card">
+                    <h4><strong>Country Manager - Smaller Earth Chile SpA - 2017 Feb – 2020 May</strong></h4>
+                    <p>Developing SCADA systems in Rockwell Automation technology, using Factory Talk View, Studio 5000
+                        and other tool related to the software.
+                        Attended local plants seeking to solve issues in the control systems among any other problems
+                        associated with the industrial process.
+                        Participated in training for Ignition Software, SEPASOFT, Power BI.</p>
+                </div>
             </article>
         </section>
 
         </section>
 
-        <footer id="goodbye">
-            <div class="center"><img src="/img/cat.gif" alt="Gatito tomando boba tea" class="gatito"></div>
-            <h3>Thank you for reading</h3>
-        </footer>
+
     </main>
+    <script src="js/main.js"></script>
+
 </body>
 
 
