@@ -18,6 +18,9 @@ body {
     line-height: 1.5;
     padding: 2em 1em;
     color: #d6dee6;
+    background-image: url("/img/fondo-divpanda-cv-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 main {
@@ -26,16 +29,15 @@ main {
 }
 
 h1 {
-    background-image: url("/img/imagen-fondo-divpanda.jpg");
-    border-radius: 8px;
-    border: 1px solid #f0ffff;
+    margin: 10px 0px 10px 0;
+    font-size: 40px;
     display: flex;
     justify-content: center;
 }
 
 form {
     width: 100%;
-    background-color: #3533335c;
+    background-color: #353333a2;
     padding: 15px;
     border-radius: 15px;
     border: 2px solid #f0ffff;
@@ -63,16 +65,22 @@ textarea {
 
 input:not([type="checkbox"]),
 textarea {
-    background-image: url("/img/imagen-fondo-divpanda.jpg");
+    background-color: #5250509f;
     background-size: contain;
     color: #d5dee6;
     border: 1px solid #f0ffff;
     border-radius: 5px;
     padding: 8px 10px;
+    font-size: 15px;
 }
 
 ::placeholder {
     color: #d5dee6;
+}
+
+.container-submit-button {
+    display: flex;
+    justify-content: center;
 }
 
 button {
@@ -80,11 +88,10 @@ button {
     background-color: rgba(53 51 51 / 0.36);
     color: rgb(213, 222, 230);
     border: 1px solid azure;
-    border-radius: 5px;
-    padding: 5px 20px;
+    border-radius: 15px;
+    height: 40px;
+    width: 95px;
     font-weight: bold;
-    box-shadow: 1px 1px 2px;
-    text-shadow: -1px -1px 0 rgba(53 51 51 / 0.36);
     cursor: pointer;
 }
 
@@ -94,4 +101,9 @@ button:hover {
 
 button:active {
     background-color: #5250505c;
+}
+
+footer {
+    font-weight: bold;
+    text-align: center;
 }
