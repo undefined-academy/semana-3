@@ -130,6 +130,7 @@ img {
     ul {
         justify-content: space-evenly;
         width: 50%;
+        font-weight: bold;
     }
 
     .container {
