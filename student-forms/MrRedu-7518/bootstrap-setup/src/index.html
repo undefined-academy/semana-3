@@ -9,11 +9,6 @@
     
 </head>
 <body>
-
-    <!-- <div class="container py-4 px-3 mx-auto">
-      <h1>Hello, Bootstrap and Vite!</h1>
-      <button class="btn btn-primary">Primary button</button>
-    </div> -->
         
   <header class="header">
       <h1>
@@ -23,91 +18,120 @@
 
   <article>
       <main class="form">
-          <h1>Contacto</h1>
-          <form action="" method="post">
-
-            <div class="mb-3">
-              <label for="formGroupExampleInput" class="form-label">Nombres y apellidos</label>
-              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="abc">
-            </div>           
-
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Correo eléctronico</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp" placeholder="e-mail@abc.com" required>
-                <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie.</div>
+          <h1>¡Contáctame!</h1>
+          <form action="" method="">
+            
+            <div class="row g-1 form-content">
+              <div class="col">
+                <label for="name" class="form-label">Nombre</label>
+                <input type="text" id="name" class="form-control changeColor" placeholder="Nombre" aria-label="Nombre">
               </div>
+              <div class="col">
+                <label for="lastname" class="form-label">Apellido</label>
+                <input type="text" id="lastname" class="form-control changeColor" placeholder="Apellido" aria-label="Apellido">
+              </div>
+            </div>
 
-              <div class="form-content">
-                <label for="type">Tipo de proyecto</label>
-                <select class="form-select" aria-label="Default select example" name="type" id="type">
-                  <option selected disabled>Open this select menu</option>
-                  <option value="1">Website 🖥️</option>
-                  <option value="2">WebApp 📱</option>
-                </select>
-              </div>
+            <div class="mb-3 form-content">
+              <label for="email" class="form-label">Correo eléctronico</label>
+              <input type="email" class="form-control changeColor" id="email" name="email" placeholder="e-mail@abc.com" required>
 
-              <div class="form-content">
-                  <label for="quantity">Número de proyectos</label>
-                  <input type="number" name="quantity" id="quantity" min="1" max="5" placeholder="n" required>
-              </div>
+              <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie.</div>
+            </div>
 
-              <div class="form-content">
-                  <fieldset>
-                      <legend>Presupuesto</legend>
-                      <div class="opciones">
-                          <div class="opcion">
-                              <input id="275" type="radio" name="budget" value="275" required>
-                              <label for="275">$ 275</label>
-                          </div>
-                          <div class="opcion">
-                              <input id="350" type="radio" name="budget" value="350" required>
-                              <label for="350">$ 350</label>
-                          </div>
-                          <div class="opcion">
-                              <input id="475" type="radio" name="budget" value="475" required>
-                              <label for="475">$ 475</label>
-                          </div>
-                          <div class="opcion">
-                              <input id="725" type="radio" name="budget" value="725" required>
-                              <label for="725">$ 725</label>
-                          </div>
-                          <div class="opcion">
-                              <input id="925" type="radio" name="budget" value="925" required>
-                              <label for="925">$ 925</label>
-                          </div>
-                          <div class="opcion">
-                              <input id="1200" type="radio" name="budget" value="1200" required checked>
-                              <label for="1200">$ 1200</label>
-                          </div>
-                      </div>
-                  </fieldset>
-              </div>
+            <div class="col-12 form-content">
+              <label for="adress1" class="form-label">Dirección 1</label>
+              <input type="text" class="form-control changeColor" id="adress1" placeholder="País, estado, provincia, ciudad, municipio, etc" required>
+            </div>
 
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label" for="description">Descripción</label>
-                <textarea name="description" id="description" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="¡Buenas, buenas!..." required></textarea>
-                <div id="emailHelp" class="form-text">
-                  Escribe una descripción del proyecto en al menos 500 palabras.
-              </div>
-              </div>
+            <!-- <div class="col-12 form-content">
+              <label for="adress2" class="form-label">Dirección 2</label>
+              <input type="text" class="form-control" id="adress2" placeholder="">
+            </div> -->
 
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Acepto los términos y condiciones</label>
-              </div>
+            <div class="form-content">
+              <label for="type" class="form-label">Tipo de proyecto</label>
+              <select class="form-select changeColor" name="type" id="type" required>
+                <option value="" disabled selected>Seleccionar</option>
+                <option value="website">Website 🖥️</option>
+                <option value="webapp">WebApp 📱</option>
+              </select>
+            </div>
 
-              <div class="botones">
-                <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="form-content">
+              <label for="quantity" class="form-label">Número de proyectos</label>
+              <select class="form-select changeColor" name="quantity" id="quantity" required>
+                <option value="" disabled selected>Seleccionar</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="2">3</option>
+                <option value="2">4</option>
+                <option value="2">5</option>
+              </select>
+            </div>
+
+            <div class="form-content">
+              <fieldset>
+                <legend class="fieldset-legend-options">Presupuesto</legend>
+
+                <div class="opciones">
+                  <div class="opcion">
+                    <input class="form-check-input" type="radio" name="budget" value="475" id="475">
+                    <label class="form-check-label" for="475">
+                      $ 475
+                    </label>
+                  </div>
+
+                  <div class="opcion">
+                    <input class="form-check-input" type="radio" name="budget" value="725" id="725">
+                    <label class="form-check-label" for="725">
+                      $ 725
+                    </label>
+                  </div>
+
+                  <div class="opcion">
+                    <input class="form-check-input" type="radio" name="budget" value="1200" id="925">
+                    <label class="form-check-label" for="925">
+                      $ 925
+                    </label>
+                  </div>
+
+                  <div class="opcion">
+                    <input class="form-check-input" type="radio" name="budget" value="1200" id="1200" checked required>
+                    <label class="form-check-label" for="1200">
+                      $ 1200
+                    </label>
+                  </div>
+                </div>
+
+              </fieldset>
+            </div>
+
+            <div class="mb-3 form-content">
+              <label for="description" class="form-label">Descripción</label>
+              <textarea name="description" id="description" class="form-control changeColor" id="description" rows="3" placeholder="¡Buenas, buenas!..." required></textarea>
+
+              <div id="emailHelp" class="form-text">
+                Escribe una descripción del proyecto en al menos 500 palabras.
               </div>
+            </div>
+
+            <div class="mb-3 form-check form-content">
+              <input type="checkbox" class="form-check-input" id="terms" required>
+              <label class="form-check-label" for="terms">Acepto los términos y condiciones</label>
+            </div>
+
+            <div class="botones">
+              <button type="submit" class="btn btn-submit">Enviar</button>
+              <button type="reset" class="btn btn-clear">Limpiar</button>
+            </div>
 
           </form>
       </main>
   </article>
     
-    
         <!-- <script src="form-contacto_js.js"></script> -->
         <!-- <script type="module" src="/main.mjs"></script> -->
-
 
 </body>
 </html>
