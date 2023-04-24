@@ -215,4 +215,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+#VS code directory
+/vscode
+
 # End of https://www.toptal.com/developers/gitignore/api/linux,node,windows,macos
