@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootsrap</title>
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+
+  <form class="row g-3" style="margin: 20px;">
+    <h1>Contacto</h1>
+
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label" style="margin: 20;">NOMBRE</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su nombre completo" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label" style="margin: 20;">EMAIL</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingrese su correo electrónico" required>
+    </div>
+
+    <section>
+      <h6>Presupuesto</h6>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
+        <label class="form-check-label" for="inlineRadio1">€1.000</label>
+      </div>
+
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
+        <label class="form-check-label" for="inlineRadio2">€5.000</label>
+      </div>
+
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" required>
+        <label class="form-check-label" for="inlineRadio3">€10.000</label>
+      </div>
+
+    </section>
+
+
+    <select class="form-select" aria-label="Default select example">
+      <option selected>Tipo de proyecto</option>
+      <option value="1">Mobile</option>
+      <option value="2">Desktop</option>
+      <option value="3">Cloud</option>
+    </select>
+
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      <div class="form-text" id="basic-addon4">Escribe una descripción de al menos 500 palabras</div>
+    </div>    
+
+
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+      <label class="form-check-label" for="flexCheckDefault">
+        Acepto términos y condiciones
+      </label>
+    </div>
+
+
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Enviar</button>
+    </div>
+  </form>
+
+</body>
+
+</html>
