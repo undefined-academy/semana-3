@@ -231,7 +231,7 @@ main article .container .texto {
     text-shadow: 1px 1px 10px black;
 }
 
-
+/* Breakpoints */
 @media screen and (max-width: 850px) {
     body {
         width: 90vw;
