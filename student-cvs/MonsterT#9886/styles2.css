@@ -1,5 +1,4 @@
 /* Estilos para el formulario de contacto */
-
 body {
   font-family: Arial, sans-serif;
   background-color: #f2f2f2;
@@ -10,12 +9,13 @@ h1 {
 }
 
 form {
-  width: 50%;
-  margin: 0 auto;
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 label {
@@ -102,4 +102,29 @@ input[type="radio"]:checked + label:before {
   background-color: #008CBA;
   color: #fff;
   border-color: #008CBA;
+}
+
+/* Media queries para responsive first */
+@media only screen and (min-width: 768px) {
+  form {
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  label {
+    width: 30%;
+    text-align: right;
+    margin: 0;
+  }
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea,
+  input[type="submit"],
+  input[type="radio"] {
+    width: 60%;
+  }
+  input[type="submit"] {
+    margin-top: 10px;
+  }
 }

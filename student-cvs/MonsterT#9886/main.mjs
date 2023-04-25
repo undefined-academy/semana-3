@@ -1,6 +1,6 @@
 function handleSubmit(event) {
 	event.preventDefault()
-	console.log("Hola mundo");
+	console.log("Hemos aprendido mucho en 3 semanas gracias guillermo");
 }
 
 const $form = document.querySelector("form")
