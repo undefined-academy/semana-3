@@ -10,14 +10,15 @@ body {
 * {
     box-sizing: inherit;
     margin: 0%;
-   }
+}
 
 
-.container {
-    display: grid;
-    grid-template-columns: repeat (3, 1fr);
-    grid-template-rows: 5% auto auto;
-    border: 10% dashed black;
+@media screen and (min-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat (3, 1fr);
+        grid-template-rows: 2% auto auto;
+    }
 }
 
 
@@ -29,7 +30,8 @@ nav {
     align-items: center;
     grid-column: 1/4;
     grid-row: 1/2;
-    }
+
+}
 
 ul {
     list-style: none;
@@ -38,14 +40,13 @@ ul {
     gap: 20px;
     font-weight: bold;
     text-transform: uppercase;
-    
+
 }
 
 
 input {
     border: 2px solid lightblue;
-    border-radius: 5% ;
-    
+    border-radius: 4%;
 }
 
 
@@ -58,7 +59,7 @@ div {
     gap: 10px;
 }
 
-.card{
+.card {
     background-color: whitesmoke;
 }
 
@@ -74,11 +75,11 @@ div :last-child {
 
 }
 
-button{
+button {
     width: 200px;
     border-radius: 5%;
     border: 1px solid palevioletred;
-    background-color:lightpink;
+    background-color: lightpink;
     font-style: oblique;
-    font-weight: bold;  
+    font-weight: bold;
 }
