@@ -1,3 +1,5 @@
+/* DESKTOP FIRST  */
+
 html,
 body {
   box-sizing: border-box;
@@ -6,7 +8,7 @@ body {
 }
 
 body {
-  border-box: inherit;
+  box-sizing: inherit;
   font-family: monospace;
   color: #fff;
 }
@@ -18,7 +20,7 @@ body {
   background: #3f6212;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 48px auto;
+  grid-template-rows: 1fr auto;
   grid-template-areas:
     "header header header header"
     "card card card card"
@@ -27,10 +29,14 @@ body {
 
 .section-header {
   grid-area: header;
+  width: 80%;
+  margin: auto;
 }
 
 nav {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
   padding: 0 20px;
 }
@@ -38,6 +44,8 @@ nav {
 .section-header ul {
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   gap: 16px;
 }
 
@@ -49,18 +57,25 @@ nav {
 
 .section-header input {
   padding: 8px;
+  border-radius: 4px;
+  width: 100%;
 }
-
 
 .section-cards {
   grid-area: card;
   display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
   gap: 20px;
   width: 80%;
-  margin: 2em auto;
+  margin: 1em auto;
 }
 
 .card {
+  display: flex;
+  flex-wrap: wrap;
+  word-break: break-word;
   border: 1px solid #fff;
   padding: 10px;
   width: auto;
@@ -76,4 +91,46 @@ nav {
   grid-area: notice;
   width: 80%;
   margin: 2em auto;
+}
+
+.main-notice {
+  background: whitesmoke;
+  color: #3f6212;
+  padding: 0 2px;
+  border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  
+  nav {
+    flex-direction: row;
+  }
+
+  .section-header {
+    width: 80%;
+    margin: auto;
+  }
+
+  .section-header input {
+    width: auto;
+  }
+
+  .section-cards {
+    flex-direction: row;
+  }
+
+  .section-notice {
+    margin: 2em auto;
+  }
+
+  .section-notice > .card > img {
+    height: 640px;
+    object-fit: cover;
+  }
+
+  .main-notice {
+    background: whitesmoke;
+    color: #3f6212;
+    padding: 2px;
+  }
 }
