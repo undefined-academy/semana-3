@@ -1,8 +1,8 @@
 function handleSubmit(event) {
-	event.preventDefault()
+	event.preventDefault(); // 🍎
 	console.log("Hemos aprendido mucho en 3 semanas gracias guillermo");
 }
 
-const $form = document.querySelector("form")
+const $form = document.querySelector("form");
+$form.addEventListener("submit", handleSubmit);
 
-$form.addEventListener("submit", handleSubmit)
