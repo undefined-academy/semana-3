@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+</head>
+
+<body class="bg-neutral-100">
+  <div class="min-h-screen bg-gray-100 p-0 sm:p-12">
+
+    <div class="mx-auto max-w-md px-6 py-12 bg-white border-0 shadow-lg sm:rounded-3xl">
+
+      <h1 class="text-center text-zinc-950 text-2xl font-bold">Contacto</h1>
+      <p class="text-center text-zinc-950 text-sm">
+        Deja tu mensaje y en breve me pondre en contacto contigo.
+      </p>
+
+      <form action="/server" method="get" class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="name">
+            Nombre
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500" required
+            id="name" name="name" type="text" placeholder="Ingrese su nombre completo">
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+            Email
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500" required
+            id="email" name="email" type="email" placeholder="Ingrese su correo electronico">
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="subject">
+            Asunto
+          </label>
+          <input
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500" required
+            id="subject" name="subject" type="text" placeholder="Ingrese un asunto">
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+            Mensaje
+          </label>
+          <textarea
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500" required
+            id="message" name="message" type="text" placeholder="Ingrese un mensaje"></textarea>
+        </div>
+
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="terms">
+            <input id="terms" name="terms" type="checkbox" required>
+            <span class="font-weight-bold">Acepto los terminos y condiciones</span>
+          </label>
+        </div>
+
+        <div class="flex items-center justify-between">
+          <button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+            Enviar
+          </button>
+
+        </div>
+      </form>
+
+    </div>
+  </div>
+</body>
+
+</html>
