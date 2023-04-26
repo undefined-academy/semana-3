@@ -9,13 +9,13 @@
     <title>Contact Form</title>
 </head>
 
-<body class="w-3/5 h-full mt-0 mb-4 mx-auto bg-gradient-to-r from-cyan-400 via-blue-700 to-cyan-800">
+<body class="box-border my-0 mx-auto bg-gradient-to-r from-[#00d4ff] via-[#074b9e] to-[#067086]">
 
-    <div class="bg-white w-2/3 rounded-lg mt-12 mx-auto pt-32 pr-1.5 pb-12 pl-1.5 shadow-lg hover:shadow-xl flex flex-col items-center justify-center shadow-slate-600">
+    <div class="bg-white h-full lg:w-[46%] w-[60%] rounded-[7px] my-12 mx-auto pt-28 pb-12 px-12 shadow-lg hover:shadow-xl flex flex-col flex-wrap items-center justify-center shadow-slate-600">
         <section>
 
             <header>
-                <h1 class="-mt-14 font-bold text-center text-3xl center">Contact Page</h1>
+                <h1 class="mt-[-4rem] font-bold text-center text-[2rem] center">Contact Page</h1>
             </header>
         </section>
 
@@ -24,22 +24,22 @@
                 <p class="my-6 text-center text-slate-700">Enter the following information to leave a message:</p>
 
                 <div class="flex flex-col justify-around">
-                    <label for="name" class="text-center my-2.5 w-full">Enter your name:
+                    <label for="name" class="block mx-0 text-center my-2.5 w-full">Enter your name:
                         <input type="text" name="name" id="name" required
-                            class=" border border-slate-400 w-full rounded-sm" />
+                            class="rounded-[3px] border-[1px] block my-2.5 mx-0 w-full border-slate-300 hover:border-slate-400 focus:border-slate-400 outline-none " />
                     </label>
 
-                    <label for="email" class="text-center my-2.5 w-full">Enter your email:
+                    <label for="email" class="block my-2.5 mx-0 w-full  text-center">Enter your email:
                         <input type="email" name="email" id="email" required
-                            class=" border border-slate-400 w-full rounded-sm">
+                            class="rounded-[3px] block my-2.5 mx-0 w-full  border-[1px] border-slate-300 hover:border-slate-400 focus:border-slate-400 outline-none">
                     </label>
 
-                    <label for="message" class="text-center my-2.5 w-full">Enter your message:
+                    <label for="message" class="block my-2.5 mx-0 w-full  text-center">Enter your message:
                         <textarea name="message" id="message" rows="5" required
-                            class=" border border-slate-400 w-full rounded-sm">
+                            class="rounded-[3px] block my-2.5 mx-0 w-full  border-[1px] border-slate-300 hover:border-slate-400 focus:border-slate-400 outline-none">
                 </textarea>
                     </label>
-                    <button class="w-2/4 bg-cyan-600 hover:bg-cyan-700 py-2.5 px-1.5 active:bg-cyan-900 mt-5 uppercase rounded-sm border border-solid border-sky-900 shadow-md shadow-slate-400 hover:shadow-slate-400 active:shadow-slate-600 self-center" type="submit">
+                    <button class="w-2/4 bg-cyan-600 hover:bg-cyan-700 py-[7px] lg:py-[10px] px[7px] active:bg-cyan-900 mt-5 uppercase rounded-sm border border-solid border-sky-900 shadow-md shadow-slate-400 hover:shadow-slate-400 active:shadow-slate-600 self-center" type="submit">
                         Send message
                     </button>
                 </div>
