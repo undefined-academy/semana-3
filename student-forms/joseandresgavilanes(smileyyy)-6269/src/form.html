@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <script async defer type="module" src="main.mjs"></script>
+    <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+
+  </head>
+  <body class="my-0 mx-auto max-w-5xl text-justify py-16 px-4 text-gray-500 bg-gray-900">
+      <h1 class="text-white text-4xl font-semibold p-2">
+        Formulario de contacto
+      </h1>
+    <section class="border border-yellow-600 rounded my-5 shadow-2xl">
+      <h3
+        class="text-lg font-bold text-black bg-yellow-600 border-b border-yellow-600 py-1 px-2"
+      >
+        Contacto
+      </h3>
+      <form action="/server" method="get" class="form" ;>
+        <div class="m-5">
+          <div class="w-full text-base font-bold align-middle mb-2">
+            <label for="user_name">Nombre: </label>
+          </div>
+          <input
+            class="w-full bg-transparent border border-yellow-600 rounded py-2 px-2"
+            type="text"
+            name="name"
+            id="user_name"
+            placeholder="Ingrese su nombre"
+            required
+          />
+        </div>
+        <div class="m-5">
+          <div class="w-full text-base font-bold align-middle mb-2">
+            <label for="user_email">Email: </label>
+          </div>
+          <input
+            class="w-full bg-transparent border border-yellow-600 rounded py-2 px-2"
+            type="email"
+            name="email"
+            id="user_email"
+            placeholder="Ingrese su email"
+            required
+          />
+        </div>
+        <div class="m-5">
+          <div class="w-full text-base font-bold align-middle mb-2">
+            <label for="user_msg">Comentario: </label>
+          </div>
+          <textarea
+            class="block w-full resize-y bg-transparent border border-yellow-600 rounded p-2"
+            name="msg"
+            id="user_msg"
+            placeholder="Ingrese su comentario"
+            rows="10"
+            required
+          ></textarea>
+        </div>
+        <div class="m-5">
+          <fieldset class="bg-transparent border border-yellow-600 rounded p-3">
+            <legend class="w-full text-base font-bold align-middle">
+              ¿Cómo me has conocido?:
+            </legend>
+            <input
+              class="ml-10"
+              type="radio"
+              id="bootcamp"
+              name="plataform"
+              value="bootcamp"
+              required
+            />
+            <label class="text-xs" for="bootcamp">Bootcamp de Guillermo </label>
+            <input
+              class="ml-10"
+              type="radio"
+              id="discord"
+              name="plataform"
+              value="discord"
+              required
+            />
+            <label class="text-xs" for="discord">Discord </label>
+            <input
+              class="ml-10"
+              type="radio"
+              id="github"
+              name="plataform"
+              value="github"
+              required
+            />
+            <label class="text-xs" for="github">Github </label>
+          </fieldset>
+        </div>
+        <div class="mb-5">
+          <button
+            class="py-3 px-8 font-bold border text-black border-yellow-600 bg-yellow-600 rounded shadow-md cursor-pointer block m-auto w-auto hover:border-yellow-600 hover:bg-transparent hover:text-yellow-600"
+          >
+            Enviar
+          </button>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
