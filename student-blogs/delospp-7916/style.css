@@ -14,7 +14,7 @@ body {
 
 @media only screen and (max-width: 992px) {
   .container {
-    display: flex!important;
+    display: flex;
     flex-direction: column;
   }
   nav{
