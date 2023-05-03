@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <script async defer type="module" src="main.mjs"></script>
+    <title>Form</title>
+</head>
+<body>
+    <main>
+    <section>
+        <header>
+            <h3>Contactame</h3>
+        </header>
+        <form id="form">
+            <div class="form-group">
+            <label for="name">NOMBRE:</label>
+            <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="NOMBRE"
+                required
+            />
+            <label for="email">EMAIL:</label>
+            <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="EMAIL"
+                required
+            />
+            </div>
+            <div class="form-group">
+            <fieldset>
+            <legend>Proyecto</legend>
+            <div class="dispoflex">
+                <label for="proyect">TIPO DE PROYECTO:</label>
+                <select name="proyect" id="proyect" required>
+                <option value="" selected disabled>SELECCIONA UNA OPCIÓN</option>
+                <option value="website">WEBSITE</option>
+                <option value="webapp">WEBAPP</option>
+                </select>
+                <label for="budget">PRESUPUESTO:</label>
+                <select name="budget" id="budget" required>
+                <option value="" selected disabled>SELECCIONA UNA OPCIÓN</option>
+                <option value="5.000">5.000</option>
+                <option value="10.000">10.000</option>
+                <option value="15.000">15.000</option>
+                <option value="20.000">20.000</option>
+                </select>
+            </div>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <label for="text">DESCRIPCIÓN:</label>
+            <textarea name="text" id="text" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="enviar">ENVIAR</button>
+        </div>
+        </form>
+        </div>
+    </section>
+    </main>
+    <script src="./index.js"></script>
+</body>
+</html>
