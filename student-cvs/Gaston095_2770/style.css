@@ -178,8 +178,8 @@ footer {
         max-width: 60%;
     }
 
-    .form-input, .form-area {
-        width: 60%;
+    .form-label{
+        margin-top: 7px;
     }
 
     .submit {
