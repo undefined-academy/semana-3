@@ -1,20 +1,9 @@
-/home/josofico/semana-3/student-forms/Kick Off-2479/bootstrap-setup/node_modules
-
-student-forms/Kick Off-2479/bootstrap-setup/node_modules
-
 # Created by https://www.toptal.com/developers/gitignore/api/macos,node,nextjs,react,intellij,linux,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,node,nextjs,react,intellij,linux,windows
 
 ### Intellij ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
-
-# package.json
-package-lock.json
-package.json
-
-# vite
-vite.config.js
 
 # User-specific stuff
 .idea/**/workspace.xml
@@ -386,7 +375,4 @@ $RECYCLE.BIN/
 
 .vite
 *:Zone.Identifier
-.vscode
-
-
-# End of https://www.toptal.com/developers/gitignore/api/node
+*.dropbox.attributes
