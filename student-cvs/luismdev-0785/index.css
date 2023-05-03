@@ -1,0 +1,44 @@
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: #555;
+}
+
+h2, h3 {
+    margin-top: 1em;
+    padding-top:1em;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+textarea {
+    width: 100%;
+}
+
+.tableflex{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+.form-group {
+    margin: 10px;
+}
+
+.dispoflex{
+    display: flex;
+    width:100%;
+    justify-content:space-around;
+}
+
+label {
+    font-weight: bold;
+}
+
+button{
+    padding:16px 60px;
+    font-weight: bold;
+}
