@@ -10,8 +10,8 @@ student-forms/Kick Off-2479/bootstrap-setup/node_modules
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # package.json
-package-lock.json
-package.json
+# package-lock.json
+# package.json
 
 # vite
 vite.config.js
