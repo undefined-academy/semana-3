@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="module" src="js/main.mjs"></script>
+    <script type="text/javascript" src="/script.js"></script>
+    <link rel="stylesheet" href="css/index.scss">
+    <title>Daniel Campo</title>
+    <meta charset='UTF-8'>
+    <meta name="viewport" content="width=device-widht, initial-scale=1.0, maximun-scale=1.0">
+</head>
+
+
+<body>
+    <article>
+        <header class="mhead">
+            <h1>Daniel Campo</h1>
+        </header>
+
+        <div class="body">
+            <section>
+                <h2>About me</h2>
+                <figure>
+                    <img src="/pages/imgs/look.jpg" alt="A human looking through magnifying glass">
+                </figure>
+                <article>
+                    <h3>I’m currently learning...</h3>
+                    <ul>
+                        <li>🎓 To be a <strong>JavaScript Full-Stack developer</strong> on <a
+                                href="https://undefined.academy/"><strong>Undefined Academy</strong></a>.</li>
+                        <li>🤓 English (B1) and Colombian Sign Language (B1)</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <form id="form1" action="/server" method="get" class="form border border-2 rounded-4 p-3">
+                        <fieldset class="d-flex row">
+                            <legend class="center">
+                                <h3>Contact me</h3>
+                            </legend>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input id="name" class="form-control border border-primary border-1 rounded-3" name="name" type="text"
+                                        placeholder="Enter your full name" required>
+                                </div>
+                                <div class="col">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input id="email" class="form-control border border-primary border-1 rounded-3" name="email" type="email"
+                                        placeholder="Enter your email" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <legend class="mt-2">Service</legend>
+                                <fieldset class="d-flex justify-content-evenly">
+                                    <div class="d-flex justify-content-center">
+                                        <input id="developer" class="form-check-input mx-1" name="Service" value="developer"
+                                            type="radio" required>
+                                        <label for="developer" class="form-check-label">Developer💻</label>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <input id="Interpreter" class="form-check-input mx-1" name="Service"
+                                            value="Interpreter" type="radio" required>
+                                        <label for="Interpreter" class="form-check-label">Interpreter🤟🏻</label>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <div class="mt-1">
+                                <label for="description form-label">Description</label>
+                                <div class="h5 mb-0">Put a description for the required job.</div>
+                                <textarea class="form-control border border-primary border-1 rounded-3" required id="description" name="description" rows="3"></textarea>
+                            </div>
+
+                            <div class="m-2 form-check">
+                                <label for="check" class="form-check-label">
+                                    <input id="check" class="form-check-input" name="check" type="checkbox" required>
+                                    <span>Acepto los terminos y condiciones</span>
+                                </label>
+                            </div>
+    
+                            <button class="ms-2 btn btn-primary w-25">Send</button>
+                        </fieldset>
+                    </form>
+                </article>
+
+            </section>
+        </div>
+
+        
+
+        <div class="sidebar">
+            <div class="side">
+                <h2> <a href="pages/bootexercises.html">Undefined Academy Exercise <img class="side1"
+                            src="/pages/imgs/Undefined.jpg" alt="Undefined Academy Logo"></a> </h2>
+                <h3>Learned comands:</h3>
+                <ul>
+                    <li> -Commands</li>
+                    <li>-Useful Aliases</li>
+                    <li>-Aliases I made</li>
+                </ul>
+            </div>
+            <div class="side">
+                <h2><a href="pages/hobbies.html">Hobbies<img class="side1" src="/pages/imgs/cat.jpg"
+                            alt="Cat resting"></a></h2>
+            </div>
+        </div>
+
+        <footer>
+            <hr>
+            <ul>
+                <li>📧 danielcampo314@gmail.com</li>
+            </ul>
+            <nav>
+                <h2><a href="/pages/bootexercises.html">Bootcamp Exercise</a></h2>
+            </nav>
+        </footer>
+    </article>
+</body>
+
+</html>
