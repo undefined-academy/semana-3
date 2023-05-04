@@ -378,5 +378,4 @@ $RECYCLE.BIN/
 *.dropbox.attributes
 
 
-student-forms/IngFelipeSolarte-3451/node_modules
-student-cvs/IngFelipeSolarte-3451/node_modules
+**/node_modules
