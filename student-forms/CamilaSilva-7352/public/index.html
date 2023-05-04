@@ -13,23 +13,23 @@
     <form action="" method="get" class="flex flex-wrap gap-10 justify-center px-36 form">
       <div class="flex flex-col w-80 border-b-2 border-b-black gap-3">
         <label for="firstName" class="">FIRST NAME</label>
-        <input type="text" id="firstName"  placeholder="Enter your first name" class="p-1">
+        <input type="text" id="firstName"  placeholder="Enter your first name" class="p-1" required>
       </div>
       <div class="flex flex-col w-80 border-b-2 border-b-black gap-3">
         <label for="lastName" class="">LAST NAME</label>
-        <input type="text" id="lastName" placeholder="Enter your last name" class="">
+        <input type="text" id="lastName" placeholder="Enter your last name" class="" required>
       </div>
       <div class="flex flex-col w-80 border-b-2 border-b-black gap-3">
         <label for="email" class="">EMAIL</label>
-        <input type="email" id="email" placeholder="Enter your email" class="">
+        <input type="email" id="email" placeholder="Enter your email" class="" required>
       </div>
       <div class="flex flex-col w-80 border-b-2 border-b-black gap-3">
         <label for="phone" class="">PHONE NUMBER</label>
-        <input type="tel" id="phone" placeholder="Enter your phone number" class="">
+        <input type="tel" id="phone" placeholder="Enter your phone number" class="" required>
       </div>
       <div class="flex flex-col w-11/12 border-b-2 border-b-black gap-3">
         <label for="message" class="">MESSAGE</label>
-        <textarea name="" cols="30" rows="2" type="text" id="message" placeholder="Enter your message" class="resize-y"></textarea>
+        <textarea required name="" cols="30" rows="2" type="text" id="message" placeholder="Enter your message" class="resize-y"></textarea>
       </div>
 
       <button type="submit" class="w-32 bg-gray-300 rounded-md py-1 shadow-2xl cursor-pointer form">Submit</button>
