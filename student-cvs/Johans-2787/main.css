@@ -23,12 +23,14 @@ main {
 
 }
 .bar {
-    display: grid;
-    place-content:center ;
+    display: flex;
+    justify-content: space-between;
     background-color: #f5f6fa;
-    place-content: end;
-    font-weight: bold;
     padding: 8px;
+    font-size: larger;
+    font-weight: bold;
+    padding: 5px;
+
 }
 
 h1, h4 {
@@ -90,7 +92,7 @@ section:nth-child(2) {
 }
 
 
-@media screen and (min-width: 772px) {
+@media screen and (min-width: 992px) {
 
     .main {
         height: auto;
