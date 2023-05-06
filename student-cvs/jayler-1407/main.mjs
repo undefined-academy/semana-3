@@ -1,6 +1,6 @@
-// main.mjs
+
 function handleSubmit(event) {
-  event.preventDefault(); // 🍎
+  event.preventDefault();
   console.log("Hola mundo");
 }
   
