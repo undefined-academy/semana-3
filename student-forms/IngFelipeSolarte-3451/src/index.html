@@ -5,43 +5,42 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap w/ Vite</title>
-  <script type="module" src="./js/main.js"></script>
 </head>
 
 <body class="container d-flex justify-content-center my-5">
   <div class="row row-bg-color rounded mt-5 d-flex justify-content-center col-12 col-sm-10 col-md-6 px-2" >
     <div class="">
       <section class="py-5 mx-3">
-        <h2 class="text-center border border-info rounded py-2 mb-3 bg-info text-white ">Contacto Form using Bootstrap</h2>
+        <h2 class="text-center border border-info rounded py-2 mb-3 bg-primary text-white ">Contacto Form using Bootstrap</h2>
         <article class="mx-3">
           <p>In order to reach out to me, please fill out the following form</p>
-          <form onsubmit="formEnviar()"> 
+          <form onsubmit="formEnviar()" id="formBasic"> 
             <div class="input-group mb-3 my-2">
-              <input type="text" class="form-control" placeholder="Nombre" aria-label="name" required>
+              <input type="text" class="form-control" placeholder="Name" aria-label="name" required>
               <span class="input-group-text"></span>
-              <input type="text" class="form-control" placeholder="Apellid" aria-label="lastname" required>
+              <input type="text" class="form-control" placeholder="lastname " aria-label="lastname" required>
             </div>
             <div class="form-group my-2">
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                placeholder="Correo Electronico" required>
-              <small id="emailHelp" class="form-text text-muted">Nunca le venderemos tu correo a Claro *cough*</small>
+                placeholder="Email" required>
+              <small id="emailHelp" class="form-text text-muted">We will never sell your data to any third party   *cough*</small>
             </div>
 
             <div class="form-group my-2">
               <select class="form-control" id="selectReason" required>
-                <option disabled selected>Motivo de contacto</option>
-                <option>Felicitaciones</option>
-                <option>Oportunidad Laboral</option>
-                <option disabled>Queja</option>
-                <option>Donación</option>
+                <option disabled selected>Reason</option>
+                <option>Congratulation</option>
+                <option>Job Opportunity</option>
+                <option disabled>Complain</option>
+                <option>Donation</option>
               </select>
             </div>
             <div class="form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
-              <label class="form-check-label" for="exampleCheck1">Acepto los terminos y condiciones descritos en <a
+              <label class="form-check-label" for="exampleCheck1">Accept the terms and conditions describes in  <a
                   href="#TCModal" data-bs-toggle="modal">T&C</a> </label>
             </div>
-            <button type="submit" class="btn btn-primary mt-2">Enviar</button>
+            <button type="submit" class="btn btn-primary mt-2">Send</button>
           </form>
 
           <!-- Button trigger modal -->
@@ -70,12 +69,16 @@
     </div>
   </div>
 </div>
-  <script>
-    function formEnviar() {
-    alert("Tu mensaje ha sido enviado");
-    alert("o pues, eso crees");
-};
-  </script>
+
+    <script type="module" src="js/main.js"></script> 
+    <script>
+      function formEnviar() {
+        event.preventDefault()
+      alert("Tu mensaje ha sido enviado");
+      alert("o pues, eso crees");
+      document.getElementById("formBasic").reset();
+  };
+    </script>
 </body>
 
 </html>

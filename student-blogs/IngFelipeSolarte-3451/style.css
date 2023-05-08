@@ -5,6 +5,10 @@ html {
     margin-top: 2.25em;
     background: fuchsia
 }
+main{
+    max-width: 90%;
+    margin: 0 auto;
+}
 
 * {
     box-sizing: inherit;
@@ -16,10 +20,8 @@ html {
     font-size: 3.53em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 2px 4px darkblue;
-}
-
-article {
-    display: block;
+    margin-top: 0px;
+    margin-bottom: 25px;
 }
 
 .card {
@@ -63,7 +65,7 @@ article {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 500px) {
 
     body,
     html {
@@ -85,7 +87,7 @@ article {
     }
 
     .card {
-        width: 45%;
+        width: 40%;
     }
 }
 
@@ -113,7 +115,7 @@ article {
     }
 
     .card {
-        width: calc(50% - 20px);
+        width: calc(33% - 20px);
         margin: 10px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -163,6 +165,9 @@ article {
         width: 100%;
     }
 
+    main{
+        max-width: 80%;
+    }
     * {
         box-sizing: inherit;
     }
@@ -175,7 +180,7 @@ article {
     }
 
     .card {
-        width: calc(16.66% - 30px);
+        width: calc(25% - 20px);
         margin: 5px;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
