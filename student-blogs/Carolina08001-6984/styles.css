@@ -117,11 +117,18 @@ article a {
     display:flex;
     align-items: center;
     text-decoration: none;
-    color: #fff;
+    color:rgb(6, 62, 101);
+
     padding: 10px 20px ;
     border-radius: 8px;
+    transition: color,font-size, background-color 1s ease-out;
+
+}
+
+article a:hover {
+    color: rgb(139, 196, 237);
+    font-size: 1.3rem;
     background-color: rgb(6, 62, 101);
-    transition: color,font-size 0.7s ease-out;
 
 }
 .ultimo-article {
@@ -142,10 +149,6 @@ article a {
 }
 .article-wrapper img{
     width: 100%;
-}
-article a:hover {
-    color: rgb(139, 196, 237);
-    font-size: 1.3rem;
 }
 
 .icon {
