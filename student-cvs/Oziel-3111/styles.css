@@ -21,7 +21,6 @@ header {
     text-align: center;
     text-shadow: 3px 3px 3px black;
     color: white;
-    font-size: 50px;
     padding: 10px;
     height: 200px;    
     margin:10px;
@@ -53,7 +52,7 @@ section{
     background:gainsboro;
     padding: 10px;
     margin: 10px;
-    line-height: 11px;
+    line-height: 25px;
 }
 
 
@@ -93,7 +92,7 @@ footer {
         height: 480px;
         padding: 10px 10px 10px 10px;
         font-size: large;
-        line-height: 14px;
+        line-height: 25px;
     }
     
 }
