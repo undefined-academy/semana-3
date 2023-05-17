@@ -53,33 +53,59 @@
     <section class="Comandos">
         <h2>✔️ Comandos terminal que uso y que pueden resultarte útiles </h2>
         <h3>Comandos terminal</h3>
-        <ul>
-            <li>cal: Muestra calendario del mes actual</li>
-            <li>rm -r: Permite eliminar una carpeta dada una ruta</li>
-            <li>touch: Crea un archivo nuevo dada una ruta y/o nombre</li>
-            <li>cat: imprime el contenido de un archivo dada su ruta y/o nombre</li>
-            <li>mv: nos permite mover un archivo o carpeta dada una ruta inicial y una final</li>
-        </ul>
+        <table class = "comandos">
+            <tr>
+                <th>Comando</th>
+                <th>Función</th>
+            </tr>
+            <tr>
+                <td>cal</td>
+                <td>Muestra calendario del mes actual</td>
+            </tr>
+            <tr>
+                <td>rm -r </td>
+                <td>Permite eliminar una carpeta dada una ruta</td>
+            </tr>
+            <tr>
+                <td>touch </td>
+                <td>Crea un archivo nuevo dada una ruta y/o nombre</td>
+            </tr>
+            <tr>
+                <td>cat </td>
+                <td>Imprime el contenido de un archivo dada su ruta y/o nombre</td>
+            </tr>
+            <tr>
+                <td>mv </td>
+                <td>nos permite mover un archivo o carpeta dada una ruta inicial y una final</td>
+            </tr>
+        </table>
+        
+        
 
         <h3>Comandos alias útiles</h3>
-        <ol>
-            <li>
-                Findd: permitirá buscar un archivo dentro de la ruta en que se encuentre
-                <br>
-                alias findd="ls ~/ | grep $1"  # siendo $1 es el primer y único parámetro  
-                <br>
-                * Ejemplo: findd Doc
-                <br>
-            </li> 
-            <li> 
-                npmd: permitirá ejecutar un script dev
-                <br>
-                alias npmd="npm run dev"
-                <br>
-                * Ejemplo: npmd
-                <br>
-            </li>
-        </ol>
+
+        <table>
+            <tr>
+                <th>Comando</th>
+                <th>Función</th>
+                <th>Alias</th>
+                <th>Ejemplo</th>
+            </tr>
+            <tr>
+                <td>findd</td>
+                <td>permitirá buscar un archivo dentro de la ruta en que se encuentre</td>
+                <td>alias findd="ls ~/ | grep $1"  # siendo $1 es el primer y único parámetro</td>
+                <td>findd Doc</td>
+
+            </tr>
+            <tr>
+                <td>nomd</td>
+                <td>permitirá ejecutar un script dev</td>
+                <td>alias npmd="npm run dev"</td>
+                <td>npmd</td>
+            </tr>
+        </table>
+       
     </section>
 </body>
 </html>
