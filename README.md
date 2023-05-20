@@ -28,7 +28,7 @@ Agregar la siguiente etiqueta meta a tu HTML de la hoja de vida:
  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 ```
 
-1. Abrir la hoja de vida en el navegador (Usando `npx vite dev`).
+1. Abrir la hoja de vida en el navegador (Usando `npx vite dev` ).
 2. Abrir el inspector haciendo clic derecho > Inspeccionar en el navegador.
 3. Hacer clic en la vista responsive (El icono del smartphone).
 4. Constatar los cambios en vista responsive con y sin la etiqueta meta.
