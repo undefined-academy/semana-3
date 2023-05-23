@@ -1,0 +1,70 @@
+body {
+    background-image:url(../Imagenes/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 70%;
+    height: 100%;
+    font-family: "Helvetica";
+    color: lightgray;
+}
+
+body {
+    line-height: 1.5;
+    padding: 4em 1em;
+}
+
+h1 {
+    color: lightgrey;
+    text-align: center;
+}
+
+.info {
+    text-align: justify;
+    margin: 1px;
+    padding: 20px;
+    width: 350px;
+    height: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+a {
+    color: lightgrey;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button {
+    text-align: center;
+    padding: 14px 50px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    background: lightgray;
+    color: rgb(73, 72, 72);
+    box-shadow: 1px 1px 3px black;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkgrey;
+    color: lightgray;
+}
+
+button:active {
+    background-color: rgb(73, 72, 72);
+    box-shadow: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
