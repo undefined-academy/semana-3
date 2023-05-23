@@ -1,0 +1,22 @@
+@import "bootstrap/scss/bootstrap";
+
+body {
+    background-color: #111111;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+body {
+    margin: 0 auto;
+    max-width: 70%;
+    height: 100%;
+    font-family: "Helvetica";
+    color: lightgray;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
