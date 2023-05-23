@@ -178,8 +178,9 @@ html {
   }
 
 .page {
-    max-width: 800px;
-    padding: 0 40px;
+    max-width: 50em;
+    margin: 0 auto;
+    padding: 4em 1em;
     box-sizing: border-box;
     border-left: darkorchid solid;
 }
