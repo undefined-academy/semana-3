@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios en HTML</title>
+    <link rel="stylesheet" href="output.css">
+    <script type="module" src="main.mjs"></script>
+</head>
+
+<body>
+    <main class="container mx-auto mt-10">
+        <h1 class="text-3xl font-bold mb-6">Contacto</h1>
+        <form class="flex flex-col space-y-4" action="/server" method="GET">
+            <div class="flex items-center">
+                <label class="w-24" for="name">Nombre</label>
+                <input class="form-input" id="name" type="text" placeholder="Ingrese su nombre completo" required>
+            </div>
+            <div class="flex items-center">
+                <label class="w-24" for="email">Email</label>
+                <input class="form-input" id="email" type="email" placeholder="Ingrese su correo-e" required>
+            </div>
+            <div class="flex items-center">
+                <fieldset class="space-y-4">
+                    <legend class="text-lg font-semibold">Presupuesto</legend>
+                    <div class="flex items-center-space-x-2">
+                        <input class="w-4" type="radio" name="budget" id="10000" value="10000" required>
+                        <label class="mx-2 cursor-pointer" for="10000">$10,000</label>
+                    </div>
+                    <div class="flex items-center-space-x-2">
+                        <input class="w-4" type="radio" name="budget" id="5000" value="5000">
+                        <label class="mx-2 cursor-pointer" for="5000">$5,000</label>
+                    </div>
+                    <div class="flex items-center-space-x-2">
+                        <input class="w-4" type="radio" name="budget" id="1000" value="1000">
+                        <label class="mx-2 cursor-pointer" for="1000">$1,000</label>
+                    </div>
+
+                    <div class="text-sm text-gray-500">Este presupuesto es la base, no el total</div>
+                </fieldset>
+            </div>
+            <div class="flex items-center">
+                <label class="w-48" for="type">Tipo de proyecto</label>
+                <select class="form-input cursor-pointer" name="type" id="type" required>
+                    <option value="">[Seleccione]</option>
+                    <option value="website">Website</option>
+                    <option value="webapp">Web app</option>
+                    <option value="mobile">Mobile app</option>
+                    <option value="design">Diseño</option>
+                </select>
+            </div>
+            <div class="flex items-center">
+                <label class="w-32" for="description">Descripción</label>
+                <div class="w-full">
+                    <textarea class="form-input" name="description" id="description" rows="5" required></textarea>
+                    <div class="text-sm text-gray-500">
+                        Escribe una descripción del proyecto en al menos 500 palabras.
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <label class="w-full" for="terms">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <span>Acepto los términos y condiciones</span>
+                </label>
+            </div>
+            <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">
+                Enviar
+            </button>
+        </form>
+    </main>
+</body>
+
+</html>

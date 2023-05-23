@@ -1,0 +1,97 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    to top,
+    #8fcfd1,
+    #a1d9ce,
+    #b3e2cb,
+    #c5ebc8,
+    #d7f4c5
+  );
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 100%;
+  border: 3px solid #19fc8e;
+}
+
+h1 {
+  margin: 4px auto;
+}
+
+h2 {
+  margin: 5px auto;
+  text-align: center;
+}
+
+.content {
+  text-align: justify;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.social-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.social-item:visited {
+  color: #658;
+}
+
+.social-icon {
+  width: 40px;
+}
+
+.social-item > span {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  .content {
+    text-align: center;
+  }
+}

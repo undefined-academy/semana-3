@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: ghostwhite;
+}
+
+
+#home {
+    width: 50px;
+}
+
+img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px auto auto;
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+}
+
+ul > li {
+    padding: 5px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+ul > li:first-child {
+    background: black;
+    color: whitesmoke
+}
+
+ul > li:hover {
+    background: gray;
+    color: white
+}
+
+input[type="search"] {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+    min-width: 300px;
+    max-width: 350px;
+}
+
+article:last-child {
+    background-color: rgb(196, 255, 255);
+    display: flex;
+    gap: 10px;
+    grid-column: 1/4;
+    padding: 20px;
+}
+
+.card {
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: -5px 5px 5px gainsboro;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.tags > span {
+    font-size: small;
+    padding: 8px;
+    background: lightblue;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.card h1 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.card p {
+    margin-top: 0;
+    font-size: 14px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.user-avatar {
+    height: 20px;
+    width: 20px;
+}
+
+footer > span {
+    color: gray;
+    font-size: 15px;
+}
