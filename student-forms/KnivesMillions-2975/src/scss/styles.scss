@@ -1,44 +1,30 @@
 // Import all of Bootstrap's CSS
 @import "~bootstrap/scss/bootstrap";
 
-html {
-    box-sizing: border-box;
-}
-
-* {
-    box-sizing: inherit;
-}
-
 body {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
-    background-color: #7d8690;
-}
-
-.text-primary {
-    --bs-text-opacity: 1;
-    color: #6c5b7b;
+    background-color: #f0f0f0;
 }
 
 nav {
-    margin-top: 12px;
     margin-bottom: 32px;
     background-color: #212529;
 }
 
 i {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: whitesmoke;
     margin: 12px;
 }
 
 
 .card {
-    width: 320px;
+    width: 300px;
     border: 1px solid #212529;
     border-radius: 8px;
-    padding: 8px 12px;
+    padding: 8px 8px;
     margin: 0 auto;
 }
 
@@ -47,15 +33,18 @@ i {
 }
 
 .form-control {
-    margin: 4px;
+    width: 280px;
+    margin: auto;
 }
 
 select {
-    border-color: #ced4da;
+    border-color: transparent;
 }
 
 textarea {
-    resize: none;
+    resize: vertical;
+    width: 280px;
+    background-color: transparent;
 }
 
 footer {
@@ -63,12 +52,10 @@ footer {
     background-color: #212529;
 }
 
-@media screen and (min-width: 420px) {
+
+@include media-breakpoint-up(md) {
     .card {
-        width: 420px;
-        border: 1px solid #212529;
-        border-radius: 8px;
-        padding: 20px 32px;
-        margin: 0 auto;
+        width: 640px;
+        padding: 24px 32px;
     }
 }
