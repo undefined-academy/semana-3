@@ -10,14 +10,8 @@ body {
     font-family: 'Noto Sans', sans-serif;
 }
 
-.grid-container {
-    height: 100vh;
-    display: grid;
-    grid-template: 2em 3em 35em 35fr/ 1fr 1fr 1fr;
-    gap: 15px;
-}
-
 .header {
+    height: 2em;
     background-color: #333;
     color: #f0f0f0;
     font-weight: 600;
@@ -29,6 +23,7 @@ body {
 }
 
 .nav-cards {
+    height: 3em;
     display: flex;
     padding: 0 30px 10px 10px;
     grid-area: 2 / 1 / 2 / 4;
@@ -36,13 +31,14 @@ body {
     align-items: center;
     box-shadow: 0px 6px 6px 0px #333;
 }
+
 .nav-cards a{
     text-decoration: none;
     font-weight: 600;
 }
 
 .nav-cards a:hover{
-    color: rgb(5, 60, 170);
+    color: turquoise;
 }
 
 li,
@@ -51,7 +47,18 @@ ul {
     display: inline-block;
 }
 
+/*  Section blog */
+
+.blogGrid{
+    margin: 1em 2em;
+    height: 100vh;
+    display: grid;
+    grid-template: 35em/ 1fr 1fr 1fr;
+    gap: 1em;
+}
+
 /* Cards */
+
 .article {
     /*background-color: teal;*/
     display: grid;
@@ -114,6 +121,7 @@ ul {
     margin-bottom: 10px;
     text-decoration: none;
 }
+
 .readmore:hover{
     background-color: #f0f0f0;
     color: #333;
