@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <script type="module" src="/main.mjs"></script>
+    <title>Contacto</title>
+</head>
+<body>
+    <header class="header_mod">
+        <h1 class="h1_mod">Contáctame</h1>
+    </header>
+    <main>
+    <div class="bloque-main">
+        <form name="form" class="group-form" action="/server" method="post">
+            <div class="elementos_form">
+                <label class="label_name" for="name_user">Nombre</label>
+                <input class="input_text" id="name_user" name="name_user" type="text" placeholder="Introduce tu nombre" required>
+            </div>
+            <div class="elementos_form">
+                <label class="label_name" for="email_user">Email</label>
+                <input class="input_text" id="email_user" name="email_user" type="text" placeholder="Introduce tu email" required>
+            </div>
+            <div class="elementos_form">
+                <fieldset>
+                    <legend>Asunto de contacto:</legend>
+                    <label class="label_checkbox" for="hobbies">Hobbies
+                        <input id ="hobbies" name="hobies" type="checkbox" value="hobbies">
+                    </label>
+                    <label class="label_checkbox" for="economy">Economía
+                        <input id ="economy" name="economy" type="checkbox" value="economia">
+                    </label>
+                    <label class="label_checkbox" for="reading">Lectura
+                        <input id ="reading" name="reading" type="checkbox" value="lectura">
+                    </label>
+                </fieldset>
+            </div>
+            <div class="elementos_form">
+                <label class="label_name" for="textarea">Comentario:</label>
+                <textarea id="textarea" name="comentario"></textarea>
+                <div><p class="comentario">Escriba un comentario de al menos 100 palabras.</p></div>
+            </div>
+            <div class="elementos_form">
+                <input type="submit" value="Enviar" class="button">
+            </div>
+            <div></div>
+        </form>
+        <div class="bloque-drch"><p>Cumplimente el formulario con su información</p></div>
+    </div>
+   </main>
+    <footer><p>2023</p></footer>
+</body>
+</html>
