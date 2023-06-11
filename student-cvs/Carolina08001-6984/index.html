@@ -4,21 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <title>CV Mobile First</title>
-  <link href="styles.css" rel="stylesheet" >
+  <link href="styles.css" rel="stylesheet">
+
   <script src="https://kit.fontawesome.com/c2447c2ee1.js" crossorigin="anonymous"></script>
+  <script async defer type="module" src="./main.mjs"></script>
 </head>
 
 <body>
   <header id="main-header">
-    
+
     <nav class="nav-bar">
-      <div>
-        <h1 class="logo">Carolina Limay</h1>
+      <div class="logo-barra">
+        <div class="logo">
+          <p>Carolina Limay</p>
+        </div>
+        <div class="mobile-menu">
+          <i class="fas fa-bars bar-btn"></i>
+        </div>
       </div>
-      <input type="checkbox" id="check">
-      <label for="check" class="bar-btn">
-      <i class="fas fa-bars"></i>
-      </label>
+
       <ul class="nav-menu">
         <li><a href="#" class="active">Home</a></li>
         <li><a href="#bio">Biography</a></li>
@@ -56,11 +60,11 @@
       </section>
       <section id="certifications">
         <header>
-          <h1>Certifications and courses completed </h1>
+          <h2>Certifications and courses completed </h2>
         </header>
-        
+
         <article>
-          <h2>Git</h2>
+          <h3>Git and Github</h3>
           <p><strong>Academy: OpenBootcamp</strong> </p>
           <p>
             Completed in <time datetime="2023-01-17">January 2023</time>
@@ -69,7 +73,7 @@
             target="_blank">Show credential</a>
         </article>
         <article>
-          <h2>Javascript Algorithms and Data Structures</h2>
+          <h3>Javascript Algorithms and Data Structures</h3>
           <p><strong>Academy: FreeCodeCamp</strong> </p>
           <p>
             Completed in <time datetime="2022-09-28">September 2022</time>
@@ -80,7 +84,7 @@
             programming.</footer>
         </article>
         <article>
-          <h2>Responsive Web Design</h2>
+          <h3>Responsive Web Design</h3>
           <p><strong>Academy: FreeCodeCamp</strong> </p>
           <p>
             Completed in <time datetime="2022-07-20">July 2022</time>
@@ -90,7 +94,7 @@
           <footer>Aptitudes: HTML y CSS, responsive web design, CSS flex, CSS Grid and others.</footer>
         </article>
         <article>
-          <h2>CCNA Switching, routing and wireless essentials</h2>
+          <h3>CCNA Switching, routing and wireless essentials</h3>
           <p><strong>Academy: CISCO NETACAD</strong> </p>
           <p>
             Completed in <time datetime="2021-09-30">September 2021</time>
@@ -100,35 +104,91 @@
           <footer>Aptitudes: IP routing.</footer>
         </article>
       </section>
-      <section class="projects">
-        <article>
-
-        </article>
+        <section id="projects">
+          <header>
+            <h2>These are my projects</h2>
+          </header>
+          
+          <div id="all-projects">
+              <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project project-tile">
+                  <img class="project-image" src="https://play-lh.googleusercontent.com/cweCpoG0q7Z4qVBdozGoM1DFhp2U_kHmmbo2F1_qgF6BP-hCRai6uB9U1j28ZhaaYXU" alt="project">
+                  <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Check th wheater in your city
+                    <span class="code">/&gt;</span>
+                  </p>
+                </a>
+                <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project project-tile">
+                  <img class="project-image" src="https://cdn.shopify.com/s/files/1/0187/2886/products/L2490748_1024x1024.jpg?v=1571443024" alt="project">
+                  <p class="project-title">
+                    <span class="code">&lt;</span>
+                    Tribute page
+                    <span class="code">/&gt;</span>
+                  </p>
+                </a>
+                <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project project-tile">
+                  <img class="project-image" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/to-do-list-doodles-artistic-2-design-template-97965c7b77e4b72ba49bebf753004101_screen.jpg?ts=1637014225" alt="project">
+                  <p class="project-title">
+                    <span class="code">&lt;</span>
+                    To do list
+                    <span class="code">/&gt;</span>
+                  </p>
+                </a>
+                <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project project-tile">
+                  <img class="project-image" src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/pet-shop-design-template-455bdf66d037814ea6eb95f9b137c7b5_screen.jpg?ts=1599317196" alt="project">
+                  <p class="project-title">
+                    <span class="code">&lt;</span>
+                    A Pet shop                      
+                    <span class="code">/&gt;</span>
+                  </p>
+                </a>
+                <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project project-tile">
+                  <img class="project-image" src="https://play-lh.googleusercontent.com/k-K6mdmZJZrJiuMJCHILReDGjMl_2ljzFIz3QLULfKL1q0tWtTcAkc0RDsjg9QEuXYw" alt="project">
+                  <p class="project-title">
+                    <span class="code">&lt;</span>
+                    A watch with React
+                    <span class="code">/&gt;</span>
+                  </p>
+                </a>
+                <a href="https://codepen.io/freeCodeCamp/full/wgGVVX" target="_blank" class="project project-tile">
+                  <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="project">
+                  <p class="project-title">
+                    <span class="code">&lt;</span>
+                    JavaScript Calculator
+                    <span class="code">/&gt;</span>
+                  </p>
+                </a>
+          </div>
+          <a href="#" class="button">Show more projects
+              <i class="fas fa-chevron-right"></i>
+          </a>
       </section>
     </div>
-    
+
   </main>
   <footer class="final-footer">
-      <p>You can follow me on my social networks, ther I will be sharing the progress of my learning. </p>
-      <div class="iconos">
-        <div class="icono"><a href="https://www.facebook.com/marylauracarolina.limayoliva" target="_blank"
-            class="net-icons"><i class="fa-brands fa-facebook"></i>Facebook</a></div>
+    <p>You can follow me on my social networks, ther I will be sharing the progress of my learning. </p>
+    <div class="iconos">
+      <div class="icono"><a href="https://www.facebook.com/marylauracarolina.limayoliva" target="_blank"
+          class="net-icons"><i class="fa-brands fa-facebook"></i>Facebook</a></div>
 
-        <div class="icono"><a href="https://twitter.com/marylaura5" target="_blank" class="net-icons"><i
-              class="fa-brands fa-twitter"></i>Twitter</a></div>
+      <div class="icono"><a href="https://twitter.com/marylaura5" target="_blank" class="net-icons"><i
+            class="fa-brands fa-twitter"></i>Twitter</a></div>
 
-        <div class="icono"><a href="https://github.com/Lunisa202" target="_blank" class="net-icons"><i
-              class="fa-brands fa-github"></i>Git-hub</a></div>
+      <div class="icono"><a href="https://github.com/Lunisa202" target="_blank" class="net-icons"><i
+            class="fa-brands fa-github"></i>Git-hub</a></div>
 
-        <div class="icono">
-          <address>
-            <a href='mailto:limayolivamary@gmail.com' class="net-icons"> <i class="fa-solid fa-envelope"></i>Send me a
-              message</a>
-          </address>
-        </div>
+      <div class="icono">
+        <address>
+          <a href='mailto:limayolivamary@gmail.com' class="net-icons"> <i class="fa-solid fa-envelope"></i>Send me a
+            message</a>
+        </address>
       </div>
-      <p>Created by Carolina - Copyright 2023 ©</p>
+    </div>
+    <p>Created by Carolina - Copyright 2023 &copy;</p>
   </footer>
+  
+
 </body>
 
 </html>

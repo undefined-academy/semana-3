@@ -5,22 +5,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact me</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./styles.css">
   <script src="https://kit.fontawesome.com/c2447c2ee1.js" crossorigin="anonymous"></script>
+  <script async defer type="module" src="./main.mjs"></script>
 
 </head>
   
 <body>
   <header id="main-header">
-    <nav>
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./index.html/#bio">Biography</a></li>
-        <li><a href="./index.html/#certifications">Certifications completed</a></li>
+
+    <nav class="nav-bar">
+      <div class="logo-barra">
+        <div class="logo">
+          <p>Carolina Limay</p>
+        </div>
+        <div class="mobile-menu">
+          <i class="fas fa-bars bar-btn"></i>
+        </div>
+      </div>
+
+      <ul class="nav-menu">
+        <li><a href="./index.html" class="active">Home</a></li>
+        <li><a href="./index.html#bio">Biography</a></li>
+        <li><a href="./index.html#certifications">Certifications completed</a></li>
+        <li><a href="./index.html#projects">Projects</a> </li>
         <li><a href="./contact.html">Contact</a> </li>
+
       </ul>
     </nav>
   </header>
+
   <main class="container">
     <h1>Contacto</h1>
     <form action="/server" method="get">
@@ -91,7 +105,7 @@
           <span>I accept all terms and condictions</span>
         </label>
       </div>
-      <button>Send offer</button>
+      <button class="enviar-propuesta">Send offer</button>
       
     </form>
   </main>
@@ -114,7 +128,7 @@
         </address>
       </div>
     </div>
-    <p>Created by Carolina - Copyright 2023 © ;copy</p>
+    <p>Created by Carolina - Copyright 2023 &copy;</p>
 </footer>
 </body>
 
