@@ -1,0 +1,144 @@
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: #566b78;
+    box-sizing: border-box;
+  }
+  
+  h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+    text-align: center;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+
+  }
+  .profile {
+    text-align: center;
+}
+section {
+  display:flex;
+  flex-direction: column; 
+  
+  padding: 10px 12px 10px 12px 
+
+}
+  
+  
+  pre {
+    background: #eee;
+  }
+  
+
+  h1 {
+    background-color: #5a8891;
+    
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2; 
+    text-align: center;
+    font-weight: 300;
+    text-align: center;
+    border: 1px solid #e81c4f;
+    border-radius: 290486px;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: none 200ms ease-out;
+    transition-property: color;
+    text-align: center;
+  }
+  
+  .form-group {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+   textarea {
+  width: 100%;
+  vertical-align: middle;
+  background: white;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 10px;
+  color: #333;
+}
+
+@media screen and (min-width: 992px) {    
+  .features, .table-one, .table-two {
+      display: flex;
+  }
+
+  .feature {
+      width: 100%;
+  }  
+}
+
+@media (max-width: 500px) {
+  .header-info {
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     padding: 0px 6px 0px 6px;
+     box-sizing: border-box;
+  }
+
+  
+
+  .profile {
+      padding: 2px 40px
+  }
+
+  h2 {
+      padding: 0px 20px 0px 20px;
+  }
+
+  
+}
+
+li {
+  padding: 0px 8px 0px 8px;
+}
+
+p {
+  text-align: center;
+  padding: 2px 40px
+}
+
+table {
+  margin-top: 1em;
+  
+ 
+  text-align: center;
+  border-collapse: collapse;
+  width: 20em;
+}
+
+thead {
+ 
+  border-bottom: solid 2px rgb(234, 234, 234);
+}
+
+th, td {
+  padding: 6px;
+}
+
+
+
+
+
