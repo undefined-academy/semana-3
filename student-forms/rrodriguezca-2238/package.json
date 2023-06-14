@@ -1,0 +1,20 @@
+{
+  "name": "rrodriguezca-2238",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite dev src",
+    "dev:css": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^4.3.9"
+    
+    
+  }
+}
