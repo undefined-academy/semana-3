@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="./js/main.js"></script>
+    <title>Formulario</title>
+</head>
+
+<body class="bg-light">
+    <main class="d-flex">
+        <div class="ms-auto me-auto m-3">
+            <h1 class="mb-3 text-center font-weight-bold">Contacto</h1>
+            <form action="/server" method="get" id="form">
+                <div class="input-group mb-3 form-group row">
+                    <label for="name" class="form-label w-lg">Nombre</label>
+                    <input id="name" class="form-control" type="text" placeholder="Ingrese su nombre completo" required>
+                </div>
+        
+                <div class="input-group mb-3 form-group flex-wrap row">
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" class="form-control" type="email" placeholder="Ingrese su correo electronico" required>
+                </div>
+        
+                <div class="input-group mb-3 form-group gap-2 ">
+                    <label for="type">Tipo de proyecto</label>
+                    <select id="type" required>
+                        <option disabled selected value="">Seleccione uno</option>
+                        <option value="website">Website</option>
+                        <option value="webapp">Webapp</option>
+                        <option value="mobileapp">Mobile app</option>
+                        <option value="design">Diseño web</option>
+                    </select>
+                </div>
+        
+                <div class="input-group mb-3 form-group flex-wrap row">
+                    <label for="description">Mensaje</label>
+                    <textarea id="description" rows="5"></textarea>
+                    <div class="help">Maximo 250 caracteres</div>
+                </div>
+        
+                <div class="input-group mb-3 form-group">
+                    <label for="terms">
+                        <input id="terms" type="checkbox" required>
+                        <span>Acepto los terminos y condiciones</span>
+                    </label>
+                </div>
+        
+                <button type="button" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </main>
+    
+   
+
+</body>
+
+</html>
