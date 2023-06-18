@@ -1,0 +1,539 @@
+html, body {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #e5e7eb;
+    margin: 0%;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem;
+}
+
+.logo span {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 36px;
+    color: #475569;
+}
+
+.nav {
+    background-color: #f3f4f6;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 1.3rem;
+    border-left: 5px solid #ef4444;
+}
+
+.nav-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item a {
+    margin: 0 0.6rem;
+    color: #0f172a;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .header h1 {
+    margin: 0.6rem;
+}
+
+.container .span-hello {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    font-weight: normal;
+    height: 100px;
+    font-family: Helvetica, sans-serif;
+    color: #ef4444;
+}
+
+.container .span-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 0.3rem;
+    height: 50px;
+    font-size: 45px;
+    font-weight: normal;
+    font-family: 'Didact Gothic', sans-serif;
+    color: #0f172a;
+}
+
+.container .study {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0.5rem;
+    margin: 0 0 0 1.1rem;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'Didact Gothic', sans-serif;
+    color: #0f172a;
+    border-left: 5px solid #ef4444;
+}
+
+.container .header-about {
+    margin: 0.5rem 1rem 0 1rem;
+}
+
+.container .header-about p {
+    font-size: 16px;
+    text-align: justify;
+    word-spacing: -2px;
+    color: #0f172a;
+    letter-spacing: 1px;
+}
+
+.container .header-about h2, h3 {
+    color: #0f172a;
+    letter-spacing: 1px;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: normal;
+}
+
+.container .header-about h2 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+}
+
+.container .header-about h3 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.container .commands {
+    background-color: #f3f4f6;
+    padding: 0;
+    width: 94.5%;
+
+    border-right: 4px solid #eab308;
+}
+
+.container li {
+    margin: 0.6rem 0;
+}
+
+.container li::marker {
+    color: #eab308;
+}
+
+.container code {
+    background-color: #e5e7eb;
+    padding: 0.3em 0.5em;
+}
+
+.container .personal-goals {
+    margin: 1.2rem 1rem 0 1rem;
+}
+
+.container .personal-goals h2 {
+    color: #0f172a;
+    letter-spacing: 1px;
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: normal;
+
+    margin-top: 0.2rem;
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+}
+
+.container .personal-goals p {
+    margin-top: 0;
+    font-size: 16px;
+    text-align: justify;
+    word-spacing: -2px;
+    color: #0f172a;
+    letter-spacing: 1px;
+}
+
+.container .canada {
+    margin: 0.6rem 1rem 0 1rem;
+}
+
+.container .canada img {
+    width: 100%;
+    height: auto;
+}
+
+.container .block-while-green {
+    height: 2rem;
+    width: 100%;
+    margin-left: 49.5%;
+    margin-bottom: 0.5rem;
+    background-color: #f3f4f6;
+
+    border-left: 4px solid #84cc16;
+}
+
+.container .block-while-blue {
+    height: 2rem;
+    width: 50.5%;
+    margin-right: 2rem;
+    margin-top: 1.1rem;
+    margin-bottom: 1.1rem;
+    background-color: #f3f4f6;
+
+    border-right: 4px solid #0284c7;
+}
+
+.container .norway {
+    margin: 0 1rem 0.4rem 1rem;
+}
+
+.container .norway img {
+    width: 100%;
+    height: auto;
+}
+
+.container .footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 2rem;
+
+    background-color: #f3f4f6;
+}
+
+.container .footer span {
+    margin-left: 1rem;
+}
+
+/* Responsive - Mobile first*/
+
+@media screen and (min-width: 251px) {
+
+    .container .canada {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .container .canada img {
+        max-width: 600px;
+    }
+
+    .container .norway {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .container .norway img {
+        max-width: 600px;
+    }
+}
+
+@media screen and (min-width: 371px) {
+    .container .commands {
+        width: 50.5%;
+    }
+}
+
+@media screen and (min-width: 618px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 13.4rem auto auto auto auto auto;
+        gap: 1rem 0;
+    }
+
+    .container .header {
+        align-items: normal;
+        padding-top: 0.3rem;
+    }
+
+    .container .header-about {
+        grid-column: 2/3;
+        grid-row: 1/2;
+
+        margin: 0;
+        padding: 0.3rem 1rem;
+    }
+
+    .container .commands {
+        grid-column: 2/3;
+        grid-row: 2/3;
+
+        width: 100%;
+        margin-left: 1rem;
+        border-right: none;
+        border-left: 4px solid #eab308;
+        border-bottom: 4px solid #eab308;
+    }
+
+    .container .block-while-green {
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+        width: 95%;
+        margin: 0;
+        height: 2.8rem;
+        border-left: none;
+        border-right: 4px solid #84cc16;
+        border-top: 4px solid #84cc16;
+        background-color: transparent;
+    }
+
+    .container .block-while-blue {
+        width: 95%;
+        height: 6rem;
+    }
+
+    .container .blue-container {
+        grid-column: 2/3;
+        grid-row: 3/4;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .personal-goals {
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+        padding-top: 0.4rem;
+        margin: 2.5rem 2rem 0 2rem;
+    }
+
+    .container .canada {
+        margin: 0;
+    }
+
+    .container .norway {
+        grid-column: 1/3;
+        grid-row: 4/6;
+        margin:0 1rem;
+    }
+
+    .container .norway img {
+        max-width: 800px;
+    }
+
+    .container .footer {
+        grid-column: 1/3;
+        grid-row: 6/7;
+    }
+}
+
+@media screen and (min-width: 671px) {
+    .container .header-about {
+        padding: 0.9rem 1rem 0 1rem;
+    }
+
+    .container .commands {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 852px) {
+    .container .header-about {
+        padding: 1rem 2rem 0 1rem;
+    }
+
+    .container .personal-goals p{
+        margin: 1rem 1rem 0 0;
+    }
+
+    .container .commands {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 883px) {
+    .container .header-about {
+        padding: 0.7rem 2rem 0 1rem;
+    }
+
+    .container .header-about p {
+        font-size: 17px;
+    }
+
+    .container .personal-goals {
+        margin: 2rem 2rem 0 2rem;
+    }
+
+    .container .personal-goals p {
+        font-size: 17px;
+    }
+}
+
+@media screen and (min-width: 883px) {
+    .container .header-about {
+        padding: 1.4rem 2rem 0 1rem;
+    }
+}
+
+@media screen and (min-width: 1118px) {
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f3f4f6;
+        height: 2.2rem;
+    }
+
+    .logo {
+        padding: 0 0 0 1rem;
+    }
+    
+    .logo span {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 14px;
+    }
+
+    .nav {
+        background-color: transparent;
+        border-left: none;
+        margin-right: 1rem;
+        margin-left: 0;
+        height: 2.2rem;
+    }
+    
+    .item a {
+        color: #475569;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 11.3rem 11.3rem 10rem auto;
+        gap: 0 1rem;
+    }
+
+    .container .header {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+
+    .container .header h1 {
+        margin-top: 1.3rem;
+    }
+
+    .container .span-hello {
+        font-size: 170px;
+        height: 170px;
+    }
+    
+    .container .span-name {
+        height: 90px;
+        font-size: 65px;
+        padding-left: 0.7rem;
+    }
+
+    .container .study {
+        margin: 0 0 0 1.6rem;
+        font-size: 15px;
+    }
+
+    .container .header-about {
+        padding: 0.8rem 2rem 0 0;
+    }
+
+    .container .header-about p {
+        font-size: 17px;
+    }
+
+    .container .header-about h2 {
+        margin: 0 0 0.2rem 0;
+    }
+
+    .container .commands {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        margin-left: 0;
+    }
+
+    .container .block-while-green {
+        grid-column: 1/2;
+        grid-row: 3/4;
+
+        width: 100%;
+    }
+
+    .container .personal-goals {
+        grid-column: 1/2;
+        grid-row: 3/4;
+
+        margin: auto 2rem;
+        
+    }
+
+    .container .personal-goals p {
+        font-size: 18px;
+    }
+
+    .container .canada {
+        grid-column: 2/3;
+        grid-row: 4/5;
+
+        height: 50%;
+        width: 50%;
+    }
+
+    .container .norway {
+        grid-column: 1/2;
+        grid-row: 4/5;
+
+        width: auto;
+        height: auto;
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1218px) {
+    .container .span-hello {
+        font-size: 200px;
+        height: 170px;
+    }
+    
+    .container .span-name {
+        height: 90px;
+        font-size: 80px;
+        padding-left: 0.7rem;
+    }
+
+    .container .study {
+        margin: 0 0 0 1.6rem;
+        font-size: 18px;
+    }
+
+    .container .header-about p {
+        font-size: 18px;
+    }
+}
+
