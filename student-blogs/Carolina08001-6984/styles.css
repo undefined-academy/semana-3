@@ -46,6 +46,8 @@ nav{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     justify-items: center;
+    margin-right: 2rem;
+    margin-left: 0.5rem;
     align-items: center;
 }
 
@@ -166,6 +168,9 @@ article a:hover {
 .buscar {
     appearance: none;
     width: 100%;
+    padding: 3%;
+    margin: 5%;
+
     height: 1.8rem;
     border-radius: 5px;
 }
