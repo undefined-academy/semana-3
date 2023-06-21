@@ -1,0 +1,10 @@
+$primary: #b7b7ff;
+$secondary: #eab308;
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
