@@ -1,0 +1,12 @@
+@import "bootstrap/scss/bootstrap";
+
+body{
+  background-color: white;
+  
+}
+
+@include media-breakpoint-up(lg) {
+  body{
+    background-color: white;
+  }  
+ }

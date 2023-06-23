@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios HTML</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="py-10 bg-stone-50 flex justify-center">
+    <div class=" mx-4">
+			<h1 class="text-left font-bold text-2xl mt-2">
+				Contacto
+			</h1>
+			<div class="roundes-xl shadow-lg p-8 mt-10">
+				<form action="/server" method="get" class="flex flex-col space-y-4">
+					<div>
+						<label for="name" class="text-sm font-bold">
+							Nombre
+						</label>
+					</div>
+					<div class="px-2">
+						<input id="name" name="name" type="text" placeholder="Ingrese su nombre completo" class="ring-1 ring-gray-300 w-full rounded-md outline-none focus:ring-2 focus:ring-amber-200 px-4 py-2" required>
+					</div>
+					<div>
+						<label for="email" class="text-sm font-bold">
+							Email
+						</label>
+					</div>
+					<div class="px-2">
+						<input id="email" name="email" type="email" placeholder="Ingrese su correo electrónico" class="ring-1 ring-gray-300 w-full rounded-md outline-none focus:ring-2 focus:ring-amber-200 px-4 py-2" required>
+					</div>
+					<div class="flex flex-col space-y-2">
+						<div class="text-sm font-bold">
+							Presupuesto
+						</div>
+						<div class="flex flex-row space-x-10 px-2" >
+							<div>
+								<input id="10000" name="budget" type="radio" for="10000" value="10000" class="accent-amber-200">
+								<label class="text-sm">$10.000</label>
+							</div>
+							<div>
+								<input id="15000" name="budget" type="radio" for="15000" value="15000" class="accent-amber-200">
+								<label class="text-sm">$15.000</label>
+							</div>
+							<div>
+								<input id="20000" name="budget" type="radio" for="20000" value="20000" class="accent-amber-200">
+								<label class="text-sm">$20.000</label>
+							</div>	
+						</div>
+						<div class="text-sm px-2">
+							Este presupuesto es la base no el total.
+						</div>
+					</div>
+					<div>
+						<label for="type" class="text-sm font-bold">
+							Tipo de proyecto
+						</label>
+					</div>
+					<div class="px-2">
+						<select id="type" name="type" class="ring-1 ring-gray-300 w-full rounded-md outline-none focus:ring-2 focus:ring-amber-200 px-4 py-2 text-sm" required>
+							<option disabled selected value="" class="">Seleccione uno</option>
+							<option value="website">Website</option>
+							<option value="webapp">WepApp</option>
+							<option value="mobile">Mobile App</option>
+							<option value="Diseño">Diseño</option>
+						</select>
+					</div>
+					<div>
+						<label for="description" class="text-sm font-bold">
+							Descripción
+						</label>
+					</div>
+					<div class="px-2">
+						<textarea id="description" name="description" rows="3" class="text-sm ring-1 ring-gray-300 w-full rounded-md outline-none focus:ring-2 focus:ring-amber-200 px-4 py-2"></textarea>
+						<div class="text-sm">Escribe una descripción del proyecto en al menos 500 palabras.</div>
+					</div>
+					<div class="form-group">
+						<label for="terms">
+							<input id="terms" name="terms" type="checkbox" required class="accent-amber-200">
+							<span class="text-sm font-bold">Acepto los terminos y condiciones</span>
+						</label>
+					</div>
+					<button class="inline-block bg-amber-400 text-white font-bold  self-center focus:outline-none  hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:focus:ring-yellow-900">Enviar</button>
+				</form>
+			</div>
+		</div>	    
+  </main>    
+</body>
+</html>
+

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <div class="container" style="margin-top: 100px;">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form class="shadow p-5 mb-5 bg-body rounded" style="background-color: whitesmoke;" action="/server" method="get">
+          <h1 style="margin-bottom: 40px;">
+            Contacto
+          </h1>
+          <div class="mb-3">
+            <label for="name" class="form-label" style="font-weight: bold;">Nombre</label>
+            <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre completo" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label" style="font-weight: bold;">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" style="font-weight: bold;">Presupuesto</label>
+            <div class="d-flex pt-2">
+              <div class="form-check me-5">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  $10.000
+                </label>
+              </div>
+              <div class="form-check me-5">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  $15.000
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  $20.000
+                </label>
+              </div>
+            </div>
+            <p class="mt-2" style="font-size:small;">Este dinero es la base no el total.</p>
+          </div>
+          <div class="mb-3">
+            <label for="name" class="form-label" style="font-weight: bold;">Tipo de proyecto</label>
+            <select class="form-select" aria-label="Default select example" required>
+              <option disable selected value="" selected>Seleccione uno</option>
+              <option value="1">Website</option>
+              <option value="2">WebApp</option>
+              <option value="3">Mobile App</option>
+              <option value="3">Diseño</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label" style="font-weight: bold;">Descripción</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <p class="mt-2" style="font-size:small;">Escribe una descripción del proyecto en al menos 500 palabras.</p>
+          </div>
+          <div class="mb-3">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+            <label class="form-label" style="font-weight: bold;" for="flexCheckDefault">
+              Acepto los terminos y condiciones
+            </label>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-primary">Enviar</button>
+          </div>          
+      </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
