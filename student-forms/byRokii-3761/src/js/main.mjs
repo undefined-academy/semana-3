@@ -1,6 +1,6 @@
 function handleSubmit(event) {
 	event.preventDefault();
-	console.log("Hola Mundo");
+	alert("Hola Mundo");
 }
 
 const $form = document.querySelector("form");
