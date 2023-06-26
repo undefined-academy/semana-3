@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+</head>
+
+<body>
+    <div class="container py-4 px-3 mx-auto">
+        <h1 class="mt-5 display-5">My form with Vite & Bootstrap</h1>
+        <div class="mt-5 row gx-5">
+            <div class="col-12 col-sm-6">
+                <p class="lead">Create and style a form width Vite.</p>
+            </div>
+            <div class="col-12 col-sm-6 d-flex justify-content-start">
+                <form action="">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Name</span>
+                        <input type="text" class="form-control" placeholder="Pepito Perez" aria-label="Name"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Email</span>
+                        <input type="email" class="form-control" placeholder="Pepiperez@youremail.com"
+                            aria-label="Email" aria-describedby="basic-addon1">
+                    </div>
+                    <fieldset class="mb-3">
+                        <legend>Why contact me?</legend>
+
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="subject" id="bootcamp">
+                            <label class="form-check-label" for="bootcamp">
+                                Bootcamp friend
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="subject" id="friend">
+                            <label class="form-check-label" for="friend">
+                                Friend of a friend
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="subject" id="social">
+                            <label class="form-check-label" for="social">
+                                Social network
+                            </label>
+                        </div>
+                    </fieldset>
+
+
+                    <button type="submit" class="btn btn-primary">Send</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
