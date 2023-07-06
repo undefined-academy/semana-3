@@ -1,6 +1,13 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   box-sizing: border-box;
+  height: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
 }
 
 * {
@@ -9,13 +16,15 @@ body {
 }
 
 .main {
-  min-height: 100vh;
   height: 100%;
-  display: grid;
-  place-content: center;
+  background-color: lightgrey;
 }
 
 .form {
   display: grid;
   gap: 1.6rem;
+}
+
+.help{
+  font-size: 12px;
 }

@@ -3,49 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV Luis Alejandro Grajales</title>
-    <link rel="stylesheet" href="./scss/styles.scss" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="./js/main.mjs"></script>
   </head>
 
   <body>
-    <main class="main">
-      <form class="form" id="form">
-        <h2>Contact me</h2>
-        <div class="form__input">
-          <label for="name" class="form-label">Name</label>
+    <main class="main container rounded-5 p-5">
+      <h1 class="mb-3 text-primary">Contacto</h1>
+      <form class="form" action="/server" method="get">
+        <div class="form-group">
+          <label for="name" class="form-label">Nombre</label>
           <input
             type="text"
             id="name"
-            placeholder="Name"
+            name="name"
+            placeholder="Ingrese su nombre completo"
             class="form-control"
+            required
           />
         </div>
-        <div class="form__input">
-          <label for="phone">Phone</label>
-          <input type="tel" id="phone" placeholder="Phone" />
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label"
-            >Email address</label
-          >
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
           <input
             type="email"
+            id="email"
+            name="email"
+            placeholder="Ingrese su nombre correo electronico"
             class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="name@example.com"
+            required
           />
         </div>
-        <div class="form__input">
-          <label for="msg">Message</label>
-          <textarea
-            id="msg"
-            rows="5"
-            placeholder="Please send me a Message"
-          ></textarea>
+        <div class="form-group">
+          <fieldset>
+            <legend>Presupuesto</legend>
+            <div class="form-check">
+              <input
+                id="10000"
+                name="budget"
+                type="radio"
+                value="10000"
+                required
+                class="form-check-input"
+              /><label for="10000" class="form-check-label">$10000</label>
+            </div>
+            <div class="form-check">
+              <input
+                id="5000"
+                name="budget"
+                type="radio"
+                value="5000"
+                required
+                class="form-check-input"
+              /><label for="5000" class="form-check-label">$5000</label>
+            </div>
+            <div class="form-check">
+              <input
+                id="1000"
+                name="budget"
+                type="radio"
+                value="1000"
+                required
+                class="form-check-input"
+              /><label for="1000" class="form-check-label">$1000</label>
+            </div>
+          </fieldset>
+          <p class="help">Este presupuesto es la base, no el total.</p>
         </div>
-        <input type="submit" value="Send" />
+        <div class="form-group">
+          <label for="type" class="form-label">Tipo de proyecto</label>
+          <select name="type" id="type" class="form-select" required>
+            <option disabled selected>Seleccione uno</option>
+            <option value="website">Website</option>
+            <option value="webapp">Webapp</option>
+            <option value="mobile">Mobile app</option>
+            <option value="design">Diseño</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="description" class="form-label">Descripción</label>
+          <textarea
+            name="description"
+            id="description"
+            class="form-control"
+            rows="5"
+            placeholder="Deja tu comentario aquí"
+            required
+          ></textarea>
+          <div class="help">
+            Escribe una descripción del proyecto en al menos 500 palabras
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="terms" class="form-check-label">
+            <input id="terms" name="terms" type="checkbox" class="form-check-input" required />
+            <span>Acepto los terminos y condiciones</span>
+          </label>
+        </div>
+        <button class="btn btn-primary submit">Enviar</button>
       </form>
     </main>
-    <script type="module" src="./js/main.mjs"></script>
+    <script src="index.js"></script>
   </body>
 </html>
