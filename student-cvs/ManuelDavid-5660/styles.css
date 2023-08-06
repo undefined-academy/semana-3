@@ -1,0 +1,108 @@
+html, body{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    
+}
+
+*{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+span.material-icons-sharp{
+    font-size: 50px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: #E2A9F3;
+    color: white;
+}
+
+nav{
+    display: grid;
+    justify-content: end;
+    background: #9b59b6;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: end;
+}
+
+li{
+    margin-right: 10px;
+    text-align: center;
+}
+
+li:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 2px 2px;
+    border-radius: 2px;
+    background-color: mediumorchid;
+}
+
+section, header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+p{
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.feature{
+    text-align: center;
+}
+
+.features section:hover{
+    cursor: pointer;
+    border: 0.5px solid purple;
+    border-radius: 5px;
+    box-shadow: #9b59b6 1px 2px 1px 2px;
+}
+
+.footer{
+    order: 4;
+    background-color: aquamarine;
+    text-align: center;
+    background: gainsboro;
+    color: purple
+}
+
+@media screen and (min-width: 992px) {
+    .features{
+        display: flex;
+        order:1;
+    }
+    .feature{
+        width: 100%;
+    }
+    .content{
+        order:3;
+    }
+    
+}
