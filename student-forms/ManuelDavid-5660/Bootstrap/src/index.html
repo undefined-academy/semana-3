@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Formulario</title>
+  </head>
+  <body>
+    <main class="main">
+      <h1>Registrarse</h1>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">User Name</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email Address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" min="18" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Repeat Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" min="18" required>
+        </div>
+
+        <div>
+          <legend>Elige la raza de tu personaje</legend>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1"> Warrior</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2"> Hunter</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+            <label class="form-check-label" for="flexRadioDefault3"> Mage</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+            <label class="form-check-label" for="flexRadioDefault4"> Nigromant</label>
+          </div>
+        </div>
+
+        <div>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Elige un pack de inicio</option>
+            <option value="1">Pvp</option>
+            <option value="2">Recolector</option>
+            <option value="3">Explorador</option>
+          </select>
+        </div>
+
+        <div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+            <label class="form-check-label" for="flexCheckDefault">
+              Acepto los terminos y condiciones
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              Quiero recibir informacion a mi correo
+            </label>
+          </div>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </main>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

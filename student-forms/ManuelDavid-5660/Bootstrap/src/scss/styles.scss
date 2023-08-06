@@ -1,0 +1,26 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+.main{
+    max-width: 800px;
+    padding: 20px 20px;
+    margin: 100px auto;
+    border-radius: 15px;
+    border: 1px solid aqua;
+    background-color: darkorchid;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
