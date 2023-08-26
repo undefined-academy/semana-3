@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Form with bootstrap</title>
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+  <section class="container py-4 px-3 mx-auto">
+    <h1>Enter your information:</h1>
+    <form action="/" method="get">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" id="floatingPassword" placeholder="Name">
+        <label for="floatingPassword">Name</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input type="tel" class="form-control" id="floatingInput" placeholder="Phone Number">
+        <label for="floatingInput">Phone Number</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+          style="height: 100px"></textarea>
+        <label for="floatingTextarea2">Send us a message</label>
+      </div>
+      <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="submit">Send</button>
+      </div>
+    </form>
+  </section>
+</body>
+
+</html>

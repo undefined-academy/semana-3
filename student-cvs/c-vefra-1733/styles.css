@@ -1,0 +1,120 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 500px;
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  padding: 1em 1em;
+  color: #555;
+  background-color: #fdfdfd;
+  display: grid;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+.profile,
+.knowledge,
+.social {
+  order: 2;
+}
+
+.contactme {
+  order: 1;
+}
+
+.contactme a {
+  text-decoration: none;
+}
+
+.contactme a h2 {
+  width: 156px;
+  height: 36px;
+  padding: 0 12px;
+  border-radius: 4px;
+  background-color: rgb(52, 139, 238);
+  color: #fdfdfd;
+}
+
+.knowledge-img {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+}
+
+.knowledge img {
+  width: 160px;
+  height: 40px;
+  margin-bottom: 4px;
+}
+
+.textarea-msg {
+  font-size: 12px;
+}
+
+.form-contactme {
+  width: 100%;
+  margin: 20px 0;
+}
+
+label,
+input {
+  width: 100%;
+}
+
+input,
+textarea {
+  padding: 8px 10px;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  background: white;
+  color: #333;
+}
+
+label {
+  font-weight: bold;
+}
+
+textarea {
+  display: block;
+  width: 100%;
+  resize: none;
+}
+
+button {
+  padding: 12px 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 1px solid grey;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #333;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    max-width: 600px;
+    padding: 4em 1em;
+    display: block;
+  }
+  .knowledge-img {
+    display: block;
+  }
+  .knowledge img {
+    width: 160px;
+    height: 40px;
+  }
+}
