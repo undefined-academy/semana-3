@@ -1,0 +1,19 @@
+{
+  "name": "carlos123-5551",
+  "version": "1.0.0",
+  "description": "<details>\r <summary>My top languages</summary>",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"vite",
+    "build":"vite build",
+    "preview":"vite preview",
+    "host":"vite --host"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^4.4.9"
+  }
+}

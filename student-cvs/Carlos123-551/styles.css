@@ -1,0 +1,64 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
+body {
+  margin: 0 auto;
+  max-width: 50em;
+  line-height: 1.5;
+  padding: 2em 1em;
+  color: #555;
+  background: hsl(0, 28%, 77%);
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+h1,
+h2,
+strong {
+  color: #333;
+}
+a {
+    color: #e81c4f;
+}
+
+/* Form */
+.form{
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 10px 40px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background: #e81c4f;
+  border-radius: 5px;
+  color: wheat;
+}
+.form-group {
+  margin: 20px 0;
+}
+label, input:not([type="radio"], [type="checkbox"]) {
+  width: 100%;
+}
+textarea {
+  width: 100%;
+  display: block;
+  resize: vertical;
+  border-radius: 10px;
+  padding: 10px;
+}
+input {
+  border-radius: 5px;
+  padding: 10px;
+}
+label{
+  font-weight: bold;
+  color: wheat;
+}
+button {
+  padding: 10px;
+}
