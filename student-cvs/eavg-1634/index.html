@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>CV Responsive</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>CV Responsive</title>
-</head>
-
-<body>
-  <main>
+  <body>
+    <main>
       <header>
         <h1>Hi,👋 My name is Esmelin Vivanco</h1>
       </header>
@@ -60,32 +62,58 @@
       </section>
 
       <h2>Skills</h2>
-      <img src="./icons/javascript-icon.svg" alt="javascript-icon" width="36" height="36" />
+      <img
+        src="./icons/javascript-icon.svg"
+        alt="javascript-icon"
+        width="36"
+        height="36"
+      />
       <img src="./icons/git-icon.svg" alt="git-icon" width="36" height="36" />
-      <img src="./icons/boopstrap-icon.svg" alt="boopstrap-icon" width="36" height="36" />
+      <img
+        src="./icons/boopstrap-icon.svg"
+        alt="boopstrap-icon"
+        width="36"
+        height="36"
+      />
       <img src="./icons/node-icon.svg" alt="node-icon" width="36" height="36" />
 
       <h2>Socials</h2>
-      <img src="./icons/git-social-icon.svg" alt="git-social-icon" width="36" height="36" />
+      <a href="https://github.com/esmelinantonio" target="_blank">
+        <img
+          src="./icons/git-social-icon.svg"
+          alt="git-social-icon"
+          width="36"
+          height="36"
+        />
+      </a>
 
       <section id="contact-me">
         <h2>Contact me</h2>
         <form method="post">
           <div class="form-group">
             <label for="name">Nombre</label>
-            <input id="name" type="text" placeholder="Nombre" name="name" required />
+            <input
+              id="name"
+              type="text"
+              placeholder="Nombre"
+              name="name"
+              required
+            />
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input id="email" type="email" placeholder="Email" name="email" required />
+            <input
+              id="email"
+              type="email"
+              placeholder="Email"
+              name="email"
+              required
+            />
           </div>
           <button id="submit" type="submit">Enviar</button>
         </form>
       </section>
     </main>
-</body>
-<script
-type="module" src="/main.mjs">
-</script>
-
+  </body>
+  <script type="module" src="/main.mjs"></script>
 </html>
