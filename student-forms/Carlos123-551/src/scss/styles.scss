@@ -1,0 +1,9 @@
+/* Import all of Bootstrap's CSS */
+@import "bootstrap/scss/bootstrap";
+body{
+    background-color: aquamarine;
+}
+.center {
+    margin: 0 auto;
+    max-width: 70rem;
+}
