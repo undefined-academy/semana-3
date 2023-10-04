@@ -1,0 +1,19 @@
+@import "bootstrap/scss/bootstrap";
+
+.content-width {
+    width: 100%;
+}
+
+@media screen and (min-width:767px) {
+    .content-width {
+        width: 75%;
+    }
+}
+
+.form-check-inline {}
+
+
+    $form-select-padding-y: 5px;
+    $form-select-padding-x: 5px;
+    $input-padding-y: 5px;
+    $input-padding-x: 5px;

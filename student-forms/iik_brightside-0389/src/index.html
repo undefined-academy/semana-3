@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Formulario de contacto con Bootstrap </title>
+  <link href="/scss/styles.scss" rel="stylesheet">
+  <script type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+
+  <main class="container mx-auto content-width">
+    <form action="/server" method="get">
+      <h1 class="text-center text-uppercase fs-2 fw-bold mb-3">Contacto</h1>
+
+      <form>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1"> Nombre </span>
+          <input type="text" class="form-control" aria-describedby="basic-addon1" required>
+        </div>
+
+
+        <div class=" input-group mb-3">
+          <span class="input-group-text" id="basic-addon2"> Correo </span>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+        </div>
+        <div id="emailHelp" class="form-text fs-6 mb-3 mt-6"> Nunca compartiremos tus datos personales con nadie.</div>
+        </div>
+
+        <div class="mb-3 row text-start fs-4 fw-bold">
+          <label for="form-check form-check-inline" class="form-label">Presupuesto</label>
+        </div>
+        <div class="form-check form-check-inline mb-3">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">5,000 MXN</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">15,000 MXN</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+          <label class="form-check-label" for="inlineRadio3">50,000 MXN</label>
+        </div>
+
+
+        <div class="mb-3 row text-start fs-4 fw-bold">
+          <label for="form-select" class="form-label"> Tipo de proyecto</label>
+        </div>
+        <select class="form-select mb-3" aria-label="Default select example" required>
+          <option selected disabled>Seleccione una opción</option>
+          <option value="1">Website</option>
+          <option value="2">Webapp</option>
+          <option value="3">Web tutorial</option>
+        </select>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text">Descripción de proyecto</span>
+          <textarea class="form-control" aria-label="With textarea"
+            placeholder="Porfavor describe tu proyecto en al menos 50 palabras." required></textarea>
+        </div>
+
+        <div class="form-check mb-3 mt-3">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+          <label class="form-check-label" for="flexCheckDefault">
+            Acepto términos y condiciones.
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+</body>
+
+</html>
+
+
+<!-- 
+<body>
+   
+        <form>
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" type="text" placeholder="Ingrese su nombre completo" required>
+            </div>
+            <div class="form-group">
+                <label for="email"> Email</label>
+                <input id="email" name="email" type="email" placeholder="Ingrese su correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Presupuesto</legend>
+                    <input id="5000" name="budget" type="radio" value="5000"><label> $ 5,000 MXN</label>
+
+                    <input id="10000" name="budget" type="radio" value="10000"><label> $ 10,000 MXN</label>
+
+                    <input id="50000" name="budget" type="radio" value="50000"><label> $ 50,000 MXN</label>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <label for="project"> Tipo de proyecto</label>
+                <select id="project" name="project" required>
+                    <option disabled selected value=""> Seleccione una opción</option>
+                    <option> Website</option>
+                    <option> Web app</option>
+                    <option> Web tutorial</option>
+                </select>
+            </div>
+            
+<div class="form-group">
+    <label for="description">Descripción de proyecto</label>
+    <textarea id="description" name="description" required rows="5"></textarea>
+    <div class="help">Escribe una descripción de tu proyecto en 250 palabras</div>
+</div>
+<div class=form-group>
+    <label for="terms">
+        <input id="terms" name="terms" type="checkbox" required>
+<span> Acepto los términos y condiciones</span>
+    </label>
+</div>
+            <button> Enviar</button>
+        </form>
+    </main>
+
+</body>
+
+</html>
+-->
