@@ -1,0 +1,185 @@
+
+/* Hack!!! reset*/
+html,body{
+	height: 100%; /* Hack!!! reset*/
+	box-sizing: border-box; /* Hack!!! reseteo de boder-box*/
+  }
+  * {
+	box-sizing: inherit;  /* Hack!!! */
+  }
+
+/* Responsive Mobile first --------------------------------------- */
+/* contenedor padre hijo de body ------------------------------ */
+.container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr); /* 3 tracks (4 líneas) */
+	grid-template-rows: auto auto auto; /* altura de cada una de las rows, la 1ª 50px, en auto ocupan todo el alto del container */
+	gap: 20px; /* espacio entre elementos */
+  }
+
+  /* grid-column: 1 /4; de la línea 1 a la 4. grid-row: 1 / 2;   */
+  article {
+	display: flex;
+	flex-direction: column; /* el contenido del div en columna */
+	grid-column: 1 /4; 
+	/* justify-content:center;
+	align-items: center; */
+  }
+
+  header {
+	display: flex;
+	flex-direction: column; /* el contenido del div en columna */
+	grid-column: 1 /4; 
+	/* justify-content:center;
+	align-items: center; */
+	padding: 10px 10px 0px 10px;
+	gap: 10px;
+	grid-row: 1 / 2;
+  }
+
+  section {
+	display: flex;
+	flex-direction: column; /* el contenido del div en columna */
+	grid-column: 1 /4; 
+	/* border: 1px solid Gainsboro; */
+	padding: 10px;
+	grid-row: 3 / 4;
+  }
+
+/* ============================================================ */
+
+/* first rule ---
+Centering */
+
+/* 01 Centering */
+/* header,
+main {
+  margin: 0 auto;
+  max-width: 50em;
+} */
+
+/* 02 Font family */
+body {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+/* 03 Spacing */
+/* body {
+	line-height: 1.5;
+	padding: 4em 1em;
+}  */
+
+/* h2 {
+	margin-top: 1em;
+	padding-top: 1em;
+} */
+
+h1, h2 {
+	margin-bottom: 0em;
+	border-bottom: 0em;
+	padding-bottom: 0em;
+}
+/*h1 {
+	font-size: 2.50em;
+}*/
+h2 {
+	font-size: 1.17em;
+}
+h3 {
+	margin: 0.25em 0em;
+	font-size: 1.0em;
+}
+
+/* 04 Color and contrast */
+body {
+	color: #555;
+}
+h3 {
+	color: #333;
+} 
+h3 {
+	color: #444;
+} 
+strong {
+	color: #333;
+} 
+
+/* 05 Balance */
+ul {
+  vertical-align: text-top;
+  margin-top: 0em;
+  padding-top: 0em;
+}
+
+/* 06 Primary color */
+h1 {
+	color: #000000;
+}
+/* 07 Secondary colors */
+body {
+	background: white;
+}
+
+/* Classes */
+/* .li_black{
+	color:#1f1f1f
+} */
+
+.li_font_size{
+	font-size: 0.9em;
+}
+
+/* #id Selectors */
+#p_subtitle{
+	margin-top: 0em;
+	padding-top: 0em;
+	border-top: 0em;
+
+	font-size: 0.9em;
+}
+
+/* ----para desktop---------------------------------- */
+@media screen and (min-width: 425px) {
+
+	article {
+		justify-content:center;
+		align-items: center; 
+	  }
+
+	header{
+		/* order: 1; */
+		justify-content: center;
+		align-items: center;
+	}
+	
+	/* section{
+		justify-content: center;
+		order: 2;
+	} */
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+	h1 {
+		font-size: 2.50em;
+	}
+	h2 {
+	font-size: 1.67em;
+	}
+	h3 {
+		font-size: 1.5em;
+	}
+	.li_black{
+		font-size: 1.4em;;
+	}
+	#p_subtitle{
+		font-size: 1.4em;
+	}
+		.li_font_size{
+	font-size: 1.2em;
+}
+
+}
+
