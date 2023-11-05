@@ -1,0 +1,81 @@
+/* Hack!!! reset*/
+html,body{
+  height: 100%; /* Hack!!! reset*/
+  box-sizing: border-box; /* Hack!!! reseteo de boder-box*/
+}
+* {
+  box-sizing: inherit;  /* Hack!!! */
+}
+body{
+  background-color: whitesmoke;
+  margin: 0; /* Hack!!! reset*/
+}
+/* fin Hack!!! reset ----------------------------------- */
+
+body {
+  font-family: Arial;
+}
+
+/* contenedor padre hijo de body ------------------------------ */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 tracks (4 líneas) */
+  grid-template-rows: 50px auto auto; /* altura de cada una de las rows, la 1ª 50px, en auto ocupan todo el alto del container */
+  gap: 20px; /* espacio entre elementos */
+}
+
+nav {
+  display: flex;
+  grid-column: 1 /4; /* de la línea 1 a la 4 */
+  justify-content:center;
+  align-items: center;
+  grid-row: 1 / 2;
+}
+ul {
+  display: flex;
+  grid-column:inherit;
+  /* justify-content:left; */
+  list-style: none;
+  padding: 10px 10px;
+  gap: 20px;
+  /* border-style: solid; */
+}
+/* barra Buscar 
+input[type="search"] {
+  display: flex;
+  grid-column: 3 /4;
+  padding: 10px 10px;
+  border-style: solid;
+  background: WhiteSmoke;
+  margin-right: 10px;
+}
+*/
+
+/* divs tipo flex !!!!!!!!!!!!! */
+div {
+  display: flex;
+  flex-direction: column; /* el contenido del div en columna */
+  /* border: 1px solid Gainsboro; */
+  padding: 10px;
+
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+
+/* el último div. grid-column-start / grid-column-end ------------------------  */
+div:last-child {
+  grid-column: 2 / 3; 
+}
+
+
+
+h1{
+  font-size: 25px;
+  margin-bottom: unset;
+  /* text-transform: uppercase; */
+  /* padding: 0px 0 10px 0; */
+  /* color: #fff; */
+}
