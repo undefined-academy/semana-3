@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite Form</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+
+      <div class="mx-auto p-2" style="width: 800px;">  
+        <h1 class="mx-0 px-0 mt-2 pt-2">Contacto</h1>
+        <form action="/server" method="get">
+
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su nombre" required>
+          </div>
+          <div class="mb-4">
+            <label for="formGroupExampleInput2" class="form-label">Email</label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese email" required>
+          </div>
+
+          <!-- radio ------------------------------------------------------------------------------------------------------ -->
+          <div class="mb-4">
+          <legend>Presupuesto</legend>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="10000" required>
+            <label class="form-check-label" for="flexRadioDefault1">
+              10000
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"  value="5000" required>
+            <label class="form-check-label" for="flexRadioDefault2">
+              5000
+            </label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" value="1000" required>
+            <label class="form-check-label" for="flexRadioDefault1">
+              1000
+            </label>
+          </div>
+          <div class="help">Este presupuesto es la base no el total.</div>
+        </div>
+          
+          <!-- select -------------------------------------------------------- --> 
+          <div class="mb-4">
+          <legend>Tipo de Proyecto</legend>
+          <select class="form-select" aria-label="Default select example" required>
+            <option disabled selected value="">Seleccione uno</option>
+            <option value="1">Website</option>
+            <option value="2">Webapp</option>
+            <option value="3">Mobile app</option>
+            <option value="3">Diseño</option>
+          </select>
+        </div>
+
+          <!-- textarea -------------------------------------------------------------------- -->
+          <div class="mb-4">
+            <label for="exampleFormControlTextarea1" class="form-label">Descripción</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+            <div class="help">
+              Escribe una descripción del proyecto
+          </div>
+          </div>
+
+          <!-- checkbox -------------------------------------------------------------------- -->
+          <div class="mb-4">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+            <label class="form-check-label" for="flexCheckDefault">
+              Acepto los términos y condiciones
+            </label>
+          </div>
+        </div>
+
+          <!-- button ----------------------------------------------------- -->
+          <input class="btn btn-primary" type="submit" value="Submit" required>
+          
+        </form>
+      </div>
+</body>
+</html>
+</html>
