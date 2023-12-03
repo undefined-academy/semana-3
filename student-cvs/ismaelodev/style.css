@@ -1,0 +1,119 @@
+body {
+  margin: 0 auto;
+  max-width: 50em;
+  font-family: "Helvetica", "Arial", sans-serif;
+  line-height: 1.5;
+  padding: 4em 1em;
+  background-color: rgb(31 41 55);
+  color: #eee;
+  font-size: larger;
+}
+
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+
+h1,
+h2,
+strong {
+  color: #eee;
+}
+
+code,
+pre {
+  background-color: hsla(0, 0%, 100%, 0.05);
+}
+
+code {
+  padding: 2px 4px;
+  vertical-align: text-bottom;
+  color: white;
+}
+
+pre {
+  padding: 1em;
+}
+
+a {
+  color: whitesmoke;
+}
+
+a:hover {
+  zoom: 1.1;
+}
+
+th,
+td {
+  padding-right: 40px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="email"] {
+  max-width: 280px;
+  height: 16px;
+}
+
+input[type="checkbox"] {
+  display: inline;
+}
+
+textarea {
+  max-width: 280px;
+}
+
+button {
+  max-width: 280px;
+  padding: 10px;
+  font-size: large;
+  border-radius: 6px;
+  border: 2px solid tomato;
+}
+
+button:hover {
+  color: white;
+  background-color: rgb(31 41 55);
+  cursor: pointer;
+  font-size: large;
+  zoom: 1.02;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    max-width: 60em;
+  }
+
+  .imLearning {
+    display: flex;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .commands {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .commands h4 {
+    display: flex;
+    color: yellowgreen;
+    justify-content: center;
+    text-decoration: underline;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+  }
+}
