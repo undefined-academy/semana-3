@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+
+  <body class="d-flex flex-column justify-content-center align-items-center">
+    <h1 class="text-center h1">Contact</h1>
+    <form
+      action="/server"
+      method="get"
+      class="row flex-column justify-content-center align-items-center w-75"
+      id="contact"
+    >
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          placeholder="Enter your full name"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="Enter your Email"
+        />
+      </div>
+      <div class="mb-3">
+        <fieldset>
+          <legend class="scheduler-border">Project</legend>
+          <div class="d-flex gap-3 flex-column flex-sm-row">
+            <div class="mb-3 col-lg-6">
+              <label for="proyect" class="form-label">Project type:</label>
+              <select class="form-select" id="proyect" required>
+                <option value="" selected disabled>Select an option</option>
+                <option value="website">Web site</option>
+                <option value="webapp">Web aplication</option>
+                <option value="mobileapp">Mobile App</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="disabledSelect" class="form-label"
+                >Menu only for admin</label
+              >
+              <select id="disabledSelect" class="form-select" disabled>
+                <option value="wholesale">Wholesale customer</option>
+                <option value="particular">Particular customer</option>
+                <option value="public-employee">Public Employee</option>
+              </select>
+            </div>
+            <div class="form-text"></div>
+          </div>
+        </fieldset>
+      </div>
+      <div class="mb-3">
+        <label for="text" class="form-label">Description:</label>
+        <textarea
+          class="form-control"
+          id="text"
+          rows="5"
+          placeholder="Write a short description of the project"
+        ></textarea>
+      </div>
+      <div class="d-grid gap-2 col-sm-6 mx-auto text-center mb-3">
+        <button type="submit" class="btn btn-success btn-block">Submit</button>
+      </div>
+    </form>
+  </body>
+  <script type="module" src="./js/main.js"></script>
+</html>
