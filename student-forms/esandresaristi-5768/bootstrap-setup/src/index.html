@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+        <form class="row g-3 mt-3 needs-validation" novalidate >
+            
+            <div class="col-6">
+            <label for="nameinput" class="form-label">NOMBRES Y APELLIDOS</label>
+                    <input type="text" class="form-control" id="nameinput" placeholder="Escribe tu nombre completo" required>
+                    <div class="valid-feedback">
+                        Todo bien
+                    </div>
+                    <div class="invalid-feedback">
+                        Por favor ingresa tu nombre completo
+                    </div>
+
+            </div>
+            <div class="col-6">
+                <label for="email" class="form-label">EMAIL</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                        <div class="valid-feedback">
+                            Todo bien
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor ingresa tu correo
+                        </div>
+                </div>
+            
+                <div class="col-6">
+                    <label for="ciudad" class="form-label">CIUDAD</label>
+                            <select class="form-select" id="ciudad" aria-label="Seleccione una ciudad" required> 
+                                <option selected disabled value="">Seleccione una ciudad</option>
+                                <option value="1">Bogotá</option>
+                                <option value="2">Medellín</option>
+                                <option value="3">Cartagena</option>
+                                <option value="4">Barranquilla</option>
+                            </select>
+                            <div class="valid-feedback">
+                                Todo bien
+                            </div>
+                            <div class="invalid-feedback">
+                                Por favor seleccione la ciudad donde vive
+                            </div>
+                    </div>
+                    
+            <div class="col-12" id="area">
+                <label for="area">SELECCIONE UN AREA DE AYUDA</label>
+
+                    <div class="form-check">                    
+                    <input class="form-check-input" type="radio"   name="area" id="Robótica" required>
+                    <label class="form-check-label" for="Robótica">Robótica</label>
+                    </div>
+                    <div class="form-check">   
+                    <input class="form-check-input" type="radio"   name="area" id="Barismo" required>
+                    <label class="form-check-label" for="Barismo">Barismo</label>
+                    </div>
+                    <div class="form-check">
+                    <input class="form-check-input" type="radio"   name="area" id="Mundo Motero" required>
+                    <label class="form-check-label" for="Mundo Motero">Mundo Motero</label>
+                    </div>
+                    <div class="form-check">
+                    <input class="form-check-input" type="radio"   name="area" id="Programación" required>
+                    <label class="form-check-label" for="Programación">Programación</label>
+                    </div>
+                    <div class="valid-feedback">
+                        Todo bien
+                    </div>
+                    <div class="invalid-feedback">
+                        Por favor seleccione una opción
+                    </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="descripción" class="form-label">INGRESE UNA DESCRIPCIÓN DE SU NECESIDAD</label>
+                        <textarea class="form-control" id="descripción" rows="3" required></textarea>
+                        <div class="valid-feedback">
+                            Todo bien
+                        </div>
+                        <div class="invalid-feedback">
+                            Por favor ingrese una descripción
+                        </div>
+                      </div>
+                    
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input type="checkbox" id="checkterms" class="form-checkbox" required>
+                            <Label for="checkterms" class="form-check-label">Acepto los términos</Label>
+                            <div class="valid-feedback">
+                                Todo bien
+                            </div>
+                            <div class="invalid-feedback">
+                                No has aceptado los términos
+                            </div>
+                        </div>
+                      
+
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">
+                            Registrate                 
+                        
+                        </button>
+                    </div>
+                    
+
+
+
+                    
+
+
+
+        </form>
+
+
+    </div>
+
+    
+
+  </body>
+</html>
