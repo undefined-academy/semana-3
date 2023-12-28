@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  background: lightblue;
+  box-sizing: border-box;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+.main-div {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+  background: whitesmoke;
+  border: 3px solid #000;
+  border-top: 0;
+  border-bottom: 0;
+  padding: 24px 48px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.solid {
+  margin-top: 8px solid #ccc;
+}
+
+section {
+  height: 100vh;
+}
+
+a {
+  color: cornflowerblue;
+  text-decoration: none;
+  font-size: larger;
+}
+
+.social-img {
+  width: 40px;
+  height: 40px;
+}
+
+.social-links {
+  display: inline-block;
+}
+
+.social-link {
+  display: inherit;
+  vertical-align: middle;
+}
+.social-link img, a {
+  display: inherit;
+  vertical-align: middle;
+}
+
+.form-group {
+  border: 1px solid #666;
+  border-radius: 4px;
+  margin: 10px 0;
+  padding: 5px;
+  /* max-width: 400px; */
+}
+label {
+  display: block;
+}
+input {
+  max-width: 150px;
+}
+input, select {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+fieldset {
+  display: flex;
+}
+fieldset input {
+  margin: 0 10px;
+}
+
+.comentary {
+  border: 2px solid #666;
+}
+.submit {
+  border: 0;
+  border: 2px solid #000;
+  border-radius: 4px;
+  width: 125px;
+  height: 65px;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 600;
+  color: whitesmoke;
+  background: rgb(59, 139, 34);
+  box-shadow: 2px 2px 0 #444;
+}
+
+.help {
+  font-size: small;
+}
+
+.navbar {
+  position: sticky;
+  top: 20px;
+  height: 10%;
+  width: 100%;
+}
+.navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+.navbar ul li {
+  padding: 0 10px;
+}
+
+.presentation {
+  display: flex;
+  align-items: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-evenly;
+}
+
+.gallery-item {
+  height: 200px;
+  width: 250px;
+  border: 1px solid tomato;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar {
+    font-size: 1em;
+  }
+  .navbar ul li {
+    padding: 0 5px;
+  }
+
+  .gallery {
+    display: block;
+  }
+  .gallery-item {
+    width: 100%;
+    height: 100px;
+    margin: 5px 0;
+  }
+  fieldset {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 135px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
