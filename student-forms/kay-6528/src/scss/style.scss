@@ -1,0 +1,16 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+body {
+    background: #ccc;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // flex-direction: column;
+}
+
+.container {
+    width: 70%;
+}
