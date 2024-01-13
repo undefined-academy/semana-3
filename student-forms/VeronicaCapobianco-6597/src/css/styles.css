@@ -28,11 +28,6 @@ h1{
 
 h2 {
 	font-style: italic;
-	color: orangered;
-}
-
-.subtitle{
-	color: #cebebe;
 }
 
 h3{
@@ -53,23 +48,10 @@ a{
 	color: yellowgreen;
 }
 
-.container {
-	max-width: 960px;
-	margin: 20px auto;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
+ul{
+	max-width: 80%;
+	margin: 0 auto;
 }
-
-.article {
-	background-color: #cebebe;
-	color: #313132;;
-	border: 1px solid #ddd;
-	border-radius: 8px;
-	padding: 20px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .item{
 	padding: 10px 5px;
 }
@@ -78,7 +60,7 @@ p {
 	line-height: 1.5;
 }
 
-figure{
+figure, form{
 	max-width: 300px;
 	padding: 20px 0;
 	margin: 0 auto;
