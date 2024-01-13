@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <title>Veronica Capobianco</title>
+    </head>
+
+    <body>
+        <header>
+            <h1 class="format">Veronica Capobianco</h1>
+            <h2 class="format">/ FrontEnd Developer / Buenos Aires, Argentina /</h2>
+        </header>
+        <main>
+            <figure>
+                <img src="https://i.postimg.cc/BnZ4fvgw/profile.png" alt="imagen de perfil" width="200">
+            </figure>
+
+            <section class="form">
+                <h3>Completa el formulario:</h3>
+                <form id="contact_form">
+                <div class="row">
+                    <label class="required" for="name">Nombre:</label>
+                    <input id="name" class="input" name="name" type="text" />
+                    <span id="name_validation" class="error_message"></span>
+                </div>
+                <div class="row">
+                    <label class="required" for="email">Email:</label>
+                    <input id="email" class="input" name="email" type="text" />
+                    <span id="email_validation" class="error_message"></span>
+                </div>
+                <div class="row">
+                    <label class="required" for="message">Mensaje:</label>
+                    <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea>
+                    <span id="message_validation" class="error_message"></span>
+                </div>
+                    
+                    <input id="submit_button" type="submit" value="Enviar mensaje" class="btn" />
+                </form>
+                <a href="./index.html"><p> <= Volver al inicio</p></a>
+            </section>
+        </main>
+        <footer>
+            <p>2024 - @veritocapito</p>
+        </footer>
+        <script
+        type="module" src="./main.mjs">
+        </script>
+    </body>
+
+</html>
