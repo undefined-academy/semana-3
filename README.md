@@ -1,4 +1,5 @@
-# ⛺ Semana 3
+> # ⚠️ Mira el nuevo repositorio de Undefined Academy en https://github.com/glrodasz/academy
+## ⛺ Semana 3
 
 > 🏕️ [Base de conocimientos.](https://undefinedshell.notion.site/Semana-3-73f4277f993c4eb78d0d5aab7be42c94)
 
