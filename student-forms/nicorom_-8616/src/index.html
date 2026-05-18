@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Contact</title>
+  </head>
+  <body>
+    <header class="d-flex justify-content-center aling-items-center">
+      <h1 class="display-1">Contact</h1>
+    </header>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+      <div class="card" style="width: 35rem; height: 25rem">
+        <section
+          class="container-form d-flex justify-content-center aling-items-center"
+        >
+          <form
+            style="width: 30rem"
+            action="/sever"
+            method="get"
+            onsubmit="return false"
+          >
+            <div>
+              <label
+                class="d-flex justify-content-center aling-items-center"
+                for="name"
+                class="form-label"
+                >Name
+              </label>
+              <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="your Name"
+                required
+                class="form-control"
+              />
+            </div>
+
+            <div>
+              <label
+                class="d-flex justify-content-center aling-items-center"
+                for="email"
+                class="form-label"
+                >Email
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="your email"
+                required
+                class="form-control"
+              />
+            </div>
+
+            <div class="d-flex justify-content-center aling-items-center">
+              <fieldset >
+                <legend
+                  class="d-flex justify-content-center aling-items-center"
+                  class="col-form-label col-sm-2 pt-0"
+                >
+                  Services
+                </legend>
+                <input
+                  class="form-check-input"
+                  id="front"
+                  name="service"
+                  value="front"
+                  type="radio"
+                />
+                <label class="form-check-label" for="front">Frontend</label>
+                <input
+                  class="form-check-input"
+                  id="back"
+                  name="service"
+                  value="back"
+                  type="radio"
+                />
+                <label class="form-check-label" for="back">Backend</label>
+                <input
+                  class="form-check-input"
+                  id="db"
+                  name="service"
+                  value="db"
+                  type="radio"
+                />
+                <label class="form-check-label" for="db">Database</label>
+              </fieldset>
+            </div>
+
+            <div >
+              <label
+                class="d-flex justify-content-center aling-items-center"
+                for="country"
+                class="form-label"
+                >Country</label
+              >
+              <select
+                class="form-select form-select-sm"
+                aria-label="Small select example"
+                id="country"
+                name="country"
+                required
+              >
+                <option>China</option>
+                <option>Argentina</option>
+                <option>Russia</option>
+                <option>Spain</option>
+                <option>USA</option>
+                <option>Others</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label
+                class="d-flex justify-content-center aling-items-center"
+                for="msj"
+                class="form-label"
+                >Enter your message</label
+              >
+              <textarea id="msj" name="msj" class="form-control"></textarea>
+            </div>
+            <div class="d-flex justify-content-center aling-items-center">
+              <button class="btn btn-primary" type="submit">Envar</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

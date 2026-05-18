@@ -1,0 +1,22 @@
+{
+  "name": "nicorom_-8616",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start":"vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.89.2",
+    "vite": "^7.0.6"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.7"
+  }
+}

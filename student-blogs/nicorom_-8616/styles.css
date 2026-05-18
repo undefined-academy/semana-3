@@ -1,0 +1,79 @@
+html body {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #08080a;
+    font-family     : Arial;
+    color           : whitesmoke;
+    margin          : 20px;
+    height          : 20px;
+}
+
+img {
+    width        : 100%;
+    border-radius: 10px;
+}
+
+nav {
+    display        : flex;
+    flex-direction : row;
+    justify-content: center;
+    align-items    : center;
+}
+
+ul {
+    list-style: none;
+    padding   : 0;
+    display   : flex;
+    gap       : 20px;
+}
+ul:hover{
+    transform : scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+a {
+    font-family: sans-serif;
+    color      : white;
+    font-size  : 20px;
+    text-decoration: none;
+
+}
+
+a:hover {
+    color     : wheat;
+    text-decoration: overline;
+}
+
+
+.blogs {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows   : 2fr;
+    gap                  : 12px;
+
+}
+
+.blog-main {
+    grid-column: 1/4;
+    place-items: center;
+
+}
+
+.blog {
+    border       : 1px solid wheat;
+    border-radius: 8px;
+
+}
+
+
+.blog:hover,
+.blog-main:hover {
+    width : 90%;
+    margin: 0 auto;
+}
