@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Form with Bootstrap 5</title>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-secondary">
+    <section class="d-flex justify-content-center align-items-center">
+      <div class="card col-sm-6 p-3">
+        <div class="mb-3">
+          <h4 class="text-center">Contactame</h4>
+        </div>
+        <div class="mb-2">
+          <form action="">
+            <div class="mb-2">
+              <label for="nombre">Nombre</label>
+              <input
+                class="form-control"
+                type="text"
+                name="nombre"
+                id="nombre"
+                placeholder="Peter"
+                required
+              />
+            </div>
+            <div class="mb-2">
+              <label for="nombre">Apellido</label>
+              <input
+                class="form-control"
+                type="text"
+                name="apellido"
+                id="apellido"
+                placeholder="Pan"
+                required
+              />
+            </div>
+            <div class="mb-2">
+              <label for="correo">Correo Electrónico</label>
+              <input
+                class="form-control"
+                type="email"
+                name="correo"
+                id="correo"
+                placeholder="tucorreo@corre.com"
+                required
+              />
+            </div>
+            <div class="mb-2">
+              <label for="sexo">Sexo</label>
+              <input
+                type="radio"
+                name="sexo"
+                id="sexo"
+                value="masculino"
+                required
+              />
+              Masculino
+              <input type="radio" name="sexo" id="sexo" value="femenino" />
+              Femenino
+            </div>
+            <div class="mb-2">
+              <label for="mensaje">Mensaje</label>
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                placeholder="Mensaje"
+                class="form-control"
+              ></textarea>
+            </div>
+            <div class="mb-2">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

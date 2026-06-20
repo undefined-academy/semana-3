@@ -1,0 +1,29 @@
+@import url("styles.css");
+
+a {
+  text-decoration: none;
+}
+
+.container-navbar {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__logo img {
+  height: 60px;
+  margin-right: 20px;
+}
